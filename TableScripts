@@ -1,0 +1,106 @@
+BUYER:
+CREATE TABLE [dbo].[Buyer] (
+    [BuyerID]      INT          NOT NULL,
+    [Active]       BIT          NOT NULL,
+    [LastName]     VARCHAR (25) NULL,
+    [FirstName]    VARCHAR (25) NULL,
+    [City]         VARCHAR (25) NULL,
+    [State]        CHAR (2)     NULL,
+    [Zip]          INT          NULL,
+    [Email]        VARCHAR (30) NULL,
+    [Phone]        CHAR (10)    NULL,
+    [BillType]     VARCHAR (10) NOT NULL,
+    [RotaryMember] BIT          NULL,
+    [Notes]        TEXT         NULL,
+    PRIMARY KEY CLUSTERED ([BuyerID] ASC)
+);
+
+
+DISCOUNT:
+CREATE TABLE [dbo].[Discount]
+(
+	[DiscountID] int NOT NULL PRIMARY KEY,
+[DiscountReason] varchar(20) NOT NULL,
+[DiscountAmount] smallmoney NOT NULL
+)
+
+ORDER:
+CREATE TABLE [dbo].[Order]
+(
+[OrderID] int NOT NULL PRIMARY KEY,
+[OrderDate] date NOT NULL,
+[Source] varchar(15), 
+[SubYear] int NOT NULL,
+[BasePrice] smallmoney NOT NULL,
+[DiscountID] int,
+[Type] varchar(10) NOT NULL,
+[ConfirmationDate] date,
+[FirstHoliday] varchar(12) NOT NULL
+ CONSTRAINT [FK_Order_ToDiscount] FOREIGN KEY ([DiscountID]) REFERENCES [Discount]([DiscountID]) 
+)
+
+PAYMENT:
+CREATE TABLE [dbo].[Payment]
+(
+[BuyerID] int NOT NULL,
+[OrderID] int NOT NULL, 
+    CONSTRAINT [PK_Payment] PRIMARY KEY ([BuyerID], [OrderID]),
+	CONSTRAINT [FK_Payment_ToOrder] FOREIGN KEY ([OrderID]) REFERENCES [Order]([OrderID]),
+	CONSTRAINT [FK_Payment_ToBuyer] FOREIGN KEY ([BuyerID]) REFERENCES [Buyer]([BuyerID])
+
+)
+
+
+PROPERTY OWNER:
+CREATE TABLE [dbo].[PropertyOwner]
+(
+
+[PropertyOwnerID] int NOT NULL PRIMARY KEY, 
+[LastName] varchar(25),
+[FirstName] varchar(25),
+[StreetAddress] varchar(50) NOT NULL,
+[City] varchar(25) NOT NULL,
+[State] char(2) NOT NULL,
+[Zip] int NOT NULL,
+[Email] varchar(30),
+[Phone] char(10),
+[New] bit NOT NULL,
+[Sprinkler] bit NOT NULL,
+[Fence] bit NOT NULL
+
+)
+
+ROUTE:
+CREATE TABLE [dbo].[Route]
+(
+	[PropertyOwnerID] int NOT NULL PRIMARY KEY,
+[RouteColor] varchar(15) NOT NULL,
+[PreviousPropertyOwnerID] int,
+CONSTRAINT [FK_Route_ToPropertyOwner] FOREIGN KEY ([PropertyOwnerID]) REFERENCES [PropertyOwner]([PropertyOwnerID]),
+CONSTRAINT [FK_Route_ToPreviousPropertyOwner] FOREIGN KEY ([PreviousPropertyOwnerID]) REFERENCES [PropertyOwner]([PropertyOwnerID])
+
+
+)
+
+
+SLEEVE:
+CREATE TABLE [dbo].[Sleeve]
+(
+[SleeveID] int PRIMARY KEY NOT NULL,
+[Active] bit NOT NULL,
+[OrderId] int NOT NULL,
+[PropertyOwnerID] int NOT NULL,
+[LocationDescription] text NULL,
+[Latitude] decimal(8, 6) NOT NULL,
+[Longitude] decimal(8, 6) NOT NULL,
+[Photo] varchar(50) NOT NULL,
+[OupsID] int NOT NULL,
+[InstalledDate] date NULL, 
+[ChangeDate] date NULL,
+[Public] bit NOT NULL,
+[Deliver] bit NOT NULL, 
+    CONSTRAINT [FK_Sleeve_ToOrder] FOREIGN KEY ([OrderID]) REFERENCES [Order]([OrderID]),
+	 CONSTRAINT [FK_Sleeve_ToPropertyOwner] FOREIGN KEY ([PropertyOwnerID]) REFERENCES [PropertyOwner]([PropertyOwnerID]),
+	   CONSTRAINT [FK_Sleeve_ToOUPS] FOREIGN KEY ([OupsID]) REFERENCES [OUPS]([OupsID])
+
+)
