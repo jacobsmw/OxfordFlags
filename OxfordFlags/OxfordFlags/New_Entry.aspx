@@ -4,8 +4,8 @@
     <h2><%: Title %>.<asp:Image ID="Image1" runat="server" />
     </h2>
     <p style="text-decoration: underline; font-size: large"><strong>Buyer</strong></p>
-    <p>Name
-        <input id="Text6" type="text" /></p>
+    <p>First Name <input id="Text6" type="text" /></p>
+    <p>Last Name <input id="Text17" type="text" /></p>
     <p>Address <input id="Text5" type="text" /></p>
     <p>City <input id="Text4" type="text" /></p>
     <p>State <select id="Select1" name="D1">
