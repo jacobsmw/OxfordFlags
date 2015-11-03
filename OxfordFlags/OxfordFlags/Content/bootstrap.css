@@ -325,6 +325,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+    width: 140px;
 }
 
 button,
@@ -402,6 +403,7 @@ hr {
 
 p {
   margin: 0 0 10px;
+    font-size: medium;
 }
 
 .lead {
