@@ -1,19 +1,17 @@
 ﻿<%@ Page Title="New Entry" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="New_Entry.aspx.vb" Inherits="OxfordFlags.New_Entry" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.<asp:Image ID="Image1" runat="server" />
-    </h2>
-    <p style="text-decoration: underline; font-size: large"><strong>Buyer</strong></p>
+    <h2><%: Title %>.<asp:Image ID="Image1" runat="server" /></h2>
     <p>First Name <input id="Text6" type="text" /></p>
     <p>Last Name <input id="Text17" type="text" /></p>
     <p>Address <input id="Text5" type="text" /></p>
     <p>City <input id="Text4" type="text" /></p>
     <p>State <select id="Select1" name="D1">
-            <option>WV</option>
-            <option>OH</option>
-        <%--Need to add all 50 states plus a select option
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option>WV</option>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option>OH</option>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%--Need to add all 50 states plus a select option
             we can then save this as a tool--%>
-        </select></p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select></p>
     <p>Zip Code <input id="Text3" type="text" /></p>
     <p>Email <input id="Text2" type="text" /></p>
     <p>Phone <input id="Text1" type="text" /></p>
@@ -25,27 +23,22 @@
     <p>
         Payment Method
         <select id="Select2" name="D2">
-            <option></option>
-        </select></p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option></option>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select></p>
     <p>
         Date
-        <select id="Select3" name="D3">
-            <option></option>
-        </select><select id="Select4" name="D4">
-            <option></option>
-        </select><select id="Select5" name="D5">
-            <option></option>
-        </select></p>
+        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+    </p>
     <p>
         Source
         <select id="Select6" name="D6">
-            <option></option>
-        </select></p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option></option>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select></p>
     <p>
         Discount
         <select id="Select7" name="D7">
-            <option></option>
-        </select></p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option></option>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select></p>
     <p>
         First Holiday
         <input id="Text7" type="text" /></p>
@@ -57,7 +50,10 @@
         <strong>Sleeve</strong></p>
     <p>
         Property Owner
+        First Name
         <input id="Text16" type="text" /></p>
+    <p>
+        Property Owner Last Name <input id="Text18" type="text" /></p>
     <p>
         Address <input id="Text15" type="text" /></p>
     <p>
@@ -90,7 +86,14 @@
         Longitude
         <input id="Text10" type="text" /></p>
     <p>
-        OUPS Notified </p> <%--put in date drop list--%>
+        OUPS Notified 
+        <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
+    </p> <%--put in date drop list--%>
     <p>
-        OUPS Checked </p> <%--put in date drop list--%>
+        OUPS Checked 
+        <asp:Calendar ID="Calendar3" runat="server"></asp:Calendar>
+    </p> <%--put in date drop list--%>
+    </div>
+    </div>
+    </div>
 </asp:Content>

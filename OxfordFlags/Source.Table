@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Source]
+(
+	[SourceID] INT NOT NULL PRIMARY KEY
+)

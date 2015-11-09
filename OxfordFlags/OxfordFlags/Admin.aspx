@@ -4,7 +4,7 @@
     <h2><%: Title %>.<asp:Image ID="Image1" runat="server" />
     </h2>
     <p>
-        <asp:Button ID="Button1" runat="server" Text="New Entry" />
+        <asp:Button ID="Button1" runat="server" Text="Add New User" PostBackUrl="~/Account/Register.aspx" />
     </p>
     <p>
         <asp:Button ID="Button2" runat="server" Text="Search" />
