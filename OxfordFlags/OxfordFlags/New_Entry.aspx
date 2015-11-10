@@ -1,7 +1,13 @@
 ﻿<%@ Page Title="New Entry" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="New_Entry.aspx.vb" Inherits="OxfordFlags.New_Entry" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.<asp:Image ID="Image1" runat="server" /></h2>
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent" >  
+    <h2><%: Title %></h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+
+
     <p>First Name <input id="Text6" type="text" /></p>
     <p>Last Name <input id="Text17" type="text" /></p>
     <p>Address <input id="Text5" type="text" /></p>
