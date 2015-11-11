@@ -12,7 +12,160 @@ Option Explicit On
 
 
 Partial Public Class New_Entry
-    
+
+    '''<summary>
+    '''BuyerFirstNameLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerFirstNameLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BuyerFirstName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerFirstName As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''BuyerFirstNameValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerFirstNameValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''BuyerLastNameLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerLastNameLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BuyerAddressLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerAddressLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BuyerCityLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerCityLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BuyerStateLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerStateLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BuyerZipCodeLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerZipCodeLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BuyerZipCode control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerZipCode As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''BuyerZipCodeValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerZipCodeValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''BuyerRotaryMember control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerRotaryMember As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''OrderDate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderDate As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''DropDownList5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DropDownList5 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''PaymentSource control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentSource As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''DropDownList4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DropDownList4 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''DiscountName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DiscountName As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''TextBox1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
     '''Calendar1 control.
     '''</summary>
@@ -21,22 +174,40 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Calendar1 As Global.System.Web.UI.WebControls.Calendar
-    
+
     '''<summary>
-    '''Calendar2 control.
+    '''DropDownList1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Calendar2 As Global.System.Web.UI.WebControls.Calendar
-    
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''Calendar3 control.
+    '''SqlDataSource2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Calendar3 As Global.System.Web.UI.WebControls.Calendar
+    Protected WithEvents SqlDataSource2 As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''CheckBoxList1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CheckBoxList1 As Global.System.Web.UI.WebControls.CheckBoxList
+
+    '''<summary>
+    '''SqlDataSource1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

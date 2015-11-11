@@ -12,49 +12,40 @@ Option Explicit On
 
 
 Partial Public Class Main_Menu
-    
+
     '''<summary>
-    '''Image1 control.
+    '''NewEntryButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
-    
+    Protected WithEvents NewEntryButton As Global.System.Web.UI.WebControls.Button
+
     '''<summary>
-    '''Button1 control.
+    '''SearchButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
-    
+    Protected WithEvents SearchButton As Global.System.Web.UI.WebControls.Button
+
     '''<summary>
-    '''Button2 control.
+    '''ReportsButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
-    
+    Protected WithEvents ReportsButton As Global.System.Web.UI.WebControls.Button
+
     '''<summary>
-    '''Button3 control.
+    '''AdminButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button3 As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''Button4 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Button4 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents AdminButton As Global.System.Web.UI.WebControls.Button
 End Class
