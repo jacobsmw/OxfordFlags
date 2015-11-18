@@ -11,5 +11,5 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Reports
+Partial Public Class Admin
 End Class

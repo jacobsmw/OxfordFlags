@@ -14,74 +14,83 @@ Option Explicit On
 Partial Public Class Admin
 
     '''<summary>
-    '''Image1 control.
+    '''DiscountDescriptionLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents DiscountDescriptionLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''AddNewUserButton control.
+    '''DiscountDescription control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddNewUserButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountDescription As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''ViewUsersButton control.
+    '''DiscountDescriptionEnteredValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ViewUsersButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountDescriptionEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''AddNewOccasionButton control.
+    '''DiscountDescriptionFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddNewOccasionButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountDescriptionFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''AddNewTraitButton control.
+    '''DiscountAmountLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddNewTraitButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountAmountLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''AddNewSourceButton control.
+    '''DiscountAmount control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddNewSourceButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountAmount As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''AddNewDiscountButton control.
+    '''DiscountAmountEnteredValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddNewDiscountButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountAmountEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''EditActiveDiscountsButton control.
+    '''DiscountAmountFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents EditActiveDiscountsButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountAmountFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''DiscountActive control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DiscountActive As Global.System.Web.UI.WebControls.CheckBox
 End Class

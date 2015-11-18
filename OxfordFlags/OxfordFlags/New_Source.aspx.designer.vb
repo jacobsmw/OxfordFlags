@@ -11,59 +11,41 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Search
+Partial Public Class Admin
 
     '''<summary>
-    '''SearchNameLabel control.
+    '''SourceNameLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchNameLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SourceNameLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''SearchName control.
+    '''SourceName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SourceName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''SearchAddressLabel control.
+    '''SourceNameEnteredValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchAddressLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SourceNameEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''SearchAddress control.
+    '''SourceNameFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchAddress As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''SearchOUPSTicketLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SearchOUPSTicketLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''SearchOUPSTicket control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SearchOUPSTicket As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SourceNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 End Class

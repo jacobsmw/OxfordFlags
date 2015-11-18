@@ -190,9 +190,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Edit_Discounts.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Main_Menu.aspx" />
+    <Content Include="New_Discount.aspx" />
     <Content Include="New_Entry.aspx" />
+    <Content Include="NewOccasion.aspx" />
+    <Content Include="New_Source.aspx" />
+    <Content Include="New_Trait.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -340,6 +345,13 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Edit_Discounts.aspx.designer.vb">
+      <DependentUpon>Edit_Discounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Discounts.aspx.vb">
+      <DependentUpon>Edit_Discounts.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -370,11 +382,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="New_Discount.aspx.designer.vb">
+      <DependentUpon>New_Discount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="New_Discount.aspx.vb">
+      <DependentUpon>New_Discount.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="New_Entry.aspx.designer.vb">
       <DependentUpon>New_Entry.aspx</DependentUpon>
     </Compile>
     <Compile Include="New_Entry.aspx.vb">
       <DependentUpon>New_Entry.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="NewOccasion.aspx.designer.vb">
+      <DependentUpon>NewOccasion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewOccasion.aspx.vb">
+      <DependentUpon>NewOccasion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="New_Source.aspx.designer.vb">
+      <DependentUpon>New_Source.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="New_Source.aspx.vb">
+      <DependentUpon>New_Source.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="New_Trait.aspx.designer.vb">
+      <DependentUpon>New_Trait.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="New_Trait.aspx.vb">
+      <DependentUpon>New_Trait.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Reports.aspx.designer.vb">
