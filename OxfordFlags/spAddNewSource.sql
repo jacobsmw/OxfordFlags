@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spAddNewSource]
-	@SourceName nvarchar
+	@SourceName nvarchar(50)
 
 AS
 	SET NOCOUNT ON

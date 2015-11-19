@@ -1,14 +1,15 @@
-﻿﻿CREATE PROCEDURE [dbo].[spAddNewBuyer]
-	@LastName nvarchar,
-	@FirstName nvarchar,
-	@StreetAddress nvarchar,
-	@City nvarchar,
-	@State nvarchar,
-	@Zip nvarchar,
-	@Email nvarchar,
-	@Phone nvarchar,
-	@BillType nvarchar,
+﻿CREATE PROCEDURE [dbo].[spAddNewBuyer]
+	@LastName nvarchar(25),
+	@FirstName nvarchar(25),
+	@StreetAddress nvarchar(50),
+	@City nvarchar(25),
+	@State nvarchar(2),
+	@Zip nvarchar(5),
+	@Email nvarchar(200),
+	@Phone nvarchar(15),
+	@BillType nvarchar(10),
 	@RotaryMember bit
+
 AS
 	SET NOCOUNT ON
 	BEGIN

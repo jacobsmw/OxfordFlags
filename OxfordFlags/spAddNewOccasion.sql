@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spAddNewOccasion]
-	@OccasionName nvarchar
+	@OccasionName nvarchar(50)
 AS
 	SET NOCOUNT ON
 	BEGIN

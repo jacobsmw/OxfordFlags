@@ -1,6 +1,7 @@
-﻿<%@ Page Title="Add New Occasion" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NewOccasion.aspx.vb" Inherits="OxfordFlags.Admin" %>
+﻿<%@ Page Title="Add New Occasion" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="New_Occasion.aspx.vb" Inherits="OxfordFlags.New_Occasion" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+
     <h2><%: Title %></h2>
     <hr />
 
@@ -19,5 +20,8 @@
             ValidationExpression="^[a-zA-Z0-9''-'\s]{0,50}$">
         </asp:RegularExpressionValidator>
     </p>
-    <input id="SubmitButton" type="submit" value="Submit" />
+    <asp:Label ID="Label1" runat="server"></asp:Label>
+    <br />
+    &nbsp;<asp:Button ID="SubmitButton" runat="server" Text="Submit" />
+
 </asp:Content>

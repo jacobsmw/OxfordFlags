@@ -1,4 +1,8 @@
-﻿Public Class New_Discount
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Configuration
+
+Public Class New_Occasion
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -9,17 +13,11 @@
 
         Dim tbl As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
 
-        Dim desc As String
-        desc = DiscountDescription.Text
+        Dim s As String
+        s = OccasionName.Text
 
-        Dim amount As Double
-        Double.TryParse(DiscountAmount.Text, amount)
-
-        Dim active As Boolean
-        active = DiscountActive.Checked
-
-        tbl.spAddNewDiscount(desc, amount, active)
-        Label1.Text = "Inserted new Discount"
+        tbl.spAddNewOccasion(s)
+        Label1.Text = "Inserted new Occasion"
 
     End Sub
 

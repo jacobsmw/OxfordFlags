@@ -1,12 +1,12 @@
 ﻿CREATE PROCEDURE [dbo].[spAddNewPropertyOwner]
-	@LastName nvarchar,
-	@FirstName nvarchar,
-	@StreetAddress nvarchar,
-	@City nvarchar,
-	@State nvarchar,
-	@Zip nvarchar,
-	@Email nvarchar,
-	@Phone nvarchar,
+	@LastName nvarchar(25),
+	@FirstName nvarchar(25),
+	@StreetAddress nvarchar(50),
+	@City nvarchar(25),
+	@State nvarchar(2),
+	@Zip nvarchar(5),
+	@Email nvarchar(200),
+	@Phone nvarchar(15),
 	@RotaryMember bit
 
 AS

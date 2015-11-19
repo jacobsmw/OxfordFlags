@@ -4,7 +4,7 @@
 	@SubYear int,
 	@BasePrice float,
 	@DiscountID int,
-	@Type nvarchar,
+	@Type nvarchar(10),
 	@ConfirmationDate date,
 	@FirstOccasionID int
 

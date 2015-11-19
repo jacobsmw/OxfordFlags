@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[spAddNewRoute]
 	@PropertyOwnerID int,
-	@RouteColor nvarchar,
+	@RouteColor nvarchar(15),
 	@SortOrder int
 
 AS

@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spAddNewOups]
-	@OupsTicketNumber nvarchar,
+	@OupsTicketNumber nvarchar(50),
 	@OupsNotifiedDate date,
 	@OupsCheckedDate date
 
