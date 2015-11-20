@@ -218,7 +218,6 @@ E:\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.vbproj.GenerateReso
 E:\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.dll
 E:\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\WebForms_Basic.xml
 E:\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.pdb
-C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.vbprojResolveAssemblyReference.cache
 C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.Resources.resources
 C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.vbproj.GenerateResource.Cache
 C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.dll

@@ -6,55 +6,7 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.New_Occasion.OccasionNameLabel">
-	<summary>
-OccasionNameLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Occasion.OccasionName">
-	<summary>
-OccasionName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Occasion.OccasionNameEnteredValidator">
-	<summary>
-OccasionNameEnteredValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Occasion.OccasionNameFormatValidator">
-	<summary>
-OccasionNameFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Occasion.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Occasion.SubmitButton">
-	<summary>
-SubmitButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
+<member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
 	<summary>
 providerDetails control.
 </summary>
@@ -256,6 +208,54 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Discount.SubmitButton">
+	<summary>
+SubmitButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Occasion.OccasionNameLabel">
+	<summary>
+OccasionNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Occasion.OccasionName">
+	<summary>
+OccasionName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Occasion.OccasionNameEnteredValidator">
+	<summary>
+OccasionNameEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Occasion.OccasionNameFormatValidator">
+	<summary>
+OccasionNameFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Occasion.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Occasion.SubmitButton">
 	<summary>
 SubmitButton control.
 </summary>

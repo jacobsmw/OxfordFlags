@@ -29,11 +29,6 @@ Partial Public Class New_Entry
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-            SqlCommand cmd = New SqlCommand("insert into Buyer values('"+BuyerFirstName.Text+"','"+BuyerLastName.Text +"', '"+ BuyerAddress.Text+"'), con);
-            cmd.ExecuteNoneQuery();
-            con.Close();
-            Label1.Visible=true;
-            Label1.Text="SAVED";
 
     End Sub
 

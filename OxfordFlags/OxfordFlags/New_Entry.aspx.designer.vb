@@ -347,6 +347,15 @@ Partial Public Class New_Entry
     Protected WithEvents SubscriptionYearEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
+    '''SubscriptionYearFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''OrderTypeLabel control.
     '''</summary>
     '''<remarks>
@@ -1155,24 +1164,6 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents DeliverEarly As Global.System.Web.UI.WebControls.CheckBox
-
-    '''<summary>
-    '''Label1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''SqlDataSource1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Button1 control.
