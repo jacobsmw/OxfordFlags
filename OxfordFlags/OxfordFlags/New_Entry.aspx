@@ -2,7 +2,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-    <h3><%: "Buyer"%></h3>
+    <h3><%: "Sleeve"%></h3>
     <p>
         <asp:Label ID="BuyerFirstNameLabel" runat="server" Text="First Name"></asp:Label>
         <asp:TextBox ID="BuyerFirstName" runat="server"></asp:TextBox>
@@ -97,7 +97,7 @@
     </p>
 
     <hr />
-    <h3><%: "Order"%></h3>
+    <h3><%-- How are we Handeling this? --%></h3>
     <p>
         <asp:Label ID="OrderDateLabel" runat="server" Text="Order Date"></asp:Label>
         <asp:TextBox ID="OrderDate" runat="server"></asp:TextBox>
@@ -116,9 +116,9 @@
     </p>
     <p>
         <asp:Label ID="OrderSource" runat="server" Text="Order Source"></asp:Label>
-        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="OrderSourceList" DataTextField="SourceName" DataValueField="SourceName">
+        <asp:DropDownList ID="OrderSourceDropDownList" runat="server" DataSourceID="OrderSourceList" DataTextField="SourceName" DataValueField="SourceID">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="OrderSourceList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName] FROM [Source]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="OrderSourceList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName], [SourceID] FROM [Source]"></asp:SqlDataSource>
     </p>
     <p>
         <asp:Label ID="SubscriptionYearLabel" runat="server" Text="Subscription Year"></asp:Label>
@@ -168,7 +168,7 @@
     </p>
 
     <hr />
-    <h3><%: "Payment"%></h3>
+    <h3><%: "Sleeve"%></h3>
     <p>
         <asp:Label ID="BasePriceLabel" runat="server" Text="Base Price"></asp:Label>
         <asp:TextBox ID="BasePrice" runat="server"></asp:TextBox>
@@ -186,14 +186,14 @@
     </p>
     <p>
         <asp:Label ID="PaymentMethodLabel" runat="server" Text="Payment Method"></asp:Label>
-        <asp:DropDownList ID="PaymentMethod" runat="server" DataSourceID="PaymentSource" DataTextField="SourceName" DataValueField="SourceName"></asp:DropDownList>
-        <asp:SqlDataSource ID="PaymentSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName] FROM [Source]"></asp:SqlDataSource>
+        <asp:DropDownList ID="PaymentMethod" runat="server" DataSourceID="PaymentSource" DataTextField="SourceName" DataValueField="SourceID"></asp:DropDownList>
+        <asp:SqlDataSource ID="PaymentSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName], [SourceID] FROM [Source]"></asp:SqlDataSource>
 
     </p>
     <p>
         <asp:Label ID="DiscountLabel" runat="server" Text="Discount"></asp:Label>
-        <asp:DropDownList ID="Discount" runat="server" DataSourceID="DiscountName" DataTextField="DiscountReason" DataValueField="DiscountReason"></asp:DropDownList>
-        <asp:SqlDataSource ID="DiscountName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason] FROM [Discount]"></asp:SqlDataSource>
+        <asp:DropDownList ID="Discount" runat="server" DataSourceID="DiscountName" DataTextField="DiscountReason" DataValueField="DiscountID"></asp:DropDownList>
+        <asp:SqlDataSource ID="DiscountName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason], [DiscountID] FROM [Discount]"></asp:SqlDataSource>
     </p>
     <p>
         <asp:Label ID="AmountPaidLabel" runat="server" Text="Amount Paid"></asp:Label>
@@ -227,12 +227,12 @@
         </asp:CompareValidator>
     <p>
         <asp:Label ID="FirstHolidayLabel" runat="server" Text="First Holiday"></asp:Label>
-        <asp:DropDownList ID="FirstHoliday" runat="server" DataSourceID="HolidayName" DataTextField="OccasionName" DataValueField="OccasionName"></asp:DropDownList>
-        <asp:SqlDataSource ID="HolidayName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName] FROM [Occasion]"></asp:SqlDataSource>
+        <asp:DropDownList ID="FirstHoliday" runat="server" DataSourceID="HolidayName" DataTextField="OccasionName" DataValueField="OccasionID"></asp:DropDownList>
+        <asp:SqlDataSource ID="HolidayName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName], [OccasionID] FROM [Occasion]"></asp:SqlDataSource>
     </p>
 
     <hr />
-    <h3><%: "Property"%></h3>
+    <h3><%-- How are we Handeling this? --%></h3>
     <p>
         <asp:Label ID="PropertyFirstNameLabel" runat="server" Text="Property Owner First Name"></asp:Label>
         <asp:TextBox ID="PropertyFirstName" runat="server"></asp:TextBox>
@@ -310,7 +310,7 @@
             ControlToValidate="PropertyZipCode"
             ErrorMessage="You must enter a valid zip code"
             ForeColor="Red"
-            ValidationExpression="[0,9]{5}">
+            ValidationExpression="[0-9]{5}">
         </asp:RegularExpressionValidator>
     </p>
     <p>
@@ -338,8 +338,8 @@
     </p>
     <p>
         <asp:Label ID="PropertyTraitsLabel" runat="server" Text="Property Traits"></asp:Label>
-        <asp:CheckBoxList ID="PropertyTraits" runat="server" DataSourceID="Traits" DataTextField="TraitDescription" DataValueField="TraitDescription"></asp:CheckBoxList>
-        <asp:SqlDataSource ID="Traits" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitDescription] FROM [Traits]"></asp:SqlDataSource>
+        <asp:CheckBoxList ID="PropertyTraits" runat="server" DataSourceID="Traits" DataTextField="TraitDescription" DataValueField="TraitID"></asp:CheckBoxList>
+        <asp:SqlDataSource ID="Traits" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitID], [TraitDescription] FROM [Trait]"></asp:SqlDataSource>
     </p>
 
     <hr />
@@ -445,12 +445,12 @@
         <asp:CheckBox ID="PublicFlag" runat="server" Text="Public" TextAlign="Left" />
     </p>
     <p>
-        <asp:CheckBox ID="DeliverEarly" runat="server" Text="Deliver Early" TextAlign="Left" />
+        <asp:CheckBox ID="Deliver" runat="server" Text="Deliver" TextAlign="Left" />
     </p>
     <p>
         &nbsp;</p>
     <p>
-        <asp:Button ID="Button1" runat="server" Text="Submit" />
+        <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
     </p>
 
 </asp:Content>

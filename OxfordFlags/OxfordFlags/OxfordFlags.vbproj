@@ -194,6 +194,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Main_Menu.aspx" />
     <Content Include="New_Discount.aspx" />
+    <Content Include="New_Entry.aspx" />
     <Content Include="New_Occasion.aspx" />
     <Content Include="New_Source.aspx" />
     <Content Include="New_Trait.aspx" />
@@ -404,6 +405,13 @@
     <Compile Include="New_Discount.aspx.vb">
       <DependentUpon>New_Discount.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="New_Entry.aspx.designer.vb">
+      <DependentUpon>New_Entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="New_Entry.aspx.vb">
+      <DependentUpon>New_Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="New_Occasion.aspx.designer.vb">
       <DependentUpon>New_Occasion.aspx</DependentUpon>

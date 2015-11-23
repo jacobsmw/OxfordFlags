@@ -271,3 +271,4 @@ C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\Micr
 C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.vbprojResolveAssemblyReference.cache
