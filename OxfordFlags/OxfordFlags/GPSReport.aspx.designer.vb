@@ -11,61 +11,70 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Search
+Partial Public Class GPSReport
 
     '''<summary>
-    '''SearchNameLabel control.
+    '''SubscriptionYearLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchNameLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''SearchName control.
+    '''SubscriptionYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''SearchAddressLabel control.
+    '''SubscriptionYearEnteredValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchAddressLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SubscriptionYearEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''SearchAddress control.
+    '''SubscriptionYearFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchAddress As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''SearchOUPSTicketLabel control.
+    '''RouteColorLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchOUPSTicketLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents RouteColorLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''SearchOUPSTicket control.
+    '''RouteColor control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchOUPSTicket As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RouteColor As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''RouteColorEnteredValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RouteColorEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''SearchButton control.
@@ -77,11 +86,11 @@ Partial Public Class Search
     Protected WithEvents SearchButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Label1 control.
+    '''Label2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 End Class

@@ -192,6 +192,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Edit_Discounts.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GPSReport.aspx" />
     <Content Include="Main_Menu.aspx" />
     <Content Include="New_Discount.aspx" />
     <Content Include="New_Entry.aspx" />
@@ -204,6 +205,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="PaymentReport.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -355,6 +357,13 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GPSReport.aspx.designer.vb">
+      <DependentUpon>GPSReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPSReport.aspx.vb">
+      <DependentUpon>GPSReport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Main_Menu.aspx.designer.vb">
       <DependentUpon>Main_Menu.aspx</DependentUpon>
     </Compile>
@@ -415,6 +424,13 @@
     </Compile>
     <Compile Include="New_Trait.aspx.vb">
       <DependentUpon>New_Trait.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PaymentReport.aspx.designer.vb">
+      <DependentUpon>PaymentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReport.aspx.vb">
+      <DependentUpon>PaymentReport.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Reports.aspx.designer.vb">

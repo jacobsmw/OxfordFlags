@@ -16,5 +16,9 @@
         <asp:Label ID="SearchOUPSTicketLabel" runat="server" Text="OUPS Ticket"></asp:Label>
         &nbsp<asp:TextBox ID="SearchOUPSTicket" runat="server"></asp:TextBox>
     </p>
-    <input id="Submit1" type="submit" value="Submit" />
+    <asp:Button ID="SearchButton" runat="server" Text="Button" />
+    <br />
+    <asp:Label ID="Label1" runat="server">Label</asp:Label>
+    <br />
+    <br />
 </asp:Content>
