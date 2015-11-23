@@ -1,5 +1,0 @@
-﻿CREATE TABLE [Buyer]
-(
-	[BuyerID] INT NOT NULL PRIMARY KEY, 
-    [Active] BIT NOT NULL
-)

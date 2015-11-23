@@ -302,13 +302,13 @@ Partial Public Class New_Entry
     Protected WithEvents OrderSource As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''OrderSourceDropDownList control.
+    '''DropDownList1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OrderSourceDropDownList As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''OrderSourceList control.
@@ -1157,20 +1157,11 @@ Partial Public Class New_Entry
     Protected WithEvents PublicFlag As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''Deliver control.
+    '''DeliverEarly control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Deliver As Global.System.Web.UI.WebControls.CheckBox
-
-    '''<summary>
-    '''SubmitButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SubmitButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DeliverEarly As Global.System.Web.UI.WebControls.CheckBox
 End Class

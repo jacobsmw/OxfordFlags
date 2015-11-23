@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Add New Discount" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="New_Discount.aspx.vb" Inherits="OxfordFlags.New_Discount" %>
+﻿<%@ Page Title="Add New Discount" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="New_Discount.aspx.vb" Inherits="OxfordFlags.Admin" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
@@ -20,7 +20,7 @@
         </asp:RegularExpressionValidator>
     </p>
     <p>
-        <asp:Label ID="DiscountAmountLabel" runat="server" Text="Discount Amount"></asp:Label>
+        <asp:Label ID="DiscountAmountLabel" runat="server" Text="Discount Ammount"></asp:Label>
         &nbsp;<asp:TextBox ID="DiscountAmount" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator id="DiscountAmountEnteredValidator" runat="server"
             ControlToValidate="DiscountAmount"
@@ -37,7 +37,5 @@
     <p>
         <asp:CheckBox ID="DiscountActive" runat="server" TextAlign="Left" Text="Discount Active" />
     </p>
-    <asp:Label ID="Label1" runat="server"></asp:Label>
-    <br />
-&nbsp;<asp:Button ID="SubmitButton" runat="server" Text="Submit" />
+    <input id="SubmitButton" type="submit" value="Submit" />
 </asp:Content>

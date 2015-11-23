@@ -10,7 +10,7 @@
         <asp:Button ID="ViewUsersButton" runat="server" Text="View Users" Width="175px" />
     </p>
     <p>
-        <asp:Button ID="AddNewOccasionButton" runat="server" Text="Add New Occasion" PostBackUrl="~/New_Occasion.aspx" Width="175px" />
+        <asp:Button ID="AddNewOccasionButton" runat="server" Text="Add New Occasion" PostBackUrl="~/NewOccasion.aspx" Width="175px" />
     </p>
     <p>
         <asp:Button ID="AddNewTraitButton" runat="server" Text="Add New Trait" PostBackUrl="~/New_Trait.aspx" Width="175px" />

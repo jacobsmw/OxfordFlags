@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class New_Trait
+Partial Public Class Admin
 
     '''<summary>
     '''TraitDecriptionLabel control.
@@ -23,13 +23,13 @@ Partial Public Class New_Trait
     Protected WithEvents TraitDecriptionLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''TraitDescription control.
+    '''TraitDecription control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TraitDescription As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TraitDecription As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''TraitDecriptionEnteredValidator control.
@@ -48,22 +48,4 @@ Partial Public Class New_Trait
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TraitDecriptionFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-
-    '''<summary>
-    '''Label1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''SubmitButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SubmitButton As Global.System.Web.UI.WebControls.Button
 End Class
