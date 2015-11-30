@@ -12,7 +12,34 @@ Option Explicit On
 
 
 Partial Public Class New_Entry
-    
+
+    '''<summary>
+    '''BuyerLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BuyerDropDownList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerDropDownList As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''BuyerList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerList As Global.System.Web.UI.WebControls.SqlDataSource
+
     '''<summary>
     '''BuyerFirstNameLabel control.
     '''</summary>
@@ -21,7 +48,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerFirstNameLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerFirstName control.
     '''</summary>
@@ -30,7 +57,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerFirstName As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerFirstNameEnteredValidator control.
     '''</summary>
@@ -39,7 +66,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerFirstNameEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''BuyerFirstNameFormatValidator control.
     '''</summary>
@@ -48,7 +75,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerFirstNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerLastNameLabel control.
     '''</summary>
@@ -57,7 +84,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerLastNameLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerLastName control.
     '''</summary>
@@ -66,7 +93,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerLastName As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerLastNameEnteredValidator control.
     '''</summary>
@@ -75,7 +102,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerLastNameEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''BuyerLastNameFormatValidator control.
     '''</summary>
@@ -84,7 +111,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerLastNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerAddressLabel control.
     '''</summary>
@@ -93,7 +120,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerAddressLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerAddress control.
     '''</summary>
@@ -102,7 +129,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerAddress As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerAddressFormatValidator control.
     '''</summary>
@@ -111,7 +138,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerAddressFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerCityLabel control.
     '''</summary>
@@ -120,7 +147,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerCityLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerCity control.
     '''</summary>
@@ -129,7 +156,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerCity As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerCityFormatValidator control.
     '''</summary>
@@ -138,7 +165,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerCityFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerStateLabel control.
     '''</summary>
@@ -147,7 +174,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerStateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerState control.
     '''</summary>
@@ -156,7 +183,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerState As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerStateFormatValidator control.
     '''</summary>
@@ -165,7 +192,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerStateFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerZipCodeLabel control.
     '''</summary>
@@ -174,7 +201,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerZipCodeLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerZipCode control.
     '''</summary>
@@ -183,7 +210,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerZipCode As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerZipCodeFormatValidator control.
     '''</summary>
@@ -192,7 +219,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerZipCodeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerEmailLabel control.
     '''</summary>
@@ -201,7 +228,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerEmailLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerEmail control.
     '''</summary>
@@ -210,7 +237,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerEmail As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerEmailFormatValidator control.
     '''</summary>
@@ -219,7 +246,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerEmailFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerPhoneLabel control.
     '''</summary>
@@ -228,7 +255,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerPhoneLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BuyerPhone control.
     '''</summary>
@@ -237,7 +264,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerPhone As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BuyerPhoneFormatValidator control.
     '''</summary>
@@ -246,7 +273,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerPhoneFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''BuyerRotaryMember control.
     '''</summary>
@@ -255,7 +282,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerRotaryMember As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''OrderDateLabel control.
     '''</summary>
@@ -264,7 +291,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''OrderDate control.
     '''</summary>
@@ -273,7 +300,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''OrderDateEnteredValidator control.
     '''</summary>
@@ -282,7 +309,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderDateEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''OrderDateFormatValidator control.
     '''</summary>
@@ -291,7 +318,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
     '''<summary>
     '''OrderSource control.
     '''</summary>
@@ -300,7 +327,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderSource As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''OrderSourceDropDownList control.
     '''</summary>
@@ -309,7 +336,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderSourceDropDownList As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''OrderSourceList control.
     '''</summary>
@@ -318,7 +345,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderSourceList As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''SubscriptionYearLabel control.
     '''</summary>
@@ -327,7 +354,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''SubscriptionYear control.
     '''</summary>
@@ -336,7 +363,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''SubscriptionYearEnteredValidator control.
     '''</summary>
@@ -345,7 +372,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''SubscriptionYearFormatValidator control.
     '''</summary>
@@ -354,7 +381,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''OrderTypeLabel control.
     '''</summary>
@@ -363,7 +390,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderTypeLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''OrderType control.
     '''</summary>
@@ -372,7 +399,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderType As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ConfirmationDateLabel control.
     '''</summary>
@@ -381,7 +408,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ConfirmationDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''ConfirmationDate control.
     '''</summary>
@@ -390,7 +417,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ConfirmationDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ConfirmationDateFormatValidator control.
     '''</summary>
@@ -399,7 +426,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ConfirmationDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
     '''<summary>
     '''ExpireDateLabel control.
     '''</summary>
@@ -408,7 +435,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ExpireDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''ExpireDate control.
     '''</summary>
@@ -417,7 +444,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ExpireDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ExpireDateFormatValidator control.
     '''</summary>
@@ -426,7 +453,34 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ExpireDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
+    '''<summary>
+    '''PropertyOwnerLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''PropertyOwnerDropDownList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerDropDownList As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''PropertyOwnerList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerList As Global.System.Web.UI.WebControls.SqlDataSource
+
     '''<summary>
     '''PropertyFirstNameLabel control.
     '''</summary>
@@ -435,7 +489,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyFirstNameLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyFirstName control.
     '''</summary>
@@ -444,7 +498,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyFirstName As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyFirstNameFormatValidator control.
     '''</summary>
@@ -453,7 +507,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyFirstNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PropertyLastNameLabel control.
     '''</summary>
@@ -462,7 +516,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyLastNameLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyLastName control.
     '''</summary>
@@ -471,7 +525,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyLastName As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyLastNameFormatValidator control.
     '''</summary>
@@ -480,7 +534,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyLastNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PropertyAddressLabel control.
     '''</summary>
@@ -489,7 +543,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyAddressLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyAddress control.
     '''</summary>
@@ -498,7 +552,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyAddress As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyAddressEnteredValidator control.
     '''</summary>
@@ -507,7 +561,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyAddressEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''PropertyAddressFormatValidator control.
     '''</summary>
@@ -516,7 +570,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyAddressFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PropertyCityLabel control.
     '''</summary>
@@ -525,7 +579,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyCityLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyCity control.
     '''</summary>
@@ -534,7 +588,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyCity As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyCityEnteredValidator control.
     '''</summary>
@@ -543,7 +597,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyCityEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''PropertyCityFormatValidator control.
     '''</summary>
@@ -552,7 +606,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyCityFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''ProprtyStateLabel control.
     '''</summary>
@@ -561,7 +615,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ProprtyStateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyState control.
     '''</summary>
@@ -570,7 +624,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyState As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyStateEnteredValidator control.
     '''</summary>
@@ -579,7 +633,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyStateEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''PropertyStateFormatValidator control.
     '''</summary>
@@ -588,7 +642,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyStateFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PropertyZipCodeLabel control.
     '''</summary>
@@ -597,7 +651,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyZipCodeLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyZipCode control.
     '''</summary>
@@ -606,7 +660,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyZipCode As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyZipCodeEnteredValidator control.
     '''</summary>
@@ -615,7 +669,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyZipCodeEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''PropertyZipCodeFormatValidator control.
     '''</summary>
@@ -624,7 +678,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyZipCodeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PropertyEmailLabel control.
     '''</summary>
@@ -633,7 +687,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyEmailLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyEmail control.
     '''</summary>
@@ -642,7 +696,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyEmail As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyEmailFormatValidator control.
     '''</summary>
@@ -651,7 +705,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyEmailFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PropertyPhoneLabel control.
     '''</summary>
@@ -660,7 +714,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyPhoneLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyPhone control.
     '''</summary>
@@ -669,7 +723,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyPhone As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PropertyPhoneFormatValidator control.
     '''</summary>
@@ -678,7 +732,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyPhoneFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PropertyRotaryMember control.
     '''</summary>
@@ -687,7 +741,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyRotaryMember As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''PropertyTraitsLabel control.
     '''</summary>
@@ -696,7 +750,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyTraitsLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PropertyTraits control.
     '''</summary>
@@ -705,7 +759,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyTraits As Global.System.Web.UI.WebControls.CheckBoxList
-    
+
     '''<summary>
     '''Traits control.
     '''</summary>
@@ -714,7 +768,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Traits As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''LocationDescriptionLabel control.
     '''</summary>
@@ -723,7 +777,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LocationDescriptionLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''LocationDescription control.
     '''</summary>
@@ -732,7 +786,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LocationDescription As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''SleevePhoto control.
     '''</summary>
@@ -741,7 +795,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SleevePhoto As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''FileUpload1 control.
     '''</summary>
@@ -750,7 +804,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents FileUpload1 As Global.System.Web.UI.WebControls.FileUpload
-    
+
     '''<summary>
     '''ImageValidator1 control.
     '''</summary>
@@ -759,7 +813,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ImageValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''AddAnotherImage control.
     '''</summary>
@@ -768,7 +822,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AddAnotherImage As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''LatitudeLabel control.
     '''</summary>
@@ -777,7 +831,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LatitudeLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Latitude control.
     '''</summary>
@@ -786,7 +840,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Latitude As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''LatitudeEnteredValidator control.
     '''</summary>
@@ -795,7 +849,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LatitudeEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''LatitudeFormatValidator control.
     '''</summary>
@@ -804,7 +858,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LatitudeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''LongitudeLabel control.
     '''</summary>
@@ -813,7 +867,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LongitudeLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Longitude control.
     '''</summary>
@@ -822,7 +876,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Longitude As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''LongitudeEnteredValidator control.
     '''</summary>
@@ -831,7 +885,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LongitudeEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''LongitudeFormatValidator control.
     '''</summary>
@@ -840,7 +894,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LongitudeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''OUPSNotifiedDateLabel control.
     '''</summary>
@@ -849,7 +903,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSNotifiedDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''OUPSNotifiedDate control.
     '''</summary>
@@ -858,7 +912,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSNotifiedDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''OUPSNotifiedDateFormatValidator control.
     '''</summary>
@@ -867,7 +921,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSNotifiedDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
     '''<summary>
     '''OUPSTicketNumberLabel control.
     '''</summary>
@@ -876,7 +930,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSTicketNumberLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''OUPSTicketNumber control.
     '''</summary>
@@ -885,7 +939,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSTicketNumber As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''OUPSTicketNumberEnteredValidator control.
     '''</summary>
@@ -894,7 +948,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSTicketNumberEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''OUPSTicketNumberFormatValidator control.
     '''</summary>
@@ -903,7 +957,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSTicketNumberFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''OUPSCheckedDateLabel control.
     '''</summary>
@@ -912,7 +966,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSCheckedDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''OUPSCheckedDate control.
     '''</summary>
@@ -921,7 +975,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSCheckedDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''OUPSCheckedDateFormatValidator control.
     '''</summary>
@@ -930,7 +984,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OUPSCheckedDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
     '''<summary>
     '''InstallDateLabel control.
     '''</summary>
@@ -939,7 +993,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InstallDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''InstallDate control.
     '''</summary>
@@ -948,7 +1002,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InstallDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''InstallDateFormatValidator control.
     '''</summary>
@@ -957,7 +1011,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InstallDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
     '''<summary>
     '''ChangeDateLabel control.
     '''</summary>
@@ -966,7 +1020,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ChangeDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''ChangeDate control.
     '''</summary>
@@ -975,7 +1029,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ChangeDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''ChangeDateFormatValidator control.
     '''</summary>
@@ -984,7 +1038,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ChangeDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
     '''<summary>
     '''PublicFlag control.
     '''</summary>
@@ -993,7 +1047,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PublicFlag As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''Deliver control.
     '''</summary>
@@ -1002,7 +1056,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Deliver As Global.System.Web.UI.WebControls.CheckBox
-    
+
     '''<summary>
     '''BasePriceLabel control.
     '''</summary>
@@ -1011,7 +1065,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BasePriceLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''BasePrice control.
     '''</summary>
@@ -1020,7 +1074,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BasePrice As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''BasePriceEnteredValidator control.
     '''</summary>
@@ -1029,7 +1083,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BasePriceEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''BasePriceFormatValidator control.
     '''</summary>
@@ -1038,7 +1092,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BasePriceFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PaymentMethodLabel control.
     '''</summary>
@@ -1047,7 +1101,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentMethodLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PaymentMethod control.
     '''</summary>
@@ -1056,7 +1110,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentMethod As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''PaymentSource control.
     '''</summary>
@@ -1065,7 +1119,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentSource As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''DiscountLabel control.
     '''</summary>
@@ -1074,7 +1128,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents DiscountLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Discount control.
     '''</summary>
@@ -1083,7 +1137,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Discount As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''DiscountName control.
     '''</summary>
@@ -1092,7 +1146,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents DiscountName As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''AmountPaidLabel control.
     '''</summary>
@@ -1101,7 +1155,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AmountPaidLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''AmountPaid control.
     '''</summary>
@@ -1110,7 +1164,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AmountPaid As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''AmountPaidEnteredValidator control.
     '''</summary>
@@ -1119,7 +1173,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AmountPaidEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''AmountPaidFormatValidator control.
     '''</summary>
@@ -1128,7 +1182,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AmountPaidFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PaymentDateLabel control.
     '''</summary>
@@ -1137,7 +1191,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentDateLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''PaymentDate control.
     '''</summary>
@@ -1146,7 +1200,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentDate As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''PaymentDateEnteredValidator control.
     '''</summary>
@@ -1155,7 +1209,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentDateEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''PaymentDateFormatValidator control.
     '''</summary>
@@ -1164,7 +1218,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-    
+
     '''<summary>
     '''FirstHolidayLabel control.
     '''</summary>
@@ -1173,7 +1227,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents FirstHolidayLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''FirstHoliday control.
     '''</summary>
@@ -1182,7 +1236,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents FirstHoliday As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''HolidayName control.
     '''</summary>
@@ -1191,7 +1245,7 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents HolidayName As Global.System.Web.UI.WebControls.SqlDataSource
-    
+
     '''<summary>
     '''SubmitButton control.
     '''</summary>

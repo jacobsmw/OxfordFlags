@@ -271,7 +271,7 @@ Namespace dsTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.IDbCommand(13) {}
+            Me._commandCollection = New Global.System.Data.IDbCommand(16) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             CType(Me._commandCollection(0), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
             CType(Me._commandCollection(0), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewSource"
@@ -424,6 +424,45 @@ Namespace dsTableAdapters
             CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email", Global.System.Data.SqlDbType.NVarChar, 200, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Phone", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RotaryMember", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.Input, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(14) = New Global.System.Data.SqlClient.SqlCommand()
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spSelectBuyer"
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@LastName", Global.System.Data.SqlDbType.NVarChar, 25, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@FirstName", Global.System.Data.SqlDbType.NVarChar, 25, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@StreetAddress", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@City", Global.System.Data.SqlDbType.NVarChar, 25, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@State", Global.System.Data.SqlDbType.NVarChar, 2, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Zip", Global.System.Data.SqlDbType.NVarChar, 5, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email", Global.System.Data.SqlDbType.NVarChar, 200, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Phone", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@BillType", Global.System.Data.SqlDbType.NVarChar, 10, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RotaryMember", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.InputOutput, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(15) = New Global.System.Data.SqlClient.SqlCommand()
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spSelectPropertyOwner"
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@LastName", Global.System.Data.SqlDbType.NVarChar, 25, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@FirstName", Global.System.Data.SqlDbType.NVarChar, 25, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@StreetAddress", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@City", Global.System.Data.SqlDbType.NVarChar, 25, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@State", Global.System.Data.SqlDbType.NVarChar, 2, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Zip", Global.System.Data.SqlDbType.NVarChar, 5, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Email", Global.System.Data.SqlDbType.NVarChar, 200, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Phone", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.InputOutput, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RotaryMember", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.InputOutput, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(16) = New Global.System.Data.SqlClient.SqlCommand()
+            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spPropertyHasTrait"
+            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PropertyOwnerID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@TraitID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@HasTrait", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.InputOutput, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -1168,6 +1207,309 @@ Namespace dsTableAdapters
                 ID = New Global.System.Nullable(Of Integer)()
             Else
                 ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+            End If
+            Return returnValue
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function spSelectBuyer(ByVal ID As Global.System.Nullable(Of Integer), ByRef LastName As String, ByRef FirstName As String, ByRef StreetAddress As String, ByRef City As String, ByRef State As String, ByRef Zip As String, ByRef Email As String, ByRef Phone As String, ByRef BillType As String, ByRef RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(14), Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = True) Then
+                command.Parameters(1).Value = CType(ID.Value, Integer)
+            Else
+                command.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (LastName Is Nothing) Then
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(2).Value = CType(LastName, String)
+            End If
+            If (FirstName Is Nothing) Then
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(3).Value = CType(FirstName, String)
+            End If
+            If (StreetAddress Is Nothing) Then
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(4).Value = CType(StreetAddress, String)
+            End If
+            If (City Is Nothing) Then
+                command.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(5).Value = CType(City, String)
+            End If
+            If (State Is Nothing) Then
+                command.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(6).Value = CType(State, String)
+            End If
+            If (Zip Is Nothing) Then
+                command.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(7).Value = CType(Zip, String)
+            End If
+            If (Email Is Nothing) Then
+                command.Parameters(8).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(8).Value = CType(Email, String)
+            End If
+            If (Phone Is Nothing) Then
+                command.Parameters(9).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(9).Value = CType(Phone, String)
+            End If
+            If (BillType Is Nothing) Then
+                command.Parameters(10).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(10).Value = CType(BillType, String)
+            End If
+            If (RotaryMember.HasValue = True) Then
+                command.Parameters(11).Value = CType(RotaryMember.Value, Boolean)
+            Else
+                command.Parameters(11).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open()
+            End If
+            Dim returnValue As Integer
+            Try
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close()
+                End If
+            End Try
+            If ((command.Parameters(2).Value Is Nothing) _
+                        OrElse (command.Parameters(2).Value.GetType Is GetType(Global.System.DBNull))) Then
+                LastName = Nothing
+            Else
+                LastName = CType(command.Parameters(2).Value, String)
+            End If
+            If ((command.Parameters(3).Value Is Nothing) _
+                        OrElse (command.Parameters(3).Value.GetType Is GetType(Global.System.DBNull))) Then
+                FirstName = Nothing
+            Else
+                FirstName = CType(command.Parameters(3).Value, String)
+            End If
+            If ((command.Parameters(4).Value Is Nothing) _
+                        OrElse (command.Parameters(4).Value.GetType Is GetType(Global.System.DBNull))) Then
+                StreetAddress = Nothing
+            Else
+                StreetAddress = CType(command.Parameters(4).Value, String)
+            End If
+            If ((command.Parameters(5).Value Is Nothing) _
+                        OrElse (command.Parameters(5).Value.GetType Is GetType(Global.System.DBNull))) Then
+                City = Nothing
+            Else
+                City = CType(command.Parameters(5).Value, String)
+            End If
+            If ((command.Parameters(6).Value Is Nothing) _
+                        OrElse (command.Parameters(6).Value.GetType Is GetType(Global.System.DBNull))) Then
+                State = Nothing
+            Else
+                State = CType(command.Parameters(6).Value, String)
+            End If
+            If ((command.Parameters(7).Value Is Nothing) _
+                        OrElse (command.Parameters(7).Value.GetType Is GetType(Global.System.DBNull))) Then
+                Zip = Nothing
+            Else
+                Zip = CType(command.Parameters(7).Value, String)
+            End If
+            If ((command.Parameters(8).Value Is Nothing) _
+                        OrElse (command.Parameters(8).Value.GetType Is GetType(Global.System.DBNull))) Then
+                Email = Nothing
+            Else
+                Email = CType(command.Parameters(8).Value, String)
+            End If
+            If ((command.Parameters(9).Value Is Nothing) _
+                        OrElse (command.Parameters(9).Value.GetType Is GetType(Global.System.DBNull))) Then
+                Phone = Nothing
+            Else
+                Phone = CType(command.Parameters(9).Value, String)
+            End If
+            If ((command.Parameters(10).Value Is Nothing) _
+                        OrElse (command.Parameters(10).Value.GetType Is GetType(Global.System.DBNull))) Then
+                BillType = Nothing
+            Else
+                BillType = CType(command.Parameters(10).Value, String)
+            End If
+            If ((command.Parameters(11).Value Is Nothing) _
+                        OrElse (command.Parameters(11).Value.GetType Is GetType(Global.System.DBNull))) Then
+                RotaryMember = New Global.System.Nullable(Of Boolean)()
+            Else
+                RotaryMember = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(11).Value, Boolean))
+            End If
+            Return returnValue
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function spSelectPropertyOwner(ByVal ID As Global.System.Nullable(Of Integer), ByRef LastName As String, ByRef FirstName As String, ByRef StreetAddress As String, ByRef City As String, ByRef State As String, ByRef Zip As String, ByRef Email As String, ByRef Phone As String, ByRef RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(15), Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = True) Then
+                command.Parameters(1).Value = CType(ID.Value, Integer)
+            Else
+                command.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (LastName Is Nothing) Then
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(2).Value = CType(LastName, String)
+            End If
+            If (FirstName Is Nothing) Then
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(3).Value = CType(FirstName, String)
+            End If
+            If (StreetAddress Is Nothing) Then
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(4).Value = CType(StreetAddress, String)
+            End If
+            If (City Is Nothing) Then
+                command.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(5).Value = CType(City, String)
+            End If
+            If (State Is Nothing) Then
+                command.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(6).Value = CType(State, String)
+            End If
+            If (Zip Is Nothing) Then
+                command.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(7).Value = CType(Zip, String)
+            End If
+            If (Email Is Nothing) Then
+                command.Parameters(8).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(8).Value = CType(Email, String)
+            End If
+            If (Phone Is Nothing) Then
+                command.Parameters(9).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(9).Value = CType(Phone, String)
+            End If
+            If (RotaryMember.HasValue = True) Then
+                command.Parameters(10).Value = CType(RotaryMember.Value, Boolean)
+            Else
+                command.Parameters(10).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open()
+            End If
+            Dim returnValue As Integer
+            Try
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close()
+                End If
+            End Try
+            If ((command.Parameters(2).Value Is Nothing) _
+                        OrElse (command.Parameters(2).Value.GetType Is GetType(Global.System.DBNull))) Then
+                LastName = Nothing
+            Else
+                LastName = CType(command.Parameters(2).Value, String)
+            End If
+            If ((command.Parameters(3).Value Is Nothing) _
+                        OrElse (command.Parameters(3).Value.GetType Is GetType(Global.System.DBNull))) Then
+                FirstName = Nothing
+            Else
+                FirstName = CType(command.Parameters(3).Value, String)
+            End If
+            If ((command.Parameters(4).Value Is Nothing) _
+                        OrElse (command.Parameters(4).Value.GetType Is GetType(Global.System.DBNull))) Then
+                StreetAddress = Nothing
+            Else
+                StreetAddress = CType(command.Parameters(4).Value, String)
+            End If
+            If ((command.Parameters(5).Value Is Nothing) _
+                        OrElse (command.Parameters(5).Value.GetType Is GetType(Global.System.DBNull))) Then
+                City = Nothing
+            Else
+                City = CType(command.Parameters(5).Value, String)
+            End If
+            If ((command.Parameters(6).Value Is Nothing) _
+                        OrElse (command.Parameters(6).Value.GetType Is GetType(Global.System.DBNull))) Then
+                State = Nothing
+            Else
+                State = CType(command.Parameters(6).Value, String)
+            End If
+            If ((command.Parameters(7).Value Is Nothing) _
+                        OrElse (command.Parameters(7).Value.GetType Is GetType(Global.System.DBNull))) Then
+                Zip = Nothing
+            Else
+                Zip = CType(command.Parameters(7).Value, String)
+            End If
+            If ((command.Parameters(8).Value Is Nothing) _
+                        OrElse (command.Parameters(8).Value.GetType Is GetType(Global.System.DBNull))) Then
+                Email = Nothing
+            Else
+                Email = CType(command.Parameters(8).Value, String)
+            End If
+            If ((command.Parameters(9).Value Is Nothing) _
+                        OrElse (command.Parameters(9).Value.GetType Is GetType(Global.System.DBNull))) Then
+                Phone = Nothing
+            Else
+                Phone = CType(command.Parameters(9).Value, String)
+            End If
+            If ((command.Parameters(10).Value Is Nothing) _
+                        OrElse (command.Parameters(10).Value.GetType Is GetType(Global.System.DBNull))) Then
+                RotaryMember = New Global.System.Nullable(Of Boolean)()
+            Else
+                RotaryMember = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(10).Value, Boolean))
+            End If
+            Return returnValue
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function spPropertyHasTrait(ByVal PropertyOwnerID As Global.System.Nullable(Of Integer), ByVal TraitID As Global.System.Nullable(Of Integer), ByRef HasTrait As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(16), Global.System.Data.SqlClient.SqlCommand)
+            If (PropertyOwnerID.HasValue = True) Then
+                command.Parameters(1).Value = CType(PropertyOwnerID.Value, Integer)
+            Else
+                command.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (TraitID.HasValue = True) Then
+                command.Parameters(2).Value = CType(TraitID.Value, Integer)
+            Else
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (HasTrait.HasValue = True) Then
+                command.Parameters(3).Value = CType(HasTrait.Value, Boolean)
+            Else
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open()
+            End If
+            Dim returnValue As Integer
+            Try
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close()
+                End If
+            End Try
+            If ((command.Parameters(3).Value Is Nothing) _
+                        OrElse (command.Parameters(3).Value.GetType Is GetType(Global.System.DBNull))) Then
+                HasTrait = New Global.System.Nullable(Of Boolean)()
+            Else
+                HasTrait = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(3).Value, Boolean))
             End If
             Return returnValue
         End Function

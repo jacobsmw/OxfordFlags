@@ -3,8 +3,23 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
     <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Buyer</a>
+        <li class="active"><a data-toggle="tab" href="#BuyerInfo">Buyer</a></li>
+        <li><a data-toggle="tab" href="#OrderInfo">Order</a></li>
+        <li><a data-toggle="tab" href="#PropertyOwnerInfo">Property Owner</a></li>
+        <li><a data-toggle="tab" href="#SleeveInfo">Sleeve</a></li>
+        <li><a data-toggle="tab" href="#PaymentInfo">Payment</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="BuyerInfo" class="tab-pane fade in active">
             <h3><%: "Buyer"%></h3>
+            <asp:Label ID="BuyerLabel" runat="server" Text="Buyer"></asp:Label>
+            <asp:DropDownList ID="BuyerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="BuyerList" DataTextField="Name" DataValueField="BuyerID">
+                <asp:ListItem Value="0">New</asp:ListItem>
+            </asp:DropDownList>
+            <asp:SqlDataSource ID="BuyerList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT BuyerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [Buyer] WHERE ([Active] = '1')"></asp:SqlDataSource>
+            <p>
+                &nbsp;</p>
             <p>
                 <asp:Label ID="BuyerFirstNameLabel" runat="server" Text="First Name"></asp:Label>
                 <asp:TextBox ID="BuyerFirstName" runat="server"></asp:TextBox>
@@ -97,9 +112,9 @@
             <p>
                 <asp:CheckBox ID="BuyerRotaryMember" runat="server" Text="Rotary Member" TextAlign="Left" />
             </p>
-        </li>
+        </div>
         
-        <li role="presentation"><a href="#">Order</a>
+        <div id="OrderInfo" class="tab-pane fade">
             <h3><%: "Order"%></h3>
             <p>
                 <asp:Label ID="OrderDateLabel" runat="server" Text="Order Date"></asp:Label>
@@ -169,9 +184,21 @@
                     ForeColor="Red">
                 </asp:CompareValidator>
             </p>
-        </li>
+        </div>
         
-        <li role="presentation"><a href="#">Property Owner</a>
+        <div id="PropertyOwnerInfo" class="tab-pane fade">
+            <h3><%: "Property Owner"%></h3>
+            <p>
+                <asp:Label ID="PropertyOwnerLabel" runat="server" Text="Property Owner"></asp:Label>
+                <asp:DropDownList ID="PropertyOwnerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PropertyOwnerList" DataTextField="Name" DataValueField="PropertyOwnerID">
+                    <asp:ListItem Value="0">New</asp:ListItem>
+                </asp:DropDownList>
+            </p>
+            <p>
+                <asp:SqlDataSource ID="PropertyOwnerList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT PropertyOwnerID, CONCAT(LastName, ', ', FirstName) AS Name FROM [PropertyOwner]"></asp:SqlDataSource>
+            </p>
+            <p>
+                &nbsp;</p>
             <p>
                 <asp:Label ID="PropertyFirstNameLabel" runat="server" Text="Property Owner First Name"></asp:Label>
                 <asp:TextBox ID="PropertyFirstName" runat="server"></asp:TextBox>
@@ -280,9 +307,9 @@
                 <asp:CheckBoxList ID="PropertyTraits" runat="server" DataSourceID="Traits" DataTextField="TraitDescription" DataValueField="TraitID"></asp:CheckBoxList>
                 <asp:SqlDataSource ID="Traits" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitID], [TraitDescription] FROM [Trait]"></asp:SqlDataSource>
             </p>
-        </li>
+        </div>
 
-        <li role="presentation"><a href="#">Sleeve</a>
+        <div id="SleeveInfo" class="tab-pane fade">
             <h3><%: "Sleeve"%></h3>
             <p>
                 <asp:Label ID="LocationDescriptionLabel" runat="server" Text="Location Description"></asp:Label>
@@ -391,11 +418,11 @@
                 <asp:CheckBox ID="PublicFlag" runat="server" Text="Public" TextAlign="Left" />
             </p>
             <p>
-                <asp:CheckBox ID="Deliver" runat="server" Text="Deliver" TextAlign="Left" />
+                <asp:CheckBox ID="Deliver" runat="server" Text="Deliver" TextAlign="Left" Checked="True" />
             </p>
-        </li>
+        </div>
 
-        <li role="presentation"><a href="#">Property Owner</a>
+        <div id="PaymentInfo" class="tab-pane fade">
             <h3><%: "Payment"%></h3>
             <p>
                 <asp:Label ID="BasePriceLabel" runat="server" Text="Base Price"></asp:Label>
@@ -458,14 +485,13 @@
                 <asp:DropDownList ID="FirstHoliday" runat="server" DataSourceID="HolidayName" DataTextField="OccasionName" DataValueField="OccasionID"></asp:DropDownList>
                 <asp:SqlDataSource ID="HolidayName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName], [OccasionID] FROM [Occasion]"></asp:SqlDataSource>
             </p>
-        </li>
-    </ul>
-    
-    <p>
-        &nbsp;</p>
-    <p>
-        <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
-    </p>
+            <p>
+                &nbsp;</p>
+            <p>
+                <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
+            </p>
+        </div>
+    </div>
 
     <script type="text/javascript">
         function addImageUploadBox() {

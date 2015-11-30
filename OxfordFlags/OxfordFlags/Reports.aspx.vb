@@ -2,11 +2,9 @@
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
-
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        If Not User.Identity.IsAuthenticated Then
+            Response.Redirect("~/Account/Login")
+        End If
     End Sub
 
     Protected Sub DeliveryReportButton_Click(sender As Object, e As EventArgs) Handles DeliveryReportButton.Click
