@@ -192,11 +192,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Edit_Discounts.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GPSReport.aspx" />
     <Content Include="Main_Menu.aspx" />
     <Content Include="New_Discount.aspx" />
     <Content Include="New_Entry.aspx" />
-    <Content Include="NewOccasion.aspx" />
+    <Content Include="New_Occasion.aspx" />
     <Content Include="New_Source.aspx" />
     <Content Include="New_Trait.aspx" />
     <Content Include="packages.config" />
@@ -204,8 +203,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="ds.xsc">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </Content>
+    <None Include="ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="ds.xss">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="PaymentReport.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -240,7 +248,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Search.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -347,6 +357,11 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Edit_Discounts.aspx.designer.vb">
       <DependentUpon>Edit_Discounts.aspx</DependentUpon>
     </Compile>
@@ -356,13 +371,6 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="GPSReport.aspx.designer.vb">
-      <DependentUpon>GPSReport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GPSReport.aspx.vb">
-      <DependentUpon>GPSReport.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Main_Menu.aspx.designer.vb">
       <DependentUpon>Main_Menu.aspx</DependentUpon>
@@ -403,14 +411,14 @@
     </Compile>
     <Compile Include="New_Entry.aspx.vb">
       <DependentUpon>New_Entry.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="NewOccasion.aspx.designer.vb">
-      <DependentUpon>NewOccasion.aspx</DependentUpon>
+    <Compile Include="New_Occasion.aspx.designer.vb">
+      <DependentUpon>New_Occasion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="NewOccasion.aspx.vb">
-      <DependentUpon>NewOccasion.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+    <Compile Include="New_Occasion.aspx.vb">
+      <DependentUpon>New_Occasion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="New_Source.aspx.designer.vb">
       <DependentUpon>New_Source.aspx</DependentUpon>
@@ -424,13 +432,6 @@
     </Compile>
     <Compile Include="New_Trait.aspx.vb">
       <DependentUpon>New_Trait.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="PaymentReport.aspx.designer.vb">
-      <DependentUpon>PaymentReport.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="PaymentReport.aspx.vb">
-      <DependentUpon>PaymentReport.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Reports.aspx.designer.vb">

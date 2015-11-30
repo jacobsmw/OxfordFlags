@@ -9,6 +9,9 @@ Imports Owin
 Partial Public Class Login
     Inherits Page
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+        If User.Identity.IsAuthenticated Then
+            Response.Redirect("~/Main_Menu")
+        End If
         RegisterHyperLink.NavigateUrl = "Register"
         ' Enable this once you have account confirmation enabled for password reset functionality
         ' ForgotPasswordHyperLink.NavigateUrl = "Forgot"
@@ -26,7 +29,8 @@ Partial Public Class Login
             Dim user As ApplicationUser = manager.Find(Email.Text, Password.Text)
             If user IsNot Nothing Then
                 IdentityHelper.SignIn(manager, user, RememberMe.Checked)
-                IdentityHelper.RedirectToReturnUrl(Request.QueryString("ReturnUrl"), Response)
+                ' IdentityHelper.RedirectToReturnUrl(Request.QueryString("ReturnUrl"), Response)
+                Response.Redirect("~/Main_Menu")
             Else
                 FailureText.Text = "Invalid username or password."
                 ErrorMessage.Visible = True

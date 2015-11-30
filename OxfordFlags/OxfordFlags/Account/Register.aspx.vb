@@ -22,7 +22,8 @@ Partial Public Class Register
             ' Dim callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id)
             ' manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=""" & callbackUrl & """>here</a>.")
 
-            IdentityHelper.RedirectToReturnUrl(Request.QueryString("ReturnUrl"), Response)
+            ' IdentityHelper.RedirectToReturnUrl(Request.QueryString("ReturnUrl"), Response)
+            Response.Redirect("~/Main_Menu")
         Else
             ErrorMessage.Text = result.Errors.FirstOrDefault()
         End If

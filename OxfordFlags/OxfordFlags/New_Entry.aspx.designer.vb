@@ -302,13 +302,13 @@ Partial Public Class New_Entry
     Protected WithEvents OrderSource As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DropDownList1 control.
+    '''OrderSourceDropDownList control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents OrderSourceDropDownList As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''OrderSourceList control.
@@ -932,6 +932,33 @@ Partial Public Class New_Entry
     Protected WithEvents SleevePhoto As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''FileUpload1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FileUpload1 As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''ImageValidator1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImageValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''AddAnotherImage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AddAnotherImage As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''LatitudeLabel control.
     '''</summary>
     '''<remarks>
@@ -1157,20 +1184,20 @@ Partial Public Class New_Entry
     Protected WithEvents PublicFlag As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''DeliverEarly control.
+    '''Deliver control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DeliverEarly As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents Deliver As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''Button1 control.
+    '''SubmitButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SubmitButton As Global.System.Web.UI.WebControls.Button
 End Class
