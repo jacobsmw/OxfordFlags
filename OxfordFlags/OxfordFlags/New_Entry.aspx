@@ -2,8 +2,8 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-    <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Buyer</a>
+ <%--   <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Buyer</a> --%>
             <h3><%: "Buyer"%></h3>
             <p>
                 <asp:Label ID="BuyerFirstNameLabel" runat="server" Text="First Name"></asp:Label>
@@ -97,9 +97,9 @@
             <p>
                 <asp:CheckBox ID="BuyerRotaryMember" runat="server" Text="Rotary Member" TextAlign="Left" />
             </p>
-        </li>
+<%--        </li>
         
-        <li role="presentation"><a href="#">Order</a>
+        <li role="presentation"><a href="#">Order</a> --%>
             <h3><%: "Order"%></h3>
             <p>
                 <asp:Label ID="OrderDateLabel" runat="server" Text="Order Date"></asp:Label>
@@ -169,9 +169,10 @@
                     ForeColor="Red">
                 </asp:CompareValidator>
             </p>
-        </li>
+<%--        </li>
         
-        <li role="presentation"><a href="#">Property Owner</a>
+        <li role="presentation"><a href="#">Property Owner</a> --%>
+            <h3><%: "Property Owner"%></h3>
             <p>
                 <asp:Label ID="PropertyFirstNameLabel" runat="server" Text="Property Owner First Name"></asp:Label>
                 <asp:TextBox ID="PropertyFirstName" runat="server"></asp:TextBox>
@@ -280,9 +281,9 @@
                 <asp:CheckBoxList ID="PropertyTraits" runat="server" DataSourceID="Traits" DataTextField="TraitDescription" DataValueField="TraitID"></asp:CheckBoxList>
                 <asp:SqlDataSource ID="Traits" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitID], [TraitDescription] FROM [Trait]"></asp:SqlDataSource>
             </p>
-        </li>
+<%--        </li>
 
-        <li role="presentation"><a href="#">Sleeve</a>
+        <li role="presentation"><a href="#">Sleeve</a> --%>
             <h3><%: "Sleeve"%></h3>
             <p>
                 <asp:Label ID="LocationDescriptionLabel" runat="server" Text="Location Description"></asp:Label>
@@ -393,9 +394,9 @@
             <p>
                 <asp:CheckBox ID="Deliver" runat="server" Text="Deliver" TextAlign="Left" />
             </p>
-        </li>
+<%--        </li>
 
-        <li role="presentation"><a href="#">Property Owner</a>
+      <li role="presentation"><a href="#">Property Owner</a> --%>
             <h3><%: "Payment"%></h3>
             <p>
                 <asp:Label ID="BasePriceLabel" runat="server" Text="Base Price"></asp:Label>
@@ -458,8 +459,8 @@
                 <asp:DropDownList ID="FirstHoliday" runat="server" DataSourceID="HolidayName" DataTextField="OccasionName" DataValueField="OccasionID"></asp:DropDownList>
                 <asp:SqlDataSource ID="HolidayName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName], [OccasionID] FROM [Occasion]"></asp:SqlDataSource>
             </p>
-        </li>
-    </ul>
+<%--    </li>
+    </ul> --%>
     
     <p>
         &nbsp;</p>
