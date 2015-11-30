@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class OpenAuthProviders
-
+    
     '''<summary>
     '''providerDetails control.
     '''</summary>
