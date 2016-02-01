@@ -9,36 +9,36 @@ Public Class New_Entry
     Dim tbl As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
 
     ' Buyer variables
-    Dim buyerId As Integer
-    Dim buyerFName As String = ""
-    Dim buyerLName As String = ""
-    Dim buyerAddr As String = ""
-    Dim buyerCityName As String = ""
-    Dim buyerStateName As String = ""
-    Dim buyerZip As String = ""
-    Dim buyerEmailAddr As String = ""
-    Dim buyerPhoneNum As String = ""
-    Dim buyerRotMem As Boolean = False
+    Dim vBuyerId As Integer
+    Dim vBuyerFirstName As String = ""
+    Dim vBuyerLastName As String = ""
+    Dim vBuyerAddress As String = ""
+    Dim vBuyerCity As String = ""
+    Dim vBuyerState As String = ""
+    Dim vBuyerZipCode As String = ""
+    Dim vBuyerEmail As String = ""
+    Dim vBuyerPhone As String = ""
+    Dim vBuyerRotaryMember As Boolean = False
 
     ' Order variables
-    Dim orderId As Integer
-    Dim orderExpireDt As Date
+    Dim vOrderId As Integer
+    Dim vOrderExpireDate As Date
 
     ' PropertyOwner variables
-    Dim poId As Integer
-    Dim poFName As String = ""
-    Dim poLName As String = ""
-    Dim poAddr As String = ""
-    Dim poCityName As String = ""
-    Dim poStateName As String = ""
-    Dim poZip As String = ""
-    Dim poEmailAddr As String = ""
-    Dim poPhoneNum As String = ""
-    Dim poRotMem As Boolean = False
+    Dim vPropertyOwnerId As Integer
+    Dim vPropertyOwnerFirstName As String = ""
+    Dim vPropertyOwnerLastName As String = ""
+    Dim vPropertyOwnerAddress As String = ""
+    Dim vPropertyOwnerCity As String = ""
+    Dim vPropertyOwnerState As String = ""
+    Dim vPropertyOwnerZipCode As String = ""
+    Dim vPropertyOwnerEmail As String = ""
+    Dim vPropertyOwnerPhone As String = ""
+    Dim vPropertyOwnerRotaryMember As Boolean = False
 
-    Dim sleeveId As Integer
+    Dim vSleeveId As Integer
 
-    Dim oupsId As Integer
+    Dim vOupsId As Integer
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not User.Identity.IsAuthenticated Then
@@ -64,119 +64,119 @@ Public Class New_Entry
 
 
     Protected Sub HandleBuyer()
-        buyerId = BuyerDropDownList.SelectedValue
-        buyerFName = BuyerFirstName.Text
-        buyerLName = BuyerLastName.Text
-        buyerAddr = BuyerAddress.Text
-        buyerCityName = BuyerCity.Text
-        buyerStateName = BuyerState.Text
-        buyerZip = BuyerZipCode.Text
-        buyerEmailAddr = BuyerEmail.Text
-        buyerPhoneNum = BuyerPhone.Text
-        buyerRotMem = BuyerRotaryMember.Checked
+        vBuyerId = BuyerDropDownList.SelectedValue
+        vBuyerFirstName = BuyerFirstName.Text
+        vBuyerLastName = BuyerLastName.Text
+        vBuyerAddress = BuyerAddress.Text
+        vBuyerCity = BuyerCity.Text
+        vBuyerState = BuyerState.Text
+        vBuyerZipCode = BuyerZipCode.Text
+        vBuyerEmail = BuyerEmail.Text
+        vBuyerPhone = BuyerPhone.Text
+        vBuyerRotaryMember = BuyerRotaryMember.Checked
 
-        If buyerId = 0 Then
-            tbl.spAddNewBuyer(buyerId, buyerLName, buyerFName, buyerAddr, buyerCityName, buyerStateName, buyerZip, buyerEmailAddr, buyerPhoneNum, "Online", buyerRotMem)
+        If vBuyerId = 0 Then
+            tbl.spAddNewBuyer(vBuyerId, vBuyerLastName, vBuyerFirstName, vBuyerAddress, vBuyerCity, vBuyerState, vBuyerZipCode, vBuyerEmail, vBuyerPhone, "Online", vBuyerRotaryMember)
         End If
     End Sub
 
 
     Protected Sub HandleOrder()
-        Dim orderDt As Date
-        Dim orderSrc As Integer
-        Dim orderSubYear As Integer
-        Dim orderTypeName As String
-        Dim orderConfirmationDt As Date
-        Dim orderBasePrice As Double
-        Dim orderDiscount As Integer
-        Dim orderPaymentMethod As Integer
-        Dim orderFirstOccasion As Integer
+        Dim vOrderDate As Date
+        Dim vOrderSource As Integer
+        Dim vOrderSubscriptionYear As Integer
+        Dim vOrderType As String
+        Dim vOrderConfirmationDate As Date
+        Dim vOrderBasePrice As Double
+        Dim vOrderDiscount As Integer
+        Dim vOrderPaymentMethod As Integer
+        Dim vOrderFirstOccasion As Integer
 
-        orderDt = OrderDate.Text
-        orderSrc = OrderSourceDropDownList.SelectedValue
-        orderSubYear = SubscriptionYear.Text
-        orderTypeName = OrderType.SelectedValue
-        orderConfirmationDt = ConfirmationDate.Text
-        orderBasePrice = BasePrice.Text
-        orderDiscount = Discount.SelectedValue
-        orderExpireDt = ExpireDate.Text
-        orderPaymentMethod = PaymentMethod.SelectedValue
-        orderFirstOccasion = FirstHoliday.SelectedValue
+        vOrderDate = OrderDate.Text
+        vOrderSource = OrderSourceDropDownList.SelectedValue
+        vOrderSubscriptionYear = SubscriptionYear.Text
+        vOrderType = OrderType.SelectedValue
+        vOrderConfirmationDate = ConfirmationDate.Text
+        vOrderBasePrice = BasePrice.Text
+        vOrderDiscount = Discount.SelectedValue
+        vOrderExpireDate = ExpireDate.Text
+        vOrderPaymentMethod = PaymentMethod.SelectedValue
+        vOrderFirstOccasion = FirstHoliday.SelectedValue
 
-        tbl.spAddNewOrder(orderId, orderDt, orderSrc, orderSubYear, orderBasePrice, orderDiscount, orderTypeName, orderConfirmationDt, orderFirstOccasion)
+        tbl.spAddNewOrder(vOrderId, vOrderDate, vOrderSource, vOrderSubscriptionYear, vOrderBasePrice, vOrderDiscount, vOrderType, vOrderConfirmationDate, vOrderFirstOccasion)
     End Sub
 
 
     Protected Sub HandlePayment()
-        Dim paymentAmountPaid As Double
-        Dim paymentDt As Date
+        Dim vPaymentAmountPaid As Double
+        Dim vPaymentDate As Date
 
-        paymentAmountPaid = AmountPaid.Text
-        paymentDt = PaymentDate.Text
+        vPaymentAmountPaid = AmountPaid.Text
+        vPaymentDate = PaymentDate.Text
 
-        tbl.spAddNewPayment(buyerId, orderId, paymentAmountPaid, paymentDt)
+        tbl.spAddNewPayment(vBuyerId, vOrderId, vPaymentAmountPaid, vPaymentDate)
     End Sub
 
 
     Protected Sub HandlePropertyOwner()
-        poFName = PropertyFirstName.Text
-        poLName = PropertyLastName.Text
-        poAddr = PropertyAddress.Text
-        poCityName = PropertyCity.Text
-        poStateName = PropertyState.Text
-        poZip = PropertyZipCode.Text
-        poEmailAddr = PropertyEmail.Text
-        poPhoneNum = PropertyPhone.Text
-        poRotMem = PropertyRotaryMember.Checked
+        vPropertyOwnerFirstName = PropertyFirstName.Text
+        vPropertyOwnerLastName = PropertyLastName.Text
+        vPropertyOwnerAddress = PropertyAddress.Text
+        vPropertyOwnerCity = PropertyCity.Text
+        vPropertyOwnerState = PropertyState.Text
+        vPropertyOwnerZipCode = PropertyZipCode.Text
+        vPropertyOwnerEmail = PropertyEmail.Text
+        vPropertyOwnerPhone = PropertyPhone.Text
+        vPropertyOwnerRotaryMember = PropertyRotaryMember.Checked
 
-        If poId = 0 Then
-            tbl.spAddNewPropertyOwner(poId, poLName, poFName, poAddr, poCityName, poStateName, poZip, poEmailAddr, poPhoneNum, poRotMem)
+        If vPropertyOwnerId = 0 Then
+            tbl.spAddNewPropertyOwner(vPropertyOwnerId, vPropertyOwnerLastName, vPropertyOwnerFirstName, vPropertyOwnerAddress, vPropertyOwnerCity, vPropertyOwnerState, vPropertyOwnerZipCode, vPropertyOwnerEmail, vPropertyOwnerPhone, vPropertyOwnerRotaryMember)
         End If
     End Sub
 
 
     Protected Sub HandlePropertyTraits()
-        Dim propTrait As Integer
+        Dim vPropertyTrait As Integer
         For Each box As ListItem In PropertyTraits.Items
             If box.Selected Then
-                propTrait = box.Value
-                tbl.spAddNewPropertyTraits(poId, propTrait)
+                vPropertyTrait = box.Value
+                tbl.spAddNewPropertyTraits(vPropertyOwnerId, vPropertyTrait)
             End If
         Next
     End Sub
 
 
     Protected Sub HandleOups()
-        Dim oupsNotifiedDt As Date
-        Dim oupsTicketNum As String
-        Dim oupsCheckedDt As Date
+        Dim vOupsNotifiedDate As Date
+        Dim vOupsTicketNumber As String
+        Dim vOupsCheckedDate As Date
 
-        oupsNotifiedDt = OUPSNotifiedDate.Text
-        oupsTicketNum = OUPSTicketNumber.Text
-        oupsCheckedDt = OUPSCheckedDate.Text
+        vOupsNotifiedDate = OUPSNotifiedDate.Text
+        vOupsTicketNumber = OUPSTicketNumber.Text
+        vOupsCheckedDate = OUPSCheckedDate.Text
 
-        tbl.spAddNewOups(oupsId, oupsTicketNum, oupsNotifiedDt, oupsCheckedDt)
+        tbl.spAddNewOups(vOupsId, vOupsTicketNumber, vOupsNotifiedDate, vOupsCheckedDate)
     End Sub
 
 
     Protected Sub HandleSleeve()
-        Dim sleeveLocationDescription As String
-        Dim sleeveLatitude As Double
-        Dim sleeveLongitude As Double
-        Dim sleeveInstallDate As Date
-        Dim sleeveChangeDate As Date
-        Dim sleevePublic As Boolean
-        Dim sleeveDeliver As Boolean
+        Dim vSleeveLocationDescription As String
+        Dim vSleeveLatitude As Double
+        Dim vSleeveLongitude As Double
+        Dim vSleeveInstallDate As Date
+        Dim vSleeveChangeDate As Date
+        Dim vSleevePublic As Boolean
+        Dim vSleeveDeliver As Boolean
 
-        sleeveLocationDescription = LocationDescription.Text
-        sleeveLatitude = Latitude.Text
-        sleeveLongitude = Longitude.Text
-        sleeveInstallDate = InstallDate.Text
-        sleeveChangeDate = ChangeDate.Text
-        sleevePublic = PublicFlag.Checked
-        sleeveDeliver = Deliver.Checked
+        vSleeveLocationDescription = LocationDescription.Text
+        vSleeveLatitude = Latitude.Text
+        vSleeveLongitude = Longitude.Text
+        vSleeveInstallDate = InstallDate.Text
+        vSleeveChangeDate = ChangeDate.Text
+        vSleevePublic = PublicFlag.Checked
+        vSleeveDeliver = Deliver.Checked
 
-        tbl.spAddNewSleeve(sleeveId, True, orderId, poId, sleeveLocationDescription, sleeveLatitude, sleeveLongitude, oupsId, sleeveInstallDate, sleeveChangeDate, sleevePublic, sleeveDeliver, orderExpireDt)
+        tbl.spAddNewSleeve(vSleeveId, True, vOrderId, vPropertyOwnerId, vSleeveLocationDescription, vSleeveLatitude, vSleeveLongitude, vOupsId, vSleeveInstallDate, vSleeveChangeDate, vSleevePublic, vSleeveDeliver, vOrderExpireDate)
 
     End Sub
 
@@ -187,26 +187,26 @@ Public Class New_Entry
                 Dim fs As Stream = Request.Files(file).InputStream
                 Dim br As New BinaryReader(fs)
                 Dim bytes As Byte() = br.ReadBytes(fs.Length)
-                tbl.spAddNewPhoto(sleeveId, bytes)
+                tbl.spAddNewPhoto(vSleeveId, bytes)
             End If
         Next
     End Sub
 
 
     Protected Sub BuyerChange(sender As Object, e As EventArgs) Handles BuyerDropDownList.SelectedIndexChanged
-        buyerId = BuyerDropDownList.SelectedValue
+        vBuyerId = BuyerDropDownList.SelectedValue
 
-        If Not buyerId = 0 Then
-            tbl.spSelectBuyer(buyerId, buyerLName, buyerFName, buyerAddr, buyerCityName, buyerStateName, buyerZip, buyerEmailAddr, buyerPhoneNum, "Online", buyerRotMem)
-            BuyerFirstName.Text = buyerFName
-            BuyerLastName.Text = buyerLName
-            BuyerAddress.Text = buyerAddr
-            BuyerCity.Text = buyerCityName
-            BuyerState.Text = buyerStateName
-            BuyerZipCode.Text = buyerZip
-            BuyerEmail.Text = buyerEmailAddr
-            BuyerPhone.Text = buyerPhoneNum
-            BuyerRotaryMember.Checked = buyerRotMem
+        If Not vBuyerId = 0 Then
+            tbl.spSelectBuyer(vBuyerId, vBuyerLastName, vBuyerFirstName, vBuyerAddress, vBuyerCity, vBuyerState, vBuyerZipCode, vBuyerEmail, vBuyerPhone, "Online", vBuyerRotaryMember)
+            BuyerFirstName.Text = vBuyerFirstName
+            BuyerLastName.Text = vBuyerLastName
+            BuyerAddress.Text = vBuyerAddress
+            BuyerCity.Text = vBuyerCity
+            BuyerState.Text = vBuyerState
+            BuyerZipCode.Text = vBuyerZipCode
+            BuyerEmail.Text = vBuyerEmail
+            BuyerPhone.Text = vBuyerPhone
+            BuyerRotaryMember.Checked = vBuyerRotaryMember
         Else
             BuyerFirstName.Text = ""
             BuyerLastName.Text = ""
@@ -222,25 +222,25 @@ Public Class New_Entry
 
 
     Protected Sub PropertyOwnerChange(sender As Object, e As EventArgs) Handles PropertyOwnerDropDownList.SelectedIndexChanged
-        poId = PropertyOwnerDropDownList.SelectedValue
+        vPropertyOwnerId = PropertyOwnerDropDownList.SelectedValue
 
-        If Not poId = 0 Then
-            tbl.spSelectPropertyOwner(poId, poLName, poFName, poAddr, poCityName, poStateName, poZip, poEmailAddr, poPhoneNum, poRotMem)
-            PropertyFirstName.Text = poFName
-            PropertyLastName.Text = poLName
-            PropertyAddress.Text = poAddr
-            PropertyCity.Text = poCityName
-            PropertyState.Text = poStateName
-            PropertyZipCode.Text = poZip
-            PropertyEmail.Text = poEmailAddr
-            PropertyPhone.Text = poPhoneNum
-            PropertyRotaryMember.Checked = poRotMem
+        If Not vPropertyOwnerId = 0 Then
+            tbl.spSelectPropertyOwner(vPropertyOwnerId, vPropertyOwnerLastName, vPropertyOwnerFirstName, vPropertyOwnerAddress, vPropertyOwnerCity, vPropertyOwnerState, vPropertyOwnerZipCode, vPropertyOwnerEmail, vPropertyOwnerPhone, vPropertyOwnerRotaryMember)
+            PropertyFirstName.Text = vPropertyOwnerFirstName
+            PropertyLastName.Text = vPropertyOwnerLastName
+            PropertyAddress.Text = vPropertyOwnerAddress
+            PropertyCity.Text = vPropertyOwnerCity
+            PropertyState.Text = vPropertyOwnerState
+            PropertyZipCode.Text = vPropertyOwnerZipCode
+            PropertyEmail.Text = vPropertyOwnerEmail
+            PropertyPhone.Text = vPropertyOwnerPhone
+            PropertyRotaryMember.Checked = vPropertyOwnerRotaryMember
             Dim hasTrait As Boolean
-            Dim propTrait As Integer
+            Dim vPropertyTrait As Integer
             For Each box As ListItem In PropertyTraits.Items
                 hasTrait = False
-                propTrait = box.Value
-                tbl.spPropertyHasTrait(poId, propTrait, hasTrait)
+                vPropertyTrait = box.Value
+                tbl.spPropertyHasTrait(vPropertyOwnerId, vPropertyTrait, hasTrait)
                 If hasTrait Then
                     box.Selected = True
                 End If
