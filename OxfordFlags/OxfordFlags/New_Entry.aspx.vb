@@ -94,14 +94,14 @@ Public Class New_Entry
 
         vOrderDate = OrderDate.Text
         vOrderSource = OrderSourceDropDownList.SelectedValue
-        vOrderSubscriptionYear = SubscriptionYear.Text
+        vOrderSubscriptionYear = OrderSubscriptionYear.Text
         vOrderType = OrderType.SelectedValue
-        vOrderConfirmationDate = ConfirmationDate.Text
-        vOrderBasePrice = BasePrice.Text
-        vOrderDiscount = Discount.SelectedValue
-        vOrderExpireDate = ExpireDate.Text
-        vOrderPaymentMethod = PaymentMethod.SelectedValue
-        vOrderFirstOccasion = FirstHoliday.SelectedValue
+        vOrderConfirmationDate = OrderConfirmationDate.Text
+        vOrderBasePrice = OrderBasePrice.Text
+        vOrderDiscount = OrderDiscount.SelectedValue
+        vOrderExpireDate = OrderExpireDate.Text
+        vOrderPaymentMethod = OrderPaymentMethod.SelectedValue
+        vOrderFirstOccasion = OrderFirstOccasion.SelectedValue
 
         tbl.spAddNewOrder(vOrderId, vOrderDate, vOrderSource, vOrderSubscriptionYear, vOrderBasePrice, vOrderDiscount, vOrderType, vOrderConfirmationDate, vOrderFirstOccasion)
     End Sub
@@ -111,7 +111,7 @@ Public Class New_Entry
         Dim vPaymentAmountPaid As Double
         Dim vPaymentDate As Date
 
-        vPaymentAmountPaid = AmountPaid.Text
+        vPaymentAmountPaid = PaymentAmountPaid.Text
         vPaymentDate = PaymentDate.Text
 
         tbl.spAddNewPayment(vBuyerId, vOrderId, vPaymentAmountPaid, vPaymentDate)
@@ -119,15 +119,15 @@ Public Class New_Entry
 
 
     Protected Sub HandlePropertyOwner()
-        vPropertyOwnerFirstName = PropertyFirstName.Text
-        vPropertyOwnerLastName = PropertyLastName.Text
-        vPropertyOwnerAddress = PropertyAddress.Text
-        vPropertyOwnerCity = PropertyCity.Text
-        vPropertyOwnerState = PropertyState.Text
-        vPropertyOwnerZipCode = PropertyZipCode.Text
-        vPropertyOwnerEmail = PropertyEmail.Text
-        vPropertyOwnerPhone = PropertyPhone.Text
-        vPropertyOwnerRotaryMember = PropertyRotaryMember.Checked
+        vPropertyOwnerFirstName = PropertyOwnerFirstName.Text
+        vPropertyOwnerLastName = PropertyOwnerLastName.Text
+        vPropertyOwnerAddress = PropertyOwnerAddress.Text
+        vPropertyOwnerCity = PropertyOwnerCity.Text
+        vPropertyOwnerState = PropertyOwnerState.Text
+        vPropertyOwnerZipCode = PropertyOwnerZipCode.Text
+        vPropertyOwnerEmail = PropertyOwnerEmail.Text
+        vPropertyOwnerPhone = PropertyOwnerPhone.Text
+        vPropertyOwnerRotaryMember = PropertyOwnerRotaryMember.Checked
 
         If vPropertyOwnerId = 0 Then
             tbl.spAddNewPropertyOwner(vPropertyOwnerId, vPropertyOwnerLastName, vPropertyOwnerFirstName, vPropertyOwnerAddress, vPropertyOwnerCity, vPropertyOwnerState, vPropertyOwnerZipCode, vPropertyOwnerEmail, vPropertyOwnerPhone, vPropertyOwnerRotaryMember)
@@ -151,9 +151,9 @@ Public Class New_Entry
         Dim vOupsTicketNumber As String
         Dim vOupsCheckedDate As Date
 
-        vOupsNotifiedDate = OUPSNotifiedDate.Text
-        vOupsTicketNumber = OUPSTicketNumber.Text
-        vOupsCheckedDate = OUPSCheckedDate.Text
+        vOupsNotifiedDate = OupsNotifiedDate.Text
+        vOupsTicketNumber = OupsTicketNumber.Text
+        vOupsCheckedDate = OupsCheckedDate.Text
 
         tbl.spAddNewOups(vOupsId, vOupsTicketNumber, vOupsNotifiedDate, vOupsCheckedDate)
     End Sub
@@ -168,13 +168,13 @@ Public Class New_Entry
         Dim vSleevePublic As Boolean
         Dim vSleeveDeliver As Boolean
 
-        vSleeveLocationDescription = LocationDescription.Text
-        vSleeveLatitude = Latitude.Text
-        vSleeveLongitude = Longitude.Text
-        vSleeveInstallDate = InstallDate.Text
-        vSleeveChangeDate = ChangeDate.Text
-        vSleevePublic = PublicFlag.Checked
-        vSleeveDeliver = Deliver.Checked
+        vSleeveLocationDescription = SleeveLocationDescription.Text
+        vSleeveLatitude = SleeveLatitude.Text
+        vSleeveLongitude = SleeveLongitude.Text
+        vSleeveInstallDate = SleeveInstallDate.Text
+        vSleeveChangeDate = SleeveChangeDate.Text
+        vSleevePublic = SleevePublic.Checked
+        vSleeveDeliver = SleeveDeliver.Checked
 
         tbl.spAddNewSleeve(vSleeveId, True, vOrderId, vPropertyOwnerId, vSleeveLocationDescription, vSleeveLatitude, vSleeveLongitude, vOupsId, vSleeveInstallDate, vSleeveChangeDate, vSleevePublic, vSleeveDeliver, vOrderExpireDate)
 
@@ -226,15 +226,15 @@ Public Class New_Entry
 
         If Not vPropertyOwnerId = 0 Then
             tbl.spSelectPropertyOwner(vPropertyOwnerId, vPropertyOwnerLastName, vPropertyOwnerFirstName, vPropertyOwnerAddress, vPropertyOwnerCity, vPropertyOwnerState, vPropertyOwnerZipCode, vPropertyOwnerEmail, vPropertyOwnerPhone, vPropertyOwnerRotaryMember)
-            PropertyFirstName.Text = vPropertyOwnerFirstName
-            PropertyLastName.Text = vPropertyOwnerLastName
-            PropertyAddress.Text = vPropertyOwnerAddress
-            PropertyCity.Text = vPropertyOwnerCity
-            PropertyState.Text = vPropertyOwnerState
-            PropertyZipCode.Text = vPropertyOwnerZipCode
-            PropertyEmail.Text = vPropertyOwnerEmail
-            PropertyPhone.Text = vPropertyOwnerPhone
-            PropertyRotaryMember.Checked = vPropertyOwnerRotaryMember
+            PropertyOwnerFirstName.Text = vPropertyOwnerFirstName
+            PropertyOwnerLastName.Text = vPropertyOwnerLastName
+            PropertyOwnerAddress.Text = vPropertyOwnerAddress
+            PropertyOwnerCity.Text = vPropertyOwnerCity
+            PropertyOwnerState.Text = vPropertyOwnerState
+            PropertyOwnerZipCode.Text = vPropertyOwnerZipCode
+            PropertyOwnerEmail.Text = vPropertyOwnerEmail
+            PropertyOwnerPhone.Text = vPropertyOwnerPhone
+            PropertyOwnerRotaryMember.Checked = vPropertyOwnerRotaryMember
             Dim hasTrait As Boolean
             Dim vPropertyTrait As Integer
             For Each box As ListItem In PropertyTraits.Items
@@ -246,15 +246,15 @@ Public Class New_Entry
                 End If
             Next
         Else
-            PropertyFirstName.Text = ""
-            PropertyLastName.Text = ""
-            PropertyAddress.Text = ""
-            PropertyCity.Text = ""
-            PropertyState.Text = ""
-            PropertyZipCode.Text = ""
-            PropertyEmail.Text = ""
-            PropertyPhone.Text = ""
-            PropertyRotaryMember.Checked = False
+            PropertyOwnerFirstName.Text = ""
+            PropertyOwnerLastName.Text = ""
+            PropertyOwnerAddress.Text = ""
+            PropertyOwnerCity.Text = ""
+            PropertyOwnerState.Text = ""
+            PropertyOwnerZipCode.Text = ""
+            PropertyOwnerEmail.Text = ""
+            PropertyOwnerPhone.Text = ""
+            PropertyOwnerRotaryMember.Checked = False
             For Each box As ListItem In PropertyTraits.Items
                 box.Selected = False
             Next

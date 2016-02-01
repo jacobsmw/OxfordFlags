@@ -356,13 +356,13 @@ Partial Public Class New_Entry
     Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''SubscriptionYear control.
+    '''OrderSubscriptionYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OrderSubscriptionYear As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''SubscriptionYearEnteredValidator control.
@@ -410,13 +410,13 @@ Partial Public Class New_Entry
     Protected WithEvents ConfirmationDateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''ConfirmationDate control.
+    '''OrderConfirmationDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ConfirmationDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OrderConfirmationDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''ConfirmationDateFormatValidator control.
@@ -437,13 +437,13 @@ Partial Public Class New_Entry
     Protected WithEvents ExpireDateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''ExpireDate control.
+    '''OrderExpireDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ExpireDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OrderExpireDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''ExpireDateFormatValidator control.
@@ -491,13 +491,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyFirstNameLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyFirstName control.
+    '''PropertyOwnerFirstName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyFirstName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerFirstName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyFirstNameFormatValidator control.
@@ -518,13 +518,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyLastNameLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyLastName control.
+    '''PropertyOwnerLastName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyLastName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerLastName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyLastNameFormatValidator control.
@@ -545,13 +545,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyAddressLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyAddress control.
+    '''PropertyOwnerAddress control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyAddress As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerAddress As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyAddressEnteredValidator control.
@@ -581,13 +581,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyCityLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyCity control.
+    '''PropertyOwnerCity control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyCity As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerCity As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyCityEnteredValidator control.
@@ -617,13 +617,13 @@ Partial Public Class New_Entry
     Protected WithEvents ProprtyStateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyState control.
+    '''PropertyOwnerState control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyState As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerState As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyStateEnteredValidator control.
@@ -653,13 +653,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyZipCodeLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyZipCode control.
+    '''PropertyOwnerZipCode control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyZipCode As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerZipCode As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyZipCodeEnteredValidator control.
@@ -689,13 +689,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyEmailLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyEmail control.
+    '''PropertyOwnerEmail control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyEmail As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerEmail As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyEmailFormatValidator control.
@@ -716,13 +716,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyPhoneLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PropertyPhone control.
+    '''PropertyOwnerPhone control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyPhone As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PropertyOwnerPhone As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''PropertyPhoneFormatValidator control.
@@ -734,13 +734,13 @@ Partial Public Class New_Entry
     Protected WithEvents PropertyPhoneFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''PropertyRotaryMember control.
+    '''PropertyOwnerRotaryMember control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyRotaryMember As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents PropertyOwnerRotaryMember As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
     '''PropertyTraitsLabel control.
@@ -779,13 +779,13 @@ Partial Public Class New_Entry
     Protected WithEvents LocationDescriptionLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''LocationDescription control.
+    '''SleeveLocationDescription control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LocationDescription As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SleeveLocationDescription As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''SleevePhoto control.
@@ -833,13 +833,13 @@ Partial Public Class New_Entry
     Protected WithEvents LatitudeLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Latitude control.
+    '''SleeveLatitude control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Latitude As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SleeveLatitude As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''LatitudeEnteredValidator control.
@@ -869,13 +869,13 @@ Partial Public Class New_Entry
     Protected WithEvents LongitudeLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Longitude control.
+    '''SleeveLongitude control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Longitude As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SleeveLongitude As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''LongitudeEnteredValidator control.
@@ -905,13 +905,13 @@ Partial Public Class New_Entry
     Protected WithEvents OUPSNotifiedDateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''OUPSNotifiedDate control.
+    '''OupsNotifiedDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OUPSNotifiedDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OupsNotifiedDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''OUPSNotifiedDateFormatValidator control.
@@ -932,13 +932,13 @@ Partial Public Class New_Entry
     Protected WithEvents OUPSTicketNumberLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''OUPSTicketNumber control.
+    '''OupsTicketNumber control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OUPSTicketNumber As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OupsTicketNumber As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''OUPSTicketNumberEnteredValidator control.
@@ -968,13 +968,13 @@ Partial Public Class New_Entry
     Protected WithEvents OUPSCheckedDateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''OUPSCheckedDate control.
+    '''OupsCheckedDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OUPSCheckedDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OupsCheckedDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''OUPSCheckedDateFormatValidator control.
@@ -995,13 +995,13 @@ Partial Public Class New_Entry
     Protected WithEvents InstallDateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''InstallDate control.
+    '''SleeveInstallDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents InstallDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SleeveInstallDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''InstallDateFormatValidator control.
@@ -1022,13 +1022,13 @@ Partial Public Class New_Entry
     Protected WithEvents ChangeDateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''ChangeDate control.
+    '''SleeveChangeDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ChangeDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SleeveChangeDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''ChangeDateFormatValidator control.
@@ -1040,22 +1040,22 @@ Partial Public Class New_Entry
     Protected WithEvents ChangeDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
 
     '''<summary>
-    '''PublicFlag control.
+    '''SleevePublic control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PublicFlag As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents SleevePublic As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''Deliver control.
+    '''SleeveDeliver control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Deliver As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents SleeveDeliver As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
     '''BasePriceLabel control.
@@ -1067,13 +1067,13 @@ Partial Public Class New_Entry
     Protected WithEvents BasePriceLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''BasePrice control.
+    '''OrderBasePrice control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BasePrice As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OrderBasePrice As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''BasePriceEnteredValidator control.
@@ -1103,13 +1103,13 @@ Partial Public Class New_Entry
     Protected WithEvents PaymentMethodLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PaymentMethod control.
+    '''OrderPaymentMethod control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentMethod As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents OrderPaymentMethod As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''PaymentSource control.
@@ -1130,13 +1130,13 @@ Partial Public Class New_Entry
     Protected WithEvents DiscountLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Discount control.
+    '''OrderDiscount control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Discount As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents OrderDiscount As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''DiscountName control.
@@ -1157,13 +1157,13 @@ Partial Public Class New_Entry
     Protected WithEvents AmountPaidLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''AmountPaid control.
+    '''PaymentAmountPaid control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AmountPaid As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PaymentAmountPaid As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''AmountPaidEnteredValidator control.
@@ -1220,31 +1220,31 @@ Partial Public Class New_Entry
     Protected WithEvents PaymentDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
 
     '''<summary>
-    '''FirstHolidayLabel control.
+    '''OrderFirstOccasionLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FirstHolidayLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents OrderFirstOccasionLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''FirstHoliday control.
+    '''OrderFirstOccasion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FirstHoliday As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents OrderFirstOccasion As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''HolidayName control.
+    '''OccasionName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HolidayName As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents OccasionName As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''SubmitButton control.

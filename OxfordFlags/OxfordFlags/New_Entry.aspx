@@ -12,7 +12,7 @@
 
     <div class="tab-content">
         <div id="BuyerInfo" class="tab-pane fade in active">
-            <h3><%: "Buyer"%></h3>
+            <h3><%: "Sleeve"%></h3>
             <asp:Label ID="BuyerLabel" runat="server" Text="Buyer"></asp:Label>
             <asp:DropDownList ID="BuyerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="BuyerList" DataTextField="Name" DataValueField="BuyerID">
                 <asp:ListItem Value="0">New</asp:ListItem>
@@ -115,7 +115,7 @@
         </div>
         
         <div id="OrderInfo" class="tab-pane fade">
-            <h3><%: "Order"%></h3>
+            <h3><%: "Payment"%></h3>
             <p>
                 <asp:Label ID="OrderDateLabel" runat="server" Text="Order Date"></asp:Label>
                 <asp:TextBox ID="OrderDate" runat="server"></asp:TextBox>
@@ -140,7 +140,7 @@
             </p>
             <p>
                 <asp:Label ID="SubscriptionYearLabel" runat="server" Text="Subscription Year"></asp:Label>
-                <asp:TextBox ID="SubscriptionYear" runat="server"></asp:TextBox>
+                <asp:TextBox ID="OrderSubscriptionYear" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="SubscriptionYearEnteredValidator" runat="server"
                     ControlToValidate="SubscriptionYear"
                     ErrorMessage="Subscription year is a required field."
@@ -164,7 +164,7 @@
             </p>
             <p>
                 <asp:Label ID="ConfirmationDateLabel" runat="server" Text="Confirmation Date"></asp:Label>
-                <asp:TextBox ID="ConfirmationDate" runat="server"></asp:TextBox>
+                <asp:TextBox ID="OrderConfirmationDate" runat="server"></asp:TextBox>
                 <asp:CompareValidator ID="ConfirmationDateFormatValidator" runat="server"
                     Type="Date"
                     Operator="DataTypeCheck"
@@ -175,7 +175,7 @@
             </p>
             <p>
                 <asp:Label ID="ExpireDateLabel" runat="server" Text="Expire Date"></asp:Label>
-                <asp:TextBox ID="ExpireDate" runat="server"></asp:TextBox>
+                <asp:TextBox ID="OrderExpireDate" runat="server"></asp:TextBox>
                 <asp:CompareValidator ID="ExpireDateFormatValidator" runat="server"
                     Type="Date"
                     Operator="DataTypeCheck"
@@ -201,7 +201,7 @@
                 &nbsp;</p>
             <p>
                 <asp:Label ID="PropertyFirstNameLabel" runat="server" Text="Property Owner First Name"></asp:Label>
-                <asp:TextBox ID="PropertyFirstName" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerFirstName" runat="server"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="PropertyFirstNameFormatValidator" runat="server"
                     ControlToValidate="PropertyFirstName"
                     ErrorMessage="You must enter a valid first name."
@@ -211,7 +211,7 @@
             </p>
             <p>
                 <asp:Label ID="PropertyLastNameLabel" runat="server" Text="Property Owner Last Name"></asp:Label>
-                <asp:TextBox ID="PropertyLastName" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerLastName" runat="server"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="PropertyLastNameFormatValidator" runat="server"
                     ControlToValidate="PropertyLastName"
                     ErrorMessage="You must enter a valid last name."
@@ -221,7 +221,7 @@
             </p>
             <p>
                 <asp:Label ID="PropertyAddressLabel" runat="server" Text="Address"></asp:Label>
-                <asp:TextBox ID="PropertyAddress" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerAddress" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="PropertyAddressEnteredValidator" runat="server"
                     ControlToValidate="PropertyAddress"
                     ErrorMessage="Address is a required field."
@@ -236,7 +236,7 @@
             </p>
             <p>
                 <asp:Label ID="PropertyCityLabel" runat="server" Text="City"></asp:Label>
-                <asp:TextBox ID="PropertyCity" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerCity" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="PropertyCityEnteredValidator" runat="server"
                     ControlToValidate="PropertyCity"
                     ErrorMessage="City is a required field."
@@ -251,7 +251,7 @@
             </p>
             <p>
                 <asp:Label ID="ProprtyStateLabel" runat="server" Text="State"></asp:Label>
-                <asp:TextBox ID="PropertyState" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerState" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="PropertyStateEnteredValidator" runat="server"
                     ControlToValidate="PropertyState"
                     ErrorMessage="State is a required field."
@@ -266,7 +266,7 @@
             </p>
             <p>
                 <asp:Label ID="PropertyZipCodeLabel" runat="server" Text="Zip Code"></asp:Label>
-                <asp:TextBox ID="PropertyZipCode" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerZipCode" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="PropertyZipCodeEnteredValidator" runat="server"
                     ControlToValidate="PropertyZipCode"
                     ErrorMessage="Zip Code is a required field."
@@ -281,7 +281,7 @@
             </p>
             <p>
                 <asp:Label ID="PropertyEmailLabel" runat="server" Text="Email"></asp:Label>
-                <asp:TextBox ID="PropertyEmail" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerEmail" runat="server"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="PropertyEmailFormatValidator" runat="server"
                     ControlToValidate="PropertyEmail"
                     ErrorMessage="You must enter a valid email."
@@ -291,7 +291,7 @@
             </p>
             <p>
                 <asp:Label ID="PropertyPhoneLabel" runat="server" Text="Phone"></asp:Label>
-                <asp:TextBox ID="PropertyPhone" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PropertyOwnerPhone" runat="server"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="PropertyPhoneFormatValidator" runat="server"
                     ControlToValidate="PropertyPhone"
                     ErrorMessage="You must enter a valid phone number"
@@ -300,7 +300,7 @@
                 </asp:RegularExpressionValidator>
             </p>
             <p>
-                <asp:CheckBox ID="PropertyRotaryMember" runat="server" Text="Rotary Member" TextAlign="Left" />
+                <asp:CheckBox ID="PropertyOwnerRotaryMember" runat="server" Text="Rotary Member" TextAlign="Left" />
             </p>
             <p>
                 <asp:Label ID="PropertyTraitsLabel" runat="server" Text="Property Traits"></asp:Label>
@@ -315,7 +315,7 @@
                 <asp:Label ID="LocationDescriptionLabel" runat="server" Text="Location Description"></asp:Label>
             </p>
             <p>
-                <asp:TextBox ID="LocationDescription" runat="server" Height="89px" Width="864px"></asp:TextBox>
+                <asp:TextBox ID="SleeveLocationDescription" runat="server" Height="89px" Width="864px"></asp:TextBox>
             </p>
             <p>
                 <asp:Label ID="SleevePhoto" runat="server" Text="Photo"></asp:Label>
@@ -329,7 +329,7 @@
             </p>
             <p>
                 <asp:Label ID="LatitudeLabel" runat="server" Text="Latitude"></asp:Label>
-                <asp:TextBox ID="Latitude" runat="server" EnableTheming="False"></asp:TextBox>
+                <asp:TextBox ID="SleeveLatitude" runat="server" EnableTheming="False"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="LatitudeEnteredValidator" runat="server"
                     ControlToValidate="Latitude"
                     ErrorMessage="Latitude is a required field."
@@ -343,7 +343,7 @@
                 </asp:RegularExpressionValidator>
             <p>
                 <asp:Label ID="LongitudeLabel" runat="server" Text="Longitude"></asp:Label>
-                <asp:TextBox ID="Longitude" runat="server"></asp:TextBox>
+                <asp:TextBox ID="SleeveLongitude" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="LongitudeEnteredValidator" runat="server"
                     ControlToValidate="Longitude"
                     ErrorMessage="Longitude is a required field."
@@ -357,7 +357,7 @@
                 </asp:RegularExpressionValidator>
             <p>
                 <asp:Label ID="OUPSNotifiedDateLabel" runat="server" Text="OUPS Notified Date"></asp:Label>
-                <asp:TextBox ID="OUPSNotifiedDate" runat="server"></asp:TextBox>
+                <asp:TextBox ID="OupsNotifiedDate" runat="server"></asp:TextBox>
                 <asp:CompareValidator ID="OUPSNotifiedDateFormatValidator" runat="server"
                     Type="Date"
                     Operator="DataTypeCheck"
@@ -368,7 +368,7 @@
             </p>
             <p>
                 <asp:Label ID="OUPSTicketNumberLabel" runat="server" Text="OUPS Ticket Number"></asp:Label>
-                <asp:TextBox ID="OUPSTicketNumber" runat="server"></asp:TextBox>
+                <asp:TextBox ID="OupsTicketNumber" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="OUPSTicketNumberEnteredValidator" runat="server"
                     ControlToValidate="OUPSTicketNumber"
                     ErrorMessage="OUPS ticket number is a required field."
@@ -383,7 +383,7 @@
             </p>
             <p>
                 <asp:Label ID="OUPSCheckedDateLabel" runat="server" Text="OUPS Checked Date"></asp:Label>
-                <asp:TextBox ID="OUPSCheckedDate" runat="server"></asp:TextBox>
+                <asp:TextBox ID="OupsCheckedDate" runat="server"></asp:TextBox>
                 <asp:CompareValidator ID="OUPSCheckedDateFormatValidator" runat="server"
                     Type="Date"
                     Operator="DataTypeCheck"
@@ -394,7 +394,7 @@
             </p>
             <p>
                 <asp:Label ID="InstallDateLabel" runat="server" Text="Install Date"></asp:Label>
-                <asp:TextBox ID="InstallDate" runat="server"></asp:TextBox>
+                <asp:TextBox ID="SleeveInstallDate" runat="server"></asp:TextBox>
                 <asp:CompareValidator ID="InstallDateFormatValidator" runat="server"
                     Type="Date"
                     Operator="DataTypeCheck"
@@ -405,7 +405,7 @@
             </p>
             <p>
                 <asp:Label ID="ChangeDateLabel" runat="server" Text="Change Date"></asp:Label>
-                <asp:TextBox ID="ChangeDate" runat="server"></asp:TextBox>
+                <asp:TextBox ID="SleeveChangeDate" runat="server"></asp:TextBox>
                 <asp:CompareValidator ID="ChangeDateFormatValidator" runat="server"
                     Type="Date"
                     Operator="DataTypeCheck"
@@ -415,10 +415,10 @@
                 </asp:CompareValidator>
             </p>
             <p>
-                <asp:CheckBox ID="PublicFlag" runat="server" Text="Public" TextAlign="Left" />
+                <asp:CheckBox ID="SleevePublic" runat="server" Text="Public" TextAlign="Left" />
             </p>
             <p>
-                <asp:CheckBox ID="Deliver" runat="server" Text="Deliver" TextAlign="Left" Checked="True" />
+                <asp:CheckBox ID="SleeveDeliver" runat="server" Text="Deliver" TextAlign="Left" Checked="True" />
             </p>
         </div>
 
@@ -426,7 +426,7 @@
             <h3><%: "Payment"%></h3>
             <p>
                 <asp:Label ID="BasePriceLabel" runat="server" Text="Base Price"></asp:Label>
-                <asp:TextBox ID="BasePrice" runat="server"></asp:TextBox>
+                <asp:TextBox ID="OrderBasePrice" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="BasePriceEnteredValidator" runat="server"
                     ControlToValidate="BasePrice"
                     ErrorMessage="Base price is a required field."
@@ -441,18 +441,18 @@
             </p>
             <p>
                 <asp:Label ID="PaymentMethodLabel" runat="server" Text="Payment Method"></asp:Label>
-                <asp:DropDownList ID="PaymentMethod" runat="server" DataSourceID="PaymentSource" DataTextField="SourceName" DataValueField="SourceID"></asp:DropDownList>
+                <asp:DropDownList ID="OrderPaymentMethod" runat="server" DataSourceID="PaymentSource" DataTextField="SourceName" DataValueField="SourceID"></asp:DropDownList>
                 <asp:SqlDataSource ID="PaymentSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName], [SourceID] FROM [Source]"></asp:SqlDataSource>
 
             </p>
             <p>
                 <asp:Label ID="DiscountLabel" runat="server" Text="Discount"></asp:Label>
-                <asp:DropDownList ID="Discount" runat="server" DataSourceID="DiscountName" DataTextField="DiscountReason" DataValueField="DiscountID"></asp:DropDownList>
+                <asp:DropDownList ID="OrderDiscount" runat="server" DataSourceID="DiscountName" DataTextField="DiscountReason" DataValueField="DiscountID"></asp:DropDownList>
                 <asp:SqlDataSource ID="DiscountName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason], [DiscountID] FROM [Discount]"></asp:SqlDataSource>
             </p>
             <p>
                 <asp:Label ID="AmountPaidLabel" runat="server" Text="Amount Paid"></asp:Label>
-                <asp:TextBox ID="AmountPaid" runat="server"></asp:TextBox>
+                <asp:TextBox ID="PaymentAmountPaid" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="AmountPaidEnteredValidator" runat="server"
                     ControlToValidate="AmountPaid"
                     ErrorMessage="Amount paid is a required field."
@@ -481,9 +481,9 @@
                     ForeColor="Red">
                 </asp:CompareValidator>
             <p>
-                <asp:Label ID="FirstHolidayLabel" runat="server" Text="First Holiday"></asp:Label>
-                <asp:DropDownList ID="FirstHoliday" runat="server" DataSourceID="HolidayName" DataTextField="OccasionName" DataValueField="OccasionID"></asp:DropDownList>
-                <asp:SqlDataSource ID="HolidayName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName], [OccasionID] FROM [Occasion]"></asp:SqlDataSource>
+                <asp:Label ID="OrderFirstOccasionLabel" runat="server" Text="First Occasion"></asp:Label>
+                <asp:DropDownList ID="OrderFirstOccasion" runat="server" DataSourceID="OccasionName" DataTextField="OccasionName" DataValueField="OccasionID"></asp:DropDownList>
+                <asp:SqlDataSource ID="OccasionName" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName], [OccasionID] FROM [Occasion]"></asp:SqlDataSource>
             </p>
             <p>
                 &nbsp;</p>
