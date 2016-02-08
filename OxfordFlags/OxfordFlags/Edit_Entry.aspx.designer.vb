@@ -14,33 +14,6 @@ Option Explicit On
 Partial Public Class New_Entry
 
     '''<summary>
-    '''BuyerLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BuyerLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''BuyerDropDownList control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BuyerDropDownList As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''BuyerList control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BuyerList As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
     '''BuyerFirstNameLabel control.
     '''</summary>
     '''<remarks>
@@ -453,33 +426,6 @@ Partial Public Class New_Entry
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ExpireDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
-
-    '''<summary>
-    '''PropertyOwnerLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents PropertyOwnerLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''PropertyOwnerDropDownList control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents PropertyOwnerDropDownList As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''PropertyOwnerList control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents PropertyOwnerList As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''PropertyFirstNameLabel control.
@@ -1094,13 +1040,13 @@ Partial Public Class New_Entry
     Protected WithEvents BasePriceFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''PaymentMethodLabel control.
+    '''OrderPaymentMethodLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentMethodLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents OrderPaymentMethodLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''OrderPaymentMethod control.
@@ -1112,13 +1058,13 @@ Partial Public Class New_Entry
     Protected WithEvents OrderPaymentMethod As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''PaymentSource control.
+    '''OrderPaymentSource control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentSource As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents OrderPaymentSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''DiscountLabel control.

@@ -1094,13 +1094,13 @@ Partial Public Class New_Entry
     Protected WithEvents BasePriceFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''PaymentMethodLabel control.
+    '''OrderPaymentMethodLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentMethodLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents OrderPaymentMethodLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''OrderPaymentMethod control.
@@ -1112,13 +1112,13 @@ Partial Public Class New_Entry
     Protected WithEvents OrderPaymentMethod As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''PaymentSource control.
+    '''OrderPaymentSource control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentSource As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents OrderPaymentSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''DiscountLabel control.

@@ -32,42 +32,6 @@ Partial Public Class Search
     Protected WithEvents SearchName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''SearchAddressLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SearchAddressLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''SearchAddress control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SearchAddress As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''SearchOUPSTicketLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SearchOUPSTicketLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''SearchOUPSTicket control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SearchOUPSTicket As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''SearchButton control.
     '''</summary>
     '''<remarks>
@@ -84,4 +48,22 @@ Partial Public Class Search
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''DataList1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DataList1 As Global.System.Web.UI.WebControls.DataList
+
+    '''<summary>
+    '''SqlDataSource1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

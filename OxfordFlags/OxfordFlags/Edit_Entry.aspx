@@ -1,8 +1,8 @@
-﻿<%@ Page Title="New Entry" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="New_Entry.aspx.vb" Inherits="OxfordFlags.New_Entry" %>
+﻿<%@ Page Title="Edit Entry" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Edit_Entry.aspx.vb" Inherits="OxfordFlags.New_Entry" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-    <ul class="nav nav-tabs">
+<ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#BuyerInfo">Buyer</a></li>
         <li><a data-toggle="tab" href="#OrderInfo">Order</a></li>
         <li><a data-toggle="tab" href="#PropertyOwnerInfo">Property Owner</a></li>
@@ -10,16 +10,10 @@
         <li><a data-toggle="tab" href="#PaymentInfo">Payment</a></li>
     </ul>
 
-    <div class="tab-content">
+     <div class="tab-content">
         <div id="BuyerInfo" class="tab-pane fade in active">
             <h3><%: "Sleeve"%></h3>
-            <asp:Label ID="BuyerLabel" runat="server" Text="Buyer"></asp:Label>
-            <asp:DropDownList ID="BuyerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="BuyerList" DataTextField="Name" DataValueField="BuyerID">
-                <asp:ListItem Value="0">New</asp:ListItem>
-            </asp:DropDownList>
-            <asp:SqlDataSource ID="BuyerList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT BuyerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [Buyer] WHERE ([Active] = '1')"></asp:SqlDataSource>
-            <p>
-                &nbsp;</p>
+
             <p>
                 <asp:Label ID="BuyerFirstNameLabel" runat="server" Text="First Name"></asp:Label>
                 <asp:TextBox ID="BuyerFirstName" runat="server"></asp:TextBox>
@@ -188,17 +182,7 @@
         
         <div id="PropertyOwnerInfo" class="tab-pane fade">
             <h3><%: "Property Owner"%></h3>
-            <p>
-                <asp:Label ID="PropertyOwnerLabel" runat="server" Text="Property Owner"></asp:Label>
-                <asp:DropDownList ID="PropertyOwnerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PropertyOwnerList" DataTextField="Name" DataValueField="PropertyOwnerID">
-                    <asp:ListItem Value="0">New</asp:ListItem>
-                </asp:DropDownList>
-            </p>
-            <p>
-                <asp:SqlDataSource ID="PropertyOwnerList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT PropertyOwnerID, CONCAT(LastName, ', ', FirstName) AS Name FROM [PropertyOwner]"></asp:SqlDataSource>
-            </p>
-            <p>
-                &nbsp;</p>
+           
             <p>
                 <asp:Label ID="PropertyFirstNameLabel" runat="server" Text="Property Owner First Name"></asp:Label>
                 <asp:TextBox ID="PropertyOwnerFirstName" runat="server"></asp:TextBox>

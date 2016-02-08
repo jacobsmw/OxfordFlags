@@ -22,4 +22,24 @@
 
         Label1.Text = "It Worked"
     End Sub
+
+    Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
+
+    End Sub
+
+    Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles SqlDataSource1.Selecting
+
+    End Sub
+
+    Protected Sub Search(sender As Object, e As EventArgs) Handles SearchButton.Click
+
+    End Sub
+
+    Protected Sub SearchResultsGrid_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SearchResultsGrid.SelectedIndexChanged
+
+    End Sub
+
+    Protected Sub DataList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DataList1.SelectedIndexChanged
+
+    End Sub
 End Class
