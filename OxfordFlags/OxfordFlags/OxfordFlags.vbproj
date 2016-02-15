@@ -190,7 +190,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CustomerReportInput.aspx" />
     <Content Include="Edit_Discounts.aspx" />
+    <Content Include="FinanceReportInput.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Main_Menu.aspx" />
     <Content Include="New_Discount.aspx" />
@@ -198,6 +200,7 @@
     <Content Include="New_Occasion.aspx" />
     <Content Include="New_Source.aspx" />
     <Content Include="New_Trait.aspx" />
+    <Content Include="NonSubscriberCommunicationInput.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -214,7 +217,9 @@
       <DependentUpon>ds.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="PaymentReportInput.aspx" />
     <Content Include="Reports.aspx" />
+    <Content Include="RouteReportInput.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -248,6 +253,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Search.aspx" />
+    <Content Include="SubscriberCommunicationInput.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -350,6 +356,13 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="CustomerReportInput.aspx.designer.vb">
+      <DependentUpon>CustomerReportInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReportInput.aspx.vb">
+      <DependentUpon>CustomerReportInput.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -367,6 +380,13 @@
     </Compile>
     <Compile Include="Edit_Discounts.aspx.vb">
       <DependentUpon>Edit_Discounts.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FinanceReportInput.aspx.designer.vb">
+      <DependentUpon>FinanceReportInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceReportInput.aspx.vb">
+      <DependentUpon>FinanceReportInput.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
@@ -434,11 +454,32 @@
       <DependentUpon>New_Trait.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="NonSubscriberCommunicationInput.aspx.designer.vb">
+      <DependentUpon>NonSubscriberCommunicationInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NonSubscriberCommunicationInput.aspx.vb">
+      <DependentUpon>NonSubscriberCommunicationInput.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PaymentReportInput.aspx.designer.vb">
+      <DependentUpon>PaymentReportInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReportInput.aspx.vb">
+      <DependentUpon>PaymentReportInput.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Reports.aspx.designer.vb">
       <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reports.aspx.vb">
       <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="RouteReportInput.aspx.designer.vb">
+      <DependentUpon>RouteReportInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteReportInput.aspx.vb">
+      <DependentUpon>RouteReportInput.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Search.aspx.designer.vb">
@@ -456,6 +497,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Startup.vb" />
+    <Compile Include="SubscriberCommunicationInput.aspx.designer.vb">
+      <DependentUpon>SubscriberCommunicationInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubscriberCommunicationInput.aspx.vb">
+      <DependentUpon>SubscriberCommunicationInput.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

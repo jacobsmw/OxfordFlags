@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Search by Year" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PaymentReport.aspx.vb" Inherits="OxfordFlags.PaymentReport" %>
+﻿<%@ Page Title="Subscriber Communication Input" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SubscriberCommunicationInput.aspx.vb" Inherits="OxfordFlags.SubscriberCommunicationInput" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
@@ -19,10 +19,7 @@
         </asp:RegularExpressionValidator>
     </p>
     <p>
-        <asp:Button ID="SearchButton" runat="server" Text="Search" />
-    </p>
-    <p>
-        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        <asp:Button ID="SubscriberCommunicationInputSearchButton" runat="server" Text="Search" />
     </p>
 
 </asp:Content>

@@ -12,16 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Reports
-
-    '''<summary>
-    '''DeliveryReportButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents DeliveryReportButton As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''CustomerReportButton control.
     '''</summary>
@@ -30,7 +21,7 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents CustomerReportButton As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''PaymentReportButton control.
     '''</summary>
@@ -39,7 +30,43 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentReportButton As Global.System.Web.UI.WebControls.Button
-
+    
+    '''<summary>
+    '''FinanceReportButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FinanceReportButton As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''SubcriberCommunicationButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SubcriberCommunicationButton As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''NonSubscriberCommunicationButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents NonSubscriberCommunicationButton As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''RouteReportButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RouteReportButton As Global.System.Web.UI.WebControls.Button
+    
     '''<summary>
     '''SleeveReportButton control.
     '''</summary>
@@ -48,7 +75,7 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SleeveReportButton As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''GPSDataButton control.
     '''</summary>
@@ -57,7 +84,7 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GPSDataButton As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''EmailListDataButton control.
     '''</summary>
@@ -66,7 +93,7 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents EmailListDataButton As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''MailingListButton control.
     '''</summary>
