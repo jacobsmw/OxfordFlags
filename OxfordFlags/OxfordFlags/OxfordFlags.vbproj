@@ -191,16 +191,14 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CustomerReportInput.aspx" />
-    <Content Include="Edit_Discounts.aspx" />
+    <Content Include="DiscountMaintenance.aspx" />
     <Content Include="FinanceReportInput.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Main_Menu.aspx" />
-    <Content Include="New_Discount.aspx" />
     <Content Include="New_Entry.aspx" />
-    <Content Include="New_Occasion.aspx" />
-    <Content Include="New_Source.aspx" />
-    <Content Include="New_Trait.aspx" />
     <Content Include="NonSubscriberCommunicationInput.aspx" />
+    <Content Include="OccasionMaintenance.aspx" />
+    <Content Include="OrderSourceMaintenance.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -218,6 +216,7 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="PaymentReportInput.aspx" />
+    <Content Include="PropertyTraitMaintenance.aspx" />
     <Content Include="Reports.aspx" />
     <Content Include="RouteReportInput.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -370,17 +369,17 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DiscountMaintenance.aspx.designer.vb">
+      <DependentUpon>DiscountMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DiscountMaintenance.aspx.vb">
+      <DependentUpon>DiscountMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="ds.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ds.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Edit_Discounts.aspx.designer.vb">
-      <DependentUpon>Edit_Discounts.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Edit_Discounts.aspx.vb">
-      <DependentUpon>Edit_Discounts.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="FinanceReportInput.aspx.designer.vb">
       <DependentUpon>FinanceReportInput.aspx</DependentUpon>
@@ -419,40 +418,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="New_Discount.aspx.designer.vb">
-      <DependentUpon>New_Discount.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="New_Discount.aspx.vb">
-      <DependentUpon>New_Discount.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="New_Entry.aspx.designer.vb">
       <DependentUpon>New_Entry.aspx</DependentUpon>
     </Compile>
     <Compile Include="New_Entry.aspx.vb">
       <DependentUpon>New_Entry.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="New_Occasion.aspx.designer.vb">
-      <DependentUpon>New_Occasion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="New_Occasion.aspx.vb">
-      <DependentUpon>New_Occasion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="New_Source.aspx.designer.vb">
-      <DependentUpon>New_Source.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="New_Source.aspx.vb">
-      <DependentUpon>New_Source.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="New_Trait.aspx.designer.vb">
-      <DependentUpon>New_Trait.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="New_Trait.aspx.vb">
-      <DependentUpon>New_Trait.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="NonSubscriberCommunicationInput.aspx.designer.vb">
       <DependentUpon>NonSubscriberCommunicationInput.aspx</DependentUpon>
@@ -461,11 +432,32 @@
       <DependentUpon>NonSubscriberCommunicationInput.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="OccasionMaintenance.aspx.designer.vb">
+      <DependentUpon>OccasionMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OccasionMaintenance.aspx.vb">
+      <DependentUpon>OccasionMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="OrderSourceMaintenance.aspx.designer.vb">
+      <DependentUpon>OrderSourceMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderSourceMaintenance.aspx.vb">
+      <DependentUpon>OrderSourceMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="PaymentReportInput.aspx.designer.vb">
       <DependentUpon>PaymentReportInput.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaymentReportInput.aspx.vb">
       <DependentUpon>PaymentReportInput.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PropertyTraitMaintenance.aspx.designer.vb">
+      <DependentUpon>PropertyTraitMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyTraitMaintenance.aspx.vb">
+      <DependentUpon>PropertyTraitMaintenance.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Reports.aspx.designer.vb">

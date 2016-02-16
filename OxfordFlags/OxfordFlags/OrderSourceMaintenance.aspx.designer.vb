@@ -11,68 +11,77 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Admin
+Partial Public Class OrderSourceMaintenance
 
     '''<summary>
-    '''Image1 control.
+    '''GridView1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''AddNewUserButton control.
+    '''OrderSourceMaintenanceData control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddNewUserButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents OrderSourceMaintenanceData As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''ViewUsersButton control.
+    '''SourceNameLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ViewUsersButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SourceNameLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''OccasionMaintenanceButton control.
+    '''SourceName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OccasionMaintenanceButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SourceName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''PropertyTraitMaintenanceButton control.
+    '''SourceNameEnteredValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyTraitMaintenanceButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SourceNameEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''OrderSourceMaintenanceButton control.
+    '''SourceNameFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OrderSourceMaintenanceButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SourceNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''DiscountMaintanceButton control.
+    '''Label1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DiscountMaintanceButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''NewEntryButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents NewEntryButton As Global.System.Web.UI.WebControls.Button
 End Class

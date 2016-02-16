@@ -4,24 +4,21 @@
     <h2><%: Title %>.<asp:Image ID="Image1" runat="server" />
     </h2>
     <p>
-        <asp:Button ID="AddNewUserButton" runat="server" Text="Add New User" PostBackUrl="~/Account/Register.aspx" Width="175px" />
+        <asp:Button ID="AddNewUserButton" runat="server" Text="Add New User" PostBackUrl="~/Account/Register.aspx" Width="200px" />
     </p>
     <p>
-        <asp:Button ID="ViewUsersButton" runat="server" Text="View Users" Width="175px" />
+        <asp:Button ID="ViewUsersButton" runat="server" Text="View Users" Width="200px" />
     </p>
     <p>
-        <asp:Button ID="AddNewOccasionButton" runat="server" Text="Add New Occasion" PostBackUrl="~/New_Occasion.aspx" Width="175px" />
+        <asp:Button ID="OccasionMaintenanceButton" runat="server" Text="Occasion Maintenance" PostBackUrl="~/OccasionMaintenance.aspx" Width="200px" />
     </p>
     <p>
-        <asp:Button ID="AddNewTraitButton" runat="server" Text="Add New Trait" PostBackUrl="~/New_Trait.aspx" Width="175px" />
+        <asp:Button ID="PropertyTraitMaintenanceButton" runat="server" Text="Property Trait Maintenance" PostBackUrl="~/PropertyTraitMaintenance.aspx" Width="200px" />
     </p>
     <p>
-        <asp:Button ID="AddNewSourceButton" runat="server" Text="Add New Source" PostBackUrl="~/New_Source.aspx" Width="175px" />
+        <asp:Button ID="OrderSourceMaintenanceButton" runat="server" Text="Order Source Maintenance" PostBackUrl="~/OrderSourceMaintenance.aspx" Width="200px" />
     </p>
     <p>
-        <asp:Button ID="AddNewDiscountButton" runat="server" Text="Add New Discount" PostBackUrl="~/New_Discount.aspx" Width="175px" />
-    </p>
-    <p>
-        <asp:Button ID="EditActiveDiscountsButton" runat="server" Text="Edit Active Discounts" PostBackUrl="~/Edit_Discounts.aspx" Width="175px" />
+        <asp:Button ID="DiscountMaintanceButton" runat="server" Text="Discount Maintenance" PostBackUrl="~/DiscountMaintenance.aspx" Width="200px" />
     </p>
 </asp:Content>

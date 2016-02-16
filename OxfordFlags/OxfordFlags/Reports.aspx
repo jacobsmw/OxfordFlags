@@ -33,7 +33,7 @@
         <asp:Button ID="SleeveReportButton" runat="server" Text="Sleeve Report" />
     </p>
     <p>
-        <asp:Button ID="GPSDataButton" runat="server" Text="GPS Data" PostBackUrl="~/GPSReport.aspx" />
+        <asp:Button ID="GPSDataButton" runat="server" Text="GPS Data" />
     </p>
     <p>
         <asp:Button ID="EmailListDataButton" runat="server" Text="Email List" />

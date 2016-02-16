@@ -11,41 +11,59 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class RouteReportInput
+Partial Public Class OccasionMaintenance
 
     '''<summary>
-    '''SubscriptionYearLabel control.
+    '''GridView1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''DropDownList1 control.
+    '''OccasionMaintenanceData control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents OccasionMaintenanceData As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''RouteReportInputData control.
+    '''OccasionNameLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RouteReportInputData As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents OccasionNameLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PaymentReportInputSearchButton control.
+    '''OccasionName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentReportInputSearchButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents OccasionName As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''NewEntryButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents NewEntryButton As Global.System.Web.UI.WebControls.Button
 End Class

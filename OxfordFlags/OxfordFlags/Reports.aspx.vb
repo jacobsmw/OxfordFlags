@@ -7,10 +7,6 @@
         End If
     End Sub
 
-    Protected Sub DeliveryReportButton_Click(sender As Object, e As EventArgs) Handles DeliveryReportButton.Click
-
-    End Sub
-
     Protected Sub CustomerReportButton_Click(sender As Object, e As EventArgs) Handles CustomerReportButton.Click
 
     End Sub
