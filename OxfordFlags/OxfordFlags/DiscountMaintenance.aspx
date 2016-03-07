@@ -5,17 +5,16 @@
     
 <hr />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="DiscountMaintenanceData" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="DiscountMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="DiscountID">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="DiscountReason" HeaderText="Discount Reason" SortExpression="DiscountReason" ControlStyle-Font-Size="Small" >
-<ControlStyle Font-Size="Small"></ControlStyle>
+<asp:BoundField DataField="DiscountID" HeaderText="DiscountID" SortExpression="DiscountID" InsertVisible="False" ReadOnly="True" Visible="False">
+</asp:BoundField>
+            <asp:BoundField DataField="DiscountReason" HeaderText="DiscountReason" SortExpression="DiscountReason" ControlStyle-Font-Size="Small" >
             </asp:BoundField>
-            <asp:BoundField DataField="DiscountAmount" HeaderText="Discount Amount" SortExpression="DiscountAmount" ControlStyle-Font-Size="Small" >
-<ControlStyle Font-Size="Small"></ControlStyle>
+            <asp:BoundField DataField="DiscountAmount" HeaderText="DiscountAmount" SortExpression="DiscountAmount" ControlStyle-Font-Size="Small" >
             </asp:BoundField>
             <asp:CheckBoxField DataField="Active" HeaderText="Active" SortExpression="Active" ControlStyle-Font-Size="Small" >
-<ControlStyle Font-Size="Small"></ControlStyle>
             </asp:CheckBoxField>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
@@ -30,7 +29,22 @@
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="DiscountMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason], [DiscountAmount], [Active] FROM [Discount]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="DiscountMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Discount]" DeleteCommand="DELETE FROM [Discount] WHERE [DiscountID] = @DiscountID" InsertCommand="INSERT INTO [Discount] ([DiscountReason], [DiscountAmount], [Active]) VALUES (@DiscountReason, @DiscountAmount, @Active)" UpdateCommand="UPDATE [Discount] SET [DiscountReason] = @DiscountReason, [DiscountAmount] = @DiscountAmount, [Active] = @Active WHERE [DiscountID] = @DiscountID">
+        <DeleteParameters>
+            <asp:Parameter Name="DiscountID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="DiscountReason" Type="String" />
+            <asp:Parameter Name="DiscountAmount" Type="Double" />
+            <asp:Parameter Name="Active" Type="Boolean" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="DiscountReason" Type="String" />
+            <asp:Parameter Name="DiscountAmount" Type="Double" />
+            <asp:Parameter Name="Active" Type="Boolean" />
+            <asp:Parameter Name="DiscountID" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
     
 <hr />
 

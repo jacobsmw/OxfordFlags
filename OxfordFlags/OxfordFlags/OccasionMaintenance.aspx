@@ -6,14 +6,14 @@
 
 <hr />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="OccasionMaintenanceData" Width="400px" CellPadding="4" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="OccasionMaintenanceData" Width="400px" CellPadding="4" ForeColor="#333333" GridLines="None" DataKeyNames="OccasionID">
         <AlternatingRowStyle BackColor="White" />
         
         <Columns>
-            <asp:BoundField DataField="OccasionName" HeaderText="OccasionName" SortExpression="OccasionName" ControlStyle-Font-Size="Small" >
-                <ControlStyle Font-Size="Small"></ControlStyle>
+            <asp:BoundField DataField="OccasionID" HeaderText="OccasionID" SortExpression="OccasionID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
             </asp:BoundField>
-            <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+            <asp:BoundField DataField="OccasionName" HeaderText="OccasionName" SortExpression="OccasionName" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -26,7 +26,18 @@
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="OccasionMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName] FROM [Occasion]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="OccasionMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Occasion]" DeleteCommand="DELETE FROM [Occasion] WHERE [OccasionID] = @OccasionID" InsertCommand="INSERT INTO [Occasion] ([OccasionName]) VALUES (@OccasionName)" UpdateCommand="UPDATE [Occasion] SET [OccasionName] = @OccasionName WHERE [OccasionID] = @OccasionID">
+        <DeleteParameters>
+            <asp:Parameter Name="OccasionID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="OccasionName" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="OccasionName" Type="String" />
+            <asp:Parameter Name="OccasionID" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 
 <hr />
 

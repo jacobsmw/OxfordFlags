@@ -5,12 +5,13 @@
 
 <hr />
 
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="PropertyTraitMaintenanceData" ForeColor="#333333" GridLines="None" Width="400px">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="PropertyTraitMaintenanceData" ForeColor="#333333" GridLines="None" Width="400px" DataKeyNames="TraitID">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
-                <asp:BoundField DataField="TraitDescription" HeaderText="Trait" SortExpression="TraitDescription" ControlStyle-Font-Size="Small" >
-<ControlStyle Font-Size="Small"></ControlStyle>
+                <asp:BoundField DataField="TraitID" HeaderText="TraitID" SortExpression="TraitID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
+                <ControlStyle Font-Size="Small" />
                 </asp:BoundField>
+                <asp:BoundField DataField="TraitDescription" HeaderText="TraitDescription" SortExpression="TraitDescription" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
@@ -24,7 +25,18 @@
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="PropertyTraitMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitDescription] FROM [Trait]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="PropertyTraitMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Trait]" DeleteCommand="DELETE FROM [Trait] WHERE [TraitID] = @TraitID" InsertCommand="INSERT INTO [Trait] ([TraitDescription]) VALUES (@TraitDescription)" UpdateCommand="UPDATE [Trait] SET [TraitDescription] = @TraitDescription WHERE [TraitID] = @TraitID">
+            <DeleteParameters>
+                <asp:Parameter Name="TraitID" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="TraitDescription" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="TraitDescription" Type="String" />
+                <asp:Parameter Name="TraitID" Type="Int32" />
+            </UpdateParameters>
+    </asp:SqlDataSource>
     
 <hr />
 

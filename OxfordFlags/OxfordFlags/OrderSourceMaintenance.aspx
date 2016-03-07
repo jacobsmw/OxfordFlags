@@ -7,12 +7,12 @@
 
     <br />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="OrderSourceMaintenanceData" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="OrderSourceMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="SourceID">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
-            <asp:BoundField DataField="SourceName" HeaderText="Source" SortExpression="SourceName" ControlStyle-Font-Size="Small" >
-<ControlStyle Font-Size="Small"></ControlStyle>
+            <asp:BoundField DataField="SourceID" HeaderText="SourceID" SortExpression="SourceID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
             </asp:BoundField>
+            <asp:BoundField DataField="SourceName" HeaderText="SourceName" SortExpression="SourceName" />
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
@@ -26,7 +26,18 @@
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="OrderSourceMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName] FROM [Source]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="OrderSourceMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Source]" DeleteCommand="DELETE FROM [Source] WHERE [SourceID] = @SourceID" InsertCommand="INSERT INTO [Source] ([SourceName]) VALUES (@SourceName)" UpdateCommand="UPDATE [Source] SET [SourceName] = @SourceName WHERE [SourceID] = @SourceID">
+        <DeleteParameters>
+            <asp:Parameter Name="SourceID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="SourceName" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="SourceName" Type="String" />
+            <asp:Parameter Name="SourceID" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 
 <hr />
 

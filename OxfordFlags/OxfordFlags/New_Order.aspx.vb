@@ -4,6 +4,7 @@ Public Class New_Order
 
     Inherits System.Web.UI.Page
 
+    <Serializable()> _
     Protected Class Buyer
         Public Id As Integer
         Public FirstName As String
@@ -35,35 +36,42 @@ Public Class New_Order
 
     ' Database connection
     Dim tbl As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
-
-    ' Buyer variables
-    Dim vBuyerId As Integer
-    Dim vBuyerFirstName As String = ""
-    Dim vBuyerLastName As String = ""
-    Dim vBuyerAddress As String = ""
-    Dim vBuyerCity As String = ""
-    Dim vBuyerState As String = ""
-    Dim vBuyerZipCode As String = ""
-    Dim vBuyerEmail As String = ""
-    Dim vBuyerPhone As String = ""
-    Dim vBuyerRotaryMember As Boolean = False
-    Dim vBuyerList As New List(Of Buyer)()
+    Dim BuyerList As List(Of Buyer)
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not User.Identity.IsAuthenticated Then
             Response.Redirect("~/Account/Login")
         End If
+        If Me.IsPostBack Then
+            BuyerList = CType(Me.ViewState("buyers"), List(Of Buyer))
+            TabName.Value = Request.Form(TabName.UniqueID)
+        Else
+            BuyerList = New List(Of Buyer)()
+            Me.ViewState.Add("buyers", BuyerList)
+        End If
     End Sub
 
     Protected Sub HandleAddBuyer(sender As Object, e As EventArgs) Handles BuyerAddButton.Click
-        vBuyerList.Add(New Buyer(BuyerDropDownList.SelectedValue, BuyerFirstName.Text, _
-                                 BuyerLastName.Text, BuyerAddress.Text, BuyerCity.Text, _
-                                 BuyerState.Text, BuyerZipCode.Text, BuyerEmail.Text, _
-                                 BuyerPhone.Text, BuyerRotaryMember.Checked))
+        BuyerList.Add(New Buyer(BuyerDropDownList.SelectedValue, BuyerFirstNameInput.Text, _
+                                 BuyerLastNameInput.Text, BuyerAddressInput.Text, BuyerCityInput.Text, _
+                                 BuyerStateDropDownList.SelectedValue, BuyerZipCodeInput.Text, BuyerEmailInput.Text, _
+                                 BuyerPhoneInput.Text, BuyerRotaryMemberInput.Checked))
+        ViewState("buyers") = BuyerList
+        FillListBox(BuyerList)
+    End Sub
+
+    Protected Sub HandleRemoveBuyer(sender As Object, e As EventArgs) Handles BuyerRemoveButton.Click
+        For Each b As Buyer In BuyerList
+            If b.LastName = BuyerListBox.SelectedItem.Text Then
+                BuyerList.Remove(b)
+                ViewState("buyers") = BuyerList
+                FillListBox(BuyerList)
+            End If
+        Next
     End Sub
 
     Protected Sub HandleBuyers(sender As Object, e As EventArgs) Handles SubmitButton.Click
-        For Each b As Buyer In vBuyerList
+        For Each b As Buyer In BuyerList
             If b.Id = 0 Then
                 tbl.spAddNewBuyer(b.Id, b.LastName, b.FirstName, b.Address, b.City, b.State, b.ZipCode, b.Email, b.Phone, "Online", b.RotaryMember)
             End If
@@ -71,19 +79,10 @@ Public Class New_Order
     End Sub
 
     Protected Sub BuyerChange(sender As Object, e As EventArgs) Handles BuyerDropDownList.SelectedIndexChanged
-        vBuyerId = BuyerDropDownList.SelectedValue
+        Dim BuyerId = BuyerDropDownList.SelectedValue
 
-        If Not vBuyerId = 0 Then
-            tbl.spSelectBuyer(vBuyerId, vBuyerLastName, vBuyerFirstName, vBuyerAddress, vBuyerCity, vBuyerState, vBuyerZipCode, vBuyerEmail, vBuyerPhone, "Online", vBuyerRotaryMember)
-            BuyerFirstName.Text = vBuyerFirstName
-            BuyerLastName.Text = vBuyerLastName
-            BuyerAddress.Text = vBuyerAddress
-            BuyerCity.Text = vBuyerCity
-            BuyerState.Text = vBuyerState
-            BuyerZipCode.Text = vBuyerZipCode
-            BuyerEmail.Text = vBuyerEmail
-            BuyerPhone.Text = vBuyerPhone
-            BuyerRotaryMember.Checked = vBuyerRotaryMember
+        If Not BuyerId = 0 Then
+            tbl.spSelectBuyer(BuyerId, BuyerLastNameInput.Text, BuyerFirstNameInput.Text, BuyerAddressInput.Text, BuyerCityInput.Text, BuyerStateDropDownList.SelectedValue, BuyerZipCodeInput.Text, BuyerEmailInput.Text, BuyerPhoneInput.Text, "Online", BuyerRotaryMemberInput.Checked)
         Else
             ClearBuyerForm()
         End If
@@ -91,15 +90,22 @@ Public Class New_Order
 
     Protected Sub ClearBuyerForm()
         BuyerDropDownList.SelectedValue = 0
-        BuyerFirstName.Text = ""
-        BuyerLastName.Text = ""
-        BuyerAddress.Text = ""
-        BuyerCity.Text = ""
-        BuyerState.Text = ""
-        BuyerZipCode.Text = ""
-        BuyerEmail.Text = ""
-        BuyerPhone.Text = ""
-        BuyerRotaryMember.Checked = False
+        BuyerFirstNameInput.Text = ""
+        BuyerLastNameInput.Text = ""
+        BuyerAddressInput.Text = ""
+        BuyerCityInput.Text = ""
+        BuyerStateDropDownList.SelectedValue = "OH"
+        BuyerZipCodeInput.Text = ""
+        BuyerEmailInput.Text = ""
+        BuyerPhoneInput.Text = ""
+        BuyerRotaryMemberInput.Checked = False
+    End Sub
+
+    Protected Sub FillListBox(list As List(Of Buyer))
+        BuyerListBox.Items.Clear()
+        For Each b As Buyer In list
+            BuyerListBox.Items.Add(b.LastName)
+        Next
     End Sub
 
 End Class
