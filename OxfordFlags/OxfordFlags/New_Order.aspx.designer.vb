@@ -86,6 +86,33 @@ Partial Public Class New_Order
     Protected WithEvents OrderDiscountSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
+    '''OrderSourceLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderSourceLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OrderSourceDropDownList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderSourceDropDownList As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''OrderSourceSource control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderSourceSource As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''OrderSubscriptionYearLabel control.
     '''</summary>
     '''<remarks>
@@ -527,13 +554,256 @@ Partial Public Class New_Order
     Protected WithEvents PropertyOwnerRotaryMemberInput As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''TabName control.
+    '''PropertyTraitsLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TabName As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents PropertyTraitsLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''PropertyTraits control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyTraits As Global.System.Web.UI.WebControls.CheckBoxList
+
+    '''<summary>
+    '''Traits control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Traits As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''SleeveFormatTable control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveFormatTable As Global.System.Web.UI.WebControls.Table
+
+    '''<summary>
+    '''SleeveLocationDescriptionLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLocationDescriptionLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''SleeveLocationDescriptionInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLocationDescriptionInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SleevePhotoLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleevePhotoLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''SleevePhotoFileUpload1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleevePhotoFileUpload1 As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''SleevePhotoImageValidator1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleevePhotoImageValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''SleeveLatitudeLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLatitudeLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''SleeveLatitudeInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLatitudeInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SleeveLongitudeLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLongitudeLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''SleeveLongitudeInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLongitudeInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''OupsNotifiedDateLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsNotifiedDateLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OupsNotifiedDateInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsNotifiedDateInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''OupsTicketNumberLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsTicketNumberLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OupsTicketNumberInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsTicketNumberInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''OupsCheckedDateLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsCheckedDateLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OupsCheckedDateInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsCheckedDateInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SleeveInstallDateLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveInstallDateLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''SleeveInstallDateInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveInstallDateInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SleeveChangeDateLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveChangeDateLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''SleeveChangeDateInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveChangeDateInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SleevePublicCheckbox control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleevePublicCheckbox As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''SleeveDeliverCheckbox control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveDeliverCheckbox As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''SleeveAddButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveAddButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''SleeveRemoveButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveRemoveButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''SleeveListBox control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveListBox As Global.System.Web.UI.WebControls.ListBox
 
     '''<summary>
     '''SubmitButton control.
@@ -543,4 +813,13 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubmitButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''TabName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TabName As Global.System.Web.UI.WebControls.HiddenField
 End Class

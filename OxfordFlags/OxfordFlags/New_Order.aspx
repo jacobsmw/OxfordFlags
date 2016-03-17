@@ -7,7 +7,7 @@
             <ul class="nav nav-tabs" role="tablist">
                 <li><a role="tab" data-toggle="tab" href="#OrderInfo">Order</a></li>
                 <li><a role="tab" data-toggle="tab" href="#BuyerInfo">Buyers</a></li>
-                <li><a role="tab" data-toggle="tab" href="#PropertyOwnerInfo">Property Owners</a></li>
+                <li><a role="tab" data-toggle="tab" href="#PropertyOwnerInfo">Property Owner</a></li>
                 <li><a role="tab" data-toggle="tab" href="#SleeveInfo">Sleeves</a></li>
             </ul>
 
@@ -27,6 +27,11 @@
                         <asp:Label ID="OrderDiscountLabel" runat="server" Text="Discount: "></asp:Label>
                         <asp:DropDownList ID="OrderDiscountDropDownList" runat="server" DataSourceID="OrderDiscountSource" DataTextField="DiscountReason" DataValueField="DiscountID"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderDiscountSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason], [DiscountID] FROM [Discount]"></asp:SqlDataSource>
+                    </div>
+                    <div class="form-group">
+                        <asp:Label ID="OrderSourceLabel" runat="server" Text="Source: "></asp:Label>
+                        <asp:DropDownList ID="OrderSourceDropDownList" runat="server" DataSourceID="OrderSourceSource" DataTextField="SourceName" DataValueField="SourceID"></asp:DropDownList>
+                        <asp:SqlDataSource ID="OrderSourceSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName], [SourceID] FROM [Source]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderSubscriptionYearLabel" runat="server" Text="Subscription Year: "></asp:Label>
@@ -149,7 +154,7 @@
                         </asp:TableCell>
                         <asp:TableCell>
                         <div id="BuyerDisplay">
-                            <asp:ListBox ID="BuyerListBox" runat="server" Width="150px"></asp:ListBox>
+                            <asp:ListBox ID="BuyerListBox" runat="server" Width="200px"></asp:ListBox>
                         </div>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -252,12 +257,87 @@
                         <div class="form-group">
                             <asp:CheckBox ID="PropertyOwnerRotaryMemberInput" runat="server" Text="Rotary Member" TextAlign="Left" />
                         </div>
+                        <div class="form-group">
+                            <asp:Label ID="PropertyTraitsLabel" runat="server" Text="Property Traits"></asp:Label>
+                            <asp:CheckBoxList ID="PropertyTraits" runat="server" DataSourceID="Traits" DataTextField="TraitDescription" DataValueField="TraitID"></asp:CheckBoxList>
+                            <asp:SqlDataSource ID="Traits" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitID], [TraitDescription] FROM [Trait]"></asp:SqlDataSource>
+                        </div>
                     </div>
                 </div>
+
+                <div id="SleeveInfo" role="tabpanel" class="tab-pane fade">
+                    <h1>Sleeve Information</h1>
+                    <asp:Table ID="SleeveFormatTable" runat="server">
+                    <asp:TableRow>
+                        <asp:TableCell>
+                        <div id="SleeveForm">
+                            <div class="form-group">
+                                <asp:Label ID="SleeveLocationDescriptionLabel" runat="server" Text="Location Desciption:"></asp:Label>
+                                <asp:TextBox ID="SleeveLocationDescriptionInput" runat="server" Height="89px" Width="864px"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="SleevePhotoLabel" runat="server" Text="Photo"></asp:Label>
+                                <div id="uploadArea">
+                                    <asp:FileUpload ID="SleevePhotoFileUpload1" type="file" runat="server" />
+                                    <asp:RegularExpressionValidator ID="SleevePhotoImageValidator1" runat="server" ControlToValidate="SleevePhotoFileUpload1" ErrorMessage="Accepts only .jpg, .jpeg, .png, and .bmp file types" ForeColor="Red" ValidationExpression="(.+\.([Jj][Pp][Gg])|.+\.([Jj][Pp][Ee][Gg])|.+\.([Pp][Nn][Gg])|.+\.([Bb][Mm][Pp]))"></asp:RegularExpressionValidator>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="SleeveLatitudeLabel" runat="server" Text="Latitude"></asp:Label>
+                                <asp:TextBox ID="SleeveLatitudeInput" runat="server" EnableTheming="False"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="SleeveLongitudeLabel" runat="server" Text="Latitude"></asp:Label>
+                                <asp:TextBox ID="SleeveLongitudeInput" runat="server" EnableTheming="False"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="OupsNotifiedDateLabel" runat="server" Text="OUPS Notified Date:"></asp:Label>
+                                <asp:TextBox ID="OupsNotifiedDateInput" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="OupsTicketNumberLabel" runat="server" Text="OUPS Ticket Number:"></asp:Label>
+                                <asp:TextBox ID="OupsTicketNumberInput" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="OupsCheckedDateLabel" runat="server" Text="OUPS Checked Date:"></asp:Label>
+                                <asp:TextBox ID="OupsCheckedDateInput" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="SleeveInstallDateLabel" runat="server" Text="Install Date:"></asp:Label>
+                                <asp:TextBox ID="SleeveInstallDateInput" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="SleeveChangeDateLabel" runat="server" Text="Change Date"></asp:Label>
+                                <asp:TextBox ID="SleeveChangeDateInput" runat="server"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:CheckBox ID="SleevePublicCheckbox" runat="server" Text="Public" TextAlign="Left" />
+                            </div>
+                            <div class="form-group">
+                                <asp:CheckBox ID="SleeveDeliverCheckbox" runat="server" Text="Deliver" TextAlign="Left" Checked="True" />
+                            </div>
+                        </div>
+                        </asp:TableCell>
+                        <asp:TableCell>
+                        <div id="SleeveButtons">
+                            <asp:Button ID="SleeveAddButton" runat="server" Text="Add" />
+                            <br />
+                            <asp:Button ID="SleeveRemoveButton" runat="server" Text="Remove" />
+                        </div>
+                        </asp:TableCell>
+                        <asp:TableCell>
+                        <div id="SleeveDisplay">
+                            <asp:ListBox ID="SleeveListBox" runat="server" Width="200px"></asp:ListBox>
+                        </div>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    </asp:Table>
+                    <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
+                </div>
+            
             </div>
         </div>
         <asp:HiddenField ID="TabName" runat="server" />
-        <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
 
         </ContentTemplate>
     </asp:UpdatePanel>
@@ -270,6 +350,26 @@
             $("#Tabs a").click(function () {
                 $("[id*=TabName]").val($(this).attr("href").replace("#", ""));
             });
+        }
+    </script>
+    <script type="text/javascript">
+        function addImageUploadBox() {
+            if (!document.getElementById || !document.createElement)
+                return false;
+            var uploadArea = document.getElementById("uploadArea");
+            if (!uploadArea)
+                return;
+            var newLine = document.createElement("br");
+            uploadArea.appendChild(newLine);
+            var newUploadBox = document.createElement("input");
+            newUploadBox.type = "file";
+            newUploadBox.setAttribute("class", "fileUpload")
+            if (!addImageUploadBox.lastAssignedId)
+                addImageUploadBox.lastAssignedId = 2;
+            newUploadBox.setAttribute("id", "FileUpload" + addImageUploadBox.lastAssignedId);
+            newUploadBox.setAttribute("name", "FileUpload" + addImageUploadBox.lastAssignedId);
+            uploadArea.appendChild(newUploadBox);
+            addImageUploadBox.lastAssignedId++;
         }
     </script>
 
