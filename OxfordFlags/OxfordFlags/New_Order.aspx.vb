@@ -42,6 +42,7 @@ Public Class New_Order
     Protected Class Sleeve
         Public Id As Integer
         Public LocationDescription As String
+        Public Photo As Byte()
         Public Latitude As Double
         Public Longitude As Double
         Public InstallDate As Date
@@ -49,11 +50,12 @@ Public Class New_Order
         Public PublicSleeve As Boolean
         Public Deliver As Boolean
 
-        Public Sub New(Id As Integer, LocationDescription As String, Latitude As Double, _
-                          Longitude As Double, InstallDate As Date, ChangeDate As Date, _
-                          PublicSleeve As Boolean, Deliver As Boolean)
+        Public Sub New(Id As Integer, LocationDescription As String, Photo As Byte(), _
+                       Latitude As Double, Longitude As Double, InstallDate As Date, _
+                       ChangeDate As Date, PublicSleeve As Boolean, Deliver As Boolean)
             Me.Id = Id
             Me.LocationDescription = LocationDescription
+            Me.Photo = Photo
             Me.Latitude = Latitude
             Me.Longitude = Longitude
             Me.InstallDate = InstallDate
@@ -222,12 +224,19 @@ Public Class New_Order
     Protected Sub HandleSleeves()
         For Each s As Sleeve In SleeveList
             tbl.spAddNewSleeve(s.Id, True, OrderId, PropertyOwnerId, s.LocationDescription, s.Latitude, s.Longitude, OupsId, s.InstallDate, s.ChangeDate, s.PublicSleeve, s.Deliver, OrderDateInput.Text)
+            If s.Photo.Length > 0 Then
+                tbl.spAddNewPhoto(s.Id, s.Photo)
+            End If
         Next
     End Sub
 
     Protected Sub HandleAddSleeve() Handles SleeveAddButton.Click
-        SleeveList.Add(New Sleeve(0, SleeveLocationDescriptionInput.Text, SleeveLatitudeInput.Text, _
-                                  SleeveLongitudeInput.Text, SleeveInstallDateInput.Text, _
+        Dim photo(0) As Byte
+        If (SleevePhotoFileUpload.HasFile) Then
+            photo = SleevePhotoFileUpload.FileBytes
+        End If
+        SleeveList.Add(New Sleeve(0, SleeveLocationDescriptionInput.Text, photo, _
+                                  SleeveLatitudeInput.Text, SleeveLongitudeInput.Text, SleeveInstallDateInput.Text, _
                                   SleeveChangeDateInput.Text, SleevePublicCheckbox.Checked, SleeveDeliverCheckbox.Checked))
         ViewState("sleeves") = SleeveList
         ClearSleeveForm()
@@ -248,6 +257,7 @@ Public Class New_Order
         SleeveChangeDateInput.Text = ""
         SleevePublicCheckbox.Checked = False
         SleeveDeliverCheckbox.Checked = True
+        SleevePhotoFileUpload = New FileUpload()
     End Sub
 
     ' <--------------------Oups---------------------->

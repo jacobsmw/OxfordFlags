@@ -5,7 +5,7 @@
     <hr />
     
     <p>
-        <asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-primary" Text="New Entry" PostBackUrl="~/New_Entry.aspx" />
+        <asp:Button ID="NewOrderButton" runat="server" CssClass="btn btn-primary" Text="New Order" PostBackUrl="~/New_Order.aspx" />
     </p>
     <p>
         <asp:Button ID="SearchButton" runat="server" CssClass="btn btn-primary" Text="Search" PostBackUrl="~/Search.aspx" />

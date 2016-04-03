@@ -41,6 +41,15 @@ Partial Public Class New_Order
     Protected WithEvents OrderDateInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''OrderDateFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
+
+    '''<summary>
     '''OrderBasePriceLabel control.
     '''</summary>
     '''<remarks>
@@ -57,6 +66,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderBasePriceInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''OrderBasePriceFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderBasePriceFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''OrderDiscountLabel control.
@@ -129,6 +147,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderSubscriptionYearInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SubscriptionYearFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''OrderFirstOccasionLabel control.
@@ -212,6 +239,15 @@ Partial Public Class New_Order
     Protected WithEvents BuyerFirstNameInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''BuyerFirstNameFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerFirstNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''BuyerLastNameLabel control.
     '''</summary>
     '''<remarks>
@@ -228,6 +264,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerLastNameInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''BuyerLastNameFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerLastNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''BuyerAddressLabel control.
@@ -248,6 +293,15 @@ Partial Public Class New_Order
     Protected WithEvents BuyerAddressInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''BuyerAddressFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerAddressFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''BuyerCityLabel control.
     '''</summary>
     '''<remarks>
@@ -264,6 +318,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerCityInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''BuyerCityFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerCityFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''BuyerStateLabel control.
@@ -302,6 +365,15 @@ Partial Public Class New_Order
     Protected WithEvents BuyerZipCodeInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''BuyerZipCodeFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerZipCodeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''BuyerEmailLabel control.
     '''</summary>
     '''<remarks>
@@ -320,6 +392,15 @@ Partial Public Class New_Order
     Protected WithEvents BuyerEmailInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''BuyerEmailFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerEmailFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''BuyerPhoneLabel control.
     '''</summary>
     '''<remarks>
@@ -336,6 +417,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BuyerPhoneInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''BuyerPhoneFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BuyerPhoneFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''BuyerRotaryMemberInput control.
@@ -419,6 +509,15 @@ Partial Public Class New_Order
     Protected WithEvents PropertyOwnerFirstNameInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''PropertyOwnerFirstNameFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerFirstNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''PropertyOwnerLastNameLabel control.
     '''</summary>
     '''<remarks>
@@ -435,6 +534,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyOwnerLastNameInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''PropertyOwnerLastNameFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerLastNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''PropertyOwnerAddressLabel control.
@@ -455,6 +563,15 @@ Partial Public Class New_Order
     Protected WithEvents PropertyOwnerAddressInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''PropertyOwnerAddressFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerAddressFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''PropertyOwnerCityLabel control.
     '''</summary>
     '''<remarks>
@@ -471,6 +588,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyOwnerCityInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''PropertyOwnerCityFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerCityFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''PropertyOwnerStateLabel control.
@@ -509,6 +635,15 @@ Partial Public Class New_Order
     Protected WithEvents PropertyOwnerZipCodeInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''PropertyOwnerZipCodeFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerZipCodeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''PropertyOwnerEmailLabel control.
     '''</summary>
     '''<remarks>
@@ -527,6 +662,15 @@ Partial Public Class New_Order
     Protected WithEvents PropertyOwnerEmailInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''PropertyOwnerEmailFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerEmailFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''PropertyOwnerPhoneLabel control.
     '''</summary>
     '''<remarks>
@@ -543,6 +687,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PropertyOwnerPhoneInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''PropertyOwnerPhoneFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerPhoneFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''PropertyOwnerRotaryMemberInput control.
@@ -617,22 +770,22 @@ Partial Public Class New_Order
     Protected WithEvents SleevePhotoLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''SleevePhotoFileUpload1 control.
+    '''SleevePhotoFileUpload control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SleevePhotoFileUpload1 As Global.System.Web.UI.WebControls.FileUpload
+    Protected WithEvents SleevePhotoFileUpload As Global.System.Web.UI.WebControls.FileUpload
 
     '''<summary>
-    '''SleevePhotoImageValidator1 control.
+    '''SleevePhotoImageValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SleevePhotoImageValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents SleevePhotoImageValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''SleeveLatitudeLabel control.
@@ -653,6 +806,15 @@ Partial Public Class New_Order
     Protected WithEvents SleeveLatitudeInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''SleeveLatitudeFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLatitudeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
     '''SleeveLongitudeLabel control.
     '''</summary>
     '''<remarks>
@@ -669,6 +831,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SleeveLongitudeInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SleeveLongitudeFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveLongitudeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''OupsNotifiedDateLabel control.
@@ -689,6 +860,15 @@ Partial Public Class New_Order
     Protected WithEvents OupsNotifiedDateInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''OupsNotifiedDateFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsNotifiedDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
+
+    '''<summary>
     '''OupsTicketNumberLabel control.
     '''</summary>
     '''<remarks>
@@ -705,6 +885,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OupsTicketNumberInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''OupsTicketNumberFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsTicketNumberFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''OupsCheckedDateLabel control.
@@ -725,6 +914,15 @@ Partial Public Class New_Order
     Protected WithEvents OupsCheckedDateInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''OupsCheckedDateFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsCheckedDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
+
+    '''<summary>
     '''SleeveInstallDateLabel control.
     '''</summary>
     '''<remarks>
@@ -743,6 +941,15 @@ Partial Public Class New_Order
     Protected WithEvents SleeveInstallDateInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''SleeveInstallDateFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveInstallDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
+
+    '''<summary>
     '''SleeveChangeDateLabel control.
     '''</summary>
     '''<remarks>
@@ -759,6 +966,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SleeveChangeDateInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SleeveChangeDateFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveChangeDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
 
     '''<summary>
     '''SleevePublicCheckbox control.

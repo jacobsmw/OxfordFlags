@@ -14,13 +14,13 @@ Option Explicit On
 Partial Public Class Main_Menu
 
     '''<summary>
-    '''NewEntryButton control.
+    '''NewOrderButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents NewEntryButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents NewOrderButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''SearchButton control.
