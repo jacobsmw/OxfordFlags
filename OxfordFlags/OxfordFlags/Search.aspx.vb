@@ -1,4 +1,7 @@
-﻿Public Class Search
+﻿Imports System.Web.Helpers
+Imports System.Web.Mvc
+
+Public Class Search
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -7,31 +10,14 @@
         End If
     End Sub
 
+    Public Shared Function CountryLookup() As ActionResult
+        Dim countries As New List(Of String)
+        countries.Add("United States")
+        Return Json(countries, JsonRequestBehavior.AllowGet)
+    End Function
 
-    Protected Sub SearchButton_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        'Dim tbl As dsTableAdapters.spSearchNameTableAdapter = New dsTableAdapters.spSearchNameTableAdapter()
+    Private Shared Function Json(countries As List(Of String), jsonRequestBehavior As JsonRequestBehavior) As ActionResult
+        Throw New NotImplementedException
+    End Function
 
-        Dim search As String
-        search = SearchName.Text
-
-        ''Dim sb As New StringBuilder
-
-        ''For Each r As ds.spSearchNameRow In tbl.GetData(search)
-        ''    sb.Append(r.FirstName & " " & r.LastName)
-        ''Next
-
-        Label1.Text = "It Worked"
-    End Sub
-
-    Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles SqlDataSource1.Selecting
-
-    End Sub
-
-    Protected Sub Search(sender As Object, e As EventArgs) Handles SearchButton.Click
-
-    End Sub
-
-    Protected Sub DataList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles DataList1.SelectedIndexChanged
-
-    End Sub
 End Class
