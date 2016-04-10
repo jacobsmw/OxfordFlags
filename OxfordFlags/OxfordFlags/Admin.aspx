@@ -19,6 +19,9 @@
         <asp:Button ID="OrderSourceMaintenanceButton" runat="server" Text="Order Source Maintenance" PostBackUrl="~/OrderSourceMaintenance.aspx" Width="200px" />
     </p>
     <p>
-        <asp:Button ID="DiscountMaintanceButton" runat="server" Text="Discount Maintenance" PostBackUrl="~/DiscountMaintenance.aspx" Width="200px" />
+        <asp:Button ID="DiscountMaintenanceButton" runat="server" Text="Discount Maintenance" PostBackUrl="~/DiscountMaintenance.aspx" Width="200px" />
+    </p>
+    <p>
+        <asp:Button ID="PaymentSourceMaintenanceButton" runat="server" Text="Payment Source Maintenance" PostBackUrl="~/PaymentSourceMaintenance.aspx" Width="200px" />
     </p>
 </asp:Content>

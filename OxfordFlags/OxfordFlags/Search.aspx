@@ -2,30 +2,57 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
     
-    <html>
-        <head>
-            <meta name="viewport" content="width=device-width" />
-            <title>Bootstrap Typeahead</title>
-            <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.js"></script>
-            <link href="http://twitter.github.io/typeahead.js/css/examples.css" rel="stylesheet" />
-        </head>
-        <body>
-            <div>
-                <div id="details"></div>
-                <input type="text" id="Search" data-provide="typeahead" placeholder="Client Name" autocomplete="off" />
-            </div>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <script src="@Url.Content('~/Scripts/bootstrap.min.js')"></script>
-            <script src="@Url.Content('~/Scripts/typeahead.js')"></script>
-        </body> 
-    </html>
-
-    <script type="text/javascript">
-
-      $('input#Search').typeahead({
-           name: 'name',
-          local: ['yasser', 'shyam', 'sujesh', 'siddhesh', 'vaibhav']
-     });
-    </script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"
+type = "text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
+type = "text/javascript"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"
+rel = "Stylesheet" type="text/css" />
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#<%=txtSearch.ClientID %>").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '<%=ResolveUrl("~/WebService1.asmx/GetCustomers") %>',
+                    data: "{ 'prefix': '" + request.term + "'}",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        response($.map(data.d, function (item) {
+                            return {
+                                label: item.split('-')[0],
+                                val: item.split('-')[1]
+                            }
+                        }))
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    }
+                });
+            },
+            select: function (e, i) {
+                $("#<%=hfCustomerId.ClientID %>").val(i.item.val);
+            },
+            minLength: 1
+        });
+    });
+</script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
+    <asp:HiddenField ID="hfCustomerId" runat="server" />
+    <br />
+    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick = "Submit" />
+    </form>
+</body>
+</html>
 </asp:Content>
 

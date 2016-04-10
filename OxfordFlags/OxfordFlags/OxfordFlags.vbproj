@@ -232,6 +232,8 @@
     <Content Include="ds.xsc">
       <DependentUpon>ds.xsd</DependentUpon>
     </Content>
+    <Content Include="PaymentSourceMaintenance.aspx" />
+    <Content Include="Service.asmx" />
     <None Include="ds.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ds.Designer.vb</LastGenOutput>
@@ -500,6 +502,13 @@
       <DependentUpon>PaymentReportInput.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="PaymentSourceMaintenance.aspx.designer.vb">
+      <DependentUpon>PaymentSourceMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentSourceMaintenance.aspx.vb">
+      <DependentUpon>PaymentSourceMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="PropertyTraitMaintenance.aspx.designer.vb">
       <DependentUpon>PropertyTraitMaintenance.aspx</DependentUpon>
     </Compile>
@@ -527,6 +536,10 @@
     <Compile Include="Search.aspx.vb">
       <DependentUpon>Search.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Service.asmx.vb">
+      <DependentUpon>Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>

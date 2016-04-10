@@ -3878,6 +3878,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
+    top: 0px;
+    left: 0px;
 }
 
 .nav-tabs > li > a {
