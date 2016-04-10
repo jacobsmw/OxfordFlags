@@ -25,13 +25,13 @@ Public Class Service
         Using conn As New SqlConnection()
             conn.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
             Using cmd As New SqlCommand()
-                cmd.CommandText = "select ContactName, CustomerId from Customers where " & "ContactName like @SearchText + '%'"
+                cmd.CommandText = "select FirstName, LastName, BuyerID from Buyer where " & "LastName like @SearchText + '%' OR FirstName like @SearchText + '%'"
                 cmd.Parameters.AddWithValue("@SearchText", prefix)
                 cmd.Connection = conn
                 conn.Open()
                 Using sdr As SqlDataReader = cmd.ExecuteReader()
                     While sdr.Read()
-                        customers.Add(String.Format("{0}-{1}", sdr("ContactName"), sdr("CustomerId")))
+                        customers.Add(String.Format("{0}-{1}", sdr("FirstName"), sdr("BuyerID")))
                     End While
                 End Using
                 conn.Close()

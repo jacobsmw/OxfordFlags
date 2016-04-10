@@ -6,23 +6,7 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.PaymentSourceMaintenance.GridView1">
-	<summary>
-GridView1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.PaymentSourceMaintenance.PaymentSourceMaintenanceData">
-	<summary>
-PaymentSourceMaintenanceData control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:OxfordFlags.My.MyWebExtension.Computer">
+<member name="P:OxfordFlags.My.MyWebExtension.Computer">
 	<summary>
  Returns information about the host computer.
  </summary>
@@ -47,22 +31,6 @@ To modify move field declaration from designer file to code-behind file.
  Module used to define the properties that are available in the My Namespace for Web projects.
  </summary>
 	<remarks></remarks>
-</member><member name="F:OxfordFlags.Search.Head1">
-	<summary>
-Head1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:OxfordFlags.Search.txtSearch">
 	<summary>
 txtSearch control.
@@ -82,6 +50,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Search.btnSubmit">
 	<summary>
 btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.FormView1">
+	<summary>
+FormView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.DetailsView1">
+	<summary>
+DetailsView1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2074,6 +2082,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.OrderSourceMaintenance.NewEntryButton">
 	<summary>
 NewEntryButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PaymentSourceMaintenance.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PaymentSourceMaintenance.PaymentSourceMaintenanceData">
+	<summary>
+PaymentSourceMaintenanceData control.
 </summary>
 	<remarks>
 Auto-generated field.

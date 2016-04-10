@@ -291,6 +291,7 @@
     <Content Include="Global.asax" />
     <Content Include="Search.aspx" />
     <Content Include="SubscriberCommunicationInput.aspx" />
+    <Content Include="ViewEntry.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -554,6 +555,13 @@
     </Compile>
     <Compile Include="SubscriberCommunicationInput.aspx.vb">
       <DependentUpon>SubscriberCommunicationInput.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ViewEntry.aspx.designer.vb">
+      <DependentUpon>ViewEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEntry.aspx.vb">
+      <DependentUpon>ViewEntry.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">
