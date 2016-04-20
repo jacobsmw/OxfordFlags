@@ -20,17 +20,14 @@
         sb.Append("<tr>")
         sb.Append("<td>") : sb.Append("Expected") : sb.Append("</td style='padding: 10px'>")
         sb.Append("<td>") : sb.Append("Paid") : sb.Append("</td style='padding: 10px'>")
-        'sb.Append("<td style='padding: 10px'>") : sb.Append("SLEEVE COUNT") : sb.Append("</td>")
-        sb.Append("<td style='padding: 10px'>") : sb.Append("PAID") : sb.Append("</td>")
-        sb.Append("<td style='padding: 10px'>") : sb.Append("Amount Due") : sb.Append("</td>")
         sb.Append("</tr>")
         For Each rs In db.GetData(vYear)
             sb.Append("<tr>")
-            sb.Append("<td>") : sb.Append(rs.Cost) : sb.Append("</td>")
+            sb.Append("<td>") : sb.Append(rs.Expected) : sb.Append("</td>")
 
             sb.Append("<td style='padding: 10px'>") : sb.Append(rs.PAID) : sb.Append("</td>")
 
-            
+
 
             sb.Append("</tr>")
         Next
