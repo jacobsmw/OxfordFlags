@@ -31,25 +31,57 @@ OxfordFlags
  Module used to define the properties that are available in the My Namespace for Web projects.
  </summary>
 	<remarks></remarks>
-</member><member name="F:OxfordFlags.Search.txtSearch">
+</member><member name="F:OxfordFlags.Search.SearchTypeSelection">
 	<summary>
-txtSearch control.
+SearchTypeSelection control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.hfCustomerId">
+</member><member name="F:OxfordFlags.Search.PersonSearch">
 	<summary>
-hfCustomerId control.
+PersonSearch control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.btnSubmit">
+</member><member name="F:OxfordFlags.Search.hfPersonID">
 	<summary>
-btnSubmit control.
+hfPersonID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PersonSearchButton">
+	<summary>
+PersonSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OupsSearch">
+	<summary>
+OupsSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.hfOupsID">
+	<summary>
+hfOupsID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OupsSearchButton">
+	<summary>
+OupsSearchButton control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -63,33 +95,33 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.GridView1">
+</member><member name="F:OxfordFlags.Search.PersonResult">
 	<summary>
-GridView1 control.
+PersonResult control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.SqlDataSource1">
+</member><member name="F:OxfordFlags.Search.OupsResult">
 	<summary>
-SqlDataSource1 control.
+OupsResult control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.FormView1">
+</member><member name="F:OxfordFlags.Search.PersonDataSource">
 	<summary>
-FormView1 control.
+PersonDataSource control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.DetailsView1">
+</member><member name="F:OxfordFlags.Search.OupsDataSource">
 	<summary>
-DetailsView1 control.
+OupsDataSource control.
 </summary>
 	<remarks>
 Auto-generated field.

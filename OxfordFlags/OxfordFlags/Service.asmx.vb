@@ -20,8 +20,8 @@ Public Class Service
 
     <WebMethod()> _
     <ScriptMethod(ResponseFormat:=ResponseFormat.Json)> _
-    Public Function GetCustomers(ByVal prefix As String) As String()
-        Dim customers As New List(Of String)()
+    Public Function GetPerson(ByVal prefix As String) As String()
+        Dim people As New List(Of String)()
         Using conn As New SqlConnection()
             conn.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
             Using cmd As New SqlCommand()
@@ -31,12 +31,35 @@ Public Class Service
                 conn.Open()
                 Using sdr As SqlDataReader = cmd.ExecuteReader()
                     While sdr.Read()
-                        customers.Add(String.Format("{0}-{1}", sdr("FirstName"), sdr("BuyerID")))
+                        Dim Key As String = sdr("FirstName") + " " + sdr("LastName")
+                        people.Add(String.Format("{0}-{1}", Key, sdr("BuyerID")))
                     End While
                 End Using
                 conn.Close()
             End Using
-            Return customers.ToArray()
+            Return people.ToArray()
+        End Using
+    End Function
+
+    <WebMethod()> _
+    <ScriptMethod(ResponseFormat:=ResponseFormat.Json)>
+    Public Function GetOups(ByVal prefix As String) As String()
+        Dim tickets As New List(Of String)()
+        Using conn As New SqlConnection()
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+            Using cmd As New SqlCommand()
+                cmd.CommandText = "select OupsTicketNumber, OupsID from Oups where " & "OupsTicketNumber like @SearchText + '%'"
+                cmd.Parameters.AddWithValue("@SearchText", prefix)
+                cmd.Connection = conn
+                conn.Open()
+                Using sdr As SqlDataReader = cmd.ExecuteReader()
+                    While sdr.Read()
+                        tickets.Add(String.Format("{0}-{1}", sdr("OupsTicketNumber"), sdr("OupsID")))
+                    End While
+                End Using
+                conn.Close()
+            End Using
+            Return tickets.ToArray()
         End Using
     End Function
 

@@ -8,19 +8,33 @@ Public Class Search
         If Not User.Identity.IsAuthenticated Then
             Response.Redirect("~/Account/Login")
         End If
+
+        PersonResult.Visible = False
+        OupsResult.Visible = False
     End Sub
-    Protected Sub Submit(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
-        Dim customerName As String = Request.Form(txtSearch.UniqueID)
-        Dim customerId As String = Request.Form(hfCustomerId.UniqueID)
+    Protected Sub SearchOups(sender As Object, e As EventArgs) Handles OupsSearchButton.Click
+        Dim oupsTicketNumber As String = Request.Form(OupsSearch.UniqueID)
+        Dim oupsId As String = Request.Form(hfOupsID.UniqueID)
 
-        SqlDataSource1.SelectCommand = "SELECT * FROM [Buyer] where [BuyerID] =" & customerId
+        Label1.Text = oupsTicketNumber
+
+        OupsDataSource.SelectCommand = "Select * From [Oups], [Sleeve], [Order] WHERE [Sleeve].[OrderID] = [Order].[OrderID] AND [Oups].[OupsID] =" & oupsId
+        OupsResult.Visible = True
     End Sub
 
-    Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
+    Protected Sub SearchPerson(sender As Object, e As EventArgs) Handles PersonSearchButton.Click
+        Dim personName As String = Request.Form(PersonSearch.UniqueID)
+        Dim personId As String = Request.Form(hfPersonID.UniqueID)
+
+        Label1.Text = personName
+
+        PersonDataSource.SelectCommand = "SELECT * FROM [Buyer] where [BuyerID] =" & personId
+        PersonResult.Visible = True
+
+        If SearchTypeSelection.SelectedValue = 1 Then
+
+        End If
 
     End Sub
 
-    Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles SqlDataSource1.Selecting
-
-    End Sub
 End Class
