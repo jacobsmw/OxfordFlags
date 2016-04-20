@@ -19,7 +19,8 @@
         </asp:RegularExpressionValidator>
     </p>
     <p>
-        <asp:Button ID="FinancetReportInputSearchButton" runat="server" Text="Search" />
+        <asp:Button ID="FinanceReportInputSearchButton" runat="server" Text="Search" />
+        <asp:Label ID="lblFinancialReport" runat="server"></asp:Label>
     </p>
 
 </asp:Content>

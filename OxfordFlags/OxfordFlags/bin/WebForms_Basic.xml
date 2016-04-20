@@ -247,9 +247,17 @@ SubscriptionYearFormatValidator control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.FinanceReportInput.FinancetReportInputSearchButton">
+</member><member name="F:OxfordFlags.FinanceReportInput.FinanceReportInputSearchButton">
 	<summary>
-FinancetReportInputSearchButton control.
+FinanceReportInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.FinanceReportInput.lblFinancialReport">
+	<summary>
+lblFinancialReport control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -463,6 +471,22 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportCustomerByStreetAddressDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportCustomerReportDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportFinancialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportGPSOutputDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectOrderCrossTableRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -487,6 +511,22 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportCustomerByStreetAddressRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportCustomerReportRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportFinancialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportGPSOutputRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectOrderCrossTableRowChangeEvent">
 	<summary>
 Row event argument class
@@ -508,6 +548,22 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:OxfordFlags.ds.spSelectPhotoBySleeveIDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportCustomerByStreetAddressRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportCustomerReportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportFinancialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportGPSOutputRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -536,6 +592,22 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:OxfordFlags.dsTableAdapters.spSelectPhotoBySleeveIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportCustomerByStreetAddressTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportCustomerReportTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportFinancialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportGPSOutputTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -1279,6 +1351,14 @@ EditRouteButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.Main_Menu.AddPaymentButton">
+	<summary>
+AddPaymentButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.PropertyTraitMaintenance.GridView1">
 	<summary>
 GridView1 control.
@@ -1402,6 +1482,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.CustomerReportInput.CustomerReportInputSearchButton">
 	<summary>
 CustomerReportInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.CustomerReportInput.lblCustomerReport">
+	<summary>
+lblCustomerReport control.
 </summary>
 	<remarks>
 Auto-generated field.
