@@ -48,4 +48,22 @@ Partial Public Class Main_Menu
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AdminButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''EditRouteButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents EditRouteButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''AddPaymentButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AddPaymentButton As Global.System.Web.UI.WebControls.Button
 End Class

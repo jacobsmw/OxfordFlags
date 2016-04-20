@@ -16,4 +16,10 @@
     <p>
         <asp:Button ID="AdminButton" runat="server" CssClass="btn btn-primary" Text="Admin" PostBackUrl="~/Admin.aspx" />
     </p>
+    <p>
+        <asp:Button ID="EditRouteButton" runat="server" CssClass="btn btn-primary" Text="Edit Route Order" PostBackUrl="~/EditRouteOrder.aspx" />
+    </p>
+    <p>
+        <asp:Button ID="AddPaymentButton" runat="server" CssClass="btn btn-primary" Text="Add New Payment" PostBackUrl="~/AddPayment.aspx" />
+    </p>
 </asp:Content>
