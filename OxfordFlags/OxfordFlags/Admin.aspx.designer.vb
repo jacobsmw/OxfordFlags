@@ -68,11 +68,20 @@ Partial Public Class Admin
     Protected WithEvents OrderSourceMaintenanceButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''DiscountMaintanceButton control.
+    '''DiscountMaintenanceButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DiscountMaintanceButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents DiscountMaintenanceButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''PaymentSourceMaintenanceButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentSourceMaintenanceButton As Global.System.Web.UI.WebControls.Button
 End Class

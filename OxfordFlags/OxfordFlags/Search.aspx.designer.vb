@@ -14,31 +14,67 @@ Option Explicit On
 Partial Public Class Search
 
     '''<summary>
-    '''SearchNameLabel control.
+    '''SearchTypeSelection control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchNameLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SearchTypeSelection As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''SearchName control.
+    '''PersonSearch control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PersonSearch As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''SearchButton control.
+    '''hfPersonID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents hfPersonID As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''PersonSearchButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PersonSearchButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''OupsSearch control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsSearch As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''hfOupsID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfOupsID As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''OupsSearchButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsSearchButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Label1 control.
@@ -50,20 +86,38 @@ Partial Public Class Search
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DataList1 control.
+    '''PersonResult control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DataList1 As Global.System.Web.UI.WebControls.DataList
+    Protected WithEvents PersonResult As Global.System.Web.UI.WebControls.DetailsView
 
     '''<summary>
-    '''SqlDataSource1 control.
+    '''OupsResult control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents OupsResult As Global.System.Web.UI.WebControls.DetailsView
+
+    '''<summary>
+    '''PersonDataSource control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PersonDataSource As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''OupsDataSource control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsDataSource As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

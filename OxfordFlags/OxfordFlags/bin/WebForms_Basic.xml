@@ -6,175 +6,7 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
-	<summary>
-providerDetails control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.ResetPassword.ErrorMessage">
-	<summary>
-ErrorMessage control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.ResetPassword.Email">
-	<summary>
-Email control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.ResetPassword.Password">
-	<summary>
-Password control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.ResetPassword.ConfirmPassword">
-	<summary>
-ConfirmPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.RouteColorsDropDownList">
-	<summary>
-RouteColorsDropDownList control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.ColorsDataSource">
-	<summary>
-ColorsDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersListBox">
-	<summary>
-PropertyOwnersListBox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersDataSource">
-	<summary>
-PropertyOwnersDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.UpButton">
-	<summary>
-UpButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.DownButton">
-	<summary>
-DownButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.EditRouteOrder.SubmitButton">
-	<summary>
-SubmitButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Register.ErrorMessage">
-	<summary>
-ErrorMessage control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Register.Email">
-	<summary>
-Email control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Register.Password">
-	<summary>
-Password control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Register.ConfirmPassword">
-	<summary>
-ConfirmPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPhoto.SleevesListBox">
-	<summary>
-SleevesListBox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPhoto.SleevesDataSource">
-	<summary>
-SleevesDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPhoto.SleevePhotoFileUpload">
-	<summary>
-SleevePhotoFileUpload control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPhoto.SubmitButton">
-	<summary>
-SubmitButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:OxfordFlags.My.MyWebExtension.Computer">
+<member name="P:OxfordFlags.My.MyWebExtension.Computer">
 	<summary>
  Returns information about the host computer.
  </summary>
@@ -199,6 +31,107 @@ To modify move field declaration from designer file to code-behind file.
  Module used to define the properties that are available in the My Namespace for Web projects.
  </summary>
 	<remarks></remarks>
+</member><member name="F:OxfordFlags.Search.SearchTypeSelection">
+	<summary>
+SearchTypeSelection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PersonSearch">
+	<summary>
+PersonSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.hfPersonID">
+	<summary>
+hfPersonID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PersonSearchButton">
+	<summary>
+PersonSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OupsSearch">
+	<summary>
+OupsSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+=======
+</member><member name="F:OxfordFlags.Search.hfOupsID">
+	<summary>
+hfOupsID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OupsSearchButton">
+	<summary>
+OupsSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PersonResult">
+	<summary>
+PersonResult control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OupsResult">
+	<summary>
+OupsResult control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PersonDataSource">
+	<summary>
+PersonDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OupsDataSource">
+	<summary>
+OupsDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.PaymentReportInput.SubscriptionYearLabel">
 	<summary>
 SubscriptionYearLabel control.
@@ -239,7 +172,55 @@ PaymentReportInputSearchButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.RouteReportInput.SubscriptionYearLabel">
+</member><member name="F:OxfordFlags.Site_Mobile.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Site_Mobile.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Site_Mobile.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Site_Mobile.FeaturedContent">
+	<summary>
+FeaturedContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Site_Mobile.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Site_Mobile.ViewSwitcher1">
+	<summary>
+ViewSwitcher1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYearLabel">
 	<summary>
 SubscriptionYearLabel control.
 </summary>
@@ -247,25 +228,465 @@ SubscriptionYearLabel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.RouteReportInput.DropDownList1">
+</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYear">
 	<summary>
-DropDownList1 control.
+SubscriptionYear control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.RouteReportInput.RouteReportInputData">
+</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYearEnteredValidator">
 	<summary>
-RouteReportInputData control.
+SubscriptionYearEnteredValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.RouteReportInput.PaymentReportInputSearchButton">
+</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYearFormatValidator">
 	<summary>
-PaymentReportInputSearchButton control.
+SubscriptionYearFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.FinanceReportInput.FinancetReportInputSearchButton">
+	<summary>
+FinancetReportInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OccasionMaintenance.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OccasionMaintenance.OccasionMaintenanceData">
+	<summary>
+OccasionMaintenanceData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OccasionMaintenance.OccasionNameLabel">
+	<summary>
+OccasionNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OccasionMaintenance.OccasionName">
+	<summary>
+OccasionName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OccasionMaintenance.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OccasionMaintenance.NewEntryButton">
+	<summary>
+NewEntryButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
+	<summary>
+providerDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:OxfordFlags.ds">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.StoredProcedureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:OxfordFlags.Manage.SuccessMessagePlaceHolder">
+	<summary>
+ SuccessMessagePlaceHolder control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.setPassword">
+	<summary>
+ setPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.password">
+	<summary>
+ password control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.confirmPassword">
+	<summary>
+ confirmPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.changePasswordHolder">
+	<summary>
+ changePasswordHolder control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.changePasswordUserName">
+	<summary>
+ changePasswordUserName control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.CurrentPasswordLabel">
+	<summary>
+ CurrentPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.CurrentPassword">
+	<summary>
+ CurrentPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.NewPasswordLabel">
+	<summary>
+ NewPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.NewPassword">
+	<summary>
+ NewPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.ConfirmNewPasswordLabel">
+	<summary>
+ ConfirmNewPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.ConfirmNewPassword">
+	<summary>
+ ConfirmNewPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Reports.CustomerReportButton">
+	<summary>
+CustomerReportButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.PaymentReportButton">
+	<summary>
+PaymentReportButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.FinanceReportButton">
+	<summary>
+FinanceReportButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.SubcriberCommunicationButton">
+	<summary>
+SubcriberCommunicationButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.NonSubscriberCommunicationButton">
+	<summary>
+NonSubscriberCommunicationButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.RouteReportButton">
+	<summary>
+RouteReportButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.SleeveReportButton">
+	<summary>
+SleeveReportButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.GPSDataButton">
+	<summary>
+GPSDataButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.EmailListDataButton">
+	<summary>
+EmailListDataButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.MailingListButton">
+	<summary>
+MailingListButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.SiteMaster.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYearLabel">
+	<summary>
+SubscriptionYearLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYear">
+	<summary>
+SubscriptionYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYearEnteredValidator">
+	<summary>
+SubscriptionYearEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYearFormatValidator">
+	<summary>
+SubscriptionYearFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.NonSubscriberCommunicationInputSearchButton">
+	<summary>
+NonSubscriberCommunicationInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ResetPassword.ErrorMessage">
+	<summary>
+ErrorMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ResetPassword.Email">
+	<summary>
+Email control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ResetPassword.Password">
+	<summary>
+Password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ResetPassword.ConfirmPassword">
+	<summary>
+ConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYearLabel">
+	<summary>
+SubscriptionYearLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYear">
+	<summary>
+SubscriptionYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYearEnteredValidator">
+	<summary>
+SubscriptionYearEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYearFormatValidator">
+	<summary>
+SubscriptionYearFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriberCommunicationInputSearchButton">
+	<summary>
+SubscriberCommunicationInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Confirm.status">
+	<summary>
+status control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.AddNewUserButton">
+	<summary>
+AddNewUserButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.ViewUsersButton">
+	<summary>
+ViewUsersButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.OccasionMaintenanceButton">
+	<summary>
+OccasionMaintenanceButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.PropertyTraitMaintenanceButton">
+	<summary>
+PropertyTraitMaintenanceButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.OrderSourceMaintenanceButton">
+	<summary>
+OrderSourceMaintenanceButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.DiscountMaintenanceButton">
+	<summary>
+DiscountMaintenanceButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.PaymentSourceMaintenanceButton">
+	<summary>
+PaymentSourceMaintenanceButton control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -375,15 +796,407 @@ NewEntryButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.UpdatePanel1">
+</member><member name="F:OxfordFlags.Main_Menu.NewOrderButton">
 	<summary>
-UpdatePanel1 control.
+NewOrderButton control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.OrderDateLabel">
+</member><member name="F:OxfordFlags.Main_Menu.SearchButton">
+	<summary>
+SearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Main_Menu.ReportsButton">
+	<summary>
+ReportsButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Main_Menu.AdminButton">
+	<summary>
+AdminButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.PropertyTraitMaintenanceData">
+	<summary>
+PropertyTraitMaintenanceData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescriptionLabel">
+	<summary>
+TraitDescriptionLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescription">
+	<summary>
+TraitDescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescriptionEnteredValidator">
+	<summary>
+TraitDescriptionEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescriptionFormatValidator">
+	<summary>
+TraitDescriptionFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PropertyTraitMaintenance.NewEntryButton">
+	<summary>
+NewEntryButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ForgotPassword.ErrorMessage">
+	<summary>
+ErrorMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ForgotPassword.FailureText">
+	<summary>
+FailureText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ForgotPassword.Email">
+	<summary>
+Email control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYearLabel">
+	<summary>
+SubscriptionYearLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYear">
+	<summary>
+SubscriptionYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYearEnteredValidator">
+	<summary>
+SubscriptionYearEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYearFormatValidator">
+	<summary>
+SubscriptionYearFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.CustomerReportInput.CustomerReportInputSearchButton">
+	<summary>
+CustomerReportInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerLabel">
+	<summary>
+BuyerLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerDropDownList">
+	<summary>
+BuyerDropDownList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerList">
+	<summary>
+BuyerList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerFirstNameLabel">
+	<summary>
+BuyerFirstNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerFirstName">
+	<summary>
+BuyerFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerFirstNameEnteredValidator">
+	<summary>
+BuyerFirstNameEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerFirstNameFormatValidator">
+	<summary>
+BuyerFirstNameFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerLastNameLabel">
+	<summary>
+BuyerLastNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerLastName">
+	<summary>
+BuyerLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerLastNameEnteredValidator">
+	<summary>
+BuyerLastNameEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerLastNameFormatValidator">
+	<summary>
+BuyerLastNameFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerAddressLabel">
+	<summary>
+BuyerAddressLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerAddress">
+	<summary>
+BuyerAddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerAddressFormatValidator">
+	<summary>
+BuyerAddressFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerCityLabel">
+	<summary>
+BuyerCityLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerCity">
+	<summary>
+BuyerCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerCityFormatValidator">
+	<summary>
+BuyerCityFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerStateLabel">
+	<summary>
+BuyerStateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerState">
+	<summary>
+BuyerState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerStateFormatValidator">
+	<summary>
+BuyerStateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerZipCodeLabel">
+	<summary>
+BuyerZipCodeLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerZipCode">
+	<summary>
+BuyerZipCode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerZipCodeFormatValidator">
+	<summary>
+BuyerZipCodeFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerEmailLabel">
+	<summary>
+BuyerEmailLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerEmail">
+	<summary>
+BuyerEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerEmailFormatValidator">
+	<summary>
+BuyerEmailFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerPhoneLabel">
+	<summary>
+BuyerPhoneLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerPhone">
+	<summary>
+BuyerPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerPhoneFormatValidator">
+	<summary>
+BuyerPhoneFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BuyerRotaryMember">
+	<summary>
+BuyerRotaryMember control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderDateLabel">
 	<summary>
 OrderDateLabel control.
 </summary>
@@ -391,15 +1204,23 @@ OrderDateLabel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.OrderDateInput">
+</member><member name="F:OxfordFlags.New_Entry.OrderDate">
 	<summary>
-OrderDateInput control.
+OrderDate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.OrderDateFormatValidator">
+</member><member name="F:OxfordFlags.New_Entry.OrderDateEnteredValidator">
+	<summary>
+OrderDateEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderDateFormatValidator">
 	<summary>
 OrderDateFormatValidator control.
 </summary>
@@ -407,6 +1228,493 @@ OrderDateFormatValidator control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderSource">
+	<summary>
+OrderSource control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.RouteColorsDropDownList">
+	<summary>
+RouteColorsDropDownList control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.OrderSourceDropDownList">
+	<summary>
+OrderSourceDropDownList control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.ColorsDataSource">
+	<summary>
+ColorsDataSource control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.OrderSourceList">
+	<summary>
+OrderSourceList control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersListBox">
+	<summary>
+PropertyOwnersListBox control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.SubscriptionYearLabel">
+	<summary>
+SubscriptionYearLabel control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersDataSource">
+	<summary>
+PropertyOwnersDataSource control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.OrderSubscriptionYear">
+	<summary>
+OrderSubscriptionYear control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.UpButton">
+	<summary>
+UpButton control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.SubscriptionYearEnteredValidator">
+	<summary>
+SubscriptionYearEnteredValidator control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.DownButton">
+	<summary>
+DownButton control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.SubscriptionYearFormatValidator">
+	<summary>
+SubscriptionYearFormatValidator control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.EditRouteOrder.SubmitButton">
+	<summary>
+SubmitButton control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.OrderTypeLabel">
+	<summary>
+OrderTypeLabel control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.Register.ErrorMessage">
+	<summary>
+ErrorMessage control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.OrderType">
+	<summary>
+OrderType control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.Register.Email">
+	<summary>
+Email control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.ConfirmationDateLabel">
+	<summary>
+ConfirmationDateLabel control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.Register.Password">
+	<summary>
+Password control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.OrderConfirmationDate">
+	<summary>
+OrderConfirmationDate control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.Register.ConfirmPassword">
+	<summary>
+ConfirmPassword control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.ConfirmationDateFormatValidator">
+	<summary>
+ConfirmationDateFormatValidator control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.AddPhoto.SleevesListBox">
+	<summary>
+SleevesListBox control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.ExpireDateLabel">
+	<summary>
+ExpireDateLabel control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.AddPhoto.SleevesDataSource">
+	<summary>
+SleevesDataSource control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.OrderExpireDate">
+	<summary>
+OrderExpireDate control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.AddPhoto.SleevePhotoFileUpload">
+	<summary>
+SleevePhotoFileUpload control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.ExpireDateFormatValidator">
+	<summary>
+ExpireDateFormatValidator control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.AddPhoto.SubmitButton">
+=======
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerLabel">
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+	<summary>
+PropertyOwnerLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="P:OxfordFlags.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:OxfordFlags.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:OxfordFlags.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:OxfordFlags.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:OxfordFlags.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:OxfordFlags.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:OxfordFlags.PaymentReportInput.SubscriptionYearLabel">
+=======
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerDropDownList">
+	<summary>
+PropertyOwnerDropDownList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerList">
+	<summary>
+PropertyOwnerList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyFirstNameLabel">
+	<summary>
+PropertyFirstNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerFirstName">
+	<summary>
+PropertyOwnerFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyFirstNameFormatValidator">
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+	<summary>
+PropertyFirstNameFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyLastNameLabel">
+	<summary>
+PropertyLastNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerLastName">
+	<summary>
+PropertyOwnerLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyLastNameFormatValidator">
+	<summary>
+PropertyLastNameFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyAddressLabel">
+	<summary>
+PropertyAddressLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerAddress">
+	<summary>
+PropertyOwnerAddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyAddressEnteredValidator">
+	<summary>
+PropertyAddressEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyAddressFormatValidator">
+	<summary>
+PropertyAddressFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyCityLabel">
+	<summary>
+PropertyCityLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerCity">
+	<summary>
+PropertyOwnerCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyCityEnteredValidator">
+	<summary>
+PropertyCityEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyCityFormatValidator">
+	<summary>
+PropertyCityFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.ProprtyStateLabel">
+	<summary>
+ProprtyStateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerState">
+	<summary>
+PropertyOwnerState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyStateEnteredValidator">
+	<summary>
+PropertyStateEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyStateFormatValidator">
+	<summary>
+PropertyStateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyZipCodeLabel">
+	<summary>
+PropertyZipCodeLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerZipCode">
+	<summary>
+PropertyOwnerZipCode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyZipCodeEnteredValidator">
+	<summary>
+PropertyZipCodeEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyZipCodeFormatValidator">
+	<summary>
+PropertyZipCodeFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyEmailLabel">
+	<summary>
+PropertyEmailLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerEmail">
+	<summary>
+PropertyOwnerEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyEmailFormatValidator">
+	<summary>
+PropertyEmailFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyPhoneLabel">
+	<summary>
+PropertyPhoneLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerPhone">
+	<summary>
+PropertyOwnerPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PropertyPhoneFormatValidator">
+	<summary>
+PropertyPhoneFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
 </member><member name="F:OxfordFlags.New_Order.OrderCostLabel">
 	<summary>
 OrderCostLabel control.
@@ -434,22 +1742,733 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.New_Order.OrderAmountPaidLabel">
 	<summary>
 OrderAmountPaidLabel control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.PropertyOwnerRotaryMember">
+	<summary>
+PropertyOwnerRotaryMember control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:OxfordFlags.New_Order.OrderAmountPaidInput">
 	<summary>
 OrderAmountPaidInput control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.PropertyTraitsLabel">
+	<summary>
+PropertyTraitsLabel control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:OxfordFlags.New_Order.OrderAmountPaidFormatValidator">
 	<summary>
 OrderAmountPaidFormatValidator control.
+=======
+</member><member name="F:OxfordFlags.New_Entry.PropertyTraits">
+	<summary>
+PropertyTraits control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.Traits">
+	<summary>
+Traits control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.LocationDescriptionLabel">
+	<summary>
+LocationDescriptionLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleeveLocationDescription">
+	<summary>
+SleeveLocationDescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleevePhoto">
+	<summary>
+SleevePhoto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.FileUpload1">
+	<summary>
+FileUpload1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.ImageValidator1">
+	<summary>
+ImageValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.AddAnotherImage">
+	<summary>
+AddAnotherImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.LatitudeLabel">
+	<summary>
+LatitudeLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleeveLatitude">
+	<summary>
+SleeveLatitude control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.LatitudeEnteredValidator">
+	<summary>
+LatitudeEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.LatitudeFormatValidator">
+	<summary>
+LatitudeFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.LongitudeLabel">
+	<summary>
+LongitudeLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleeveLongitude">
+	<summary>
+SleeveLongitude control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.LongitudeEnteredValidator">
+	<summary>
+LongitudeEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.LongitudeFormatValidator">
+	<summary>
+LongitudeFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OUPSNotifiedDateLabel">
+	<summary>
+OUPSNotifiedDateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OupsNotifiedDate">
+	<summary>
+OupsNotifiedDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OUPSNotifiedDateFormatValidator">
+	<summary>
+OUPSNotifiedDateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OUPSTicketNumberLabel">
+	<summary>
+OUPSTicketNumberLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OupsTicketNumber">
+	<summary>
+OupsTicketNumber control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OUPSTicketNumberEnteredValidator">
+	<summary>
+OUPSTicketNumberEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OUPSTicketNumberFormatValidator">
+	<summary>
+OUPSTicketNumberFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OUPSCheckedDateLabel">
+	<summary>
+OUPSCheckedDateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OupsCheckedDate">
+	<summary>
+OupsCheckedDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OUPSCheckedDateFormatValidator">
+	<summary>
+OUPSCheckedDateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.InstallDateLabel">
+	<summary>
+InstallDateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleeveInstallDate">
+	<summary>
+SleeveInstallDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.InstallDateFormatValidator">
+	<summary>
+InstallDateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.ChangeDateLabel">
+	<summary>
+ChangeDateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleeveChangeDate">
+	<summary>
+SleeveChangeDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.ChangeDateFormatValidator">
+	<summary>
+ChangeDateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleevePublic">
+	<summary>
+SleevePublic control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SleeveDeliver">
+	<summary>
+SleeveDeliver control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BasePriceLabel">
+	<summary>
+BasePriceLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderBasePrice">
+	<summary>
+OrderBasePrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BasePriceEnteredValidator">
+	<summary>
+BasePriceEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.BasePriceFormatValidator">
+	<summary>
+BasePriceFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderPaymentMethodLabel">
+	<summary>
+OrderPaymentMethodLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderPaymentMethod">
+	<summary>
+OrderPaymentMethod control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderPaymentSource">
+	<summary>
+OrderPaymentSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.DiscountLabel">
+	<summary>
+DiscountLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderDiscount">
+	<summary>
+OrderDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.DiscountName">
+	<summary>
+DiscountName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.AmountPaidLabel">
+	<summary>
+AmountPaidLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PaymentAmountPaid">
+	<summary>
+PaymentAmountPaid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.AmountPaidEnteredValidator">
+	<summary>
+AmountPaidEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.AmountPaidFormatValidator">
+	<summary>
+AmountPaidFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PaymentDateLabel">
+	<summary>
+PaymentDateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PaymentDate">
+	<summary>
+PaymentDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PaymentDateEnteredValidator">
+	<summary>
+PaymentDateEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.PaymentDateFormatValidator">
+	<summary>
+PaymentDateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderFirstOccasionLabel">
+	<summary>
+OrderFirstOccasionLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OrderFirstOccasion">
+	<summary>
+OrderFirstOccasion control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.OccasionName">
+	<summary>
+OccasionName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Entry.SubmitButton">
+	<summary>
+SubmitButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.OrderSourceMaintenanceData">
+	<summary>
+OrderSourceMaintenanceData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceNameLabel">
+	<summary>
+SourceNameLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceName">
+	<summary>
+SourceName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceNameEnteredValidator">
+	<summary>
+SourceNameEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceNameFormatValidator">
+	<summary>
+SourceNameFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.NewEntryButton">
+	<summary>
+NewEntryButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PaymentSourceMaintenance.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PaymentSourceMaintenance.PaymentSourceMaintenanceData">
+	<summary>
+PaymentSourceMaintenanceData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Login.ErrorMessage">
+	<summary>
+ErrorMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Login.FailureText">
+	<summary>
+FailureText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Login.Email">
+	<summary>
+Email control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Login.Password">
+	<summary>
+Password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Login.RememberMe">
+	<summary>
+RememberMe control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Login.RegisterHyperLink">
+	<summary>
+RegisterHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Login.OpenAuthLogin">
+	<summary>
+OpenAuthLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Register.ErrorMessage">
+	<summary>
+<<<<<<< HEAD
+Traits control.
+=======
+ErrorMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Register.Email">
+	<summary>
+Email control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Register.Password">
+	<summary>
+Password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Register.ConfirmPassword">
+	<summary>
+ConfirmPassword control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.New_Order.SleeveFormatTable">
+	<summary>
+SleeveFormatTable control.
+=======
+</member><member name="F:OxfordFlags.RegisterExternalLogin.email">
+	<summary>
+email control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.New_Order.SleeveLocationDescriptionLabel">
+	<summary>
+SleeveLocationDescriptionLabel control.
+=======
+</member><member name="F:OxfordFlags.New_Order.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.New_Order.SleeveLocationDescriptionInput">
+	<summary>
+SleeveLocationDescriptionInput control.
+=======
+</member><member name="F:OxfordFlags.New_Order.OrderDateLabel">
+	<summary>
+OrderDateLabel control.
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.OrderDateInput">
+	<summary>
+OrderDateInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.OrderDateFormatValidator">
+	<summary>
+OrderDateFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.OrderBasePriceLabel">
+	<summary>
+OrderBasePriceLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.OrderBasePriceInput">
+	<summary>
+OrderBasePriceInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.OrderBasePriceFormatValidator">
+	<summary>
+OrderBasePriceFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -791,7 +2810,43 @@ BuyerRemoveButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.DisplayImage.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.DisplayImage.SleevesListBox">
+	<summary>
+SleevesListBox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.DisplayImage.SleevesDataSource">
+	<summary>
+SleevesDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.DisplayImage.PlaceHolder1">
+	<summary>
+PlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.RegisterExternalLogin.email">
+=======
 </member><member name="F:OxfordFlags.New_Order.BuyerListBox">
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
 	<summary>
 BuyerListBox control.
 </summary>
@@ -879,7 +2934,139 @@ PropertyOwnerAddressLabel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< HEAD
+</member><member name="F:OxfordFlags.AddPayment.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.SearchLabel">
+	<summary>
+SearchLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.SearchInput">
+	<summary>
+SearchInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.SearchButton">
+	<summary>
+SearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.OrdersListBox">
+	<summary>
+OrdersListBox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.OrdersDataSource">
+	<summary>
+OrdersDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.BuyersLabel">
+	<summary>
+BuyersLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.PropertyOwnerLabel">
+	<summary>
+PropertyOwnerLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.PropertyOwnerAddressLabel">
+	<summary>
+PropertyOwnerAddressLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.AmountDueLabel">
+	<summary>
+AmountDueLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.AmountPaidLabel">
+	<summary>
+AmountPaidLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.PaymentHistoryDataSource">
+	<summary>
+PaymentHistoryDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.PaymentInput">
+	<summary>
+PaymentInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.PaymentDateInput">
+	<summary>
+PaymentDateInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.NewPaymentButton">
+	<summary>
+NewPaymentButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OrderSourceMaintenance.GridView1">
+=======
 </member><member name="F:OxfordFlags.New_Order.PropertyOwnerAddressInput">
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
 	<summary>
 PropertyOwnerAddressInput control.
 </summary>
@@ -1063,6 +3250,30 @@ SleeveLocationDescriptionInput control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.New_Order.SleevePhotoLabel">
+	<summary>
+SleevePhotoLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.SleevePhotoFileUpload">
+	<summary>
+SleevePhotoFileUpload control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.SleevePhotoImageValidator">
+	<summary>
+SleevePhotoImageValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.New_Order.SleeveLatitudeLabel">
 	<summary>
 SleeveLatitudeLabel control.
@@ -1079,838 +3290,7 @@ SleeveLatitudeInput control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveLatitudeFormatValidator">
-	<summary>
-SleeveLatitudeFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveLongitudeLabel">
-	<summary>
-SleeveLongitudeLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveLongitudeInput">
-	<summary>
-SleeveLongitudeInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveLongitudeFormatValidator">
-	<summary>
-SleeveLongitudeFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsNotifiedDateLabel">
-	<summary>
-OupsNotifiedDateLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsNotifiedDateInput">
-	<summary>
-OupsNotifiedDateInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsNotifiedDateFormatValidator">
-	<summary>
-OupsNotifiedDateFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsTicketNumberLabel">
-	<summary>
-OupsTicketNumberLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsTicketNumberInput">
-	<summary>
-OupsTicketNumberInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsTicketNumberFormatValidator">
-	<summary>
-OupsTicketNumberFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsCheckedDateLabel">
-	<summary>
-OupsCheckedDateLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsCheckedDateInput">
-	<summary>
-OupsCheckedDateInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.OupsCheckedDateFormatValidator">
-	<summary>
-OupsCheckedDateFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveInstallDateLabel">
-	<summary>
-SleeveInstallDateLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveInstallDateInput">
-	<summary>
-SleeveInstallDateInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveInstallDateFormatValidator">
-	<summary>
-SleeveInstallDateFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveChangeDateLabel">
-	<summary>
-SleeveChangeDateLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveChangeDateInput">
-	<summary>
-SleeveChangeDateInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveChangeDateFormatValidator">
-	<summary>
-SleeveChangeDateFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleevePublicCheckbox">
-	<summary>
-SleevePublicCheckbox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveDeliverCheckbox">
-	<summary>
-SleeveDeliverCheckbox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveAddButton">
-	<summary>
-SleeveAddButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveRemoveButton">
-	<summary>
-SleeveRemoveButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveListBox">
-	<summary>
-SleeveListBox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SubmitButton">
-	<summary>
-SubmitButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.TabName">
-	<summary>
-TabName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.ForgotPassword.ErrorMessage">
-	<summary>
-ErrorMessage control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.ForgotPassword.FailureText">
-	<summary>
-FailureText control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.ForgotPassword.Email">
-	<summary>
-Email control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYearLabel">
-	<summary>
-SubscriptionYearLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYear">
-	<summary>
-SubscriptionYear control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYearEnteredValidator">
-	<summary>
-SubscriptionYearEnteredValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.FinanceReportInput.SubscriptionYearFormatValidator">
-	<summary>
-SubscriptionYearFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.FinanceReportInput.FinancetReportInputSearchButton">
-	<summary>
-FinancetReportInputSearchButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYearLabel">
-	<summary>
-SubscriptionYearLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYear">
-	<summary>
-SubscriptionYear control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYearEnteredValidator">
-	<summary>
-SubscriptionYearEnteredValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.CustomerReportInput.SubscriptionYearFormatValidator">
-	<summary>
-SubscriptionYearFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.CustomerReportInput.CustomerReportInputSearchButton">
-	<summary>
-CustomerReportInputSearchButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYearLabel">
-	<summary>
-SubscriptionYearLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYear">
-	<summary>
-SubscriptionYear control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYearEnteredValidator">
-	<summary>
-SubscriptionYearEnteredValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.SubscriptionYearFormatValidator">
-	<summary>
-SubscriptionYearFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.NonSubscriberCommunicationInputSearchButton">
-	<summary>
-NonSubscriberCommunicationInputSearchButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.SiteMaster.MainContent">
-	<summary>
-MainContent control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.DisplayImage.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.DisplayImage.SleevesListBox">
-	<summary>
-SleevesListBox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.DisplayImage.SleevesDataSource">
-	<summary>
-SleevesDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.DisplayImage.PlaceHolder1">
-	<summary>
-PlaceHolder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.RegisterExternalLogin.email">
-	<summary>
-email control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.CustomerReportButton">
-	<summary>
-CustomerReportButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.PaymentReportButton">
-	<summary>
-PaymentReportButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.FinanceReportButton">
-	<summary>
-FinanceReportButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.SubcriberCommunicationButton">
-	<summary>
-SubcriberCommunicationButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.NonSubscriberCommunicationButton">
-	<summary>
-NonSubscriberCommunicationButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.RouteReportButton">
-	<summary>
-RouteReportButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.SleeveReportButton">
-	<summary>
-SleeveReportButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.GPSDataButton">
-	<summary>
-GPSDataButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.EmailListDataButton">
-	<summary>
-EmailListDataButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.MailingListButton">
-	<summary>
-MailingListButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.SearchLabel">
-	<summary>
-SearchLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.SearchInput">
-	<summary>
-SearchInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.SearchButton">
-	<summary>
-SearchButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.OrdersListBox">
-	<summary>
-OrdersListBox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.OrdersDataSource">
-	<summary>
-OrdersDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.BuyersLabel">
-	<summary>
-BuyersLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.PropertyOwnerLabel">
-	<summary>
-PropertyOwnerLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.PropertyOwnerAddressLabel">
-	<summary>
-PropertyOwnerAddressLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.AmountDueLabel">
-	<summary>
-AmountDueLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.AmountPaidLabel">
-	<summary>
-AmountPaidLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.GridView1">
-	<summary>
-GridView1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.PaymentHistoryDataSource">
-	<summary>
-PaymentHistoryDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.PaymentInput">
-	<summary>
-PaymentInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.PaymentDateInput">
-	<summary>
-PaymentDateInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.AddPayment.NewPaymentButton">
-	<summary>
-NewPaymentButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.GridView1">
-	<summary>
-GridView1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.OrderSourceMaintenanceData">
-	<summary>
-OrderSourceMaintenanceData control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceNameLabel">
-	<summary>
-SourceNameLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceName">
-	<summary>
-SourceName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceNameEnteredValidator">
-	<summary>
-SourceNameEnteredValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.SourceNameFormatValidator">
-	<summary>
-SourceNameFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OrderSourceMaintenance.NewEntryButton">
-	<summary>
-NewEntryButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Admin.Image1">
-	<summary>
-Image1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Admin.AddNewUserButton">
-	<summary>
-AddNewUserButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Admin.ViewUsersButton">
-	<summary>
-ViewUsersButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Admin.OccasionMaintenanceButton">
-	<summary>
-OccasionMaintenanceButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Admin.PropertyTraitMaintenanceButton">
-	<summary>
-PropertyTraitMaintenanceButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Admin.OrderSourceMaintenanceButton">
-	<summary>
-OrderSourceMaintenanceButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Admin.DiscountMaintanceButton">
-	<summary>
-DiscountMaintanceButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OccasionMaintenance.GridView1">
-	<summary>
-GridView1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OccasionMaintenance.OccasionMaintenanceData">
-	<summary>
-OccasionMaintenanceData control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OccasionMaintenance.OccasionNameLabel">
-	<summary>
-OccasionNameLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OccasionMaintenance.OccasionName">
-	<summary>
-OccasionName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OccasionMaintenance.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OccasionMaintenance.NewEntryButton">
-	<summary>
-NewEntryButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Login.ErrorMessage">
-	<summary>
-ErrorMessage control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Login.FailureText">
-	<summary>
-FailureText control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Login.Email">
-	<summary>
-Email control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Login.Password">
-	<summary>
-Password control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Login.RememberMe">
-	<summary>
-RememberMe control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Login.RegisterHyperLink">
-	<summary>
-RegisterHyperLink control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Login.OpenAuthLogin">
-	<summary>
-OpenAuthLogin control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
+<<<<<<< HEAD
 </member><member name="T:OxfordFlags.ds.spSelectOrderCrossTableDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -2144,77 +3524,81 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
  To modify move field declaration from designer file to code-behind file.
  </remarks>
 </member><member name="F:OxfordFlags.PropertyTraitMaintenance.GridView1">
+=======
+</member><member name="F:OxfordFlags.New_Order.SleeveLatitudeFormatValidator">
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
 	<summary>
-GridView1 control.
+SleeveLatitudeFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.PropertyTraitMaintenance.PropertyTraitMaintenanceData">
+</member><member name="F:OxfordFlags.New_Order.SleeveLongitudeLabel">
 	<summary>
-PropertyTraitMaintenanceData control.
+SleeveLongitudeLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescriptionLabel">
+</member><member name="F:OxfordFlags.New_Order.SleeveLongitudeInput">
 	<summary>
-TraitDescriptionLabel control.
+SleeveLongitudeInput control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescription">
+</member><member name="F:OxfordFlags.New_Order.SleeveLongitudeFormatValidator">
 	<summary>
-TraitDescription control.
+SleeveLongitudeFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescriptionEnteredValidator">
+</member><member name="F:OxfordFlags.New_Order.OupsNotifiedDateLabel">
 	<summary>
-TraitDescriptionEnteredValidator control.
+OupsNotifiedDateLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.PropertyTraitMaintenance.TraitDescriptionFormatValidator">
+</member><member name="F:OxfordFlags.New_Order.OupsNotifiedDateInput">
 	<summary>
-TraitDescriptionFormatValidator control.
+OupsNotifiedDateInput control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.PropertyTraitMaintenance.Label1">
+</member><member name="F:OxfordFlags.New_Order.OupsNotifiedDateFormatValidator">
 	<summary>
-Label1 control.
+OupsNotifiedDateFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.PropertyTraitMaintenance.NewEntryButton">
+</member><member name="F:OxfordFlags.New_Order.OupsTicketNumberLabel">
 	<summary>
-NewEntryButton control.
+OupsTicketNumberLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Confirm.status">
+</member><member name="F:OxfordFlags.New_Order.OupsTicketNumberInput">
 	<summary>
-status control.
+OupsTicketNumberInput control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< HEAD
 </member><member name="F:OxfordFlags.EditRouteColor.UpdatePanel1">
 	<summary>
 UpdatePanel1 control.
@@ -2280,134 +3664,145 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.Site_Mobile.Head1">
+=======
+</member><member name="F:OxfordFlags.New_Order.OupsTicketNumberFormatValidator">
+>>>>>>> d43211caf30e3e21f38151acde032d00321094fa
 	<summary>
-Head1 control.
+OupsTicketNumberFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Site_Mobile.HeadContent">
+</member><member name="F:OxfordFlags.New_Order.OupsCheckedDateLabel">
 	<summary>
-HeadContent control.
+OupsCheckedDateLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Site_Mobile.form1">
+</member><member name="F:OxfordFlags.New_Order.OupsCheckedDateInput">
 	<summary>
-form1 control.
+OupsCheckedDateInput control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Site_Mobile.FeaturedContent">
+</member><member name="F:OxfordFlags.New_Order.OupsCheckedDateFormatValidator">
 	<summary>
-FeaturedContent control.
+OupsCheckedDateFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Site_Mobile.MainContent">
+</member><member name="F:OxfordFlags.New_Order.SleeveInstallDateLabel">
 	<summary>
-MainContent control.
+SleeveInstallDateLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Site_Mobile.ViewSwitcher1">
+</member><member name="F:OxfordFlags.New_Order.SleeveInstallDateInput">
 	<summary>
-ViewSwitcher1 control.
+SleeveInstallDateInput control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Main_Menu.NewOrderButton">
+</member><member name="F:OxfordFlags.New_Order.SleeveInstallDateFormatValidator">
 	<summary>
-NewOrderButton control.
+SleeveInstallDateFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Main_Menu.SearchButton">
+</member><member name="F:OxfordFlags.New_Order.SleeveChangeDateLabel">
 	<summary>
-SearchButton control.
+SleeveChangeDateLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Main_Menu.ReportsButton">
+</member><member name="F:OxfordFlags.New_Order.SleeveChangeDateInput">
 	<summary>
-ReportsButton control.
+SleeveChangeDateInput control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Main_Menu.AdminButton">
+</member><member name="F:OxfordFlags.New_Order.SleeveChangeDateFormatValidator">
 	<summary>
-AdminButton control.
+SleeveChangeDateFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.SearchNameLabel">
+</member><member name="F:OxfordFlags.New_Order.SleevePublicCheckbox">
 	<summary>
-SearchNameLabel control.
+SleevePublicCheckbox control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.SearchName">
+</member><member name="F:OxfordFlags.New_Order.SleeveDeliverCheckbox">
 	<summary>
-SearchName control.
+SleeveDeliverCheckbox control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.SearchButton">
+</member><member name="F:OxfordFlags.New_Order.SleeveAddButton">
 	<summary>
-SearchButton control.
+SleeveAddButton control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.Label1">
+</member><member name="F:OxfordFlags.New_Order.SleeveRemoveButton">
 	<summary>
-Label1 control.
+SleeveRemoveButton control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.DataList1">
+</member><member name="F:OxfordFlags.New_Order.SleeveListBox">
 	<summary>
-DataList1 control.
+SleeveListBox control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.SqlDataSource1">
+</member><member name="F:OxfordFlags.New_Order.SubmitButton">
 	<summary>
-SqlDataSource1 control.
+SubmitButton control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYearLabel">
+</member><member name="F:OxfordFlags.New_Order.TabName">
+	<summary>
+TabName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.RouteReportInput.SubscriptionYearLabel">
 	<summary>
 SubscriptionYearLabel control.
 </summary>
@@ -2415,33 +3810,25 @@ SubscriptionYearLabel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYear">
+</member><member name="F:OxfordFlags.RouteReportInput.DropDownList1">
 	<summary>
-SubscriptionYear control.
+DropDownList1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYearEnteredValidator">
+</member><member name="F:OxfordFlags.RouteReportInput.RouteReportInputData">
 	<summary>
-SubscriptionYearEnteredValidator control.
+RouteReportInputData control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriptionYearFormatValidator">
+</member><member name="F:OxfordFlags.RouteReportInput.PaymentReportInputSearchButton">
 	<summary>
-SubscriptionYearFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.SubscriberCommunicationInput.SubscriberCommunicationInputSearchButton">
-	<summary>
-SubscriberCommunicationInputSearchButton control.
+PaymentReportInputSearchButton control.
 </summary>
 	<remarks>
 Auto-generated field.
