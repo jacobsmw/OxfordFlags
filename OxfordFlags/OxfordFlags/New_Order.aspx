@@ -27,10 +27,20 @@
                         </asp:CompareValidator>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderBasePriceLabel" runat="server" Text="Base Price: "></asp:Label>
-                        <asp:TextBox ID="OrderBasePriceInput" runat="server"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="OrderBasePriceFormatValidator" runat="server"
-                            ControlToValidate="OrderBasePriceInput"
+                        <asp:Label ID="OrderCostLabel" runat="server" Text="Cost: "></asp:Label>
+                        <asp:TextBox ID="OrderCostInput" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="OrderCostFormatValidator" runat="server"
+                            ControlToValidate="OrderCostInput"
+                            ErrorMessage="You must enter a valid price."
+                            ForeColor="Red"
+                            ValidationExpression="^\d+(\.\d\d)?$">
+                        </asp:RegularExpressionValidator>
+                    </div>
+                    <div class="form-group">
+                        <asp:Label ID="OrderAmountPaidLabel" runat="server" Text="Amount Paid: "></asp:Label>
+                        <asp:TextBox ID="OrderAmountPaidInput" runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="OrderAmountPaidFormatValidator" runat="server"
+                            ControlToValidate="OrderAmountPaidInput"
                             ErrorMessage="You must enter a valid price."
                             ForeColor="Red"
                             ValidationExpression="^\d+(\.\d\d)?$">
@@ -377,13 +387,6 @@
                             <div class="form-group">
                                 <asp:Label ID="SleeveLocationDescriptionLabel" runat="server" Text="Location Desciption:"></asp:Label>
                                 <asp:TextBox ID="SleeveLocationDescriptionInput" runat="server" Height="89px" Width="864px"></asp:TextBox>
-                            </div>
-                            <div class="form-group">
-                                <asp:Label ID="SleevePhotoLabel" runat="server" Text="Photo"></asp:Label>
-                                <div id="uploadArea">
-                                    <asp:FileUpload ID="SleevePhotoFileUpload" type="file" runat="server" />
-                                    <asp:RegularExpressionValidator ID="SleevePhotoImageValidator" runat="server" ControlToValidate="SleevePhotoFileUpload" ErrorMessage="Accepts only .jpg, .jpeg, .png, and .bmp file types" ForeColor="Red" ValidationExpression="(.+\.([Jj][Pp][Gg])|.+\.([Jj][Pp][Ee][Gg])|.+\.([Pp][Nn][Gg])|.+\.([Bb][Mm][Pp]))"></asp:RegularExpressionValidator>
-                                </div>
                             </div>
                             <div class="form-group">
                                 <asp:Label ID="SleeveLatitudeLabel" runat="server" Text="Latitude"></asp:Label>

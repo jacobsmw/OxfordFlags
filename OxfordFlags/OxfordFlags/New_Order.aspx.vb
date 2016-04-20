@@ -42,7 +42,6 @@ Public Class New_Order
     Protected Class Sleeve
         Public Id As Integer
         Public LocationDescription As String
-        Public Photo As Byte()
         Public Latitude As Double
         Public Longitude As Double
         Public InstallDate As Date
@@ -50,12 +49,11 @@ Public Class New_Order
         Public PublicSleeve As Boolean
         Public Deliver As Boolean
 
-        Public Sub New(Id As Integer, LocationDescription As String, Photo As Byte(), _
+        Public Sub New(Id As Integer, LocationDescription As String, _
                        Latitude As Double, Longitude As Double, InstallDate As Date, _
                        ChangeDate As Date, PublicSleeve As Boolean, Deliver As Boolean)
             Me.Id = Id
             Me.LocationDescription = LocationDescription
-            Me.Photo = Photo
             Me.Latitude = Latitude
             Me.Longitude = Longitude
             Me.InstallDate = InstallDate
@@ -68,7 +66,6 @@ Public Class New_Order
             Return String.Format("Sleeve")
         End Function
     End Class
-
 
 
     ' Database connection
@@ -100,6 +97,7 @@ Public Class New_Order
     Protected Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
 
         HandleOrder()
+        HandlePayment()
         HandleBuyers()
         HandlePropertyOwner()
         HandlePropertyTraits()
@@ -114,9 +112,16 @@ Public Class New_Order
 
     Protected Sub HandleOrder()
         tbl.spAddNewOrder(OrderId, OrderDateInput.Text, OrderSourceDropDownList.SelectedValue, _
-                          OrderSubscriptionYearInput.Text, OrderBasePriceInput.Text, _
+                          OrderSubscriptionYearInput.Text, OrderCostInput.Text, _
                           OrderDiscountDropDownList.SelectedValue, "Online", OrderDateInput.Text, _
                           OrderFirstOccasionDropDownList.SelectedValue)
+    End Sub
+
+    ' <--------------------Payment---------------------->
+
+    Protected Sub HandlePayment()
+        Dim PaymentID As Integer
+        tbl.spAddNewPayment(PaymentID, OrderId, OrderAmountPaidInput.Text, OrderDateInput.Text)
     End Sub
 
     ' <--------------------Buyer---------------------->
@@ -126,6 +131,7 @@ Public Class New_Order
             If b.Id = 0 Then
                 tbl.spAddNewBuyer(b.Id, b.LastName, b.FirstName, b.Address, b.City, b.State, b.ZipCode, b.Email, b.Phone, "Online", b.RotaryMember)
             End If
+            tbl.spAddNewBuyerOrder(b.Id, OrderId)
         Next
     End Sub
 
@@ -224,18 +230,11 @@ Public Class New_Order
     Protected Sub HandleSleeves()
         For Each s As Sleeve In SleeveList
             tbl.spAddNewSleeve(s.Id, True, OrderId, PropertyOwnerId, s.LocationDescription, s.Latitude, s.Longitude, OupsId, s.InstallDate, s.ChangeDate, s.PublicSleeve, s.Deliver, OrderDateInput.Text)
-            If s.Photo.Length > 0 Then
-                tbl.spAddNewPhoto(s.Id, s.Photo)
-            End If
         Next
     End Sub
 
     Protected Sub HandleAddSleeve() Handles SleeveAddButton.Click
-        Dim photo(0) As Byte
-        If (SleevePhotoFileUpload.HasFile) Then
-            photo = SleevePhotoFileUpload.FileBytes
-        End If
-        SleeveList.Add(New Sleeve(0, SleeveLocationDescriptionInput.Text, photo, _
+        SleeveList.Add(New Sleeve(0, SleeveLocationDescriptionInput.Text, _
                                   SleeveLatitudeInput.Text, SleeveLongitudeInput.Text, SleeveInstallDateInput.Text, _
                                   SleeveChangeDateInput.Text, SleevePublicCheckbox.Checked, SleeveDeliverCheckbox.Checked))
         ViewState("sleeves") = SleeveList
@@ -257,7 +256,6 @@ Public Class New_Order
         SleeveChangeDateInput.Text = ""
         SleevePublicCheckbox.Checked = False
         SleeveDeliverCheckbox.Checked = True
-        SleevePhotoFileUpload = New FileUpload()
     End Sub
 
     ' <--------------------Oups---------------------->

@@ -181,6 +181,8 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="AddPayment.aspx" />
+    <Content Include="AddPhoto.aspx" />
     <Content Include="Admin.aspx" />
     <Content Include="App_Data\OxfordFlags.mdf" />
     <Content Include="App_Data\OxfordFlags_log.ldf">
@@ -192,10 +194,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="CustomerReportInput.aspx" />
     <Content Include="DiscountMaintenance.aspx" />
+    <Content Include="DisplayImage.aspx" />
+    <Content Include="EditRouteColor.aspx" />
+    <Content Include="EditRouteOrder.aspx" />
     <Content Include="FinanceReportInput.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Main_Menu.aspx" />
-    <Content Include="New_Entry.aspx" />
     <Content Include="New_Order.aspx" />
     <Content Include="NonSubscriberCommunicationInput.aspx" />
     <Content Include="OccasionMaintenance.aspx" />
@@ -331,6 +335,20 @@
       <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="AddPayment.aspx.designer.vb">
+      <DependentUpon>AddPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPayment.aspx.vb">
+      <DependentUpon>AddPayment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AddPhoto.aspx.designer.vb">
+      <DependentUpon>AddPhoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPhoto.aspx.vb">
+      <DependentUpon>AddPhoto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Admin.aspx.designer.vb">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
@@ -377,10 +395,31 @@
       <DependentUpon>DiscountMaintenance.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="DisplayImage.aspx.designer.vb">
+      <DependentUpon>DisplayImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayImage.aspx.vb">
+      <DependentUpon>DisplayImage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="ds.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditRouteColor.aspx.designer.vb">
+      <DependentUpon>EditRouteColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditRouteColor.aspx.vb">
+      <DependentUpon>EditRouteColor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EditRouteOrder.aspx.designer.vb">
+      <DependentUpon>EditRouteOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditRouteOrder.aspx.vb">
+      <DependentUpon>EditRouteOrder.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="FinanceReportInput.aspx.designer.vb">
       <DependentUpon>FinanceReportInput.aspx</DependentUpon>
@@ -418,13 +457,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="New_Entry.aspx.designer.vb">
-      <DependentUpon>New_Entry.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="New_Entry.aspx.vb">
-      <DependentUpon>New_Entry.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="New_Order.aspx.designer.vb">
       <DependentUpon>New_Order.aspx</DependentUpon>
@@ -541,7 +573,9 @@
     <Content Include="Site.Mobile.Master" />
     <Content Include="ViewSwitcher.ascx" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

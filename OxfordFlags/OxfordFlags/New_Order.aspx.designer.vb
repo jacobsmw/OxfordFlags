@@ -50,31 +50,58 @@ Partial Public Class New_Order
     Protected WithEvents OrderDateFormatValidator As Global.System.Web.UI.WebControls.CompareValidator
 
     '''<summary>
-    '''OrderBasePriceLabel control.
+    '''OrderCostLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OrderBasePriceLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents OrderCostLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''OrderBasePriceInput control.
+    '''OrderCostInput control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OrderBasePriceInput As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OrderCostInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''OrderBasePriceFormatValidator control.
+    '''OrderCostFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OrderBasePriceFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents OrderCostFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''OrderAmountPaidLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderAmountPaidLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OrderAmountPaidInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderAmountPaidInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''OrderAmountPaidFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderAmountPaidFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''OrderDiscountLabel control.
@@ -759,33 +786,6 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SleeveLocationDescriptionInput As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''SleevePhotoLabel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SleevePhotoLabel As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''SleevePhotoFileUpload control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SleevePhotoFileUpload As Global.System.Web.UI.WebControls.FileUpload
-
-    '''<summary>
-    '''SleevePhotoImageValidator control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SleevePhotoImageValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''SleeveLatitudeLabel control.
