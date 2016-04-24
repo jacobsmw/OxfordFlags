@@ -234,148 +234,166 @@
 
                 <div id="PropertyOwnerInfo" role="tabpanel" class="tab-pane fade">
                     <h1>Property Owner Information</h1>
-                    <div id="PropertyOwnerForm">
-                        <asp:Label ID="PropertyOwnerLabel" runat="server" Text="Property Owner: "></asp:Label>
-                        <asp:DropDownList ID="PropertyOwnerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PropertyOwnerSource" DataTextField="Name" DataValueField="PropertyOwnerID">
-                            <asp:ListItem Value="0">New</asp:ListItem>
-                        </asp:DropDownList>
-                        <asp:SqlDataSource ID="PropertyOwnerSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT PropertyOwnerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [PropertyOwner]"></asp:SqlDataSource>
+                    <asp:Table ID="PropertyOwnerFormatTable" runat="server">
+                        <asp:TableRow>
+                            <asp:TableCell>
+                                <div id="PropertyOwnerForm">
+                                    <asp:Label ID="PropertyOwnerLabel" runat="server" Text="Property Owner: "></asp:Label>
+                                    <asp:DropDownList ID="PropertyOwnerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PropertyOwnerSource" DataTextField="Name" DataValueField="PropertyOwnerID">
+                                        <asp:ListItem Value="0">New</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:SqlDataSource ID="PropertyOwnerSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT PropertyOwnerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [PropertyOwner]"></asp:SqlDataSource>
             
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerFirstNameLabel" runat="server" Text="First Name: "></asp:Label>
-                            <asp:TextBox ID="PropertyOwnerFirstNameInput" runat="server"></asp:TextBox>
-                            <asp:RegularExpressionValidator ID="PropertyOwnerFirstNameFormatValidator" runat="server"
-                                ControlToValidate="PropertyOwnerFirstNameInput"
-                                ErrorMessage="You must enter a valid first name."
-                                ForeColor="Red"
-                                ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
-                            </asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerLastNameLabel" runat="server" Text="Last Name: "></asp:Label>
-                            <asp:TextBox ID="PropertyOwnerLastNameInput" runat="server"></asp:TextBox>
-                            <asp:RegularExpressionValidator ID="PropertyOwnerLastNameFormatValidator" runat="server"
-                                ControlToValidate="PropertyOwnerLastNameInput"
-                                ErrorMessage="You must enter a valid last name."
-                                ForeColor="Red"
-                                ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
-                            </asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerAddressLabel" runat="server" Text="Address: "></asp:Label>
-                            <asp:TextBox ID="PropertyOwnerAddressInput" runat="server"></asp:TextBox>
-                            <asp:RegularExpressionValidator ID="PropertyOwnerAddressFormatValidator" runat="server"
-                                ControlToValidate="PropertyOwnerAddressInput"
-                                ErrorMessage="You must enter a valid address."
-                                ForeColor="Red"
-                                ValidationExpression="^[a-zA-Z0-9''-'\s]{0,50}$">
-                            </asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerCityLabel" runat="server" Text="City: "></asp:Label>
-                            <asp:TextBox ID="PropertyOwnerCityInput" runat="server"></asp:TextBox>
-                            <asp:RegularExpressionValidator ID="PropertyOwnerCityFormatValidator" runat="server"
-                                ControlToValidate="PropertyOwnerCityInput"
-                                ErrorMessage="You must enter a valid city."
-                                ForeColor="Red"
-                                ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
-                            </asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerStateLabel" runat="server" Text="State: "></asp:Label>
-                            <asp:DropDownList ID="PropertyOwnerStateDropDownList" runat="server">
-                                <asp:ListItem>AL</asp:ListItem>
-                                <asp:ListItem>AK</asp:ListItem>
-                                <asp:ListItem>AZ</asp:ListItem>
-                                <asp:ListItem>AR</asp:ListItem>
-                                <asp:ListItem>CA</asp:ListItem>
-                                <asp:ListItem>CO</asp:ListItem>
-                                <asp:ListItem>CT</asp:ListItem>
-                                <asp:ListItem>DE</asp:ListItem>
-                                <asp:ListItem>DC</asp:ListItem>
-                                <asp:ListItem>FL</asp:ListItem>
-                                <asp:ListItem>GA</asp:ListItem>
-                                <asp:ListItem>HI</asp:ListItem>
-                                <asp:ListItem>ID</asp:ListItem>
-                                <asp:ListItem>IL</asp:ListItem>
-                                <asp:ListItem>IN</asp:ListItem>
-                                <asp:ListItem>IA</asp:ListItem>
-                                <asp:ListItem>KS</asp:ListItem>
-                                <asp:ListItem>KY</asp:ListItem>
-                                <asp:ListItem>LA</asp:ListItem>
-                                <asp:ListItem>ME</asp:ListItem>
-                                <asp:ListItem>MD</asp:ListItem>
-                                <asp:ListItem>MA</asp:ListItem>
-                                <asp:ListItem>MI</asp:ListItem>
-                                <asp:ListItem>MN</asp:ListItem>
-                                <asp:ListItem>MS</asp:ListItem>
-                                <asp:ListItem>MO</asp:ListItem>
-                                <asp:ListItem>MT</asp:ListItem>
-                                <asp:ListItem>NE</asp:ListItem>
-                                <asp:ListItem>NV</asp:ListItem>
-                                <asp:ListItem>NH</asp:ListItem>
-                                <asp:ListItem>NJ</asp:ListItem>
-                                <asp:ListItem>NM</asp:ListItem>
-                                <asp:ListItem>NY</asp:ListItem>
-                                <asp:ListItem>NC</asp:ListItem>
-                                <asp:ListItem>ND</asp:ListItem>
-                                <asp:ListItem Selected="True">OH</asp:ListItem>
-                                <asp:ListItem>OK</asp:ListItem>
-                                <asp:ListItem>OR</asp:ListItem>
-                                <asp:ListItem>PA</asp:ListItem>
-                                <asp:ListItem>RI</asp:ListItem>
-                                <asp:ListItem>SC</asp:ListItem>
-                                <asp:ListItem>SD</asp:ListItem>
-                                <asp:ListItem>TN</asp:ListItem>
-                                <asp:ListItem>TX</asp:ListItem>
-                                <asp:ListItem>UT</asp:ListItem>
-                                <asp:ListItem>VT</asp:ListItem>
-                                <asp:ListItem>VA</asp:ListItem>
-                                <asp:ListItem>WA</asp:ListItem>
-                                <asp:ListItem>WV</asp:ListItem>
-                                <asp:ListItem>WI</asp:ListItem>
-                                <asp:ListItem>WY</asp:ListItem>
-                            </asp:DropDownList>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerZipCodeLabel" runat="server" Text="Zip Code: "></asp:Label>
-                            <asp:TextBox ID="PropertyOwnerZipCodeInput" runat="server"></asp:TextBox>
-                            <asp:RegularExpressionValidator ID="PropertyOwnerZipCodeFormatValidator" runat="server"
-                                ControlToValidate="PropertyOwnerZipCodeInput"
-                                ErrorMessage="You must enter a valid zip code"
-                                ForeColor="Red"
-                                ValidationExpression="[0-9]{5}">
-                            </asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerEmailLabel" runat="server" Text="Email: "></asp:Label>
-                            <asp:TextBox ID="PropertyOwnerEmailInput" runat="server"></asp:TextBox>
-                            <asp:RegularExpressionValidator ID="PropertyOwnerEmailFormatValidator" runat="server"
-                                ControlToValidate="PropertyOwnerEmailInput"
-                                ErrorMessage="You must enter a valid email."
-                                ForeColor="Red"
-                                ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
-                            </asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyOwnerPhoneLabel" runat="server" Text="Phone: "></asp:Label>
-                            <asp:TextBox ID="PropertyOwnerPhoneInput" runat="server"></asp:TextBox>
-                            <asp:RegularExpressionValidator ID="PropertyOwnerPhoneFormatValidator" runat="server"
-                                ControlToValidate="PropertyOwnerPhoneInput"
-                                ErrorMessage="You must enter a valid phone number"
-                                ForeColor="Red"
-                                ValidationExpression="^[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$">
-                            </asp:RegularExpressionValidator>
-                        </div>
-                        <div class="form-group">
-                            <asp:CheckBox ID="PropertyOwnerRotaryMemberInput" runat="server" Text="Rotary Member" TextAlign="Left" />
-                        </div>
-                        <div class="form-group">
-                            <asp:Label ID="PropertyTraitsLabel" runat="server" Text="Property Traits"></asp:Label>
-                            <asp:CheckBoxList ID="PropertyTraits" runat="server" DataSourceID="Traits" DataTextField="TraitDescription" DataValueField="TraitID"></asp:CheckBoxList>
-                            <asp:SqlDataSource ID="Traits" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitID], [TraitDescription] FROM [Trait]"></asp:SqlDataSource>
-                        </div>
-                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerFirstNameLabel" runat="server" Text="First Name: "></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerFirstNameInput" runat="server"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="PropertyOwnerFirstNameFormatValidator" runat="server"
+                                            ControlToValidate="PropertyOwnerFirstNameInput"
+                                            ErrorMessage="You must enter a valid first name."
+                                            ForeColor="Red"
+                                            ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
+                                        </asp:RegularExpressionValidator>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerLastNameLabel" runat="server" Text="Last Name: "></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerLastNameInput" runat="server"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="PropertyOwnerLastNameFormatValidator" runat="server"
+                                            ControlToValidate="PropertyOwnerLastNameInput"
+                                            ErrorMessage="You must enter a valid last name."
+                                            ForeColor="Red"
+                                            ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
+                                        </asp:RegularExpressionValidator>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerAddressLabel" runat="server" Text="Address: "></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerAddressInput" runat="server"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="PropertyOwnerAddressFormatValidator" runat="server"
+                                            ControlToValidate="PropertyOwnerAddressInput"
+                                            ErrorMessage="You must enter a valid address."
+                                            ForeColor="Red"
+                                            ValidationExpression="^[a-zA-Z0-9''-'\s]{0,50}$">
+                                        </asp:RegularExpressionValidator>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerCityLabel" runat="server" Text="City: "></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerCityInput" runat="server"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="PropertyOwnerCityFormatValidator" runat="server"
+                                            ControlToValidate="PropertyOwnerCityInput"
+                                            ErrorMessage="You must enter a valid city."
+                                            ForeColor="Red"
+                                            ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
+                                        </asp:RegularExpressionValidator>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerStateLabel" runat="server" Text="State: "></asp:Label>
+                                        <asp:DropDownList ID="PropertyOwnerStateDropDownList" runat="server">
+                                            <asp:ListItem>AL</asp:ListItem>
+                                            <asp:ListItem>AK</asp:ListItem>
+                                            <asp:ListItem>AZ</asp:ListItem>
+                                            <asp:ListItem>AR</asp:ListItem>
+                                            <asp:ListItem>CA</asp:ListItem>
+                                            <asp:ListItem>CO</asp:ListItem>
+                                            <asp:ListItem>CT</asp:ListItem>
+                                            <asp:ListItem>DE</asp:ListItem>
+                                            <asp:ListItem>DC</asp:ListItem>
+                                            <asp:ListItem>FL</asp:ListItem>
+                                            <asp:ListItem>GA</asp:ListItem>
+                                            <asp:ListItem>HI</asp:ListItem>
+                                            <asp:ListItem>ID</asp:ListItem>
+                                            <asp:ListItem>IL</asp:ListItem>
+                                            <asp:ListItem>IN</asp:ListItem>
+                                            <asp:ListItem>IA</asp:ListItem>
+                                            <asp:ListItem>KS</asp:ListItem>
+                                            <asp:ListItem>KY</asp:ListItem>
+                                            <asp:ListItem>LA</asp:ListItem>
+                                            <asp:ListItem>ME</asp:ListItem>
+                                            <asp:ListItem>MD</asp:ListItem>
+                                            <asp:ListItem>MA</asp:ListItem>
+                                            <asp:ListItem>MI</asp:ListItem>
+                                            <asp:ListItem>MN</asp:ListItem>
+                                            <asp:ListItem>MS</asp:ListItem>
+                                            <asp:ListItem>MO</asp:ListItem>
+                                            <asp:ListItem>MT</asp:ListItem>
+                                            <asp:ListItem>NE</asp:ListItem>
+                                            <asp:ListItem>NV</asp:ListItem>
+                                            <asp:ListItem>NH</asp:ListItem>
+                                            <asp:ListItem>NJ</asp:ListItem>
+                                            <asp:ListItem>NM</asp:ListItem>
+                                            <asp:ListItem>NY</asp:ListItem>
+                                            <asp:ListItem>NC</asp:ListItem>
+                                            <asp:ListItem>ND</asp:ListItem>
+                                            <asp:ListItem Selected="True">OH</asp:ListItem>
+                                            <asp:ListItem>OK</asp:ListItem>
+                                            <asp:ListItem>OR</asp:ListItem>
+                                            <asp:ListItem>PA</asp:ListItem>
+                                            <asp:ListItem>RI</asp:ListItem>
+                                            <asp:ListItem>SC</asp:ListItem>
+                                            <asp:ListItem>SD</asp:ListItem>
+                                            <asp:ListItem>TN</asp:ListItem>
+                                            <asp:ListItem>TX</asp:ListItem>
+                                            <asp:ListItem>UT</asp:ListItem>
+                                            <asp:ListItem>VT</asp:ListItem>
+                                            <asp:ListItem>VA</asp:ListItem>
+                                            <asp:ListItem>WA</asp:ListItem>
+                                            <asp:ListItem>WV</asp:ListItem>
+                                            <asp:ListItem>WI</asp:ListItem>
+                                            <asp:ListItem>WY</asp:ListItem>
+                                        </asp:DropDownList>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerZipCodeLabel" runat="server" Text="Zip Code: "></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerZipCodeInput" runat="server"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="PropertyOwnerZipCodeFormatValidator" runat="server"
+                                            ControlToValidate="PropertyOwnerZipCodeInput"
+                                            ErrorMessage="You must enter a valid zip code"
+                                            ForeColor="Red"
+                                            ValidationExpression="[0-9]{5}">
+                                        </asp:RegularExpressionValidator>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerEmailLabel" runat="server" Text="Email: "></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerEmailInput" runat="server"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="PropertyOwnerEmailFormatValidator" runat="server"
+                                            ControlToValidate="PropertyOwnerEmailInput"
+                                            ErrorMessage="You must enter a valid email."
+                                            ForeColor="Red"
+                                            ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
+                                        </asp:RegularExpressionValidator>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyOwnerPhoneLabel" runat="server" Text="Phone: "></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerPhoneInput" runat="server"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="PropertyOwnerPhoneFormatValidator" runat="server"
+                                            ControlToValidate="PropertyOwnerPhoneInput"
+                                            ErrorMessage="You must enter a valid phone number"
+                                            ForeColor="Red"
+                                            ValidationExpression="^[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$">
+                                        </asp:RegularExpressionValidator>
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:CheckBox ID="PropertyOwnerRotaryMemberInput" runat="server" Text="Rotary Member" TextAlign="Left" />
+                                    </div>
+                                    <div class="form-group">
+                                        <asp:Label ID="PropertyTraitsLabel" runat="server" Text="Property Traits"></asp:Label>
+                                        <asp:CheckBoxList ID="PropertyTraits" runat="server" DataSourceID="Traits" DataTextField="TraitDescription" DataValueField="TraitID"></asp:CheckBoxList>
+                                        <asp:SqlDataSource ID="Traits" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [TraitID], [TraitDescription] FROM [Trait]"></asp:SqlDataSource>
+                                    </div>
+                                </div>
+                            </asp:TableCell>
+                            <asp:TableCell>
+                                <div id="PropertyOwnerButtons">
+                                    <asp:Button ID="PropertyOwnerAddButton" runat="server" CssClass="btn btn-primary" Text="Add" />
+                                    <br />
+                                    <asp:Button ID="PropertyOwnerRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" />
+                                </div>
+                            </asp:TableCell>
+                            <asp:TableCell>
+                                <div id="PropertyOwnerDisplay">
+                                    <asp:ListBox ID="PropertyOwnerListBox" runat="server" Width="200px"></asp:ListBox>
+                                </div>
+                            </asp:TableCell>
+                        </asp:TableRow>    
+                    </asp:Table>
                 </div>
 
                 <div id="SleeveInfo" role="tabpanel" class="tab-pane fade">
@@ -384,6 +402,9 @@
                     <asp:TableRow>
                         <asp:TableCell>
                         <div id="SleeveForm">
+                            <div class="form-group">
+                                Property: <asp:DropDownList ID="SleevePropertyDropDownList" runat="server"></asp:DropDownList>
+                            </div>
                             <div class="form-group">
                                 <asp:Label ID="SleeveLocationDescriptionLabel" runat="server" Text="Location Desciption:"></asp:Label>
                                 <asp:TextBox ID="SleeveLocationDescriptionInput" runat="server" Height="89px" Width="864px"></asp:TextBox>
