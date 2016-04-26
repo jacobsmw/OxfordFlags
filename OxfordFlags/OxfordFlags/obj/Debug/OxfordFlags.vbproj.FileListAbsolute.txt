@@ -467,6 +467,7 @@ C:\Users\gardnedn\Downloads\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\Oxford
 C:\Users\gardnedn\Downloads\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.dll
 C:\Users\gardnedn\Downloads\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\WebForms_Basic.xml
 C:\Users\gardnedn\Downloads\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.pdb
+<<<<<<< HEAD
 =======
 D:\OxfordFlags\OxfordFlags\OxfordFlags\bin\OxfordFlags.dll
 D:\OxfordFlags\OxfordFlags\OxfordFlags\bin\OxfordFlags.pdb
@@ -533,3 +534,15 @@ D:\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.dll
 D:\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\WebForms_Basic.xml
 D:\OxfordFlags\OxfordFlags\OxfordFlags\obj\Debug\OxfordFlags.pdb
 >>>>>>> Stashed changes
+=======
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.Helpers.dll
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.Razor.dll
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.WebPages.Deployment.dll
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.WebPages.dll
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.WebPages.Razor.dll
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.Helpers.xml
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.Razor.xml
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.WebPages.xml
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.WebPages.Deployment.xml
+C:\Users\max_s_000\Documents\GitHub\OxfordFlags\OxfordFlags\OxfordFlags\bin\System.Web.WebPages.Razor.xml
+>>>>>>> origin/master

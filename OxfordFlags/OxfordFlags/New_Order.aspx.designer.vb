@@ -491,6 +491,15 @@ Partial Public Class New_Order
     Protected WithEvents BuyerListBox As Global.System.Web.UI.WebControls.ListBox
 
     '''<summary>
+    '''PropertyOwnerFormatTable control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerFormatTable As Global.System.Web.UI.WebControls.Table
+
+    '''<summary>
     '''PropertyOwnerLabel control.
     '''</summary>
     '''<remarks>
@@ -761,6 +770,33 @@ Partial Public Class New_Order
     Protected WithEvents Traits As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
+    '''PropertyOwnerAddButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerAddButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''PropertyOwnerRemoveButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerRemoveButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''PropertyOwnerListBox control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PropertyOwnerListBox As Global.System.Web.UI.WebControls.ListBox
+
+    '''<summary>
     '''SleeveFormatTable control.
     '''</summary>
     '''<remarks>
@@ -768,6 +804,15 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SleeveFormatTable As Global.System.Web.UI.WebControls.Table
+
+    '''<summary>
+    '''SleevePropertyDropDownList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleevePropertyDropDownList As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''SleeveLocationDescriptionLabel control.

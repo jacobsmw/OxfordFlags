@@ -39,8 +39,45 @@ Public Class New_Order
     End Class
 
     <Serializable()> _
+    Protected Class PropertyOwner
+        Public Id As Integer
+        Public FirstName As String
+        Public LastName As String
+        Public Address As String
+        Public City As String
+        Public State As String
+        Public ZipCode As String
+        Public Email As String
+        Public Phone As String
+        Public RotaryMember As Boolean
+        Public Traits As List(Of Integer)
+
+        Public Sub New(Id As Integer, FirstName As String, LastName As String, _
+                          Address As String, City As String, State As String, _
+                          ZipCode As String, Email As String, Phone As String, _
+                          RotaryMember As Boolean, Traits As List(Of Integer))
+            Me.Id = Id
+            Me.FirstName = FirstName
+            Me.LastName = LastName
+            Me.Address = Address
+            Me.City = City
+            Me.State = State
+            Me.ZipCode = ZipCode
+            Me.Email = Email
+            Me.Phone = Phone
+            Me.RotaryMember = RotaryMember
+            Me.Traits = Traits
+        End Sub
+
+        Public Overrides Function ToString() As String
+            Return String.Format("{0}, {1}", LastName, FirstName)
+        End Function
+    End Class
+
+    <Serializable()> _
     Protected Class Sleeve
         Public Id As Integer
+        Public PropertyOwnerIndex As Integer
         Public LocationDescription As String
         Public Latitude As Double
         Public Longitude As Double
@@ -49,10 +86,11 @@ Public Class New_Order
         Public PublicSleeve As Boolean
         Public Deliver As Boolean
 
-        Public Sub New(Id As Integer, LocationDescription As String, _
+        Public Sub New(Id As Integer, PropertyOwnerIndex As Integer, LocationDescription As String, _
                        Latitude As Double, Longitude As Double, InstallDate As Date, _
                        ChangeDate As Date, PublicSleeve As Boolean, Deliver As Boolean)
             Me.Id = Id
+            Me.PropertyOwnerIndex = PropertyOwnerIndex
             Me.LocationDescription = LocationDescription
             Me.Latitude = Latitude
             Me.Longitude = Longitude
@@ -74,7 +112,7 @@ Public Class New_Order
     ' Globals
     Dim OrderId As Integer
     Dim BuyerList As List(Of Buyer)
-    Dim PropertyOwnerId As Integer
+    Dim PropertyOwnerList As List(Of PropertyOwner)
     Dim SleeveList As List(Of Sleeve)
     Dim OupsId As Integer
 
@@ -84,11 +122,14 @@ Public Class New_Order
         End If
         If Me.IsPostBack Then
             BuyerList = CType(Me.ViewState("buyers"), List(Of Buyer))
+            PropertyOwnerList = CType(Me.ViewState("propertyowners"), List(Of PropertyOwner))
             SleeveList = CType(Me.ViewState("sleeves"), List(Of Sleeve))
             TabName.Value = Request.Form(TabName.UniqueID)
         Else
             BuyerList = New List(Of Buyer)()
             Me.ViewState.Add("buyers", BuyerList)
+            PropertyOwnerList = New List(Of PropertyOwner)()
+            Me.ViewState.Add("propertyowners", PropertyOwnerList)
             SleeveList = New List(Of Sleeve)()
             Me.ViewState.Add("sleeves", SleeveList)
         End If
@@ -99,8 +140,7 @@ Public Class New_Order
         HandleOrder()
         HandlePayment()
         HandleBuyers()
-        HandlePropertyOwner()
-        HandlePropertyTraits()
+        HandlePropertyOwners()
         HandleOups()
         HandleSleeves()
 
@@ -142,13 +182,18 @@ Public Class New_Order
                                  BuyerPhoneInput.Text, BuyerRotaryMemberInput.Checked))
         ViewState("buyers") = BuyerList
         ClearBuyerForm()
-        SetListBoxes()
+        BindBuyerListData()
     End Sub
 
     Protected Sub HandleRemoveBuyer(sender As Object, e As EventArgs) Handles BuyerRemoveButton.Click
         BuyerList.RemoveAt(BuyerListBox.SelectedIndex)
         ViewState("buyers") = BuyerList
-        SetListBoxes()
+        BindBuyerListData()
+    End Sub
+
+    Protected Sub BindBuyerListData()
+        BuyerListBox.DataSource = BuyerList
+        BuyerListBox.DataBind()
     End Sub
 
     Protected Sub BuyerChange(sender As Object, e As EventArgs) Handles BuyerDropDownList.SelectedIndexChanged
@@ -174,30 +219,56 @@ Public Class New_Order
         BuyerRotaryMemberInput.Checked = False
     End Sub
 
-    Protected Sub FillBuyerListBox(list As List(Of Buyer))
-        BuyerListBox.Items.Clear()
-        For Each b As Buyer In list
-            BuyerListBox.Items.Add(b.LastName)
+    ' <--------------------Property Owner---------------------->
+
+    Protected Sub HandlePropertyOwners()
+        For Each p As PropertyOwner In PropertyOwnerList
+            If p.Id = 0 Then
+                tbl.spAddNewBuyer(p.Id, p.LastName, p.FirstName, p.Address, p.City, p.State, p.ZipCode, p.Email, p.Phone, "Online", p.RotaryMember)
+            End If
+            For Each item As Integer In p.Traits
+                tbl.spAddNewPropertyTraits(p.Id, item)
+            Next
         Next
     End Sub
 
-    ' <--------------------Property Owner---------------------->
-
-    Protected Sub HandlePropertyOwner()
-        PropertyOwnerId = PropertyOwnerDropDownList.SelectedValue
-        If PropertyOwnerId = 0 Then
-            tbl.spAddNewPropertyOwner(PropertyOwnerId, PropertyOwnerLastNameInput.Text, PropertyOwnerFirstNameInput.Text, PropertyOwnerAddressInput.Text, PropertyOwnerCityInput.Text, PropertyOwnerStateDropDownList.SelectedValue, PropertyOwnerZipCodeInput.Text, PropertyOwnerEmailInput.Text, PropertyOwnerPhoneInput.Text, PropertyOwnerRotaryMemberInput.Checked)
-        End If
-    End Sub
-
     Protected Sub PropertyOwnerChange(sender As Object, e As EventArgs) Handles PropertyOwnerDropDownList.SelectedIndexChanged
-        PropertyOwnerId = PropertyOwnerDropDownList.SelectedValue
+        Dim PropertyOwnerId = PropertyOwnerDropDownList.SelectedValue
 
         If Not PropertyOwnerId = 0 Then
             tbl.spSelectPropertyOwner(PropertyOwnerId, PropertyOwnerLastNameInput.Text, PropertyOwnerFirstNameInput.Text, PropertyOwnerAddressInput.Text, PropertyOwnerCityInput.Text, PropertyOwnerStateDropDownList.SelectedValue, PropertyOwnerZipCodeInput.Text, PropertyOwnerEmailInput.Text, PropertyOwnerPhoneInput.Text, PropertyOwnerRotaryMemberInput.Checked)
         Else
             ClearPropertyOwnerForm()
         End If
+    End Sub
+
+    Protected Sub HandleAddPropertyOwner(sender As Object, e As EventArgs) Handles PropertyOwnerAddButton.Click
+        Dim PropertyTraitList As New List(Of Integer)
+        For Each box As ListItem In PropertyTraits.Items
+            If box.Selected Then
+                PropertyTraitList.Add(box.Value)
+            End If
+        Next
+        PropertyOwnerList.Add(New PropertyOwner(PropertyOwnerDropDownList.SelectedValue, PropertyOwnerFirstNameInput.Text, _
+                                 PropertyOwnerLastNameInput.Text, PropertyOwnerAddressInput.Text, PropertyOwnerCityInput.Text, _
+                                 PropertyOwnerStateDropDownList.SelectedValue, PropertyOwnerZipCodeInput.Text, PropertyOwnerEmailInput.Text, _
+                                 PropertyOwnerPhoneInput.Text, PropertyOwnerRotaryMemberInput.Checked, PropertyTraitList))
+        ViewState("propertyowners") = PropertyOwnerList
+        ClearPropertyOwnerForm()
+        BindPropertyOwnerListData()
+    End Sub
+
+    Protected Sub HandleRemovePropertyOwner(sender As Object, e As EventArgs) Handles PropertyOwnerRemoveButton.Click
+        PropertyOwnerList.RemoveAt(PropertyOwnerListBox.SelectedIndex)
+        ViewState("propertyowners") = PropertyOwnerList
+        BindPropertyOwnerListData()
+    End Sub
+
+    Protected Sub BindPropertyOwnerListData()
+        PropertyOwnerListBox.DataSource = PropertyOwnerList
+        PropertyOwnerListBox.DataBind()
+        SleevePropertyDropDownList.DataSource = PropertyOwnerList
+        SleevePropertyDropDownList.DataBind()
     End Sub
 
     Protected Sub ClearPropertyOwnerForm()
@@ -213,39 +284,33 @@ Public Class New_Order
         PropertyOwnerRotaryMemberInput.Checked = False
     End Sub
 
-    ' <--------------------Property Traits---------------------->
-
-    Protected Sub HandlePropertyTraits()
-        Dim PropertyTrait As Integer
-        For Each box As ListItem In PropertyTraits.Items
-            If box.Selected Then
-                PropertyTrait = box.Value
-                tbl.spAddNewPropertyTraits(PropertyOwnerId, PropertyTrait)
-            End If
-        Next
-    End Sub
-
     ' <--------------------Sleeve---------------------->
 
     Protected Sub HandleSleeves()
         For Each s As Sleeve In SleeveList
+            Dim PropertyOwnerId = PropertyOwnerList(s.PropertyOwnerIndex).Id
             tbl.spAddNewSleeve(s.Id, True, OrderId, PropertyOwnerId, s.LocationDescription, s.Latitude, s.Longitude, OupsId, s.InstallDate, s.ChangeDate, s.PublicSleeve, s.Deliver, OrderDateInput.Text)
         Next
     End Sub
 
     Protected Sub HandleAddSleeve() Handles SleeveAddButton.Click
-        SleeveList.Add(New Sleeve(0, SleeveLocationDescriptionInput.Text, _
+        SleeveList.Add(New Sleeve(0, SleevePropertyDropDownList.SelectedIndex, SleeveLocationDescriptionInput.Text, _
                                   SleeveLatitudeInput.Text, SleeveLongitudeInput.Text, SleeveInstallDateInput.Text, _
                                   SleeveChangeDateInput.Text, SleevePublicCheckbox.Checked, SleeveDeliverCheckbox.Checked))
         ViewState("sleeves") = SleeveList
         ClearSleeveForm()
-        SetListBoxes()
+        BindSleeveListData()
     End Sub
 
     Protected Sub HandleRemoveSleeve() Handles SleeveRemoveButton.Click
         SleeveList.RemoveAt(SleeveListBox.SelectedIndex)
         ViewState("sleeves") = SleeveList
-        SetListBoxes()
+        BindSleeveListData()
+    End Sub
+
+    Protected Sub BindSleeveListData()
+        SleeveListBox.DataSource = SleeveList
+        SleeveListBox.DataBind()
     End Sub
 
     Protected Sub ClearSleeveForm()
@@ -262,13 +327,6 @@ Public Class New_Order
 
     Protected Sub HandleOups()
         tbl.spAddNewOups(OupsId, OupsTicketNumberInput.Text, OupsNotifiedDateInput.Text, OupsCheckedDateInput.Text)
-    End Sub
-
-    Protected Sub SetListBoxes()
-        BuyerListBox.DataSource = BuyerList
-        BuyerListBox.DataBind()
-        SleeveListBox.DataSource = SleeveList
-        SleeveListBox.DataBind()
     End Sub
 
 End Class
