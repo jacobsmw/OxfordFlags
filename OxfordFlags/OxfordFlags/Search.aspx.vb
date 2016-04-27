@@ -9,32 +9,58 @@ Public Class Search
             Response.Redirect("~/Account/Login")
         End If
 
-        PersonResult.Visible = False
-        OupsResult.Visible = False
-    End Sub
-    Protected Sub SearchOups(sender As Object, e As EventArgs) Handles OupsSearchButton.Click
-        Dim oupsTicketNumber As String = Request.Form(OupsSearch.UniqueID)
-        Dim oupsId As String = Request.Form(hfOupsID.UniqueID)
-
-        Label1.Text = oupsTicketNumber
-
-        OupsDataSource.SelectCommand = "Select * From [Oups], [Sleeve], [Order] WHERE [Sleeve].[OrderID] = [Order].[OrderID] AND [Oups].[OupsID] =" & oupsId
-        OupsResult.Visible = True
+        Label1.Text = SelectSearchType.SelectedValue
+        PersonSearchBox.Visible = False
+        PersonSearchButton.Visible = False
+        AddressSearchBox.Visible = False
+        AddressSearchButton.Visible = False
+        'PersonResult.Visible = False
+        'AddressResults.Visible = False
     End Sub
 
-    Protected Sub SearchPerson(sender As Object, e As EventArgs) Handles PersonSearchButton.Click
-        Dim personName As String = Request.Form(PersonSearch.UniqueID)
+    Protected Sub PersonSearch(sender As Object, e As EventArgs) Handles PersonSearchButton.Click
+        Dim personName As String = Request.Form(PersonSearchBox.UniqueID)
         Dim personId As String = Request.Form(hfPersonID.UniqueID)
 
-        Label1.Text = personName
-
-        PersonDataSource.SelectCommand = "SELECT * FROM [Buyer] where [BuyerID] =" & personId
-        PersonResult.Visible = True
-
-        If SearchTypeSelection.SelectedValue = 1 Then
-
-        End If
+        PersonSearchBox.Visible = True
+        PersonSearchButton.Visible = True
+        AddressSearchBox.Visible = False
+        AddressSearchButton.Visible = False
+        'AddressResults.Visible = False
+        'PersonResult.Visible = True
 
     End Sub
 
+    Protected Sub AddressSearch(sender As Object, e As EventArgs) Handles AddressSearchButton.Click
+        Dim streetAddress As String = Request.Form(AddressSearchBox.UniqueID)
+        Dim propertyOwnerId As String = Request.Form(hfPropertyOwnerId.UniqueID)
+
+        PersonSearchBox.Visible = False
+        PersonSearchButton.Visible = False
+        AddressSearchBox.Visible = True
+        AddressSearchButton.Visible = True
+        'AddressResults.Visible = True
+        'PersonResult.Visible = False
+
+    End Sub
+
+    Protected Sub SelectSearchType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SelectSearchType.SelectedIndexChanged
+        Select Case SelectSearchType.SelectedValue
+            Case 0
+                PersonSearchBox.Visible = False
+                PersonSearchButton.Visible = False
+                AddressSearchBox.Visible = False
+                AddressSearchButton.Visible = False
+            Case 1
+                PersonSearchBox.Visible = True
+                PersonSearchButton.Visible = True
+                AddressSearchBox.Visible = False
+                AddressSearchButton.Visible = False
+            Case 2
+                PersonSearchBox.Visible = False
+                PersonSearchButton.Visible = False
+                AddressSearchBox.Visible = True
+                AddressSearchButton.Visible = True
+        End Select
+    End Sub
 End Class

@@ -63,4 +63,51 @@ Public Class Service
         End Using
     End Function
 
+    <WebMethod()> _
+    <ScriptMethod(ResponseFormat:=ResponseFormat.Json)> _
+    Public Function SearchByBuyer(ByVal name As String) As String()
+        Dim buyers As New List(Of String)()
+        Using conn As New SqlConnection()
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+            Using cmd As New SqlCommand()
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = "spSearchByNameOrId"
+                cmd.Parameters.AddWithValue("@NAME", name)
+                cmd.Connection = conn
+                conn.Open()
+                Using sdr As SqlDataReader = cmd.ExecuteReader()
+                    While sdr.Read()
+                        Dim Key As String = sdr("FirstName") + " " + sdr("LastName")
+                        buyers.Add(String.Format("{0}-{1}", Key, sdr("BuyerID")))
+                    End While
+                End Using
+                conn.Close()
+            End Using
+            Return buyers.ToArray()
+        End Using
+    End Function
+
+    <WebMethod()> _
+    <ScriptMethod(ResponseFormat:=ResponseFormat.Json)> _
+    Public Function SearchByAddress(ByVal address As String) As String()
+        Dim addresses As New List(Of String)()
+        Using conn As New SqlConnection()
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+            Using cmd As New SqlCommand()
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.CommandText = "spSearchByAddress"
+                cmd.Parameters.AddWithValue("@ADDRESS", address)
+                cmd.Connection = conn
+                conn.Open()
+                Using sdr As SqlDataReader = cmd.ExecuteReader()
+                    While sdr.Read()
+                        addresses.Add(String.Format("{0}-{1}", sdr("StreetAddress"), sdr("PropertyOwnerID")))
+                    End While
+                End Using
+                conn.Close()
+            End Using
+            Return addresses.ToArray()
+        End Using
+    End Function
+
 End Class

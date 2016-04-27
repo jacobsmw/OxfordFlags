@@ -14,22 +14,22 @@ Option Explicit On
 Partial Public Class Search
 
     '''<summary>
-    '''SearchTypeSelection control.
+    '''SelectSearchType control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SearchTypeSelection As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents SelectSearchType As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''PersonSearch control.
+    '''PersonSearchBox control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PersonSearch As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PersonSearchBox As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''hfPersonID control.
@@ -50,31 +50,31 @@ Partial Public Class Search
     Protected WithEvents PersonSearchButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''OupsSearch control.
+    '''AddressSearchBox control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OupsSearch As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents AddressSearchBox As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''hfOupsID control.
+    '''hfPropertyOwnerId control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents hfOupsID As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents hfPropertyOwnerId As Global.System.Web.UI.WebControls.HiddenField
 
     '''<summary>
-    '''OupsSearchButton control.
+    '''AddressSearchButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OupsSearchButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents AddressSearchButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Label1 control.
@@ -95,13 +95,22 @@ Partial Public Class Search
     Protected WithEvents PersonResult As Global.System.Web.UI.WebControls.DetailsView
 
     '''<summary>
-    '''OupsResult control.
+    '''AddressResults control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OupsResult As Global.System.Web.UI.WebControls.DetailsView
+    Protected WithEvents AddressResults As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''AddressDataSource control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AddressDataSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''PersonDataSource control.
@@ -111,13 +120,4 @@ Partial Public Class Search
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PersonDataSource As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''OupsDataSource control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents OupsDataSource As Global.System.Web.UI.WebControls.SqlDataSource
 End Class
