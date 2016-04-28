@@ -6,7 +6,23 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
+<member name="F:OxfordFlags.MarkRoutesUnchanged.YesButton">
+	<summary>
+YesButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.MarkRoutesUnchanged.NoButton">
+	<summary>
+NoButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
 	<summary>
 providerDetails control.
 </summary>
@@ -1930,6 +1946,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Admin.PaymentSourceMaintenanceButton">
 	<summary>
 PaymentSourceMaintenanceButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Admin.MarkAllRoutesUnchangedButton">
+	<summary>
+MarkAllRoutesUnchangedButton control.
 </summary>
 	<remarks>
 Auto-generated field.
