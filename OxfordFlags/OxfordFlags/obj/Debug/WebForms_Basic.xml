@@ -47,14 +47,6 @@ PersonSearchBox control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.hfPersonID">
-	<summary>
-hfPersonID control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:OxfordFlags.Search.PersonSearchButton">
 	<summary>
 PersonSearchButton control.
@@ -66,14 +58,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Search.AddressSearchBox">
 	<summary>
 AddressSearchBox control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.hfPropertyOwnerId">
-	<summary>
-hfPropertyOwnerId control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -95,33 +79,73 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.PersonResult">
+</member><member name="F:OxfordFlags.Search.BuyerDetails">
 	<summary>
-PersonResult control.
+BuyerDetails control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.AddressResults">
+</member><member name="F:OxfordFlags.Search.PropertyDetails">
 	<summary>
-AddressResults control.
+PropertyDetails control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.AddressDataSource">
+</member><member name="F:OxfordFlags.Search.OrderDetails">
 	<summary>
-AddressDataSource control.
+OrderDetails control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.PersonDataSource">
+</member><member name="F:OxfordFlags.Search.SleeveOupsDetails">
 	<summary>
-PersonDataSource control.
+SleeveOupsDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PaymentSleeveDetails">
+	<summary>
+PaymentSleeveDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.hfPersonID">
+	<summary>
+hfPersonID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.hfPropertyOwnerId">
+	<summary>
+hfPropertyOwnerId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PersonSearchResults">
+	<summary>
+PersonSearchResults control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.AddressSearchResults">
+	<summary>
+AddressSearchResults control.
 </summary>
 	<remarks>
 Auto-generated field.

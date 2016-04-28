@@ -32,15 +32,6 @@ Partial Public Class Search
     Protected WithEvents PersonSearchBox As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''hfPersonID control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents hfPersonID As Global.System.Web.UI.WebControls.HiddenField
-
-    '''<summary>
     '''PersonSearchButton control.
     '''</summary>
     '''<remarks>
@@ -57,15 +48,6 @@ Partial Public Class Search
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents AddressSearchBox As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''hfPropertyOwnerId control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents hfPropertyOwnerId As Global.System.Web.UI.WebControls.HiddenField
 
     '''<summary>
     '''AddressSearchButton control.
@@ -86,38 +68,83 @@ Partial Public Class Search
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''PersonResult control.
+    '''BuyerDetails control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PersonResult As Global.System.Web.UI.WebControls.DetailsView
+    Protected WithEvents BuyerDetails As Global.System.Web.UI.WebControls.DetailsView
 
     '''<summary>
-    '''AddressResults control.
+    '''PropertyDetails control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddressResults As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents PropertyDetails As Global.System.Web.UI.WebControls.DetailsView
 
     '''<summary>
-    '''AddressDataSource control.
+    '''OrderDetails control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AddressDataSource As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents OrderDetails As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''PersonDataSource control.
+    '''SleeveOupsDetails control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PersonDataSource As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents SleeveOupsDetails As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''PaymentSleeveDetails control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentSleeveDetails As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''hfPersonID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPersonID As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''hfPropertyOwnerId control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfPropertyOwnerId As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''PersonSearchResults control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PersonSearchResults As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''AddressSearchResults control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AddressSearchResults As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

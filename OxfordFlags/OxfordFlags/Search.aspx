@@ -82,7 +82,6 @@ rel = "Stylesheet" type="text/css" />
     });
 </script>
 
-
 </head>
 <body>
     <hr />
@@ -95,15 +94,10 @@ rel = "Stylesheet" type="text/css" />
     
     <br />
     
-    <asp:TextBox ID="PersonSearchBox" runat="server"></asp:TextBox>
-    <asp:HiddenField ID="hfPersonID" runat="server" />
-    <asp:Button ID="PersonSearchButton" runat="server" Text="Search" OnClick = "PersonSearch" />
-
-    <br />
-    <br />
+    <asp:TextBox ID="PersonSearchBox" runat="server" Visible="False"></asp:TextBox>
+    <asp:Button ID="PersonSearchButton" runat="server" Text="Search" OnClick = "PersonSearch" Visible="False" />
 
     <asp:TextBox ID="AddressSearchBox" runat="server"></asp:TextBox>
-    <asp:HiddenField ID="hfPropertyOwnerId" runat="server" />
     <asp:Button ID="AddressSearchButton" runat="server" Text="Search" OnClick = "AddressSearch" />
 
 
@@ -114,9 +108,7 @@ rel = "Stylesheet" type="text/css" />
     <br />
     <asp:Label ID="Label1" runat="server" Text="Not Clicked"></asp:Label>
     <br />
-    <br />
-    
-    <asp:DetailsView ID="PersonResult" runat="server" AutoGenerateRows="False" DataKeyNames="BuyerID" DataSourceID="PersonDataSource" Height="50px" Width="125px">
+    <asp:DetailsView ID="BuyerDetails" runat="server" AutoGenerateRows="False" DataKeyNames="BuyerID" DataSourceID="PersonSearchResults" Height="50px" Width="125px" HorizontalAlign="Justify">
         <Fields>
             <asp:BoundField DataField="BuyerID" HeaderText="BuyerID" InsertVisible="False" ReadOnly="True" SortExpression="BuyerID" />
             <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
@@ -128,19 +120,18 @@ rel = "Stylesheet" type="text/css" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
             <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
             <asp:CheckBoxField DataField="RotaryMember" HeaderText="RotaryMember" SortExpression="RotaryMember" />
-            <asp:BoundField DataField="OrderDate" HeaderText="OrderDate" SortExpression="OrderDate" />
-            <asp:BoundField DataField="SubYear" HeaderText="SubYear" SortExpression="SubYear" />
-            <asp:BoundField DataField="Cost" HeaderText="Cost" SortExpression="Cost" />
-            <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
-            <asp:BoundField DataField="ConfirmationDate" HeaderText="ConfirmationDate" SortExpression="ConfirmationDate" />
-            <asp:BoundField DataField="Payment" HeaderText="Payment" SortExpression="Payment" />
-            <asp:BoundField DataField="PaymentDate" HeaderText="PaymentDate" SortExpression="PaymentDate" />
-            <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName" />
+            <asp:BoundField DataField="OrderDate" HeaderText="OrderDate" SortExpression="OrderDate" Visible="false" />
+            <asp:BoundField DataField="SubYear" HeaderText="SubYear" SortExpression="SubYear" Visible="false" />
+            <asp:BoundField DataField="Cost" HeaderText="Cost" SortExpression="Cost" Visible="false"/>
+            <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" Visible="false"/>
+            <asp:BoundField DataField="ConfirmationDate" HeaderText="ConfirmationDate" SortExpression="ConfirmationDate" Visible="false"/>
+            <asp:BoundField DataField="PaymentDate" HeaderText="PaymentDate" SortExpression="PaymentDate" Visible="false"/>
+            <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName" Visible="false"/>
+            <asp:CommandField ShowEditButton="True" />
         </Fields>
     </asp:DetailsView>
-    
-    <asp:GridView ID="AddressResults" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="AddressDataSource">
-        <Columns>
+    <asp:DetailsView ID="PropertyDetails" runat="server" AutoGenerateRows="False" DataSourceID="AddressSearchResults" Height="50px" Width="125px" HorizontalAlign="Justify">
+        <Fields>
             <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
             <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
             <asp:BoundField DataField="StreetAddress" HeaderText="StreetAddress" SortExpression="StreetAddress" />
@@ -150,7 +141,56 @@ rel = "Stylesheet" type="text/css" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
             <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
             <asp:CheckBoxField DataField="RotaryMember" HeaderText="RotaryMember" SortExpression="RotaryMember" />
-            <asp:BoundField DataField="TraitDescription" HeaderText="TraitDescription" SortExpression="TraitDescription" />
+            <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName" Visible="false"/>
+            <asp:CheckBoxField DataField="Active" HeaderText="Active" SortExpression="Active" Visible="false" />
+            <asp:BoundField DataField="LocationDescription" HeaderText="LocationDescription" SortExpression="LocationDescription" Visible="false"/>
+            <asp:BoundField DataField="Latitude" HeaderText="Latitude" SortExpression="Latitude" Visible="false"/>
+            <asp:BoundField DataField="Longitude" HeaderText="Longitude" SortExpression="Longitude" Visible="false"/>
+            <asp:BoundField DataField="InstalledDate" HeaderText="InstalledDate" SortExpression="InstalledDate" Visible="false"/>
+            <asp:BoundField DataField="ChangeDate" HeaderText="ChangeDate" SortExpression="ChangeDate" Visible="false"/>
+            <asp:BoundField DataField="ExpiredDate" HeaderText="ExpiredDate" SortExpression="ExpiredDate" Visible="false"/>
+            <asp:CheckBoxField DataField="Deliver" HeaderText="Deliver" SortExpression="Deliver" Visible="false"/>
+            <asp:BoundField DataField="OupsTicketNumber" HeaderText="OupsTicketNumber" SortExpression="OupsTicketNumber" Visible="false"/>
+            <asp:BoundField DataField="OupsNotifiedDate" HeaderText="OupsNotifiedDate" SortExpression="OupsNotifiedDate" Visible="false"/>
+            <asp:BoundField DataField="OupsCheckedDate" HeaderText="OupsCheckedDate" SortExpression="OupsCheckedDate" Visible="false"/>
+            <asp:BoundField DataField="TraitDescription" HeaderText="TraitDescription" SortExpression="TraitDescription" ConvertEmptyStringToNull="False" />
+            <asp:CommandField ShowEditButton="True" />
+        </Fields>
+    </asp:DetailsView>
+    <br />
+    <asp:GridView ID="OrderDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="BuyerID" DataSourceID="PersonSearchResults" HorizontalAlign="Justify">
+        <Columns>
+            <asp:BoundField DataField="BuyerID" HeaderText="BuyerID" SortExpression="BuyerID" InsertVisible="False" ReadOnly="True" Visible="false"/>
+            <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" Visible="false"/>
+            <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" Visible="false"/>
+            <asp:BoundField DataField="StreetAddress" HeaderText="StreetAddress" SortExpression="StreetAddress" Visible="false"/>
+            <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" Visible="false"/>
+            <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" Visible="false"/>
+            <asp:BoundField DataField="Zip" HeaderText="Zip" SortExpression="Zip" Visible="false"/>
+            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" Visible="false"/>
+            <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" Visible="false"/>
+            <asp:CheckBoxField DataField="RotaryMember" HeaderText="RotaryMember" SortExpression="RotaryMember" Visible="false"/>
+            <asp:BoundField DataField="OrderDate" HeaderText="OrderDate" SortExpression="OrderDate" />
+            <asp:BoundField DataField="SubYear" HeaderText="SubYear" SortExpression="SubYear" />
+            <asp:BoundField DataField="Cost" HeaderText="Cost" SortExpression="Cost" />
+            <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
+            <asp:BoundField DataField="ConfirmationDate" HeaderText="ConfirmationDate" SortExpression="ConfirmationDate" />
+            <asp:BoundField DataField="PaymentDate" HeaderText="PaymentDate" SortExpression="PaymentDate" Visible="false"/>
+            <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName" Visible="false"/>
+            <asp:CommandField ShowEditButton="True" />
+        </Columns>
+    </asp:GridView>
+    <asp:GridView ID="SleeveOupsDetails" runat="server" AutoGenerateColumns="False" DataSourceID="AddressSearchResults" HorizontalAlign="Justify">
+        <Columns>
+            <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" Visible="false"/>
+            <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" Visible="false"/>
+            <asp:BoundField DataField="StreetAddress" HeaderText="StreetAddress" SortExpression="StreetAddress" Visible="false"/>
+            <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" Visible="false"/>
+            <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" Visible="false"/>
+            <asp:BoundField DataField="Zip" HeaderText="Zip" SortExpression="Zip" Visible="false"/>
+            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" Visible="false"/>
+            <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" Visible="false"/>
+            <asp:CheckBoxField DataField="RotaryMember" HeaderText="RotaryMember" SortExpression="RotaryMember" Visible="false"/>
             <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName" />
             <asp:CheckBoxField DataField="Active" HeaderText="Active" SortExpression="Active" />
             <asp:BoundField DataField="LocationDescription" HeaderText="LocationDescription" SortExpression="LocationDescription" />
@@ -163,19 +203,49 @@ rel = "Stylesheet" type="text/css" />
             <asp:BoundField DataField="OupsTicketNumber" HeaderText="OupsTicketNumber" SortExpression="OupsTicketNumber" />
             <asp:BoundField DataField="OupsNotifiedDate" HeaderText="OupsNotifiedDate" SortExpression="OupsNotifiedDate" />
             <asp:BoundField DataField="OupsCheckedDate" HeaderText="OupsCheckedDate" SortExpression="OupsCheckedDate" />
+            <asp:BoundField DataField="TraitDescription" HeaderText="Trait Description" SortExpression="TraitDescription" Visible="false" ConvertEmptyStringToNull="False" NullDisplayText="None"/>
             <asp:CommandField ShowEditButton="True" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="AddressDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSearchAddressResults" SelectCommandType="StoredProcedure">
-        <SelectParameters>
-            <asp:ControlParameter ControlID="hfPropertyOwnerId" Name="PROPERTYID" PropertyName="Value" Type="Int32" />
-        </SelectParameters>
-    </asp:SqlDataSource>
-    <asp:SqlDataSource ID="PersonDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSearchResultsBuyer" SelectCommandType="StoredProcedure">
+    <br />
+    <asp:GridView ID="PaymentSleeveDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="BuyerID" DataSourceID="PersonSearchResults" HorizontalAlign="Justify">
+        <Columns>
+            <asp:BoundField DataField="BuyerID" HeaderText="BuyerID" InsertVisible="False" ReadOnly="True" SortExpression="BuyerID" Visible="false"/>
+            <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" Visible="false"/>
+            <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" Visible="false"/>
+            <asp:BoundField DataField="StreetAddress" HeaderText="StreetAddress" SortExpression="StreetAddress" Visible="false"/>
+            <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" Visible="false"/>
+            <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" Visible="false"/>
+            <asp:BoundField DataField="Zip" HeaderText="Zip" SortExpression="Zip" Visible="false"/>
+            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" Visible="false"/>
+            <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" Visible="false"/>
+            <asp:CheckBoxField DataField="RotaryMember" HeaderText="RotaryMember" SortExpression="RotaryMember" Visible="false"/>
+            <asp:BoundField DataField="OrderDate" HeaderText="OrderDate" SortExpression="OrderDate" Visible="false"/>
+            <asp:BoundField DataField="SubYear" HeaderText="SubYear" SortExpression="SubYear" Visible="false"/>
+            <asp:BoundField DataField="Cost" HeaderText="Cost" SortExpression="Cost" Visible="false"/>
+            <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" Visible="false"/>
+            <asp:BoundField DataField="ConfirmationDate" HeaderText="ConfirmationDate" SortExpression="ConfirmationDate" Visible="false"/>
+            <asp:BoundField DataField="PaymentDate" HeaderText="PaymentDate" SortExpression="PaymentDate" />
+            <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName" />
+            <asp:CommandField ShowEditButton="True" />
+        </Columns>
+    </asp:GridView>
+    <br />
+    <asp:HiddenField ID="hfPersonID" runat="server" />
+    <asp:HiddenField ID="hfPropertyOwnerId" runat="server" />
+    <asp:SqlDataSource ID="PersonSearchResults" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSearchResultsBuyer" SelectCommandType="StoredProcedure">
         <SelectParameters>
             <asp:ControlParameter ControlID="hfPersonID" Name="BUYERID" PropertyName="Value" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
+    <asp:SqlDataSource ID="AddressSearchResults" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSearchAddressResults" SelectCommandType="StoredProcedure">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="hfPropertyOwnerId" Name="PROPERTYID" PropertyName="Value" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+    <br />
+    <br />
+    
     <br />
     </asp:Content>
 
