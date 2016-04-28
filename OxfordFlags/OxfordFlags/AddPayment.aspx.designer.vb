@@ -113,13 +113,13 @@ Partial Public Class AddPayment
     Protected WithEvents AmountPaidLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''GridView1 control.
+    '''PaymentHistoryGridView control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents PaymentHistoryGridView As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
     '''PaymentHistoryDataSource control.
@@ -147,6 +147,33 @@ Partial Public Class AddPayment
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentDateInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''PaymentSourceDropDownList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentSourceDropDownList As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''PaymentSourceDataSource control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentSourceDataSource As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''PaymentMemoInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentMemoInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''NewPaymentButton control.

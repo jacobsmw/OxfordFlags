@@ -104,6 +104,51 @@ Partial Public Class New_Order
     Protected WithEvents OrderAmountPaidFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
+    '''OrderPaymentSourceLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderPaymentSourceLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OrderPaymentSourceDropDownList control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderPaymentSourceDropDownList As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''OrderPaymentSourceDataSource control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderPaymentSourceDataSource As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''OrderPaymentMemoLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderPaymentMemoLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OrderPaymentMemoInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderPaymentMemoInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''OrderDiscountLabel control.
     '''</summary>
     '''<remarks>

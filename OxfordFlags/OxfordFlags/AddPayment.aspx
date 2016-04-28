@@ -30,10 +30,12 @@
                         <asp:Label ID="AmountPaidLabel" runat="server" Text="Amount Paid: "></asp:Label><br />
                     </div>
                     <div id="PaymentInfo" role="tabpanel" class="tab-pane fade in">
-                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="PaymentHistoryDataSource">
+                        <asp:GridView ID="PaymentHistoryGridView" runat="server" AutoGenerateColumns="False" DataSourceID="PaymentHistoryDataSource">
                             <Columns>
                                 <asp:BoundField DataField="PaymentDate" HeaderText="PaymentDate" SortExpression="PaymentDate" />
                                 <asp:BoundField DataField="Payment" HeaderText="Payment" SortExpression="Payment" />
+                                <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
+                                <asp:BoundField DataField="Memo" HeaderText="Memo" SortExpression="Memo" />
                             </Columns>
                         </asp:GridView>
                         <asp:SqlDataSource ID="PaymentHistoryDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSelectPaymentHistoryByOrderID" SelectCommandType="StoredProcedure">
@@ -47,6 +49,11 @@
             <hr />
             Payment: <asp:TextBox ID="PaymentInput" runat="server"></asp:TextBox><br />
             Payment Date: <asp:TextBox ID="PaymentDateInput" runat="server"></asp:TextBox><br />
+            Payment Type: <br />
+            <asp:DropDownList ID="PaymentSourceDropDownList" runat="server" DataSourceID="PaymentSourceDataSource" DataTextField="Type" DataValueField="Id">
+            </asp:DropDownList>
+            <asp:SqlDataSource ID="PaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource><br />
+            Check # / Paypal ID: <asp:TextBox ID="PaymentMemoInput" runat="server"></asp:TextBox><br />
             <asp:Button ID="NewPaymentButton" runat="server" Text="New Payment" />
         </ContentTemplate>
     </asp:UpdatePanel>

@@ -10,13 +10,12 @@
 
     Protected Sub CustomerInputSearchButton_Click(sender As Object, e As EventArgs) Handles CustomerReportInputSearchButton.Click
         vYear = SubscriptionYear.Text
-        CustomerReportInputSearchButton.Text = "Pressed"
         Dim db As dsTableAdapters.spReportCustomerReportTableAdapter = New dsTableAdapters.spReportCustomerReportTableAdapter
         Dim rs As ds.spReportCustomerReportRow
 
         Dim sb As New StringBuilder
 
-        sb.Append("<table>")
+        sb.Append("<table style='thin black line'>")
         sb.Append("<tr>")
         sb.Append("<td>") : sb.Append("FirstName") : sb.Append("</td style='padding: 10px'>")
         sb.Append("<td>") : sb.Append("LastName") : sb.Append("</td style='padding: 10px'>")
