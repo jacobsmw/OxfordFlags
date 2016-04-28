@@ -289,7 +289,9 @@ Public Class New_Order
     Protected Sub HandleSleeves()
         For Each s As Sleeve In SleeveList
             Dim PropertyOwnerId = PropertyOwnerList(s.PropertyOwnerIndex).Id
-            tbl.spAddNewSleeve(s.Id, True, OrderId, PropertyOwnerId, s.LocationDescription, s.Latitude, s.Longitude, OupsId, s.InstallDate, s.ChangeDate, s.PublicSleeve, s.Deliver, OrderDateInput.Text)
+            Dim SleeveName As String = ""
+            tbl.spGetNextSleeveName(SleeveName, PropertyOwnerId)
+            tbl.spAddNewSleeve(s.Id, True, OrderId, PropertyOwnerId, s.LocationDescription, s.Latitude, s.Longitude, OupsId, s.InstallDate, s.ChangeDate, s.PublicSleeve, s.Deliver, OrderDateInput.Text, SleeveName)
         Next
     End Sub
 
