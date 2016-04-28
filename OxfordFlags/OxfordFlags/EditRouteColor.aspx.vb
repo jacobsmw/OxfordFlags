@@ -12,7 +12,7 @@
         If RouteColorInput.Text = "" Then
             tbl.spRemoveFromRoute(PropertyOwnerGridView.SelectedRow.Cells(1).Text)
         Else
-            tbl.spAddOrUpdateRouteColor(PropertyOwnerGridView.SelectedRow.Cells(1).Text, RouteColorInput.Text)
+            tbl.spAddOrUpdateRouteColor(PropertyOwnerGridView.SelectedRow.Cells(1).Text, RouteColorInput.Text, PropertyOwnerGridView.SelectedRow.Cells(5).Text)
         End If
         Response.Redirect("EditRouteColor")
     End Sub

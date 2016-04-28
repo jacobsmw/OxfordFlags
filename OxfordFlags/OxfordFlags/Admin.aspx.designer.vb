@@ -84,4 +84,13 @@ Partial Public Class Admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentSourceMaintenanceButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''MarkAllRoutesUnchangedButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MarkAllRoutesUnchangedButton As Global.System.Web.UI.WebControls.Button
 End Class

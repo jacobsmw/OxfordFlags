@@ -41,7 +41,7 @@
     Protected Sub HandlePayment(ByVal sender As Object, ByVal e As System.EventArgs) Handles NewPaymentButton.Click
         Dim PaymentID As Integer
         Dim tbl1 As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
-        tbl1.spAddNewPayment(PaymentID, OrdersListBox.SelectedValue, PaymentInput.Text, PaymentDateInput.Text)
+        tbl1.spAddNewPayment(PaymentID, OrdersListBox.SelectedValue, PaymentInput.Text, PaymentDateInput.Text, PaymentSourceDropDownList.SelectedValue, PaymentMemoInput.Text)
         Response.Redirect("~/Main_Menu")
     End Sub
 

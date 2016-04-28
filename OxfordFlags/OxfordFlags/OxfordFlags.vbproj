@@ -224,6 +224,7 @@
     <Content Include="FinanceReportInput.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Main_Menu.aspx" />
+    <Content Include="MarkRoutesUnchanged.aspx" />
     <Content Include="New_Order.aspx" />
     <Content Include="NonSubscriberCommunicationInput.aspx" />
     <Content Include="OccasionMaintenance.aspx" />
@@ -478,6 +479,13 @@
     </Compile>
     <Compile Include="Main_Menu.aspx.vb">
       <DependentUpon>Main_Menu.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MarkRoutesUnchanged.aspx.designer.vb">
+      <DependentUpon>MarkRoutesUnchanged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarkRoutesUnchanged.aspx.vb">
+      <DependentUpon>MarkRoutesUnchanged.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Models\IdentityModels.vb" />

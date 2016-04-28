@@ -47,6 +47,16 @@
                         </asp:RegularExpressionValidator>
                     </div>
                     <div class="form-group">
+                        <asp:Label ID="OrderPaymentSourceLabel" runat="server" Text="Payment Type: "></asp:Label><br />
+                        <asp:DropDownList ID="OrderPaymentSourceDropDownList" runat="server" DataSourceID="OrderPaymentSourceDataSource" DataTextField="Type" DataValueField="Id">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="OrderPaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource>
+                    </div>
+                    <div class="form-group">
+                        <asp:Label ID="OrderPaymentMemoLabel" runat="server" Text="Check # / Paypal ID: "></asp:Label>
+                        <asp:TextBox ID="OrderPaymentMemoInput" runat="server"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
                         <asp:Label ID="OrderDiscountLabel" runat="server" Text="Discount: "></asp:Label>
                         <asp:DropDownList ID="OrderDiscountDropDownList" runat="server" DataSourceID="OrderDiscountSource" DataTextField="DiscountReason" DataValueField="DiscountID"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderDiscountSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason], [DiscountID] FROM [Discount]"></asp:SqlDataSource>
