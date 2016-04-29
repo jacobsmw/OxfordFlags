@@ -22,165 +22,81 @@ NoButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.PersonSearchButton">
-	<summary>
-PersonSearchButton control.
-=======
 </member><member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
 	<summary>
 providerDetails control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.AddressSearchBox">
-	<summary>
-AddressSearchBox control.
-=======
 </member><member name="F:OxfordFlags.ResetPassword.ErrorMessage">
 	<summary>
 ErrorMessage control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.AddressSearchButton">
-	<summary>
-AddressSearchButton control.
-=======
 </member><member name="F:OxfordFlags.ResetPassword.Email">
 	<summary>
 Email control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.Label1">
-	<summary>
-Label1 control.
-=======
 </member><member name="F:OxfordFlags.ResetPassword.Password">
 	<summary>
 Password control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.BuyerDetails">
-	<summary>
-BuyerDetails control.
-=======
 </member><member name="F:OxfordFlags.ResetPassword.ConfirmPassword">
 	<summary>
 ConfirmPassword control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.PropertyDetails">
-	<summary>
-PropertyDetails control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.OrderDetails">
-	<summary>
-OrderDetails control.
-=======
 </member><member name="F:OxfordFlags.EditRouteOrder.UpdatePanel1">
 	<summary>
 UpdatePanel1 control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.SleeveOupsDetails">
-	<summary>
-SleeveOupsDetails control.
-=======
 </member><member name="F:OxfordFlags.EditRouteOrder.RouteColorsDropDownList">
 	<summary>
 RouteColorsDropDownList control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.PaymentSleeveDetails">
-	<summary>
-PaymentSleeveDetails control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.hfPersonID">
-	<summary>
-hfPersonID control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.hfPropertyOwnerId">
-	<summary>
-hfPropertyOwnerId control.
-=======
 </member><member name="F:OxfordFlags.EditRouteOrder.ColorsDataSource">
 	<summary>
 ColorsDataSource control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.PersonSearchResults">
-	<summary>
-PersonSearchResults control.
-=======
 </member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersListBox">
 	<summary>
 PropertyOwnersListBox control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< HEAD
-</member><member name="F:OxfordFlags.Search.AddressSearchResults">
-	<summary>
-AddressSearchResults control.
-=======
 </member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersDataSource">
 	<summary>
 PropertyOwnersDataSource control.
->>>>>>> origin/master
 </summary>
 	<remarks>
 Auto-generated field.
