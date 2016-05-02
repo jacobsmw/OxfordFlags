@@ -503,55 +503,83 @@ OrderDiscountLabel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.New_Order.OrderDiscountDropDownList">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderDiscountDropDownList control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderDiscountSource">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPaymentStatusByOrderIDDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderDiscountSource control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderSourceLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPhotoBySleeveIDDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderSourceLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderSourceDropDownList">
+=======
+</member><member name="T:OxfordFlags.ds.spReportCustomerByStreetAddressDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderSourceDropDownList control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderSourceSource">
+=======
+</member><member name="T:OxfordFlags.ds.spReportCustomerReportDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderSourceSource control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderSubscriptionYearLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spReportFinancialDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderSubscriptionYearLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderSubscriptionYearInput">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderSubscriptionYearInput control.
 </summary>
@@ -563,75 +591,111 @@ To modify move field declaration from designer file to code-behind file.
 	<summary>
 SubscriptionYearFormatValidator control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderFirstOccasionLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPropertyOwnerByOrderIDDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderFirstOccasionLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderFirstOccasionDropDownList">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectOrderCrossTableDataTable">
+>>>>>>> Stashed changes
 	<summary>
 OrderFirstOccasionDropDownList control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.OrderFirstOccasionSource">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRow">
+>>>>>>> Stashed changes
 	<summary>
 OrderFirstOccasionSource control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerFormatTable">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPaymentStatusByOrderIDRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerFormatTable control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPhotoBySleeveIDRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerDropDownList">
+=======
+</member><member name="T:OxfordFlags.ds.spReportCustomerByStreetAddressRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerDropDownList control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerSource">
+=======
+</member><member name="T:OxfordFlags.ds.spReportCustomerReportRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerSource control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerFirstNameLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spReportFinancialRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerFirstNameLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerFirstNameInput">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerFirstNameInput control.
 </summary>
@@ -643,75 +707,111 @@ To modify move field declaration from designer file to code-behind file.
 	<summary>
 BuyerFirstNameFormatValidator control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerLastNameLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPropertyOwnerByOrderIDRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerLastNameLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerLastNameInput">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectOrderCrossTableRow">
+>>>>>>> Stashed changes
 	<summary>
 BuyerLastNameInput control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerLastNameFormatValidator">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerLastNameFormatValidator control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerAddressLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPaymentStatusByOrderIDRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerAddressLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerAddressInput">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPhotoBySleeveIDRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerAddressInput control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerAddressFormatValidator">
+=======
+</member><member name="T:OxfordFlags.ds.spReportCustomerByStreetAddressRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerAddressFormatValidator control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerCityLabel">
+=======
+</member><member name="T:OxfordFlags.ds.spReportCustomerReportRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerCityLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerCityInput">
+=======
+</member><member name="T:OxfordFlags.ds.spReportFinancialRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerCityInput control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerCityFormatValidator">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerCityFormatValidator control.
 </summary>
@@ -723,14 +823,197 @@ To modify move field declaration from designer file to code-behind file.
 	<summary>
 BuyerStateLabel control.
 </summary>
+<<<<<<< Updated upstream
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:OxfordFlags.New_Order.BuyerStateDropDownList">
+=======
+</member><member name="T:OxfordFlags.ds.spSelectPropertyOwnerByOrderIDRowChangeEvent">
+>>>>>>> Stashed changes
 	<summary>
 BuyerStateDropDownList control.
 </summary>
+<<<<<<< Updated upstream
+=======
+</member><member name="T:OxfordFlags.ds.spSelectOrderCrossTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spSelectBuyersByOrderIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spSelectPaymentStatusByOrderIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spSelectPhotoBySleeveIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportCustomerByStreetAddressTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportCustomerReportTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportFinancialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spSelectPaymentHistoryByOrderIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportGPSOutputTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spSelectPropertyOwnerByOrderIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spSelectOrderCrossTableTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.StoredProcedureTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OxfordFlags.dsTableAdapters.TableAdapterManager.UpdateUpdatedRows(OxfordFlags.ds,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OxfordFlags.dsTableAdapters.TableAdapterManager.UpdateInsertedRows(OxfordFlags.ds,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OxfordFlags.dsTableAdapters.TableAdapterManager.UpdateDeletedRows(OxfordFlags.ds,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OxfordFlags.dsTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OxfordFlags.dsTableAdapters.TableAdapterManager.UpdateAll(OxfordFlags.ds)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:OxfordFlags.Manage.SuccessMessagePlaceHolder">
+	<summary>
+ SuccessMessagePlaceHolder control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.setPassword">
+	<summary>
+ setPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.password">
+	<summary>
+ password control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.confirmPassword">
+	<summary>
+ confirmPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.changePasswordHolder">
+	<summary>
+ changePasswordHolder control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.changePasswordUserName">
+	<summary>
+ changePasswordUserName control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.CurrentPasswordLabel">
+	<summary>
+ CurrentPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.CurrentPassword">
+	<summary>
+ CurrentPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.NewPasswordLabel">
+	<summary>
+ NewPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.NewPassword">
+	<summary>
+ NewPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.ConfirmNewPasswordLabel">
+	<summary>
+ ConfirmNewPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:OxfordFlags.Manage.ConfirmNewPassword">
+	<summary>
+ ConfirmNewPassword control.
+ </summary>
+>>>>>>> Stashed changes
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
