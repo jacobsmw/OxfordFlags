@@ -127,25 +127,17 @@ hfPropertyOwnerId control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.AddressDataSource">
+</member><member name="F:OxfordFlags.Search.AddressSearchResultsData">
 	<summary>
-AddressDataSource control.
+AddressSearchResultsData control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.PersonSearchResults">
+</member><member name="F:OxfordFlags.Search.PersonSearchResultsData">
 	<summary>
-PersonSearchResults control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.PersonDataSource">
-	<summary>
-PersonDataSource control.
+PersonSearchResultsData control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2730,6 +2722,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.New_Order.TabName">
 	<summary>
 TabName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.hfExistingBuyerID">
+	<summary>
+hfExistingBuyerID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.hfExistingPropertyID">
+	<summary>
+hfExistingPropertyID control.
 </summary>
 	<remarks>
 Auto-generated field.

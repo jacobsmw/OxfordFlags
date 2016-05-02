@@ -330,5 +330,20 @@ Public Class New_Order
     Protected Sub HandleOups()
         tbl.spAddNewOups(OupsId, OupsTicketNumberInput.Text, OupsNotifiedDateInput.Text, OupsCheckedDateInput.Text)
     End Sub
+    
+    ' <---------------Live Search--------------------->
+    'Protected Sub SelectBuyer(sender As Object, e As EventArgs) Handles BuyerSelectButton.Click
+    '    Dim buyerName As String = Request.Form(BuyerSearchBox.UniqueID)
+    '    Dim BuyerId As String = Request.Form(hfExistingBuyerID.UniqueID)
+
+    '    tbl.spSelectBuyer(buyerId, BuyerLastNameInput.Text, BuyerFirstNameInput.Text, BuyerAddressInput.Text, BuyerCityInput.Text, BuyerStateDropDownList.SelectedValue, BuyerZipCodeInput.Text, BuyerEmailInput.Text, BuyerPhoneInput.Text, "Online", BuyerRotaryMemberInput.Checked)
+
+    'End Sub
+
+    'Protected Sub SelectProperty(sender As Object, e As EventArgs) Handles SelectPropertyButton.Click
+    '    Dim propertyAddress As String = Request.Form(PropertySearchBox.UniqueID)
+    '    Dim propertyId As Integer = Request.Form(hfExistingPropertyID.UniqueID)
+
+    'End Sub
 
 End Class

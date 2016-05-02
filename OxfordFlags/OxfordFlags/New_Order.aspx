@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="New Order" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="New_Order.aspx.vb" Inherits="OxfordFlags.New_Order" %>
 
+
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
         <div id="Tabs" role="tabpanel">
@@ -16,8 +18,8 @@
                 <div id="OrderInfo" role="tabpanel" class="tab-pane fade in active">
                     <h1>Order Information</h1>
                     <div class="form-group">
-                        <asp:Label ID="OrderDateLabel" runat="server" Text="Date: "></asp:Label>
-                        <asp:TextBox ID="OrderDateInput" runat="server"></asp:TextBox>
+                        <asp:Label ID="OrderDateLabel" runat="server" Text="Date: " CssClass="col-x2-2"></asp:Label>
+                        <asp:TextBox ID="OrderDateInput" runat="server" CssClass="form-control" placeholder="mm/dd/yyyy"></asp:TextBox>
                         <asp:CompareValidator ID="OrderDateFormatValidator" runat="server"
                             Type="Date"
                             Operator="DataTypeCheck"
@@ -27,8 +29,8 @@
                         </asp:CompareValidator>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderCostLabel" runat="server" Text="Cost: "></asp:Label>
-                        <asp:TextBox ID="OrderCostInput" runat="server"></asp:TextBox>
+                        <asp:Label ID="OrderCostLabel" runat="server" Text="Cost: " CssClass="col-x2-2"></asp:Label>
+                        <asp:TextBox ID="OrderCostInput" runat="server" CssClass="form-control" placeholder="45.00"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="OrderCostFormatValidator" runat="server"
                             ControlToValidate="OrderCostInput"
                             ErrorMessage="You must enter a valid price."
@@ -37,8 +39,8 @@
                         </asp:RegularExpressionValidator>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderAmountPaidLabel" runat="server" Text="Amount Paid: "></asp:Label>
-                        <asp:TextBox ID="OrderAmountPaidInput" runat="server"></asp:TextBox>
+                        <asp:Label ID="OrderAmountPaidLabel" runat="server" Text="Amount Paid: " CssClass="col-x2-2"></asp:Label>
+                        <asp:TextBox ID="OrderAmountPaidInput" runat="server" CssClass="form-control" placeholder="45.00"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="OrderAmountPaidFormatValidator" runat="server"
                             ControlToValidate="OrderAmountPaidInput"
                             ErrorMessage="You must enter a valid price."
@@ -47,28 +49,28 @@
                         </asp:RegularExpressionValidator>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderPaymentSourceLabel" runat="server" Text="Payment Type: "></asp:Label><br />
+                        <asp:Label ID="OrderPaymentSourceLabel" runat="server" Text="Payment Type: " CssClass="col-x2-2"></asp:Label><br />
                         <asp:DropDownList ID="OrderPaymentSourceDropDownList" runat="server" DataSourceID="OrderPaymentSourceDataSource" DataTextField="Type" DataValueField="Id">
                         </asp:DropDownList>
                         <asp:SqlDataSource ID="OrderPaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderPaymentMemoLabel" runat="server" Text="Check # / Paypal ID: "></asp:Label>
-                        <asp:TextBox ID="OrderPaymentMemoInput" runat="server"></asp:TextBox>
+                        <asp:Label ID="OrderPaymentMemoLabel" runat="server" Text="Check # / Paypal ID: " CssClass="col-x2-2"></asp:Label>
+                        <asp:TextBox ID="OrderPaymentMemoInput" runat="server" CssClass="form-control" placeholder="Check # or PayPal ID"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderDiscountLabel" runat="server" Text="Discount: "></asp:Label>
+                        <asp:Label ID="OrderDiscountLabel" runat="server" Text="Discount: " CssClass="col-x2-2"></asp:Label>
                         <asp:DropDownList ID="OrderDiscountDropDownList" runat="server" DataSourceID="OrderDiscountSource" DataTextField="DiscountReason" DataValueField="DiscountID"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderDiscountSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason], [DiscountID] FROM [Discount]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderSourceLabel" runat="server" Text="Source: "></asp:Label>
+                        <asp:Label ID="OrderSourceLabel" runat="server" Text="Order Source: " CssClass="col-x2-2"></asp:Label>
                         <asp:DropDownList ID="OrderSourceDropDownList" runat="server" DataSourceID="OrderSourceSource" DataTextField="SourceName" DataValueField="SourceID"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderSourceSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName], [SourceID] FROM [Source]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderSubscriptionYearLabel" runat="server" Text="Subscription Year: "></asp:Label>
-                        <asp:TextBox ID="OrderSubscriptionYearInput" runat="server"></asp:TextBox>
+                        <asp:Label ID="OrderSubscriptionYearLabel" runat="server" Text="Subscription Year: " CssClass="col-x2-2"></asp:Label>
+                        <asp:TextBox ID="OrderSubscriptionYearInput" runat="server" CssClass="form-control" placeholder="yyyy"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="SubscriptionYearFormatValidator" runat="server"
                             ControlToValidate="OrderSubscriptionYearInput"
                             ErrorMessage="You must enter a valid year."
@@ -77,7 +79,7 @@
                         </asp:RegularExpressionValidator>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderFirstOccasionLabel" runat="server" Text="First Occasion: "></asp:Label>
+                        <asp:Label ID="OrderFirstOccasionLabel" runat="server" Text="First Occasion: " CssClass="col-x2-2"></asp:Label>
                         <asp:DropDownList ID="OrderFirstOccasionDropDownList" runat="server" DataSourceID="OrderFirstOccasionSource" DataTextField="OccasionName" DataValueField="OccasionID"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderFirstOccasionSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName], [OccasionID] FROM [Occasion]"></asp:SqlDataSource>
                     </div>
@@ -89,15 +91,22 @@
                     <asp:TableRow>
                         <asp:TableCell>
                         <div id="BuyerForm">
-                            <asp:Label ID="BuyerLabel" runat="server" Text="Buyer: "></asp:Label>
+                            
+                            <asp:Label ID="BuyerLabel" runat="server" Text="Buyer: " ></asp:Label>
                             <asp:DropDownList ID="BuyerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="BuyerSource" DataTextField="Name" DataValueField="BuyerID">
                                 <asp:ListItem Value="0">New</asp:ListItem>
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="BuyerSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT BuyerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [Buyer] WHERE ([Active] = '1')"></asp:SqlDataSource>
             
+                            <br />
+                            <br />
+
+<%--                            <asp:TextBox ID="BuyerSearchBox" runat="server"></asp:TextBox>
+                            <asp:Button ID="BuyerSelectButton" runat="server" Text="Search" OnClick = "SelectBuyer"/>--%>
+
                             <div class="form-group">
-                                <asp:Label ID="BuyerFirstNameLabel" runat="server" Text="First Name: "></asp:Label>
-                                <asp:TextBox ID="BuyerFirstNameInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="BuyerFirstNameLabel" runat="server" Text="First Name: " CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="BuyerFirstNameInput" runat="server" CssClass="form-control" placeholder="John"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="BuyerFirstNameFormatValidator" runat="server"
                                     ControlToValidate="BuyerFirstNameInput"
                                     ErrorMessage="You must enter a valid first name."
@@ -105,9 +114,10 @@
                                     ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="BuyerLastNameLabel" runat="server" Text="Last Name: "></asp:Label>
-                                <asp:TextBox ID="BuyerLastNameInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="BuyerLastNameLabel" runat="server" Text="Last Name: " CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="BuyerLastNameInput" runat="server" CssClass="form-control" placeholder="Smith"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="BuyerLastNameFormatValidator" runat="server"
                                     ControlToValidate="BuyerLastNameInput"
                                     ErrorMessage="You must enter a valid last name."
@@ -115,9 +125,10 @@
                                     ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="BuyerAddressLabel" runat="server" Text="Address: "></asp:Label>
-                                <asp:TextBox ID="BuyerAddressInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="BuyerAddressLabel" runat="server" Text="Address: " CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="BuyerAddressInput" runat="server" CssClass="form-control" placeholder="123 Ohio Road"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="BuyerAddressFormatValidator" runat="server"
                                     ControlToValidate="BuyerAddressInput"
                                     ErrorMessage="You must enter a valid address."
@@ -125,9 +136,10 @@
                                     ValidationExpression="^[a-zA-Z0-9''-'\s]{0,50}$">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="BuyerCityLabel" runat="server" Text="City: "></asp:Label>
-                                <asp:TextBox ID="BuyerCityInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="BuyerCityLabel" runat="server" Text="City: " CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="BuyerCityInput" runat="server" CssClass="form-control" placeholder="Oxford"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="BuyerCityFormatValidator" runat="server"
                                     ControlToValidate="BuyerCityInput"
                                     ErrorMessage="You must enter a valid city."
@@ -135,8 +147,9 @@
                                     ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="BuyerStateLabel" runat="server" Text="State: "></asp:Label>
+                                <asp:Label ID="BuyerStateLabel" runat="server" Text="State: " CssClass="col-x2-2"></asp:Label>
                                 <asp:DropDownList ID="BuyerStateDropDownList" runat="server">
                                     <asp:ListItem>AL</asp:ListItem>
                                     <asp:ListItem>AK</asp:ListItem>
@@ -191,9 +204,10 @@
                                     <asp:ListItem>WY</asp:ListItem>
                                 </asp:DropDownList>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="BuyerZipCodeLabel" runat="server" Text="Zip Code: "></asp:Label>
-                                <asp:TextBox ID="BuyerZipCodeInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="BuyerZipCodeLabel" runat="server" Text="Zip Code: " CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="BuyerZipCodeInput" runat="server" CssClass="form-control" placeholder="45056"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="BuyerZipCodeFormatValidator" runat="server"
                                     ControlToValidate="BuyerZipCodeInput"
                                     ErrorMessage="You must enter a valid zip code"
@@ -201,9 +215,10 @@
                                     ValidationExpression="[0-9]{5}">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="BuyerEmailLabel" runat="server" Text="Email: "></asp:Label>
-                                <asp:TextBox ID="BuyerEmailInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="BuyerEmailLabel" runat="server" Text="Email: " CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="BuyerEmailInput" runat="server" CssClass="form-control" placeholder="email@email.com"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="BuyerEmailFormatValidator" runat="server"
                                     ControlToValidate="BuyerEmailInput"
                                     ErrorMessage="You must enter a valid email."
@@ -211,9 +226,10 @@
                                     ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="BuyerPhoneLabel" runat="server" Text="Phone: "></asp:Label>
-                                <asp:TextBox ID="BuyerPhoneInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="BuyerPhoneLabel" runat="server" Text="Phone: " CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="BuyerPhoneInput" runat="server" CssClass="form-control" placeholder="2345678910"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="BuyerPhoneFormatValidator" runat="server"
                                     ControlToValidate="BuyerPhoneInput"
                                     ErrorMessage="You must enter a valid phone number"
@@ -221,21 +237,25 @@
                                     ValidationExpression="^[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:CheckBox ID="BuyerRotaryMemberInput" runat="server" Text="Rotary Member" TextAlign="Left" />
+                                <asp:CheckBox ID="BuyerRotaryMemberInput" runat="server" Text="Rotary Member" TextAlign="Left"/>
                             </div>
                         </div>
+                        
                         </asp:TableCell>
+                        
                         <asp:TableCell>
                         <div id="BuyerButtons">
-                            <asp:Button ID="BuyerAddButton" runat="server" CssClass="btn btn-primary" Text="Add" />
+                            <asp:Button ID="BuyerAddButton" runat="server" CssClass="btn btn-primary" Text="Add" Width="75" HorizontalAlign="Right"/>
                             <br />
-                            <asp:Button ID="BuyerRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" />
+                            <asp:Button ID="BuyerRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" Width="75" HorizontalAlign="Right"/>
                         </div>
                         </asp:TableCell>
+                        
                         <asp:TableCell>
                         <div id="BuyerDisplay">
-                            <asp:ListBox ID="BuyerListBox" runat="server" Width="200px"></asp:ListBox>
+                            <asp:ListBox ID="BuyerListBox" runat="server" Width="200px" HorizontalAlign="Right"></asp:ListBox>
                         </div>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -247,6 +267,7 @@
                     <asp:Table ID="PropertyOwnerFormatTable" runat="server">
                         <asp:TableRow>
                             <asp:TableCell>
+                                
                                 <div id="PropertyOwnerForm">
                                     <asp:Label ID="PropertyOwnerLabel" runat="server" Text="Property Owner: "></asp:Label>
                                     <asp:DropDownList ID="PropertyOwnerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PropertyOwnerSource" DataTextField="Name" DataValueField="PropertyOwnerID">
@@ -254,9 +275,15 @@
                                     </asp:DropDownList>
                                     <asp:SqlDataSource ID="PropertyOwnerSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT PropertyOwnerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [PropertyOwner]"></asp:SqlDataSource>
             
+                                    <br />
+                                    <br />
+
+<%--                                    <asp:TextBox ID="PropertySearchBox" runat="server" AutoPostBack ="True"></asp:TextBox>
+                                    <asp:Button ID="SelectPropertyButton" runat="server" Text="Search" OnClick = "SelectProperty"/>--%>
+
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerFirstNameLabel" runat="server" Text="First Name: "></asp:Label>
-                                        <asp:TextBox ID="PropertyOwnerFirstNameInput" runat="server"></asp:TextBox>
+                                        <asp:Label ID="PropertyOwnerFirstNameLabel" runat="server" Text="First Name: " CssClass="col-x2-2"></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerFirstNameInput" runat="server" CssClass="form-control" placeholder="John"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="PropertyOwnerFirstNameFormatValidator" runat="server"
                                             ControlToValidate="PropertyOwnerFirstNameInput"
                                             ErrorMessage="You must enter a valid first name."
@@ -264,9 +291,10 @@
                                             ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
                                         </asp:RegularExpressionValidator>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerLastNameLabel" runat="server" Text="Last Name: "></asp:Label>
-                                        <asp:TextBox ID="PropertyOwnerLastNameInput" runat="server"></asp:TextBox>
+                                        <asp:Label ID="PropertyOwnerLastNameLabel" runat="server" Text="Last Name: " CssClass="col-x2-2"></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerLastNameInput" runat="server" CssClass="form-control" placeholder="Smith"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="PropertyOwnerLastNameFormatValidator" runat="server"
                                             ControlToValidate="PropertyOwnerLastNameInput"
                                             ErrorMessage="You must enter a valid last name."
@@ -274,9 +302,10 @@
                                             ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
                                         </asp:RegularExpressionValidator>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerAddressLabel" runat="server" Text="Address: "></asp:Label>
-                                        <asp:TextBox ID="PropertyOwnerAddressInput" runat="server"></asp:TextBox>
+                                        <asp:Label ID="PropertyOwnerAddressLabel" runat="server" Text="Address: " CssClass="col-x2-2"></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerAddressInput" runat="server" CssClass="form-control" placeholder="123 Ohio Road"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="PropertyOwnerAddressFormatValidator" runat="server"
                                             ControlToValidate="PropertyOwnerAddressInput"
                                             ErrorMessage="You must enter a valid address."
@@ -284,9 +313,10 @@
                                             ValidationExpression="^[a-zA-Z0-9''-'\s]{0,50}$">
                                         </asp:RegularExpressionValidator>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerCityLabel" runat="server" Text="City: "></asp:Label>
-                                        <asp:TextBox ID="PropertyOwnerCityInput" runat="server"></asp:TextBox>
+                                        <asp:Label ID="PropertyOwnerCityLabel" runat="server" Text="City: " CssClass="col-x2-2"></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerCityInput" runat="server" CssClass="form-control" placeholder="Oxford"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="PropertyOwnerCityFormatValidator" runat="server"
                                             ControlToValidate="PropertyOwnerCityInput"
                                             ErrorMessage="You must enter a valid city."
@@ -294,8 +324,9 @@
                                             ValidationExpression="^[a-zA-Z''-'\s]{0,25}$">
                                         </asp:RegularExpressionValidator>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerStateLabel" runat="server" Text="State: "></asp:Label>
+                                        <asp:Label ID="PropertyOwnerStateLabel" runat="server" Text="State: " CssClass="col-x2-2"></asp:Label>
                                         <asp:DropDownList ID="PropertyOwnerStateDropDownList" runat="server">
                                             <asp:ListItem>AL</asp:ListItem>
                                             <asp:ListItem>AK</asp:ListItem>
@@ -350,9 +381,10 @@
                                             <asp:ListItem>WY</asp:ListItem>
                                         </asp:DropDownList>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerZipCodeLabel" runat="server" Text="Zip Code: "></asp:Label>
-                                        <asp:TextBox ID="PropertyOwnerZipCodeInput" runat="server"></asp:TextBox>
+                                        <asp:Label ID="PropertyOwnerZipCodeLabel" runat="server" Text="Zip Code: " CssClass="col-x2-2"></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerZipCodeInput" runat="server" CssClass="form-control" placeholder="45056"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="PropertyOwnerZipCodeFormatValidator" runat="server"
                                             ControlToValidate="PropertyOwnerZipCodeInput"
                                             ErrorMessage="You must enter a valid zip code"
@@ -360,9 +392,10 @@
                                             ValidationExpression="[0-9]{5}">
                                         </asp:RegularExpressionValidator>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerEmailLabel" runat="server" Text="Email: "></asp:Label>
-                                        <asp:TextBox ID="PropertyOwnerEmailInput" runat="server"></asp:TextBox>
+                                        <asp:Label ID="PropertyOwnerEmailLabel" runat="server" Text="Email: " CssClass="col-x2-2"></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerEmailInput" runat="server" CssClass="form-control" placeholder="email@email.com"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="PropertyOwnerEmailFormatValidator" runat="server"
                                             ControlToValidate="PropertyOwnerEmailInput"
                                             ErrorMessage="You must enter a valid email."
@@ -370,9 +403,10 @@
                                             ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
                                         </asp:RegularExpressionValidator>
                                     </div>
+                                    
                                     <div class="form-group">
-                                        <asp:Label ID="PropertyOwnerPhoneLabel" runat="server" Text="Phone: "></asp:Label>
-                                        <asp:TextBox ID="PropertyOwnerPhoneInput" runat="server"></asp:TextBox>
+                                        <asp:Label ID="PropertyOwnerPhoneLabel" runat="server" Text="Phone: " CssClass="col-x2-2"></asp:Label>
+                                        <asp:TextBox ID="PropertyOwnerPhoneInput" runat="server" CssClass="form-control" placeholder="2345678910"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="PropertyOwnerPhoneFormatValidator" runat="server"
                                             ControlToValidate="PropertyOwnerPhoneInput"
                                             ErrorMessage="You must enter a valid phone number"
@@ -380,6 +414,7 @@
                                             ValidationExpression="^[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$">
                                         </asp:RegularExpressionValidator>
                                     </div>
+                                    
                                     <div class="form-group">
                                         <asp:CheckBox ID="PropertyOwnerRotaryMemberInput" runat="server" Text="Rotary Member" TextAlign="Left" />
                                     </div>
@@ -392,14 +427,14 @@
                             </asp:TableCell>
                             <asp:TableCell>
                                 <div id="PropertyOwnerButtons">
-                                    <asp:Button ID="PropertyOwnerAddButton" runat="server" CssClass="btn btn-primary" Text="Add" />
+                                    <asp:Button ID="PropertyOwnerAddButton" runat="server" CssClass="btn btn-primary" Text="Add" Width="75"  HorizontalAlign="Right"/>
                                     <br />
-                                    <asp:Button ID="PropertyOwnerRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" />
+                                    <asp:Button ID="PropertyOwnerRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" Width="75"  HorizontalAlign="Right"/>
                                 </div>
                             </asp:TableCell>
                             <asp:TableCell>
                                 <div id="PropertyOwnerDisplay">
-                                    <asp:ListBox ID="PropertyOwnerListBox" runat="server" Width="200px"></asp:ListBox>
+                                    <asp:ListBox ID="PropertyOwnerListBox" runat="server" Width="200px"  HorizontalAlign="Right"></asp:ListBox>
                                 </div>
                             </asp:TableCell>
                         </asp:TableRow>    
@@ -416,12 +451,16 @@
                                 Property: <asp:DropDownList ID="SleevePropertyDropDownList" runat="server"></asp:DropDownList>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="SleeveLocationDescriptionLabel" runat="server" Text="Location Desciption:"></asp:Label>
-                                <asp:TextBox ID="SleeveLocationDescriptionInput" runat="server" Height="89px" Width="864px"></asp:TextBox>
+                                <asp:Label ID="SleeveLocationDescriptionLabel" runat="server" Text="Location Desciption:" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="SleeveLocationDescriptionInput" runat="server" CssClass="form-control" placeholder="Describe the location of the sleeve on the property" Height="89px" Width="864px"></asp:TextBox>
                             </div>
+
+                            <br />
+                            <br />
+                            
                             <div class="form-group">
-                                <asp:Label ID="SleeveLatitudeLabel" runat="server" Text="Latitude"></asp:Label>
-                                <asp:TextBox ID="SleeveLatitudeInput" runat="server" EnableTheming="False"></asp:TextBox>
+                                <asp:Label ID="SleeveLatitudeLabel" runat="server" Text="Latitude" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="SleeveLatitudeInput" runat="server" EnableTheming="False" CssClass="form-control" placeholder="XXX.XXXXXX"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="SleeveLatitudeFormatValidator" runat="server"
                                     ControlToValidate="SleeveLatitudeInput"
                                     ErrorMessage="You must enter a valid latitude."
@@ -429,9 +468,10 @@
                                     ValidationExpression="^\d{0,8}(.\d{0,6})?$">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="SleeveLongitudeLabel" runat="server" Text="Latitude"></asp:Label>
-                                <asp:TextBox ID="SleeveLongitudeInput" runat="server" EnableTheming="False"></asp:TextBox>
+                                <asp:Label ID="SleeveLongitudeLabel" runat="server" Text="Latitude" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="SleeveLongitudeInput" runat="server" EnableTheming="False" CssClass="form-control" placeholder="XXX.XXXXXX"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="SleeveLongitudeFormatValidator" runat="server"
                                     ControlToValidate="SleeveLongitudeInput"
                                     ErrorMessage="You must enter a valid longitude."
@@ -439,9 +479,10 @@
                                     ValidationExpression="^\d{0,8}(.\d{0,6})?$">
                                 </asp:RegularExpressionValidator>
                             </div>
+                            
                             <div class="form-group">
-                                <asp:Label ID="OupsNotifiedDateLabel" runat="server" Text="OUPS Notified Date:"></asp:Label>
-                                <asp:TextBox ID="OupsNotifiedDateInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="OupsNotifiedDateLabel" runat="server" Text="OUPS Notified Date:" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="OupsNotifiedDateInput" runat="server" CssClass="form-control" placeholder="mm/dd/yyyy"></asp:TextBox>
                                 <asp:CompareValidator ID="OupsNotifiedDateFormatValidator" runat="server"
                                     Type="Date"
                                     Operator="DataTypeCheck"
@@ -451,8 +492,8 @@
                                 </asp:CompareValidator>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="OupsTicketNumberLabel" runat="server" Text="OUPS Ticket Number:"></asp:Label>
-                                <asp:TextBox ID="OupsTicketNumberInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="OupsTicketNumberLabel" runat="server" Text="OUPS Ticket Number:" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="OupsTicketNumberInput" runat="server" CssClass="form-control" placeholder="Enter the ticket number"></asp:TextBox>
                                 <asp:RegularExpressionValidator ID="OupsTicketNumberFormatValidator" runat="server"
                                     ControlToValidate="OupsTicketNumberInput"
                                     ErrorMessage="You must enter a valid ticket number"
@@ -461,8 +502,8 @@
                                 </asp:RegularExpressionValidator>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="OupsCheckedDateLabel" runat="server" Text="OUPS Checked Date:"></asp:Label>
-                                <asp:TextBox ID="OupsCheckedDateInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="OupsCheckedDateLabel" runat="server" Text="OUPS Checked Date:" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="OupsCheckedDateInput" runat="server" CssClass="form-control" placeholder="mm/dd/yyyy"></asp:TextBox>
                                 <asp:CompareValidator ID="OupsCheckedDateFormatValidator" runat="server"
                                     Type="Date"
                                     Operator="DataTypeCheck"
@@ -472,8 +513,8 @@
                                 </asp:CompareValidator>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="SleeveInstallDateLabel" runat="server" Text="Install Date:"></asp:Label>
-                                <asp:TextBox ID="SleeveInstallDateInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="SleeveInstallDateLabel" runat="server" Text="Install Date:" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="SleeveInstallDateInput" runat="server" CssClass="form-control" placeholder="mm/dd/yyyy"></asp:TextBox>
                                 <asp:CompareValidator ID="SleeveInstallDateFormatValidator" runat="server"
                                     Type="Date"
                                     Operator="DataTypeCheck"
@@ -483,8 +524,8 @@
                                 </asp:CompareValidator>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="SleeveChangeDateLabel" runat="server" Text="Change Date"></asp:Label>
-                                <asp:TextBox ID="SleeveChangeDateInput" runat="server"></asp:TextBox>
+                                <asp:Label ID="SleeveChangeDateLabel" runat="server" Text="Change Date" CssClass="col-x2-2"></asp:Label>
+                                <asp:TextBox ID="SleeveChangeDateInput" runat="server" CssClass="form-control" placeholder="mm/dd/yyyy"></asp:TextBox>
                                 <asp:CompareValidator ID="SleeveChangeDateFormatValidator" runat="server"
                                     Type="Date"
                                     Operator="DataTypeCheck"
@@ -503,14 +544,14 @@
                         </asp:TableCell>
                         <asp:TableCell>
                         <div id="SleeveButtons">
-                            <asp:Button ID="SleeveAddButton" runat="server" CssClass="btn btn-primary" Text="Add" />
+                            <asp:Button ID="SleeveAddButton" runat="server" CssClass="btn btn-primary" Text="Add" Width="75" HorizontalAlign="Right"/>
                             <br />
-                            <asp:Button ID="SleeveRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" />
+                            <asp:Button ID="SleeveRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" Width="75" HorizontalAlign="Right"/>
                         </div>
                         </asp:TableCell>
                         <asp:TableCell>
                         <div id="SleeveDisplay">
-                            <asp:ListBox ID="SleeveListBox" runat="server" Width="200px"></asp:ListBox>
+                            <asp:ListBox ID="SleeveListBox" runat="server" Width="200px" HorizontalAlign="Right"></asp:ListBox>
                         </div>
                         </asp:TableCell>
                     </asp:TableRow>
@@ -556,4 +597,76 @@
         }
     </script>
 
+<%--    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#<%=BuyerSearchBox.ClientID%>").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '<%=ResolveUrl("~/Service.asmx/FindExistingBuyers")%>',
+                    data: "{ 'input': '" + request.term + "'}",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        response($.map(data.d, function (item) {
+                            return {
+                                label: item.split('-')[0],
+                                val: item.split('-')[1]
+                            }
+                        }))
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    }
+                });
+            },
+            select: function (e, i) {
+                $("#<%=hfExistingBuyerID.ClientID%>").val(i.item.val);
+            },
+            minLength: 1
+        });
+    });
+</script>
+
+    <script type="text/javascript">
+        Sys.Application.add_load(propertySearch)
+        function propertySearch(sender, args) {
+            $("#<%=PropertySearchBox.ClientID%>").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '<%=ResolveUrl("~/Service.asmx/FindExistingProperties")%>',
+                    data: "{ 'input': '" + request.term + "'}",
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    success: function (data) {
+                        response($.map(data.d, function (item) {
+                            return {
+                                label: item.split('-')[0],
+                                val: item.split('-')[1]
+                            }
+                        }))
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    }
+                });
+            },
+                select: function (e, i) {
+                    $("#<%=hfExistingPropertyID.ClientID()%>").val(i.item.val);
+            },
+            minLength: 1
+            });
+        });
+</script>--%>
+
+
+    <asp:HiddenField ID="hfExistingBuyerID" runat="server" />
+    <asp:HiddenField ID="hfExistingPropertyID" runat="server" />
 </asp:Content>

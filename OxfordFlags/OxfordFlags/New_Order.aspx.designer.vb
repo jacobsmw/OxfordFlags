@@ -1128,4 +1128,22 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TabName As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''hfExistingBuyerID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfExistingBuyerID As Global.System.Web.UI.WebControls.HiddenField
+
+    '''<summary>
+    '''hfExistingPropertyID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hfExistingPropertyID As Global.System.Web.UI.WebControls.HiddenField
 End Class
