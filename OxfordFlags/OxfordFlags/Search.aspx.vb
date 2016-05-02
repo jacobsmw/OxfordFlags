@@ -9,13 +9,11 @@ Public Class Search
             Response.Redirect("~/Account/Login")
         End If
 
-        Label1.Text = SelectSearchType.SelectedValue
         PersonSearchBox.Visible = False
         PersonSearchButton.Visible = False
         AddressSearchBox.Visible = False
         AddressSearchButton.Visible = False
-        'PersonResult.Visible = False
-        'AddressResults.Visible = False
+
     End Sub
 
     Protected Sub PersonSearch(sender As Object, e As EventArgs) Handles PersonSearchButton.Click
@@ -26,8 +24,12 @@ Public Class Search
         PersonSearchButton.Visible = True
         AddressSearchBox.Visible = False
         AddressSearchButton.Visible = False
-        'AddressResults.Visible = False
-        'PersonResult.Visible = True
+
+        BuyerDetails.Visible = True
+        OrderDetails.Visible = True
+        PaymentSleeveDetails.Visible = True
+        PropertyDetails.Visible = False
+        SleeveOupsDetails.Visible = False
 
     End Sub
 
@@ -39,8 +41,12 @@ Public Class Search
         PersonSearchButton.Visible = False
         AddressSearchBox.Visible = True
         AddressSearchButton.Visible = True
-        'AddressResults.Visible = True
-        'PersonResult.Visible = False
+
+        BuyerDetails.Visible = False
+        OrderDetails.Visible = False
+        PaymentSleeveDetails.Visible = False
+        PropertyDetails.Visible = True
+        SleeveOupsDetails.Visible = True
 
     End Sub
 
