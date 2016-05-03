@@ -77,6 +77,15 @@ Partial Public Class Search
     Protected WithEvents PropertyDetails As Global.System.Web.UI.WebControls.DetailsView
 
     '''<summary>
+    '''OrderDetailsLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderDetailsLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''OrderDetails control.
     '''</summary>
     '''<remarks>
@@ -84,6 +93,15 @@ Partial Public Class Search
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents OrderDetails As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''OupsDetailsLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsDetailsLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''SleeveDetails control.
