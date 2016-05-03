@@ -91,10 +91,10 @@ rel = "Stylesheet" type="text/css" />
     
     <br />
     
-    <asp:TextBox ID="PersonSearchBox" runat="server"></asp:TextBox>
+    <asp:TextBox ID="PersonSearchBox" runat="server" CssClass="form-control" placeholder="Buyer Name"></asp:TextBox>
     <asp:Button ID="PersonSearchButton" runat="server" Text="Search" OnClick = "PersonSearch" />
 
-    <asp:TextBox ID="AddressSearchBox" runat="server"></asp:TextBox>
+    <asp:TextBox ID="AddressSearchBox" runat="server" CssClass="form-control" placeholder="Address"></asp:TextBox>
     <asp:Button ID="AddressSearchButton" runat="server" Text="Search" OnClick = "AddressSearch" />
 
 
