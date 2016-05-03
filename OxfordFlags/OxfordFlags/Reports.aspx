@@ -5,42 +5,25 @@
     
     <p>
         <%--Customer by street address--%>
-        <asp:Button ID="CustomerReportButton" runat="server" Text="Customer Report" PostBackUrl="~/CustomerReportInput.aspx" />
-    </p>
-    <p>
-        <%--Payment Detial by customer by calander year--%>
-        <asp:Button ID="PaymentReportButton" runat="server" Text="Payment Report" PostBackUrl="~/PaymentReportInput.aspx" />
+        <asp:Button ID="CustomerReportButton" runat="server" Text="Customer Report" PostBackUrl="~/CustomerReportInput.aspx" CssClass="btn btn-primary" />
     </p>
     <p>
         <%-- finances for particular year--%>
-        <asp:Button ID="FinanceReportButton" runat="server" Text="Finance Report" PostBackUrl="~/FinanceReportInput.aspx" />
+        <asp:Button ID="FinanceReportButton" runat="server" Text="Finance Report" PostBackUrl="~/FinanceReportInput.aspx" CssClass="btn btn-primary" />
     </p>
-    <p>
-        <%--communicate with subscribers for a year--%>
-        <asp:Button ID="SubcriberCommunicationButton" runat="server" Text="Subscriber Communication" PostBackUrl="~/SubscriberCommunicationInput.aspx" />
-    </p>
-
     <p>
         <%--communicate with non subscribers--%>
-        <asp:Button ID="NonSubscriberCommunicationButton" runat="server" Text="Non-Subscriber Communication" PostBackUrl="~/NonSubscriberCommunicationInput.aspx" />
+        <asp:Button ID="NonSubscriberCommunicationButton" runat="server" Text="Non-Subscriber Communication" PostBackUrl="~/NonSubscriberCommunicationInput.aspx" CssClass="btn btn-primary" />
     </p>
     <p>
         <%--route output--%>
-        <asp:Button ID="RouteReportButton" runat="server" Text="Route Report" PostBackUrl="~/RouteReportInput.aspx" />
-    </p>
-    <hr />
-    <p>
-        <asp:Button ID="SleeveReportButton" runat="server" Text="Sleeve Report" />
+        <asp:Button ID="RouteReportButton" runat="server" Text="Route Report" PostBackUrl="~/RouteReportInput.aspx" CssClass="btn btn-primary" />
     </p>
     <p>
-        <asp:Button ID="GPSDataButton" runat="server" Text="GPS Data" />
+        <asp:Button ID="SleeveReportButton" runat="server" Text="Sleeve Report" CssClass="btn btn-primary" />
     </p>
     <p>
-        <asp:Button ID="EmailListDataButton" runat="server" Text="Email List" />
+        <asp:Button ID="GPSDataButton" runat="server" Text="GPS Data" CssClass="btn btn-primary" />
     </p>
-    <p>
-        <asp:Button ID="MailingListButton" runat="server" Text="Mailing List" />
-    </p>
-
 
     </asp:Content>

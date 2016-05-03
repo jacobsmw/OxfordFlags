@@ -1607,25 +1607,9 @@ CustomerReportButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Reports.PaymentReportButton">
-	<summary>
-PaymentReportButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:OxfordFlags.Reports.FinanceReportButton">
 	<summary>
 FinanceReportButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.SubcriberCommunicationButton">
-	<summary>
-SubcriberCommunicationButton control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1658,22 +1642,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Reports.GPSDataButton">
 	<summary>
 GPSDataButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.EmailListDataButton">
-	<summary>
-EmailListDataButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Reports.MailingListButton">
-	<summary>
-MailingListButton control.
 </summary>
 	<remarks>
 Auto-generated field.
