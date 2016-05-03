@@ -29,9 +29,12 @@
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="DiscountMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Discount]" DeleteCommand="DELETE FROM [Discount] WHERE [DiscountID] = @DiscountID" InsertCommand="INSERT INTO [Discount] ([DiscountReason], [DiscountAmount], [Active]) VALUES (@DiscountReason, @DiscountAmount, @Active)" UpdateCommand="UPDATE [Discount] SET [DiscountReason] = @DiscountReason, [DiscountAmount] = @DiscountAmount, [Active] = @Active WHERE [DiscountID] = @DiscountID">
+    <asp:SqlDataSource ID="DiscountMaintenanceData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Discount]" DeleteCommand="DELETE FROM [Discount] WHERE [DiscountID] = @original_DiscountID AND [DiscountReason] = @original_DiscountReason AND [DiscountAmount] = @original_DiscountAmount AND (([Active] = @original_Active) OR ([Active] IS NULL AND @original_Active IS NULL))" InsertCommand="INSERT INTO [Discount] ([DiscountReason], [DiscountAmount], [Active]) VALUES (@DiscountReason, @DiscountAmount, @Active)" UpdateCommand="UPDATE [Discount] SET [DiscountReason] = @DiscountReason, [DiscountAmount] = @DiscountAmount, [Active] = @Active WHERE [DiscountID] = @original_DiscountID AND [DiscountReason] = @original_DiscountReason AND [DiscountAmount] = @original_DiscountAmount AND (([Active] = @original_Active) OR ([Active] IS NULL AND @original_Active IS NULL))" ConflictDetection="CompareAllValues" OldValuesParameterFormatString="original_{0}">
         <DeleteParameters>
-            <asp:Parameter Name="DiscountID" Type="Int32" />
+            <asp:Parameter Name="original_DiscountID" Type="Int32" />
+            <asp:Parameter Name="original_DiscountReason" Type="String" />
+            <asp:Parameter Name="original_DiscountAmount" Type="Double" />
+            <asp:Parameter Name="original_Active" Type="Boolean" />
         </DeleteParameters>
         <InsertParameters>
             <asp:Parameter Name="DiscountReason" Type="String" />
@@ -42,7 +45,10 @@
             <asp:Parameter Name="DiscountReason" Type="String" />
             <asp:Parameter Name="DiscountAmount" Type="Double" />
             <asp:Parameter Name="Active" Type="Boolean" />
-            <asp:Parameter Name="DiscountID" Type="Int32" />
+            <asp:Parameter Name="original_DiscountID" Type="Int32" />
+            <asp:Parameter Name="original_DiscountReason" Type="String" />
+            <asp:Parameter Name="original_DiscountAmount" Type="Double" />
+            <asp:Parameter Name="original_Active" Type="Boolean" />
         </UpdateParameters>
     </asp:SqlDataSource>
     
@@ -50,8 +56,8 @@
 
     <h3><%: "Add New Entry"%></h3>
     <p>
-        <asp:Label ID="DiscountDescriptionLabel" runat="server" Text="Discount Description"></asp:Label>
-        &nbsp;<asp:TextBox ID="DiscountDescription" runat="server"></asp:TextBox>
+        <asp:Label ID="DiscountDescriptionLabel" runat="server" CssClass="col-x2-2" Text="Discount Description"></asp:Label>
+        &nbsp;<asp:TextBox ID="DiscountDescription" runat="server" CssClass="form-control" placeholder="Early Bird"></asp:TextBox>
         <asp:RequiredFieldValidator id="DiscountDescriptionEnteredValidator" runat="server"
             ControlToValidate="DiscountDescription"
             ErrorMessage="Discount Description is a required field."
@@ -65,8 +71,8 @@
         </asp:RegularExpressionValidator>
     </p>
     <p>
-        <asp:Label ID="DiscountAmountLabel" runat="server" Text="Discount Amount"></asp:Label>
-        &nbsp;<asp:TextBox ID="DiscountAmount" runat="server"></asp:TextBox>
+        <asp:Label ID="DiscountAmountLabel" runat="server" CssClass="col-x2-2" Text="Discount Amount"></asp:Label>
+        &nbsp;<asp:TextBox ID="DiscountAmount" runat="server" CssClass="form-control" placeholder="10.00"></asp:TextBox>
         <asp:RequiredFieldValidator id="DiscountAmountEnteredValidator" runat="server"
             ControlToValidate="DiscountAmount"
             ErrorMessage="Discount Amount is a required field."
@@ -84,5 +90,5 @@
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
-&nbsp;<asp:Button ID="NewEntryButton" runat="server" Text="Submit New Entry" />
+&nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
 </asp:Content>

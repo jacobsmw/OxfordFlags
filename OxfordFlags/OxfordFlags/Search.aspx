@@ -100,12 +100,14 @@ rel = "Stylesheet" type="text/css" />
     <br />
     <br />
     
-    <asp:DetailsView ID="BuyerDetails" runat="server" AutoGenerateRows="False" DataSourceID="PersonSearchResultsData" Height="50px" Width="125px" HorizontalAlign="Justify" DataKeyNames="BuyerID">
+    <asp:DetailsView ID="BuyerDetails" runat="server" AutoGenerateRows="False" DataSourceID="PersonSearchResultsData" Height="50px" HorizontalAlign="Justify" DataKeyNames="BuyerID" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" GridLines="Vertical" HeaderText="Buyer" ForeColor="Black">
+        <AlternatingRowStyle BackColor="#CCCCCC" />
+        <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
         <Fields>
-            <asp:BoundField DataField="BuyerID" HeaderText="Buyer ID" InsertVisible="False" ReadOnly="True" SortExpression="BuyerID" />
-            <asp:CheckBoxField DataField="Active" HeaderText="Active" SortExpression="Active" />
             <asp:BoundField DataField="FirstName" HeaderText="First Name" SortExpression="FirstName" />
             <asp:BoundField DataField="LastName" HeaderText="Last Name" SortExpression="LastName" />
+            <asp:BoundField DataField="BuyerID" HeaderText="Buyer ID" InsertVisible="False" ReadOnly="True" SortExpression="BuyerID" />
+            <asp:CheckBoxField DataField="Active" HeaderText="Active" SortExpression="Active" />
             <asp:BoundField DataField="StreetAddress" HeaderText="Street Address" SortExpression="StreetAddress" />
             <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
             <asp:BoundField DataField="State" HeaderText="State" SortExpression="State" />
@@ -116,12 +118,17 @@ rel = "Stylesheet" type="text/css" />
             <asp:CheckBoxField DataField="RotaryMember" HeaderText="Rotary Member" SortExpression="RotaryMember" />
             <asp:CommandField ShowEditButton="True" />
         </Fields>
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
     </asp:DetailsView>
     
-    <asp:DetailsView ID="PropertyDetails" runat="server" AutoGenerateColumns="False" DataSourceID="AddressSearchResultsData" HorizontalAlign="Justify" AutoGenerateRows="False" DataKeyNames="PropertyOwnerID">
+    <asp:DetailsView ID="PropertyDetails" runat="server" AutoGenerateColumns="False" DataSourceID="AddressSearchResultsData" HorizontalAlign="Justify" AutoGenerateRows="False" DataKeyNames="PropertyOwnerID,TraitID,Expr1,Expr2" HeaderText="Property" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+        <AlternatingRowStyle BackColor="#CCCCCC" />
+        <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
         <Fields>
            <%-- <asp:BoundField DataField="TraitDescription" HeaderText="Trait Description" SortExpression="TraitDescription"/>--%>
-            <asp:BoundField DataField="PropertyOwnerID" HeaderText="Property Owner ID" InsertVisible="False" ReadOnly="True" SortExpression="PropertyOwnerID" Visible="False" />
+            <asp:BoundField DataField="PropertyOwnerID" HeaderText="PropertyOwnerID" InsertVisible="False" ReadOnly="True" SortExpression="PropertyOwnerID" Visible="False" />
             <asp:BoundField DataField="FirstName" HeaderText="First Name" SortExpression="FirstName" />
             <asp:BoundField DataField="LastName" HeaderText="Last Name" SortExpression="LastName" />
             <asp:BoundField DataField="StreetAddress" HeaderText="Street Address" SortExpression="StreetAddress" />
@@ -131,70 +138,120 @@ rel = "Stylesheet" type="text/css" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
             <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
             <asp:CheckBoxField DataField="RotaryMember" HeaderText="Rotary Member" SortExpression="RotaryMember"/>
+            <asp:BoundField DataField="TraitDescription" HeaderText="Property Traits" SortExpression="TraitDescription" />
+            <asp:BoundField DataField="TraitID" HeaderText="TraitID" InsertVisible="False" ReadOnly="True" SortExpression="TraitID" Visible="False" />
+            <asp:BoundField DataField="Expr1" HeaderText="Expr1" ReadOnly="True" SortExpression="Expr1" Visible="False" />
+            <asp:BoundField DataField="Expr2" HeaderText="Expr2" ReadOnly="True" SortExpression="Expr2" Visible="False" />
             <asp:CommandField ShowEditButton="True" />
         </Fields>
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
     </asp:DetailsView>
     <br />
     <asp:Label ID="OrderDetailsLabel" runat="server" Text="Select an order to see payments made."></asp:Label>
-    <asp:GridView ID="OrderDetails" runat="server" AutoGenerateColumns="False" DataSourceID="OrderResultsData" HorizontalAlign="Justify" DataKeyNames="OrderID,Expr1,BuyerID,Expr2,Expr3,OccasionID">
+    <asp:GridView ID="OrderDetails" runat="server" AutoGenerateColumns="False" DataSourceID="OrderResultsData" HorizontalAlign="Justify" DataKeyNames="OrderID,Expr1,BuyerID,Expr2,Expr3,OccasionID" HeaderText="Orders" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+        <AlternatingRowStyle BackColor="#CCCCCC" />
         <Columns>
             <asp:CommandField ShowEditButton="True" ShowSelectButton="True" />
-            <asp:BoundField DataField="OrderID" HeaderText="Order ID" SortExpression="OrderID" InsertVisible="False" ReadOnly="True" Visible="False"/>
-            <asp:BoundField DataField="SourceID" HeaderText="Source ID" SortExpression="SourceID" Visible="False"/>
-            <asp:BoundField DataField="DiscountID" HeaderText="DiscountID" SortExpression="DiscountID" Visible="False"/>
-            <asp:BoundField DataField="FirstOccasionID" HeaderText="FirstOccasionID" SortExpression="FirstOccasionID" Visible="False"/>
-            <asp:BoundField DataField="BuyerID" HeaderText="BuyerID" ReadOnly="True" SortExpression="BuyerID" Visible="False" />
+            <asp:BoundField DataField="OrderID" HeaderText="OrderID" SortExpression="OrderID" InsertVisible="False" ReadOnly="True" Visible="False"/>
             <asp:BoundField DataField="OrderDate" HeaderText="Order Date" SortExpression="OrderDate"/>
+            <asp:BoundField DataField="SourceID" HeaderText="SourceID" SortExpression="SourceID" Visible="False"/>
             <asp:BoundField DataField="SubYear" HeaderText="Subscription Year" SortExpression="SubYear"/>
-            <asp:BoundField DataField="Cost" HeaderText="Cost" SortExpression="Cost"/>
+            <asp:BoundField DataField="Cost" HeaderText="Cost" SortExpression="Cost" />
+            <asp:BoundField DataField="DiscountID" HeaderText="DiscountID" SortExpression="DiscountID" Visible="False"/>
             <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type"/>
             <asp:BoundField DataField="ConfirmationDate" HeaderText="Confirmation Date" SortExpression="ConfirmationDate"/>
+            <asp:BoundField DataField="FirstOccasionID" HeaderText="FirstOccasionID" SortExpression="FirstOccasionID" Visible="False"/>
+            <asp:BoundField DataField="Expr1" HeaderText="Expr1" SortExpression="Expr1" ReadOnly="True" Visible="False"/>
             <asp:BoundField DataField="DiscountReason" HeaderText="Discount" SortExpression="DiscountReason" />
-            <asp:BoundField DataField="SourceName" HeaderText="Source" SortExpression="SourceName" />
+            <asp:BoundField DataField="SourceName" HeaderText="Source Name" SortExpression="SourceName" />
+            <asp:BoundField DataField="BuyerID" HeaderText="BuyerID" SortExpression="BuyerID" ReadOnly="True" Visible="False" />
+            <asp:BoundField DataField="Expr2" HeaderText="Expr2" InsertVisible="False" ReadOnly="True" SortExpression="Expr2" Visible="False" />
+            <asp:BoundField DataField="Expr3" HeaderText="Expr3" InsertVisible="False" ReadOnly="True" SortExpression="Expr3" Visible="False" />
             <asp:BoundField DataField="OccasionName" HeaderText="First Occasion" SortExpression="OccasionName" />
+            <asp:BoundField DataField="OccasionID" HeaderText="OccasionID" InsertVisible="False" ReadOnly="True" SortExpression="OccasionID" Visible="False" />
         </Columns>
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#808080" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#383838" />
     </asp:GridView>
     <asp:Label ID="OupsDetailsLabel" runat="server" Text="Select a sleeve to see OUPS details."></asp:Label>
-    <asp:GridView ID="SleeveDetails" runat="server" AutoGenerateColumns="False" DataSourceID="SleeveOupsResultsData" HorizontalAlign="Justify" DataKeyNames="SleeveID">
+    <asp:GridView ID="SleeveDetails" runat="server" AutoGenerateColumns="False" DataSourceID="SleeveOupsResultsData" HorizontalAlign="Justify" DataKeyNames="SleeveID" HeaderText="Sleeves" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+        <AlternatingRowStyle BackColor="#CCCCCC" />
         <Columns>
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
-            <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName"/>
+            <asp:BoundField DataField="SleeveName" HeaderText="SleeveName" SortExpression="SleeveName" Visible="False"/>
             <asp:BoundField DataField="SleeveID" HeaderText="SleeveID" InsertVisible="False" ReadOnly="True" SortExpression="SleeveID" Visible="False"/>
             <asp:CheckBoxField DataField="Active" HeaderText="Active" SortExpression="Active" />
             <asp:BoundField DataField="PropertyOwnerID" HeaderText="PropertyOwnerID" SortExpression="PropertyOwnerID" Visible="False"/>
-            <asp:BoundField DataField="LocationDescription" HeaderText="LocationDescription" SortExpression="LocationDescription" />
+            <asp:BoundField DataField="LocationDescription" HeaderText="Location Description" SortExpression="LocationDescription" />
             <asp:BoundField DataField="Latitude" HeaderText="Latitude" SortExpression="Latitude"/>
             <asp:BoundField DataField="Longitude" HeaderText="Longitude" SortExpression="Longitude"/>
             <asp:BoundField DataField="OupsID" HeaderText="OupsID" SortExpression="OupsID" Visible="False"/>
-            <asp:BoundField DataField="InstalledDate" HeaderText="InstalledDate" SortExpression="InstalledDate"/>
-            <asp:BoundField DataField="ChangeDate" HeaderText="ChangeDate" SortExpression="ChangeDate"/>
+            <asp:BoundField DataField="InstalledDate" HeaderText="Installed Date" SortExpression="InstalledDate"/>
+            <asp:BoundField DataField="ChangeDate" HeaderText="Change Date" SortExpression="ChangeDate"/>
             <asp:CheckBoxField DataField="Public" HeaderText="Public" SortExpression="Public" />
             <asp:CheckBoxField DataField="Deliver" HeaderText="Deliver" SortExpression="Deliver" />
-            <asp:BoundField DataField="ExpiredDate" HeaderText="ExpiredDate" SortExpression="ExpiredDate"/>
+            <asp:BoundField DataField="ExpiredDate" HeaderText="Expired Date" SortExpression="ExpiredDate"/>
         </Columns>
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#808080" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#383838" />
     </asp:GridView>
 
     <br />
             
-    <asp:GridView ID="PaymentSleeveDetails" runat="server" AutoGenerateColumns="False" DataSourceID="PaymentResultsData" HorizontalAlign="Justify" DataKeyNames="PaymentID">
+    <asp:GridView ID="PaymentSleeveDetails" runat="server" AutoGenerateColumns="False" DataSourceID="PaymentResultsData" HorizontalAlign="Justify" DataKeyNames="PaymentID,Id" HeaderText="Payments" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+        <AlternatingRowStyle BackColor="#CCCCCC" />
         <Columns>
             <asp:CommandField ShowEditButton="True" />
             <asp:BoundField DataField="PaymentID" HeaderText="PaymentID" InsertVisible="False" ReadOnly="True" SortExpression="PaymentID" Visible="False"/>
             <asp:BoundField DataField="OrderID" HeaderText="OrderID" SortExpression="OrderID" Visible="False"/>
-            <asp:BoundField DataField="Payment" HeaderText="Payment Amount" SortExpression="Payment"/>
+            <asp:BoundField DataField="Payment" HeaderText="Payment" SortExpression="Payment"/>
             <asp:BoundField DataField="PaymentDate" HeaderText="Payment Date" SortExpression="PaymentDate"/>
-            <asp:BoundField DataField="PaymentSource" HeaderText="Payment Source" SortExpression="PaymentSource"/>
-            <asp:BoundField DataField="Memo" HeaderText="Memo" SortExpression="Memo"/>
+            <asp:BoundField DataField="PaymentSource" HeaderText="PaymentSource" SortExpression="PaymentSource" Visible="False"/>
+            <asp:BoundField DataField="CheckPaypalNumber" HeaderText="Check/Paypal Number" SortExpression="CheckPaypalNumber"/>
+            <asp:BoundField DataField="PaypalTransaction" HeaderText="Paypal Transaction" SortExpression="PaypalTransaction" />
+            <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" Visible="False" />
+            <asp:BoundField DataField="Type" HeaderText="Payment Source" SortExpression="Type" />
         </Columns>
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#808080" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#383838" />
     </asp:GridView>
-    <asp:GridView ID="OupsDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="OupsID" DataSourceID="OupsResultsData">
+    <asp:GridView ID="OupsDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="OupsID" DataSourceID="OupsResultsData" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+        <AlternatingRowStyle BackColor="#CCCCCC" />
         <Columns>
             <asp:CommandField ShowEditButton="True" />
-            <asp:BoundField DataField="OupsID" HeaderText="OupsID" InsertVisible="False" ReadOnly="True" SortExpression="OupsID" Visible="False"/>
+            <asp:BoundField DataField="OupsID" HeaderText="OupsID" InsertVisible="False" ReadOnly="True" SortExpression="OupsID"/>
             <asp:BoundField DataField="OupsTicketNumber" HeaderText="OUPS Ticket Number" SortExpression="OupsTicketNumber" />
             <asp:BoundField DataField="OupsNotifiedDate" HeaderText="OUPS Notified Date" SortExpression="OupsNotifiedDate" />
             <asp:BoundField DataField="OupsCheckedDate" HeaderText="OUPS Checked Date" SortExpression="OupsCheckedDate" />
         </Columns>
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#808080" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#383838" />
     </asp:GridView>
     <br />
 
@@ -202,7 +259,7 @@ rel = "Stylesheet" type="text/css" />
     <asp:HiddenField ID="hfPersonID" runat="server" />
     <asp:HiddenField ID="hfPropertyOwnerId" runat="server" />
 
-    <asp:SqlDataSource ID="AddressSearchResultsData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PropertyOwner] WHERE ([PropertyOwnerID] = @PropertyOwnerID)" UpdateCommand="UPDATE [PropertyOwner] SET [LastName] = @LastName, [FirstName] = @FirstName, [StreetAddress] = @StreetAddress, [City] = @City, [State] = @State, [Zip] = @Zip, [Email] = @Email, [Phone] = @Phone, [RotaryMember] = @RotaryMember WHERE [PropertyOwnerID] = @original_PropertyOwnerID AND (([LastName] = @original_LastName) OR ([LastName] IS NULL AND @original_LastName IS NULL)) AND (([FirstName] = @original_FirstName) OR ([FirstName] IS NULL AND @original_FirstName IS NULL)) AND [StreetAddress] = @original_StreetAddress AND [City] = @original_City AND [State] = @original_State AND [Zip] = @original_Zip AND (([Email] = @original_Email) OR ([Email] IS NULL AND @original_Email IS NULL)) AND (([Phone] = @original_Phone) OR ([Phone] IS NULL AND @original_Phone IS NULL)) AND (([RotaryMember] = @original_RotaryMember) OR ([RotaryMember] IS NULL AND @original_RotaryMember IS NULL))" DeleteCommand="DELETE FROM [PropertyOwner] WHERE [PropertyOwnerID] = @original_PropertyOwnerID AND (([LastName] = @original_LastName) OR ([LastName] IS NULL AND @original_LastName IS NULL)) AND (([FirstName] = @original_FirstName) OR ([FirstName] IS NULL AND @original_FirstName IS NULL)) AND [StreetAddress] = @original_StreetAddress AND [City] = @original_City AND [State] = @original_State AND [Zip] = @original_Zip AND (([Email] = @original_Email) OR ([Email] IS NULL AND @original_Email IS NULL)) AND (([Phone] = @original_Phone) OR ([Phone] IS NULL AND @original_Phone IS NULL)) AND (([RotaryMember] = @original_RotaryMember) OR ([RotaryMember] IS NULL AND @original_RotaryMember IS NULL))" InsertCommand="INSERT INTO [PropertyOwner] ([LastName], [FirstName], [StreetAddress], [City], [State], [Zip], [Email], [Phone], [RotaryMember]) VALUES (@LastName, @FirstName, @StreetAddress, @City, @State, @Zip, @Email, @Phone, @RotaryMember)" ConflictDetection="CompareAllValues" OldValuesParameterFormatString="original_{0}">
+    <asp:SqlDataSource ID="AddressSearchResultsData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT PropertyOwner.PropertyOwnerID, PropertyOwner.LastName, PropertyOwner.FirstName, PropertyOwner.StreetAddress, PropertyOwner.City, PropertyOwner.State, PropertyOwner.Zip, PropertyOwner.Email, PropertyOwner.Phone, PropertyOwner.RotaryMember, Trait.TraitDescription, Trait.TraitID, PropertyTraits.TraitID AS Expr1, PropertyTraits.PropertyOwnerID AS Expr2 FROM PropertyOwner INNER JOIN PropertyTraits ON PropertyOwner.PropertyOwnerID = PropertyTraits.PropertyOwnerID INNER JOIN Trait ON PropertyTraits.TraitID = Trait.TraitID WHERE (PropertyOwner.PropertyOwnerID = @PropertyOwnerID)" UpdateCommand="UPDATE [PropertyOwner] SET [LastName] = @LastName, [FirstName] = @FirstName, [StreetAddress] = @StreetAddress, [City] = @City, [State] = @State, [Zip] = @Zip, [Email] = @Email, [Phone] = @Phone, [RotaryMember] = @RotaryMember WHERE [PropertyOwnerID] = @original_PropertyOwnerID AND (([LastName] = @original_LastName) OR ([LastName] IS NULL AND @original_LastName IS NULL)) AND (([FirstName] = @original_FirstName) OR ([FirstName] IS NULL AND @original_FirstName IS NULL)) AND [StreetAddress] = @original_StreetAddress AND [City] = @original_City AND [State] = @original_State AND [Zip] = @original_Zip AND (([Email] = @original_Email) OR ([Email] IS NULL AND @original_Email IS NULL)) AND (([Phone] = @original_Phone) OR ([Phone] IS NULL AND @original_Phone IS NULL)) AND (([RotaryMember] = @original_RotaryMember) OR ([RotaryMember] IS NULL AND @original_RotaryMember IS NULL))" DeleteCommand="DELETE FROM [PropertyOwner] WHERE [PropertyOwnerID] = @original_PropertyOwnerID AND (([LastName] = @original_LastName) OR ([LastName] IS NULL AND @original_LastName IS NULL)) AND (([FirstName] = @original_FirstName) OR ([FirstName] IS NULL AND @original_FirstName IS NULL)) AND [StreetAddress] = @original_StreetAddress AND [City] = @original_City AND [State] = @original_State AND [Zip] = @original_Zip AND (([Email] = @original_Email) OR ([Email] IS NULL AND @original_Email IS NULL)) AND (([Phone] = @original_Phone) OR ([Phone] IS NULL AND @original_Phone IS NULL)) AND (([RotaryMember] = @original_RotaryMember) OR ([RotaryMember] IS NULL AND @original_RotaryMember IS NULL))" InsertCommand="INSERT INTO [PropertyOwner] ([LastName], [FirstName], [StreetAddress], [City], [State], [Zip], [Email], [Phone], [RotaryMember]) VALUES (@LastName, @FirstName, @StreetAddress, @City, @State, @Zip, @Email, @Phone, @RotaryMember)" ConflictDetection="CompareAllValues" OldValuesParameterFormatString="original_{0}">
         <DeleteParameters>
             <asp:Parameter Name="original_PropertyOwnerID" Type="Int32" />
             <asp:Parameter Name="original_LastName" Type="String" />
@@ -278,7 +335,7 @@ rel = "Stylesheet" type="text/css" />
         </UpdateParameters>
     </asp:SqlDataSource>
 
-    <asp:SqlDataSource ID="SleeveOupsResultsData" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Sleeve] WHERE [SleeveID] = @original_SleeveID AND [Active] = @original_Active AND [PropertyOwnerID] = @original_PropertyOwnerID AND (([LocationDescription] = @original_LocationDescription) OR ([LocationDescription] IS NULL AND @original_LocationDescription IS NULL)) AND [Latitude] = @original_Latitude AND [Longitude] = @original_Longitude AND (([OupsID] = @original_OupsID) OR ([OupsID] IS NULL AND @original_OupsID IS NULL)) AND (([InstalledDate] = @original_InstalledDate) OR ([InstalledDate] IS NULL AND @original_InstalledDate IS NULL)) AND (([ChangeDate] = @original_ChangeDate) OR ([ChangeDate] IS NULL AND @original_ChangeDate IS NULL)) AND (([Public] = @original_Public) OR ([Public] IS NULL AND @original_Public IS NULL)) AND (([Deliver] = @original_Deliver) OR ([Deliver] IS NULL AND @original_Deliver IS NULL)) AND (([ExpiredDate] = @original_ExpiredDate) OR ([ExpiredDate] IS NULL AND @original_ExpiredDate IS NULL)) AND (([SleeveName] = @original_SleeveName) OR ([SleeveName] IS NULL AND @original_SleeveName IS NULL))" InsertCommand="INSERT INTO [Sleeve] ([Active], [PropertyOwnerID], [LocationDescription], [Latitude], [Longitude], [OupsID], [InstalledDate], [ChangeDate], [Public], [Deliver], [ExpiredDate], [SleeveName]) VALUES (@Active, @PropertyOwnerID, @LocationDescription, @Latitude, @Longitude, @OupsID, @InstalledDate, @ChangeDate, @Public, @Deliver, @ExpiredDate, @SleeveName)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Sleeve] WHERE ([PropertyOwnerID] = @PropertyOwnerID)" UpdateCommand="UPDATE [Sleeve] SET [Active] = @Active, [PropertyOwnerID] = @PropertyOwnerID, [LocationDescription] = @LocationDescription, [Latitude] = @Latitude, [Longitude] = @Longitude, [OupsID] = @OupsID, [InstalledDate] = @InstalledDate, [ChangeDate] = @ChangeDate, [Public] = @Public, [Deliver] = @Deliver, [ExpiredDate] = @ExpiredDate, [SleeveName] = @SleeveName WHERE [SleeveID] = @original_SleeveID AND [Active] = @original_Active AND [PropertyOwnerID] = @original_PropertyOwnerID AND (([LocationDescription] = @original_LocationDescription) OR ([LocationDescription] IS NULL AND @original_LocationDescription IS NULL)) AND [Latitude] = @original_Latitude AND [Longitude] = @original_Longitude AND (([OupsID] = @original_OupsID) OR ([OupsID] IS NULL AND @original_OupsID IS NULL)) AND (([InstalledDate] = @original_InstalledDate) OR ([InstalledDate] IS NULL AND @original_InstalledDate IS NULL)) AND (([ChangeDate] = @original_ChangeDate) OR ([ChangeDate] IS NULL AND @original_ChangeDate IS NULL)) AND (([Public] = @original_Public) OR ([Public] IS NULL AND @original_Public IS NULL)) AND (([Deliver] = @original_Deliver) OR ([Deliver] IS NULL AND @original_Deliver IS NULL)) AND (([ExpiredDate] = @original_ExpiredDate) OR ([ExpiredDate] IS NULL AND @original_ExpiredDate IS NULL)) AND (([SleeveName] = @original_SleeveName) OR ([SleeveName] IS NULL AND @original_SleeveName IS NULL))">
+    <asp:SqlDataSource ID="SleeveOupsResultsData" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Sleeve] WHERE [SleeveID] = @original_SleeveID AND [Active] = @original_Active AND [PropertyOwnerID] = @original_PropertyOwnerID AND (([LocationDescription] = @original_LocationDescription) OR ([LocationDescription] IS NULL AND @original_LocationDescription IS NULL)) AND [Latitude] = @original_Latitude AND [Longitude] = @original_Longitude AND (([OupsID] = @original_OupsID) OR ([OupsID] IS NULL AND @original_OupsID IS NULL)) AND (([InstalledDate] = @original_InstalledDate) OR ([InstalledDate] IS NULL AND @original_InstalledDate IS NULL)) AND (([ChangeDate] = @original_ChangeDate) OR ([ChangeDate] IS NULL AND @original_ChangeDate IS NULL)) AND (([Public] = @original_Public) OR ([Public] IS NULL AND @original_Public IS NULL)) AND (([Deliver] = @original_Deliver) OR ([Deliver] IS NULL AND @original_Deliver IS NULL)) AND (([ExpiredDate] = @original_ExpiredDate) OR ([ExpiredDate] IS NULL AND @original_ExpiredDate IS NULL)) AND (([SleeveName] = @original_SleeveName) OR ([SleeveName] IS NULL AND @original_SleeveName IS NULL))" InsertCommand="INSERT INTO [Sleeve] ([Active], [PropertyOwnerID], [LocationDescription], [Latitude], [Longitude], [OupsID], [InstalledDate], [ChangeDate], [Public], [Deliver], [ExpiredDate], [SleeveName]) VALUES (@Active, @PropertyOwnerID, @LocationDescription, @Latitude, @Longitude, @OupsID, @InstalledDate, @ChangeDate, @Public, @Deliver, @ExpiredDate, @SleeveName)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT SleeveID, Active, PropertyOwnerID, LocationDescription, Latitude, Longitude, OupsID, InstalledDate, ChangeDate, [Public], Deliver, ExpiredDate, SleeveName FROM Sleeve WHERE (PropertyOwnerID = @PropertyOwnerID)" UpdateCommand="UPDATE [Sleeve] SET [Active] = @Active, [PropertyOwnerID] = @PropertyOwnerID, [LocationDescription] = @LocationDescription, [Latitude] = @Latitude, [Longitude] = @Longitude, [OupsID] = @OupsID, [InstalledDate] = @InstalledDate, [ChangeDate] = @ChangeDate, [Public] = @Public, [Deliver] = @Deliver, [ExpiredDate] = @ExpiredDate, [SleeveName] = @SleeveName WHERE [SleeveID] = @original_SleeveID AND [Active] = @original_Active AND [PropertyOwnerID] = @original_PropertyOwnerID AND (([LocationDescription] = @original_LocationDescription) OR ([LocationDescription] IS NULL AND @original_LocationDescription IS NULL)) AND [Latitude] = @original_Latitude AND [Longitude] = @original_Longitude AND (([OupsID] = @original_OupsID) OR ([OupsID] IS NULL AND @original_OupsID IS NULL)) AND (([InstalledDate] = @original_InstalledDate) OR ([InstalledDate] IS NULL AND @original_InstalledDate IS NULL)) AND (([ChangeDate] = @original_ChangeDate) OR ([ChangeDate] IS NULL AND @original_ChangeDate IS NULL)) AND (([Public] = @original_Public) OR ([Public] IS NULL AND @original_Public IS NULL)) AND (([Deliver] = @original_Deliver) OR ([Deliver] IS NULL AND @original_Deliver IS NULL)) AND (([ExpiredDate] = @original_ExpiredDate) OR ([ExpiredDate] IS NULL AND @original_ExpiredDate IS NULL)) AND (([SleeveName] = @original_SleeveName) OR ([SleeveName] IS NULL AND @original_SleeveName IS NULL))">
         <DeleteParameters>
             <asp:Parameter Name="original_SleeveID" Type="Int32" />
             <asp:Parameter Name="original_Active" Type="Boolean" />
@@ -444,21 +501,23 @@ rel = "Stylesheet" type="text/css" />
             <asp:Parameter Name="original_FirstOccasionID" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <asp:SqlDataSource ID="PaymentResultsData" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Payment] WHERE [PaymentID] = @original_PaymentID AND [OrderID] = @original_OrderID AND [Payment] = @original_Payment AND [PaymentDate] = @original_PaymentDate AND [PaymentSource] = @original_PaymentSource AND (([Memo] = @original_Memo) OR ([Memo] IS NULL AND @original_Memo IS NULL))" InsertCommand="INSERT INTO [Payment] ([OrderID], [Payment], [PaymentDate], [PaymentSource], [Memo]) VALUES (@OrderID, @Payment, @PaymentDate, @PaymentSource, @Memo)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Payment] WHERE ([OrderID] = @OrderID)" UpdateCommand="UPDATE [Payment] SET [OrderID] = @OrderID, [Payment] = @Payment, [PaymentDate] = @PaymentDate, [PaymentSource] = @PaymentSource, [Memo] = @Memo WHERE [PaymentID] = @original_PaymentID AND [OrderID] = @original_OrderID AND [Payment] = @original_Payment AND [PaymentDate] = @original_PaymentDate AND [PaymentSource] = @original_PaymentSource AND (([Memo] = @original_Memo) OR ([Memo] IS NULL AND @original_Memo IS NULL))">
+    <asp:SqlDataSource ID="PaymentResultsData" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Payment] WHERE [PaymentID] = @original_PaymentID AND [OrderID] = @original_OrderID AND [Payment] = @original_Payment AND [PaymentDate] = @original_PaymentDate AND [PaymentSource] = @original_PaymentSource AND (([CheckPaypalNumber] = @original_CheckPaypalNumber) OR ([CheckPaypalNumber] IS NULL AND @original_CheckPaypalNumber IS NULL)) AND (([PaypalTransaction] = @original_PaypalTransaction) OR ([PaypalTransaction] IS NULL AND @original_PaypalTransaction IS NULL))" InsertCommand="INSERT INTO [Payment] ([OrderID], [Payment], [PaymentDate], [PaymentSource], [CheckPaypalNumber], [PaypalTransaction]) VALUES (@OrderID, @Payment, @PaymentDate, @PaymentSource, @CheckPaypalNumber, @PaypalTransaction)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT Payment.PaymentID, Payment.OrderID, Payment.Payment, Payment.PaymentDate, Payment.PaymentSource, Payment.CheckPaypalNumber, Payment.PaypalTransaction, PaymentSource.Id, PaymentSource.Type FROM Payment INNER JOIN PaymentSource ON Payment.PaymentSource = PaymentSource.Id WHERE (Payment.OrderID = @OrderID)" UpdateCommand="UPDATE [Payment] SET [OrderID] = @OrderID, [Payment] = @Payment, [PaymentDate] = @PaymentDate, [PaymentSource] = @PaymentSource, [CheckPaypalNumber] = @CheckPaypalNumber, [PaypalTransaction] = @PaypalTransaction WHERE [PaymentID] = @original_PaymentID AND [OrderID] = @original_OrderID AND [Payment] = @original_Payment AND [PaymentDate] = @original_PaymentDate AND [PaymentSource] = @original_PaymentSource AND (([CheckPaypalNumber] = @original_CheckPaypalNumber) OR ([CheckPaypalNumber] IS NULL AND @original_CheckPaypalNumber IS NULL)) AND (([PaypalTransaction] = @original_PaypalTransaction) OR ([PaypalTransaction] IS NULL AND @original_PaypalTransaction IS NULL))">
         <DeleteParameters>
             <asp:Parameter Name="original_PaymentID" Type="Int32" />
             <asp:Parameter Name="original_OrderID" Type="Int32" />
             <asp:Parameter Name="original_Payment" Type="Double" />
             <asp:Parameter DbType="Date" Name="original_PaymentDate" />
             <asp:Parameter Name="original_PaymentSource" Type="Int32" />
-            <asp:Parameter Name="original_Memo" Type="String" />
+            <asp:Parameter Name="original_CheckPaypalNumber" Type="String" />
+            <asp:Parameter Name="original_PaypalTransaction" Type="String" />
         </DeleteParameters>
         <InsertParameters>
             <asp:Parameter Name="OrderID" Type="Int32" />
             <asp:Parameter Name="Payment" Type="Double" />
             <asp:Parameter DbType="Date" Name="PaymentDate" />
             <asp:Parameter Name="PaymentSource" Type="Int32" />
-            <asp:Parameter Name="Memo" Type="String" />
+            <asp:Parameter Name="CheckPaypalNumber" Type="String" />
+            <asp:Parameter Name="PaypalTransaction" Type="String" />
         </InsertParameters>
         <SelectParameters>
             <asp:ControlParameter ControlID="OrderDetails" Name="OrderID" PropertyName="SelectedValue" Type="Int32" />
@@ -468,13 +527,15 @@ rel = "Stylesheet" type="text/css" />
             <asp:Parameter Name="Payment" Type="Double" />
             <asp:Parameter DbType="Date" Name="PaymentDate" />
             <asp:Parameter Name="PaymentSource" Type="Int32" />
-            <asp:Parameter Name="Memo" Type="String" />
+            <asp:Parameter Name="CheckPaypalNumber" Type="String" />
+            <asp:Parameter Name="PaypalTransaction" Type="String" />
             <asp:Parameter Name="original_PaymentID" Type="Int32" />
             <asp:Parameter Name="original_OrderID" Type="Int32" />
             <asp:Parameter Name="original_Payment" Type="Double" />
-            <asp:Parameter DbType="Date" Name="original_PaymentDate" />
+            <asp:Parameter Name="original_PaymentDate" DbType="Date" />
             <asp:Parameter Name="original_PaymentSource" Type="Int32" />
-            <asp:Parameter Name="original_Memo" Type="String" />
+            <asp:Parameter Name="original_CheckPaypalNumber" Type="String" />
+            <asp:Parameter Name="original_PaypalTransaction" Type="String" />
         </UpdateParameters>
     </asp:SqlDataSource>
 

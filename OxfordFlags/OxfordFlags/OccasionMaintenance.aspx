@@ -11,8 +11,9 @@
         
         <Columns>
             <asp:BoundField DataField="OccasionID" HeaderText="OccasionID" SortExpression="OccasionID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
+<ControlStyle Font-Size="Small"></ControlStyle>
             </asp:BoundField>
-            <asp:BoundField DataField="OccasionName" HeaderText="OccasionName" SortExpression="OccasionName" />
+            <asp:BoundField DataField="OccasionName" HeaderText="Occasion Name" SortExpression="OccasionName" />
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
@@ -43,8 +44,8 @@
 
     <h3><%: "Add New Entry"%></h3>
     <p>
-        <asp:Label ID="OccasionNameLabel" runat="server" Text="Occasion Name"></asp:Label>
-        &nbsp;<asp:TextBox ID="OccasionName" runat="server"></asp:TextBox>
+        <asp:Label ID="OccasionNameLabel" runat="server" CssClass="col-x2-2" Text="Occasion Name"></asp:Label>
+        &nbsp;<asp:TextBox ID="OccasionName" runat="server" CssClass="form-control" placeholder="Fourth of July"></asp:TextBox>
         <%--<asp:RequiredFieldValidator id="OccasionNameEnteredValidator" runat="server"
             ControlToValidate="OccasionName"
             ErrorMessage="Ocassion Name is a required field."
@@ -59,6 +60,6 @@
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
-    &nbsp;<asp:Button ID="NewEntryButton" runat="server" Text="Submit New Entry" />
+    &nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
 
 </asp:Content>

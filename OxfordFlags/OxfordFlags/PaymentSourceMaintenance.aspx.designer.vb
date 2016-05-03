@@ -30,4 +30,58 @@ Partial Public Class PaymentSourceMaintenance
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentSourceMaintenanceData As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''SourceNameLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SourceNameLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''SourceName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SourceName As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SourceNameEnteredValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SourceNameEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
+    '''SourceNameFormatValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SourceNameFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''Label1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''NewEntryButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents NewEntryButton As Global.System.Web.UI.WebControls.Button
 End Class

@@ -11,7 +11,7 @@
                 <asp:BoundField DataField="TraitID" HeaderText="TraitID" SortExpression="TraitID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
                 <ControlStyle Font-Size="Small" />
                 </asp:BoundField>
-                <asp:BoundField DataField="TraitDescription" HeaderText="TraitDescription" SortExpression="TraitDescription" />
+                <asp:BoundField DataField="TraitDescription" HeaderText="Trait Description" SortExpression="TraitDescription" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
@@ -42,8 +42,8 @@
 
     <h3><%: "Add New Entry"%></h3>
     <p>
-        <asp:Label ID="TraitDescriptionLabel" runat="server" Text="Trait Description"></asp:Label>
-        &nbsp;<asp:TextBox ID="TraitDescription" runat="server"></asp:TextBox>
+        <asp:Label ID="TraitDescriptionLabel" runat="server" CssClass="col-x2-2" Text="Trait Description"></asp:Label>
+        &nbsp;<asp:TextBox ID="TraitDescription" runat="server" CssClass="form-control" placeholder="Dogs"></asp:TextBox>
     <asp:RequiredFieldValidator id="TraitDescriptionEnteredValidator" runat="server"
             ControlToValidate="TraitDescription"
             ErrorMessage="Trait Description is a required field."
@@ -58,5 +58,5 @@
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
-&nbsp;<asp:Button ID="NewEntryButton" runat="server" Text="Submit New Entry" />
+&nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
 </asp:Content>

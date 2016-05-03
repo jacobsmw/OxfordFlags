@@ -32,15 +32,6 @@ Partial Public Class Admin
     Protected WithEvents AddNewUserButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''ViewUsersButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ViewUsersButton As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
     '''OccasionMaintenanceButton control.
     '''</summary>
     '''<remarks>

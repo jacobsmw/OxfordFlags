@@ -13,6 +13,8 @@ Public Class Search
         PersonSearchButton.Visible = False
         AddressSearchBox.Visible = False
         AddressSearchButton.Visible = False
+        OrderDetailsLabel.Visible = False
+        OupsDetailsLabel.Visible = False
 
     End Sub
 
@@ -31,6 +33,8 @@ Public Class Search
         PropertyDetails.Visible = False
         SleeveDetails.Visible = False
         OupsDetails.Visible = False
+        OrderDetailsLabel.Visible = True
+        OupsDetailsLabel.Visible = False
 
     End Sub
 
@@ -49,6 +53,8 @@ Public Class Search
         PropertyDetails.Visible = True
         SleeveDetails.Visible = True
         OupsDetails.Visible = True
+        OrderDetailsLabel.Visible = False
+        OupsDetailsLabel.Visible = True
 
     End Sub
 

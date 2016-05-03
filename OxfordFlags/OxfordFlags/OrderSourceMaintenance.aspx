@@ -11,8 +11,9 @@
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="SourceID" HeaderText="SourceID" SortExpression="SourceID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
+<ControlStyle Font-Size="Small"></ControlStyle>
             </asp:BoundField>
-            <asp:BoundField DataField="SourceName" HeaderText="SourceName" SortExpression="SourceName" />
+            <asp:BoundField DataField="SourceName" HeaderText="Source Name" SortExpression="SourceName" />
             <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
@@ -43,8 +44,8 @@
 
     <h3><%: "Add New Entry"%></h3>
     <p>
-        <asp:Label ID="SourceNameLabel" runat="server" Text="Source Name"></asp:Label>
-        &nbsp;<asp:TextBox ID="SourceName" runat="server"></asp:TextBox>
+        <asp:Label ID="SourceNameLabel" runat="server" Text="Source Name"  CssClass="col-x2-2"></asp:Label>
+        &nbsp;<asp:TextBox ID="SourceName" runat="server" CssClass="form-control" placeholder="Email"></asp:TextBox>
         <asp:RequiredFieldValidator id="SourceNameEnteredValidator" runat="server"
             ControlToValidate="SourceName"
             ErrorMessage="Source Name is a required field."
@@ -58,6 +59,5 @@
         </asp:RegularExpressionValidator>
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
-    <br />
-&nbsp;<asp:Button ID="NewEntryButton" runat="server" Text="Submit New Entry" />
+    <asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
 </asp:Content>
