@@ -86,13 +86,13 @@ Partial Public Class Search
     Protected WithEvents OrderDetails As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''SleeveOupsDetails control.
+    '''SleeveDetails control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SleeveOupsDetails As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents SleeveDetails As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
     '''PaymentSleeveDetails control.
@@ -102,6 +102,15 @@ Partial Public Class Search
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentSleeveDetails As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''OupsDetails control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsDetails As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
     '''hfPersonID control.
@@ -131,6 +140,24 @@ Partial Public Class Search
     Protected WithEvents AddressSearchResultsData As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
+    '''OupsResultsData control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OupsResultsData As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''SleeveOupsResultsData control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SleeveOupsResultsData As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''PersonSearchResultsData control.
     '''</summary>
     '''<remarks>
@@ -138,4 +165,22 @@ Partial Public Class Search
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PersonSearchResultsData As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''OrderResultsData control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderResultsData As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''PaymentResultsData control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentResultsData As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

@@ -29,7 +29,8 @@ Public Class Search
         OrderDetails.Visible = True
         PaymentSleeveDetails.Visible = True
         PropertyDetails.Visible = False
-        SleeveOupsDetails.Visible = False
+        SleeveDetails.Visible = False
+        OupsDetails.Visible = False
 
     End Sub
 
@@ -46,7 +47,8 @@ Public Class Search
         OrderDetails.Visible = False
         PaymentSleeveDetails.Visible = False
         PropertyDetails.Visible = True
-        SleeveOupsDetails.Visible = True
+        SleeveDetails.Visible = True
+        OupsDetails.Visible = True
 
     End Sub
 
@@ -69,4 +71,5 @@ Public Class Search
                 AddressSearchButton.Visible = True
         End Select
     End Sub
+
 End Class

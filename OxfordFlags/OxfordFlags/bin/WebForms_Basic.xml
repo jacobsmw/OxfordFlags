@@ -70,9 +70,15 @@ ColorsDataSource control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersListBox">
 	<summary>
 PropertyOwnersListBox control.
+=======
+</member><member name="F:OxfordFlags.Search.SleeveDetails">
+	<summary>
+SleeveDetails control.
+>>>>>>> Stashed changes
 </summary>
 	<remarks>
 Auto-generated field.
@@ -86,7 +92,19 @@ PropertyOwnersDataSource control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.EditRouteOrder.UpButton">
+=======
+</member><member name="F:OxfordFlags.Search.OupsDetails">
+	<summary>
+OupsDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.hfPersonID">
+>>>>>>> Stashed changes
 	<summary>
 UpButton control.
 </summary>
@@ -110,7 +128,27 @@ SubmitButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.Register.ErrorMessage">
+=======
+</member><member name="F:OxfordFlags.Search.OupsResultsData">
+	<summary>
+OupsResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.SleeveOupsResultsData">
+	<summary>
+SleeveOupsResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PersonSearchResultsData">
+>>>>>>> Stashed changes
 	<summary>
 ErrorMessage control.
 </summary>
@@ -118,7 +156,27 @@ ErrorMessage control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.Register.Email">
+=======
+</member><member name="F:OxfordFlags.Search.OrderResultsData">
+	<summary>
+OrderResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PaymentResultsData">
+	<summary>
+PaymentResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PaymentReportInput.SubscriptionYearLabel">
+>>>>>>> Stashed changes
 	<summary>
 Email control.
 </summary>
