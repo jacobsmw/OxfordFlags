@@ -12,14 +12,6 @@ Partial Public Class Login
         If User.Identity.IsAuthenticated Then
             Response.Redirect("~/Main_Menu")
         End If
-        RegisterHyperLink.NavigateUrl = "Register"
-        ' Enable this once you have account confirmation enabled for password reset functionality
-        ' ForgotPasswordHyperLink.NavigateUrl = "Forgot"
-        OpenAuthLogin.ReturnUrl = Request.QueryString("ReturnUrl")
-        Dim returnUrl = HttpUtility.UrlEncode(Request.QueryString("ReturnUrl"))
-        If Not [String].IsNullOrEmpty(returnUrl) Then
-            RegisterHyperLink.NavigateUrl += "?ReturnUrl=" & returnUrl
-        End If
     End Sub
 
     Protected Sub LogIn(sender As Object, e As EventArgs)

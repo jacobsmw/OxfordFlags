@@ -483,7 +483,7 @@
                                 </asp:CompareValidator>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="SleeveChangeDateLabel" runat="server" Text="Change Date" CssClass="col-x2-2"></asp:Label>
+                                <asp:Label ID="SleeveChangeDateLabel" runat="server" Text="Change Date:" CssClass="col-x2-2"></asp:Label>
                                 <asp:TextBox ID="SleeveChangeDateInput" runat="server" CssClass="form-control" placeholder="mm/dd/yyyy"></asp:TextBox>
                                 <asp:CompareValidator ID="SleeveChangeDateFormatValidator" runat="server"
                                     Type="Date"
