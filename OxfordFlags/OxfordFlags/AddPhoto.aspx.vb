@@ -15,7 +15,11 @@
             tbl.spAddNewPhoto(SleevesListBox.SelectedValue, fileName)
             file.SaveAs(Server.MapPath("~\Images\" & fileName))
         Next
-        Response.Redirect("AddPhoto")
+        Response.Redirect("~/Tools")
+    End Sub
+
+    Protected Sub Search(ByVal sender As Object, ByVal e As System.EventArgs) Handles SearchButton.Click
+
     End Sub
 
 End Class

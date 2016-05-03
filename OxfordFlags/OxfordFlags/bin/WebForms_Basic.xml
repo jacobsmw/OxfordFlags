@@ -6,47 +6,7 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.Tools.SearchButton">
-	<summary>
-SearchButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Tools.AddImageButton">
-	<summary>
-AddImageButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Tools.EditRouteColorButton">
-	<summary>
-EditRouteColorButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Tools.EditRouteOrderButton">
-	<summary>
-EditRouteOrderButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Tools.AddPaymentButton">
-	<summary>
-AddPaymentButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
+<member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
 	<summary>
 providerDetails control.
 </summary>
@@ -182,6 +142,30 @@ ConfirmPassword control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.AddPhoto.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPhoto.AddressInput">
+	<summary>
+AddressInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPhoto.SearchButton">
+	<summary>
+SearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.AddPhoto.SleevesListBox">
 	<summary>
 SleevesListBox control.
@@ -190,9 +174,9 @@ SleevesListBox control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.AddPhoto.SleevesDataSource">
+</member><member name="F:OxfordFlags.AddPhoto.SleeveNamesDataSource">
 	<summary>
-SleevesDataSource control.
+SleeveNamesDataSource control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1906,6 +1890,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.OrderSourceMaintenance.NewEntryButton">
 	<summary>
 NewEntryButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.SearchButton">
+	<summary>
+SearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.AddImageButton">
+	<summary>
+AddImageButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.EditRouteColorButton">
+	<summary>
+EditRouteColorButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.EditRouteOrderButton">
+	<summary>
+EditRouteOrderButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.AddPaymentButton">
+	<summary>
+AddPaymentButton control.
 </summary>
 	<remarks>
 Auto-generated field.

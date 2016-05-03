@@ -14,6 +14,33 @@ Option Explicit On
 Partial Public Class AddPhoto
 
     '''<summary>
+    '''UpdatePanel1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
+
+    '''<summary>
+    '''AddressInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AddressInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SearchButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SearchButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''SleevesListBox control.
     '''</summary>
     '''<remarks>
@@ -23,13 +50,13 @@ Partial Public Class AddPhoto
     Protected WithEvents SleevesListBox As Global.System.Web.UI.WebControls.ListBox
 
     '''<summary>
-    '''SleevesDataSource control.
+    '''SleeveNamesDataSource control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SleevesDataSource As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents SleeveNamesDataSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''SleevePhotoFileUpload control.
