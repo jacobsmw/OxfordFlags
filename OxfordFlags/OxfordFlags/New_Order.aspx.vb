@@ -153,7 +153,7 @@ Public Class New_Order
     Protected Sub HandleOrder()
         tbl.spAddNewOrder(OrderId, OrderDateInput.Text, OrderSourceDropDownList.SelectedValue, _
                           OrderSubscriptionYearInput.Text, OrderCostInput.Text, _
-                          OrderDiscountDropDownList.SelectedValue, "Online", OrderDateInput.Text, _
+                          OrderDiscountDropDownList.SelectedValue, OrderSourceDropDownList.SelectedValue, OrderDateInput.Text, _
                           OrderFirstOccasionDropDownList.SelectedValue)
     End Sub
 
@@ -224,7 +224,7 @@ Public Class New_Order
     Protected Sub HandlePropertyOwners()
         For Each p As PropertyOwner In PropertyOwnerList
             If p.Id = 0 Then
-                tbl.spAddNewBuyer(p.Id, p.LastName, p.FirstName, p.Address, p.City, p.State, p.ZipCode, p.Email, p.Phone, "Online", p.RotaryMember)
+                tbl.spAddNewPropertyOwner(p.Id, p.LastName, p.FirstName, p.Address, p.City, p.State, p.ZipCode, p.Email, p.Phone, p.RotaryMember)
             End If
             For Each item As Integer In p.Traits
                 tbl.spAddNewPropertyTraits(p.Id, item)
@@ -289,8 +289,11 @@ Public Class New_Order
     Protected Sub HandleSleeves()
         For Each s As Sleeve In SleeveList
             Dim PropertyOwnerId = PropertyOwnerList(s.PropertyOwnerIndex).Id
-            Dim SleeveName As String = ""
-            tbl.spGetNextSleeveName(SleeveName, PropertyOwnerId)
+            Dim SleeveName As String = "Failed"
+            Dim nameTbl As dsTableAdapters.spGetNextSleeveNameTableAdapter = New dsTableAdapters.spGetNextSleeveNameTableAdapter()
+            For Each Name As DataRow In nameTbl.GetData(PropertyOwnerId)
+                SleeveName = Name.Field(Of String)("Name")
+            Next
             tbl.spAddNewSleeve(s.Id, True, OrderId, PropertyOwnerId, s.LocationDescription, s.Latitude, s.Longitude, OupsId, s.InstallDate, s.ChangeDate, s.PublicSleeve, s.Deliver, OrderDateInput.Text, SleeveName)
         Next
     End Sub
@@ -331,4 +334,7 @@ Public Class New_Order
         tbl.spAddNewOups(OupsId, OupsTicketNumberInput.Text, OupsNotifiedDateInput.Text, OupsCheckedDateInput.Text)
     End Sub
 
+    Protected Sub OrderSourceDropDownList_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
