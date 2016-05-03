@@ -6,7 +6,47 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
+<member name="F:OxfordFlags.Tools.SearchButton">
+	<summary>
+SearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.AddImageButton">
+	<summary>
+AddImageButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.EditRouteColorButton">
+	<summary>
+EditRouteColorButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.EditRouteOrderButton">
+	<summary>
+EditRouteOrderButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Tools.AddPaymentButton">
+	<summary>
+AddPaymentButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.OpenAuthProviders.providerDetails">
 	<summary>
 providerDetails control.
 </summary>
@@ -2567,9 +2607,9 @@ NewOrderButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Main_Menu.SearchButton">
+</member><member name="F:OxfordFlags.Main_Menu.ToolsButton">
 	<summary>
-SearchButton control.
+ToolsButton control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2586,22 +2626,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Main_Menu.AdminButton">
 	<summary>
 AdminButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Main_Menu.EditRouteButton">
-	<summary>
-EditRouteButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Main_Menu.AddPaymentButton">
-	<summary>
-AddPaymentButton control.
 </summary>
 	<remarks>
 Auto-generated field.

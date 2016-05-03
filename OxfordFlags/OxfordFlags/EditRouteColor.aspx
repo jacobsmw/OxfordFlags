@@ -7,7 +7,7 @@
             <br />
             <asp:Label ID="SearchLabel" runat="server" Text="Search: "></asp:Label>
             <asp:TextBox ID="SearchInput" runat="server"></asp:TextBox>
-            <asp:Button ID="SearchButton" runat="server" Text="Search" />
+            <asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="btn btn-primary" />
             <br />
             <br />
             <br />
@@ -30,7 +30,7 @@
             <br />
             <hr />
             Route Color: <asp:TextBox ID="RouteColorInput" runat="server"></asp:TextBox><br />
-            <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
+            <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-primary" />
         </ContentTemplate>
     </asp:UpdatePanel>
 

@@ -11,7 +11,7 @@
         <asp:FileUpload ID="SleevePhotoFileUpload" runat="server" AllowMultiple="True" />
     </p>
     <p>
-        <asp:Button ID="SubmitButton" runat="server" Text="Submit" />
+        <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-primary" />
     </p>
 
 </asp:Content>
