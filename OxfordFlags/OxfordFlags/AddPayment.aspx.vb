@@ -14,27 +14,22 @@
     End Sub
 
     Protected Sub GetOrderInfo(ByVal sender As Object, ByVal e As System.EventArgs) Handles OrdersListBox.SelectedIndexChanged
-        BuyersLabel.Text = "Buyers: "
-        PropertyOwnerLabel.Text = "Property Owner: "
-        PropertyOwnerAddressLabel.Text = "Address: "
-        AmountDueLabel.Text = "Amount Due: "
-        AmountPaidLabel.Text = "Amount Paid: "
         Dim OrderID = OrdersListBox.SelectedValue
         Dim tbl1 As dsTableAdapters.spSelectBuyersByOrderIDTableAdapter = New dsTableAdapters.spSelectBuyersByOrderIDTableAdapter()
-        Dim BuyerNames = "Buyers: "
+        Dim BuyerNames = ""
         For Each Name As DataRow In tbl1.GetData(OrderID)
             BuyerNames = BuyerNames & Name.Field(Of String)("FirstName") & " " & Name.Field(Of String)("LastName") & ", "
         Next
-        BuyersLabel.Text = BuyerNames
+        BuyersCell.Text = BuyerNames.TrimEnd({" "c, ","c})
         Dim tbl2 As dsTableAdapters.spSelectPropertyOwnerByOrderIDTableAdapter = New dsTableAdapters.spSelectPropertyOwnerByOrderIDTableAdapter()
         For Each Name As DataRow In tbl2.GetData(OrderID)
-            PropertyOwnerLabel.Text = "Property Owner: " & Name.Field(Of String)("FirstName") & " " & Name.Field(Of String)("LastName")
-            PropertyOwnerAddressLabel.Text = "Address: " & Name.Field(Of String)("StreetAddress")
+            PropertyOwnerCell.Text = Name.Field(Of String)("FirstName") & " " & Name.Field(Of String)("LastName")
+            PropertyOwnerAddressCell.Text = Name.Field(Of String)("StreetAddress")
         Next
         Dim tbl3 As dsTableAdapters.spSelectPaymentStatusByOrderIDTableAdapter = New dsTableAdapters.spSelectPaymentStatusByOrderIDTableAdapter()
         For Each Name As DataRow In tbl3.GetData(OrderID)
-            AmountDueLabel.Text = "Amount Due: " & Name.Field(Of Double)("AmountDue")
-            AmountPaidLabel.Text = "Amount Paid: " & Name.Field(Of Double)("AmountPaid")
+            TotalAmountOwedCell.Text = "$" & Name.Field(Of Double)("AmountDue")
+            TotalAmountPaidCell.Text = "$" & Name.Field(Of Double)("AmountPaid")
         Next
     End Sub
 

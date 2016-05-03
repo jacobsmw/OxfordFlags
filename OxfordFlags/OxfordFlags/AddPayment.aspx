@@ -9,7 +9,7 @@
             <br />
             <br />
             Orders:<br />
-            <asp:ListBox ID="OrdersListBox" runat="server" DataSourceID="OrdersDataSource" DataTextField="OrderID" DataValueField="OrderID" AutoPostBack="True"></asp:ListBox>
+            <asp:ListBox ID="OrdersListBox" runat="server" DataSourceID="OrdersDataSource" DataTextField="OrderID" DataValueField="OrderID" AutoPostBack="True" Height="75px" Width="100px" ></asp:ListBox>
             <asp:SqlDataSource ID="OrdersDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSelectOrderCrossTable" SelectCommandType="StoredProcedure">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="SearchInput" Name="SEARCH" PropertyName="Text" Type="String" />
@@ -23,11 +23,28 @@
                 </ul>
                 <div class="tab-content">
                     <div id="OrderInfo" role="tabpanel" class="tab-pane fade in active">
-                        <asp:Label ID="BuyersLabel" runat="server" Text="Buyers: "></asp:Label><br />
-                        <asp:Label ID="PropertyOwnerLabel" runat="server" Text="Property Owner: "></asp:Label><br />
-                        <asp:Label ID="PropertyOwnerAddressLabel" runat="server" Text="Address: "></asp:Label><br />
-                        <asp:Label ID="AmountDueLabel" runat="server" Text="Amount Due: "></asp:Label><br />
-                        <asp:Label ID="AmountPaidLabel" runat="server" Text="Amount Paid: "></asp:Label><br />
+                        <asp:Table ID="OrderInfoTable" runat="server">
+                            <asp:TableRow>
+                                <asp:TableCell>Buyers</asp:TableCell>
+                                <asp:TableCell ID="BuyersCell"></asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>Property Owner</asp:TableCell>
+                                <asp:TableCell ID="PropertyOwnerCell"></asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>Address</asp:TableCell>
+                                <asp:TableCell ID="PropertyOwnerAddressCell"></asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>Total Amount Owed</asp:TableCell>
+                                <asp:TableCell ID="TotalAmountOwedCell"></asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow>
+                                <asp:TableCell>Total Amount Paid</asp:TableCell>
+                                <asp:TableCell ID="TotalAmountPaidCell"></asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
                     </div>
                     <div id="PaymentInfo" role="tabpanel" class="tab-pane fade in">
                         <asp:GridView ID="PaymentHistoryGridView" runat="server" AutoGenerateColumns="False" DataSourceID="PaymentHistoryDataSource">
@@ -48,14 +65,24 @@
                 </div>
             </div>
             <hr />
-            Payment: <asp:TextBox ID="PaymentInput" runat="server"></asp:TextBox><br />
-            Payment Date: <asp:TextBox ID="PaymentDateInput" runat="server"></asp:TextBox><br />
-            Payment Type: <br />
-            <asp:DropDownList ID="PaymentSourceDropDownList" runat="server" DataSourceID="PaymentSourceDataSource" DataTextField="Type" DataValueField="Id">
-            </asp:DropDownList>
-            <asp:SqlDataSource ID="PaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource><br />
-            Check # / Paypal ID: <asp:TextBox ID="PaymentCheckPaypalNumberInput" runat="server"></asp:TextBox><br />
-            Paypal Transaction: <asp:TextBox ID="PaymentPaypalTransactionInput" runat="server"></asp:TextBox><br />
+            <div class="form-group">
+                Payment: <asp:TextBox ID="PaymentInput" runat="server"></asp:TextBox>
+            </div>
+            <div class="form-group">
+                Payment Date: <asp:TextBox ID="PaymentDateInput" runat="server"></asp:TextBox>
+            </div>
+            <div class="form-group">
+                Payment Type: <br />
+                <asp:DropDownList ID="PaymentSourceDropDownList" runat="server" DataSourceID="PaymentSourceDataSource" DataTextField="Type" DataValueField="Id">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="PaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource><br />
+            </div>
+            <div class="form-group">
+                Check # / Paypal ID: <asp:TextBox ID="PaymentCheckPaypalNumberInput" runat="server"></asp:TextBox><br />
+            </div>
+            <div class="form-group">
+                Paypal Transaction: <asp:TextBox ID="PaymentPaypalTransactionInput" runat="server"></asp:TextBox><br />
+            </div>
             <asp:Button ID="NewPaymentButton" runat="server" Text="New Payment" CssClass="btn btn-default" />
         </ContentTemplate>
     </asp:UpdatePanel>

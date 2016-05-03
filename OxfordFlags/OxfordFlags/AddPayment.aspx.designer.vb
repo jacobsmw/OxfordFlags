@@ -68,49 +68,58 @@ Partial Public Class AddPayment
     Protected WithEvents OrdersDataSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''BuyersLabel control.
+    '''OrderInfoTable control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BuyersLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents OrderInfoTable As Global.System.Web.UI.WebControls.Table
 
     '''<summary>
-    '''PropertyOwnerLabel control.
+    '''BuyersCell control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyOwnerLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents BuyersCell As Global.System.Web.UI.WebControls.TableCell
 
     '''<summary>
-    '''PropertyOwnerAddressLabel control.
+    '''PropertyOwnerCell control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PropertyOwnerAddressLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents PropertyOwnerCell As Global.System.Web.UI.WebControls.TableCell
 
     '''<summary>
-    '''AmountDueLabel control.
+    '''PropertyOwnerAddressCell control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AmountDueLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents PropertyOwnerAddressCell As Global.System.Web.UI.WebControls.TableCell
 
     '''<summary>
-    '''AmountPaidLabel control.
+    '''TotalAmountOwedCell control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents AmountPaidLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents TotalAmountOwedCell As Global.System.Web.UI.WebControls.TableCell
+
+    '''<summary>
+    '''TotalAmountPaidCell control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TotalAmountPaidCell As Global.System.Web.UI.WebControls.TableCell
 
     '''<summary>
     '''PaymentHistoryGridView control.
