@@ -19,5 +19,6 @@
 
         tbl.spAddNewOccasion(s)
         Label1.Text = "Inserted new Occasion"
+        Response.Redirect("~/Admin")
     End Sub
 End Class

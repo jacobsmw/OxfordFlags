@@ -42,7 +42,7 @@
         Dim PaymentID As Integer
         Dim tbl1 As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
         tbl1.spAddNewPayment(PaymentID, OrdersListBox.SelectedValue, PaymentInput.Text, PaymentDateInput.Text, PaymentSourceDropDownList.SelectedValue, PaymentCheckPaypalNumberInput.Text, PaymentPaypalTransactionInput.Text)
-        Response.Redirect("~/Main_Menu")
+        Response.Redirect("~/Tools")
     End Sub
 
 End Class

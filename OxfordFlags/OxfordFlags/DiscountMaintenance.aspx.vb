@@ -21,5 +21,6 @@
 
         tbl.spAddNewDiscount(desc, amount, active)
         Label1.Text = "Inserted new Discount"
+        Response.Redirect("~/Admin")
     End Sub
 End Class

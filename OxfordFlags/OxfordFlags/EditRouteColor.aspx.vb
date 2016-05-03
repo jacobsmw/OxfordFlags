@@ -14,7 +14,7 @@
         Else
             tbl.spAddOrUpdateRouteColor(PropertyOwnerGridView.SelectedRow.Cells(1).Text, RouteColorInput.Text, PropertyOwnerGridView.SelectedRow.Cells(5).Text)
         End If
-        Response.Redirect("EditRouteColor")
+        Response.Redirect("~/Tools")
     End Sub
 
 End Class

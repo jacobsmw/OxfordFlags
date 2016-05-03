@@ -23,7 +23,7 @@ Partial Public Class Register
             ' manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=""" & callbackUrl & """>here</a>.")
 
             ' IdentityHelper.RedirectToReturnUrl(Request.QueryString("ReturnUrl"), Response)
-            Response.Redirect("~/Main_Menu")
+            Response.Redirect("~/Admin")
         Else
             ErrorMessage.Text = result.Errors.FirstOrDefault()
         End If

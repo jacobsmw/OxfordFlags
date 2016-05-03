@@ -15,5 +15,6 @@
 
         tbl.spAddNewTrait(desc)
         Label1.Text = "Inserted new Trait"
+        Response.Redirect("~/Admin")
     End Sub
 End Class

@@ -1199,14 +1199,6 @@ SleeveLatitudeInput control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveLatitudeFormatValidator">
-	<summary>
-SleeveLatitudeFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:OxfordFlags.New_Order.SleeveLongitudeLabel">
 	<summary>
 SleeveLongitudeLabel control.
@@ -1218,14 +1210,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.New_Order.SleeveLongitudeInput">
 	<summary>
 SleeveLongitudeInput control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.New_Order.SleeveLongitudeFormatValidator">
-	<summary>
-SleeveLongitudeFormatValidator control.
 </summary>
 	<remarks>
 Auto-generated field.

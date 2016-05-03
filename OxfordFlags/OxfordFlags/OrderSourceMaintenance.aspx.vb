@@ -15,5 +15,6 @@
 
         tbl.spAddNewSource(s)
         Label1.Text = "Inserted New Source"
+        Response.Redirect("~/Admin")
     End Sub
 End Class

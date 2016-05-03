@@ -36,7 +36,7 @@
             tbl.spUpdateSortOrder(item.Value, i)
             i = i + 1
         Next
-        Response.Redirect("EditRouteOrder")
+        Response.Redirect("~/Tools")
     End Sub
 
 
