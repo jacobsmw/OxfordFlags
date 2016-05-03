@@ -8,7 +8,7 @@
             <p>
                 Address:
                 <asp:TextBox ID="AddressInput" runat="server"></asp:TextBox>
-        &nbsp;<asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="btn btn-primary" />
+        &nbsp;<asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="btn btn-default" />
                 <br />
                 <asp:ListBox ID="SleevesListBox" runat="server" DataSourceID="SleeveNamesDataSource" DataTextField="SleeveName" DataValueField="SleeveID"></asp:ListBox>
                 <asp:SqlDataSource ID="SleeveNamesDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSelectSleevesByAddress" SelectCommandType="StoredProcedure">
@@ -23,6 +23,6 @@
         <asp:FileUpload ID="SleevePhotoFileUpload" runat="server" AllowMultiple="True" />
     </p>
     <p>
-        <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-primary" />
+        <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-default" />
     </p>
 </asp:Content>

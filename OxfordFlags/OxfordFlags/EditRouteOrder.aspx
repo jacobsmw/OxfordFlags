@@ -19,11 +19,11 @@ FROM [Route]"></asp:SqlDataSource>
             </asp:SqlDataSource>
             
             <br />
-            <asp:Button ID="UpButton" runat="server" Text="▲" CssClass="btn btn-primary" />
-            &nbsp;<asp:Button ID="DownButton" runat="server" Text="▼" CssClass="btn btn-primary" />
+            <asp:Button ID="UpButton" runat="server" Text="▲" CssClass="btn btn-default" />
+            &nbsp;<asp:Button ID="DownButton" runat="server" Text="▼" CssClass="btn btn-default" />
             <br />
             <br />
-            <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-primary" />
+            <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-default" />
             
         </ContentTemplate>
     </asp:UpdatePanel>

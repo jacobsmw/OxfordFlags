@@ -232,9 +232,9 @@
                         </asp:TableCell>
                         <asp:TableCell>
                         <div id="BuyerButtons">
-                            <asp:Button ID="BuyerAddButton" runat="server" CssClass="btn btn-primary" Text="Add" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="BuyerAddButton" runat="server" CssClass="btn btn-default" Text="Add" Width="75px" HorizontalAlign="Right"/>
                             <br />
-                            <asp:Button ID="BuyerRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="BuyerRemoveButton" runat="server" CssClass="btn btn-default" Text="Remove" Width="75px" HorizontalAlign="Right"/>
                         </div>
                         </asp:TableCell>
                         <asp:TableCell >
@@ -396,9 +396,9 @@
                             </asp:TableCell>
                             <asp:TableCell>
                                 <div id="PropertyOwnerButtons">
-                                    <asp:Button ID="PropertyOwnerAddButton" runat="server" CssClass="btn btn-primary" Text="Add" Width="75px" HorizontalAlign="Right"/>
+                                    <asp:Button ID="PropertyOwnerAddButton" runat="server" CssClass="btn btn-default" Text="Add" Width="75px" HorizontalAlign="Right"/>
                                     <br />
-                                    <asp:Button ID="PropertyOwnerRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" Width="75px" HorizontalAlign="Right"/>
+                                    <asp:Button ID="PropertyOwnerRemoveButton" runat="server" CssClass="btn btn-default" Text="Remove" Width="75px" HorizontalAlign="Right"/>
                                 </div>
                             </asp:TableCell>
                             <asp:TableCell>
@@ -495,9 +495,9 @@
                         </asp:TableCell>
                         <asp:TableCell>
                         <div id="SleeveButtons">
-                            <asp:Button ID="SleeveAddButton" runat="server" CssClass="btn btn-primary" Text="Add" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="SleeveAddButton" runat="server" CssClass="btn btn-default" Text="Add" Width="75px" HorizontalAlign="Right"/>
                             <br />
-                            <asp:Button ID="SleeveRemoveButton" runat="server" CssClass="btn btn-primary" Text="Remove" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="SleeveRemoveButton" runat="server" CssClass="btn btn-default" Text="Remove" Width="75px" HorizontalAlign="Right"/>
                         </div>
                         </asp:TableCell>
                         <asp:TableCell>
@@ -507,7 +507,7 @@
                         </asp:TableCell>
                     </asp:TableRow>
                     </asp:Table>
-                    <asp:Button ID="SubmitButton" runat="server" CssClass="btn btn-primary" Text="Submit" />
+                    <asp:Button ID="SubmitButton" runat="server" CssClass="btn btn-default" Text="Submit" />
                 </div>
             
             </div>

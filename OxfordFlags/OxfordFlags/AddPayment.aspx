@@ -5,7 +5,7 @@
         <ContentTemplate>
             <asp:Label ID="SearchLabel" runat="server" Text="Search: "></asp:Label>
             <asp:TextBox ID="SearchInput" runat="server"></asp:TextBox>
-            <asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="btn btn-primary" />
+            <asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="btn btn-default" />
             <br />
             <br />
             Orders:<br />
@@ -56,7 +56,7 @@
             <asp:SqlDataSource ID="PaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource><br />
             Check # / Paypal ID: <asp:TextBox ID="PaymentCheckPaypalNumberInput" runat="server"></asp:TextBox><br />
             Paypal Transaction: <asp:TextBox ID="PaymentPaypalTransactionInput" runat="server"></asp:TextBox><br />
-            <asp:Button ID="NewPaymentButton" runat="server" Text="New Payment" CssClass="btn btn-primary" />
+            <asp:Button ID="NewPaymentButton" runat="server" Text="New Payment" CssClass="btn btn-default" />
         </ContentTemplate>
     </asp:UpdatePanel>
 
