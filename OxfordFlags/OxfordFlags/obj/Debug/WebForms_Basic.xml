@@ -70,15 +70,9 @@ ColorsDataSource control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.EditRouteOrder.PropertyOwnersListBox">
 	<summary>
 PropertyOwnersListBox control.
-=======
-</member><member name="F:OxfordFlags.Search.SleeveDetails">
-	<summary>
-SleeveDetails control.
->>>>>>> Stashed changes
 </summary>
 	<remarks>
 Auto-generated field.
@@ -92,19 +86,7 @@ PropertyOwnersDataSource control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.EditRouteOrder.UpButton">
-=======
-</member><member name="F:OxfordFlags.Search.OupsDetails">
-	<summary>
-OupsDetails control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.hfPersonID">
->>>>>>> Stashed changes
 	<summary>
 UpButton control.
 </summary>
@@ -128,27 +110,7 @@ SubmitButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.Register.ErrorMessage">
-=======
-</member><member name="F:OxfordFlags.Search.OupsResultsData">
-	<summary>
-OupsResultsData control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.SleeveOupsResultsData">
-	<summary>
-SleeveOupsResultsData control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.PersonSearchResultsData">
->>>>>>> Stashed changes
 	<summary>
 ErrorMessage control.
 </summary>
@@ -156,27 +118,7 @@ ErrorMessage control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-<<<<<<< Updated upstream
 </member><member name="F:OxfordFlags.Register.Email">
-=======
-</member><member name="F:OxfordFlags.Search.OrderResultsData">
-	<summary>
-OrderResultsData control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.PaymentResultsData">
-	<summary>
-PaymentResultsData control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.PaymentReportInput.SubscriptionYearLabel">
->>>>>>> Stashed changes
 	<summary>
 Email control.
 </summary>
@@ -561,17 +503,33 @@ OrderPaymentSourceDataSource control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.OrderPaymentMemoLabel">
+</member><member name="F:OxfordFlags.New_Order.OrderPaymentCheckPaypalNumberLabel">
 	<summary>
-OrderPaymentMemoLabel control.
+OrderPaymentCheckPaypalNumberLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.New_Order.OrderPaymentMemoInput">
+</member><member name="F:OxfordFlags.New_Order.OrderPaymentCheckPaypalNumberInput">
 	<summary>
-OrderPaymentMemoInput control.
+OrderPaymentCheckPaypalNumberInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.OrderPaymentPaypalTransactionLabel">
+	<summary>
+OrderPaymentPaypalTransactionLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.New_Order.OrderPaymentPaypalTransactionInput">
+	<summary>
+OrderPaymentPaypalTransactionInput control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1841,9 +1799,17 @@ PaymentSourceDataSource control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.AddPayment.PaymentMemoInput">
+</member><member name="F:OxfordFlags.AddPayment.PaymentCheckPaypalNumberInput">
 	<summary>
-PaymentMemoInput control.
+PaymentCheckPaypalNumberInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.AddPayment.PaymentPaypalTransactionInput">
+	<summary>
+PaymentPaypalTransactionInput control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2161,10 +2127,6 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:OxfordFlags.ds.spReportGPSOutputDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -2178,6 +2140,10 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member><member name="T:OxfordFlags.ds.spGetNextSleeveNameDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -2205,10 +2171,6 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:OxfordFlags.ds.spReportGPSOutputRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -2222,6 +2184,10 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:OxfordFlags.ds.spGetNextSleeveNameRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -2249,10 +2215,6 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
 </member><member name="T:OxfordFlags.ds.spReportGPSOutputRowChangeEvent">
 	<summary>
 Row event argument class
@@ -2266,6 +2228,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:OxfordFlags.ds.spGetNextSleeveNameRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spSelectPaymentHistoryByOrderIDRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -2297,10 +2263,6 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:OxfordFlags.dsTableAdapters.spSelectPaymentHistoryByOrderIDTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
 </member><member name="T:OxfordFlags.dsTableAdapters.spReportGPSOutputTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
@@ -2314,6 +2276,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:OxfordFlags.dsTableAdapters.spGetNextSleeveNameTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spSelectPaymentHistoryByOrderIDTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -2745,9 +2711,9 @@ OrderDetails control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.Search.SleeveOupsDetails">
+</member><member name="F:OxfordFlags.Search.SleeveDetails">
 	<summary>
-SleeveOupsDetails control.
+SleeveDetails control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2756,6 +2722,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Search.PaymentSleeveDetails">
 	<summary>
 PaymentSleeveDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OupsDetails">
+	<summary>
+OupsDetails control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2785,9 +2759,41 @@ AddressSearchResultsData control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.Search.OupsResultsData">
+	<summary>
+OupsResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.SleeveOupsResultsData">
+	<summary>
+SleeveOupsResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.Search.PersonSearchResultsData">
 	<summary>
 PersonSearchResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.OrderResultsData">
+	<summary>
+OrderResultsData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Search.PaymentResultsData">
+	<summary>
+PaymentResultsData control.
 </summary>
 	<remarks>
 Auto-generated field.

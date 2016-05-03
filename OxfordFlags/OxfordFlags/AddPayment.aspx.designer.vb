@@ -167,13 +167,22 @@ Partial Public Class AddPayment
     Protected WithEvents PaymentSourceDataSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''PaymentMemoInput control.
+    '''PaymentCheckPaypalNumberInput control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentMemoInput As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents PaymentCheckPaypalNumberInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''PaymentPaypalTransactionInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentPaypalTransactionInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''NewPaymentButton control.

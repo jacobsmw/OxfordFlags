@@ -37,8 +37,6 @@ Partial Public Class ds
     
     Private tablespReportFinancial As spReportFinancialDataTable
     
-    Private tablespSelectPaymentHistoryByOrderID As spSelectPaymentHistoryByOrderIDDataTable
-    
     Private tablespReportGPSOutput As spReportGPSOutputDataTable
     
     Private tablespSelectPropertyOwnerByOrderID As spSelectPropertyOwnerByOrderIDDataTable
@@ -46,6 +44,8 @@ Partial Public Class ds
     Private tablespSelectOrderCrossTable As spSelectOrderCrossTableDataTable
     
     Private tablespGetNextSleeveName As spGetNextSleeveNameDataTable
+    
+    Private tablespSelectPaymentHistoryByOrderID As spSelectPaymentHistoryByOrderIDDataTable
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
@@ -94,9 +94,6 @@ Partial Public Class ds
             If (Not (ds.Tables("spReportFinancial")) Is Nothing) Then
                 MyBase.Tables.Add(New spReportFinancialDataTable(ds.Tables("spReportFinancial")))
             End If
-            If (Not (ds.Tables("spSelectPaymentHistoryByOrderID")) Is Nothing) Then
-                MyBase.Tables.Add(New spSelectPaymentHistoryByOrderIDDataTable(ds.Tables("spSelectPaymentHistoryByOrderID")))
-            End If
             If (Not (ds.Tables("spReportGPSOutput")) Is Nothing) Then
                 MyBase.Tables.Add(New spReportGPSOutputDataTable(ds.Tables("spReportGPSOutput")))
             End If
@@ -108,6 +105,9 @@ Partial Public Class ds
             End If
             If (Not (ds.Tables("spGetNextSleeveName")) Is Nothing) Then
                 MyBase.Tables.Add(New spGetNextSleeveNameDataTable(ds.Tables("spGetNextSleeveName")))
+            End If
+            If (Not (ds.Tables("spSelectPaymentHistoryByOrderID")) Is Nothing) Then
+                MyBase.Tables.Add(New spSelectPaymentHistoryByOrderIDDataTable(ds.Tables("spSelectPaymentHistoryByOrderID")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -190,16 +190,6 @@ Partial Public Class ds
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
      Global.System.ComponentModel.Browsable(false),  _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
-    Public ReadOnly Property spSelectPaymentHistoryByOrderID() As spSelectPaymentHistoryByOrderIDDataTable
-        Get
-            Return Me.tablespSelectPaymentHistoryByOrderID
-        End Get
-    End Property
-    
-    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-     Global.System.ComponentModel.Browsable(false),  _
-     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
     Public ReadOnly Property spReportGPSOutput() As spReportGPSOutputDataTable
         Get
             Return Me.tablespReportGPSOutput
@@ -233,6 +223,16 @@ Partial Public Class ds
     Public ReadOnly Property spGetNextSleeveName() As spGetNextSleeveNameDataTable
         Get
             Return Me.tablespGetNextSleeveName
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property spSelectPaymentHistoryByOrderID() As spSelectPaymentHistoryByOrderIDDataTable
+        Get
+            Return Me.tablespSelectPaymentHistoryByOrderID
         End Get
     End Property
     
@@ -321,9 +321,6 @@ Partial Public Class ds
             If (Not (ds.Tables("spReportFinancial")) Is Nothing) Then
                 MyBase.Tables.Add(New spReportFinancialDataTable(ds.Tables("spReportFinancial")))
             End If
-            If (Not (ds.Tables("spSelectPaymentHistoryByOrderID")) Is Nothing) Then
-                MyBase.Tables.Add(New spSelectPaymentHistoryByOrderIDDataTable(ds.Tables("spSelectPaymentHistoryByOrderID")))
-            End If
             If (Not (ds.Tables("spReportGPSOutput")) Is Nothing) Then
                 MyBase.Tables.Add(New spReportGPSOutputDataTable(ds.Tables("spReportGPSOutput")))
             End If
@@ -335,6 +332,9 @@ Partial Public Class ds
             End If
             If (Not (ds.Tables("spGetNextSleeveName")) Is Nothing) Then
                 MyBase.Tables.Add(New spGetNextSleeveNameDataTable(ds.Tables("spGetNextSleeveName")))
+            End If
+            If (Not (ds.Tables("spSelectPaymentHistoryByOrderID")) Is Nothing) Then
+                MyBase.Tables.Add(New spSelectPaymentHistoryByOrderIDDataTable(ds.Tables("spSelectPaymentHistoryByOrderID")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -404,12 +404,6 @@ Partial Public Class ds
                 Me.tablespReportFinancial.InitVars
             End If
         End If
-        Me.tablespSelectPaymentHistoryByOrderID = CType(MyBase.Tables("spSelectPaymentHistoryByOrderID"),spSelectPaymentHistoryByOrderIDDataTable)
-        If (initTable = true) Then
-            If (Not (Me.tablespSelectPaymentHistoryByOrderID) Is Nothing) Then
-                Me.tablespSelectPaymentHistoryByOrderID.InitVars
-            End If
-        End If
         Me.tablespReportGPSOutput = CType(MyBase.Tables("spReportGPSOutput"),spReportGPSOutputDataTable)
         If (initTable = true) Then
             If (Not (Me.tablespReportGPSOutput) Is Nothing) Then
@@ -434,6 +428,12 @@ Partial Public Class ds
                 Me.tablespGetNextSleeveName.InitVars
             End If
         End If
+        Me.tablespSelectPaymentHistoryByOrderID = CType(MyBase.Tables("spSelectPaymentHistoryByOrderID"),spSelectPaymentHistoryByOrderIDDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tablespSelectPaymentHistoryByOrderID) Is Nothing) Then
+                Me.tablespSelectPaymentHistoryByOrderID.InitVars
+            End If
+        End If
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -456,8 +456,6 @@ Partial Public Class ds
         MyBase.Tables.Add(Me.tablespReportCustomerReport)
         Me.tablespReportFinancial = New spReportFinancialDataTable()
         MyBase.Tables.Add(Me.tablespReportFinancial)
-        Me.tablespSelectPaymentHistoryByOrderID = New spSelectPaymentHistoryByOrderIDDataTable()
-        MyBase.Tables.Add(Me.tablespSelectPaymentHistoryByOrderID)
         Me.tablespReportGPSOutput = New spReportGPSOutputDataTable()
         MyBase.Tables.Add(Me.tablespReportGPSOutput)
         Me.tablespSelectPropertyOwnerByOrderID = New spSelectPropertyOwnerByOrderIDDataTable()
@@ -466,6 +464,8 @@ Partial Public Class ds
         MyBase.Tables.Add(Me.tablespSelectOrderCrossTable)
         Me.tablespGetNextSleeveName = New spGetNextSleeveNameDataTable()
         MyBase.Tables.Add(Me.tablespGetNextSleeveName)
+        Me.tablespSelectPaymentHistoryByOrderID = New spSelectPaymentHistoryByOrderIDDataTable()
+        MyBase.Tables.Add(Me.tablespSelectPaymentHistoryByOrderID)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -506,12 +506,6 @@ Partial Public Class ds
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Private Function ShouldSerializespSelectPaymentHistoryByOrderID() As Boolean
-        Return false
-    End Function
-    
-    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Function ShouldSerializespReportGPSOutput() As Boolean
         Return false
     End Function
@@ -531,6 +525,12 @@ Partial Public Class ds
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Function ShouldSerializespGetNextSleeveName() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializespSelectPaymentHistoryByOrderID() As Boolean
         Return false
     End Function
     
@@ -611,9 +611,6 @@ Partial Public Class ds
     Public Delegate Sub spReportFinancialRowChangeEventHandler(ByVal sender As Object, ByVal e As spReportFinancialRowChangeEvent)
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Public Delegate Sub spSelectPaymentHistoryByOrderIDRowChangeEventHandler(ByVal sender As Object, ByVal e As spSelectPaymentHistoryByOrderIDRowChangeEvent)
-    
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub spReportGPSOutputRowChangeEventHandler(ByVal sender As Object, ByVal e As spReportGPSOutputRowChangeEvent)
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -624,6 +621,9 @@ Partial Public Class ds
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub spGetNextSleeveNameRowChangeEventHandler(ByVal sender As Object, ByVal e As spGetNextSleeveNameRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub spSelectPaymentHistoryByOrderIDRowChangeEventHandler(ByVal sender As Object, ByVal e As spSelectPaymentHistoryByOrderIDRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -2334,302 +2334,6 @@ Partial Public Class ds
     '''</summary>
     <Global.System.Serializable(),  _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
-    Partial Public Class spSelectPaymentHistoryByOrderIDDataTable
-        Inherits Global.System.Data.TypedTableBase(Of spSelectPaymentHistoryByOrderIDRow)
-        
-        Private columnPaymentDate As Global.System.Data.DataColumn
-        
-        Private columnPayment As Global.System.Data.DataColumn
-        
-        Private columnType As Global.System.Data.DataColumn
-        
-        Private columnMemo As Global.System.Data.DataColumn
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub New()
-            MyBase.New
-            Me.TableName = "spSelectPaymentHistoryByOrderID"
-            Me.BeginInit
-            Me.InitClass
-            Me.EndInit
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Sub New(ByVal table As Global.System.Data.DataTable)
-            MyBase.New
-            Me.TableName = table.TableName
-            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
-                Me.CaseSensitive = table.CaseSensitive
-            End If
-            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
-                Me.Locale = table.Locale
-            End If
-            If (table.Namespace <> table.DataSet.Namespace) Then
-                Me.Namespace = table.Namespace
-            End If
-            Me.Prefix = table.Prefix
-            Me.MinimumCapacity = table.MinimumCapacity
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
-            MyBase.New(info, context)
-            Me.InitVars
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property PaymentDateColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnPaymentDate
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property PaymentColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnPayment
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property TypeColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnType
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property MemoColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnMemo
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Browsable(false)>  _
-        Public ReadOnly Property Count() As Integer
-            Get
-                Return Me.Rows.Count
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Default ReadOnly Property Item(ByVal index As Integer) As spSelectPaymentHistoryByOrderIDRow
-            Get
-                Return CType(Me.Rows(index),spSelectPaymentHistoryByOrderIDRow)
-            End Get
-        End Property
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event spSelectPaymentHistoryByOrderIDRowChanging As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event spSelectPaymentHistoryByOrderIDRowChanged As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event spSelectPaymentHistoryByOrderIDRowDeleting As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
-        
-        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Event spSelectPaymentHistoryByOrderIDRowDeleted As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Sub AddspSelectPaymentHistoryByOrderIDRow(ByVal row As spSelectPaymentHistoryByOrderIDRow)
-            Me.Rows.Add(row)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddspSelectPaymentHistoryByOrderIDRow(ByVal PaymentDate As Date, ByVal Payment As Double, ByVal Type As String, ByVal Memo As String) As spSelectPaymentHistoryByOrderIDRow
-            Dim rowspSelectPaymentHistoryByOrderIDRow As spSelectPaymentHistoryByOrderIDRow = CType(Me.NewRow,spSelectPaymentHistoryByOrderIDRow)
-            Dim columnValuesArray() As Object = New Object() {PaymentDate, Payment, Type, Memo}
-            rowspSelectPaymentHistoryByOrderIDRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowspSelectPaymentHistoryByOrderIDRow)
-            Return rowspSelectPaymentHistoryByOrderIDRow
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As spSelectPaymentHistoryByOrderIDDataTable = CType(MyBase.Clone,spSelectPaymentHistoryByOrderIDDataTable)
-            cln.InitVars
-            Return cln
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New spSelectPaymentHistoryByOrderIDDataTable()
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Sub InitVars()
-            Me.columnPaymentDate = MyBase.Columns("PaymentDate")
-            Me.columnPayment = MyBase.Columns("Payment")
-            Me.columnType = MyBase.Columns("Type")
-            Me.columnMemo = MyBase.Columns("Memo")
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitClass()
-            Me.columnPaymentDate = New Global.System.Data.DataColumn("PaymentDate", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnPaymentDate)
-            Me.columnPayment = New Global.System.Data.DataColumn("Payment", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnPayment)
-            Me.columnType = New Global.System.Data.DataColumn("Type", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnType)
-            Me.columnMemo = New Global.System.Data.DataColumn("Memo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnMemo)
-            Me.columnPaymentDate.AllowDBNull = false
-            Me.columnPayment.AllowDBNull = false
-            Me.columnType.AllowDBNull = false
-            Me.columnType.MaxLength = 25
-            Me.columnMemo.MaxLength = 50
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function NewspSelectPaymentHistoryByOrderIDRow() As spSelectPaymentHistoryByOrderIDRow
-            Return CType(Me.NewRow,spSelectPaymentHistoryByOrderIDRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New spSelectPaymentHistoryByOrderIDRow(builder)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(spSelectPaymentHistoryByOrderIDRow)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowChanged(e)
-            If (Not (Me.spSelectPaymentHistoryByOrderIDRowChangedEvent) Is Nothing) Then
-                RaiseEvent spSelectPaymentHistoryByOrderIDRowChanged(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowChanging(e)
-            If (Not (Me.spSelectPaymentHistoryByOrderIDRowChangingEvent) Is Nothing) Then
-                RaiseEvent spSelectPaymentHistoryByOrderIDRowChanging(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowDeleted(e)
-            If (Not (Me.spSelectPaymentHistoryByOrderIDRowDeletedEvent) Is Nothing) Then
-                RaiseEvent spSelectPaymentHistoryByOrderIDRowDeleted(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
-            MyBase.OnRowDeleting(e)
-            If (Not (Me.spSelectPaymentHistoryByOrderIDRowDeletingEvent) Is Nothing) Then
-                RaiseEvent spSelectPaymentHistoryByOrderIDRowDeleting(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
-            End If
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub RemovespSelectPaymentHistoryByOrderIDRow(ByVal row As spSelectPaymentHistoryByOrderIDRow)
-            Me.Rows.Remove(row)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
-            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As ds = New ds()
-            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
-            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
-            any1.MinOccurs = New Decimal(0)
-            any1.MaxOccurs = Decimal.MaxValue
-            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
-            sequence.Items.Add(any1)
-            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
-            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
-            any2.MinOccurs = New Decimal(1)
-            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
-            sequence.Items.Add(any2)
-            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
-            attribute1.Name = "namespace"
-            attribute1.FixedValue = ds.Namespace
-            type.Attributes.Add(attribute1)
-            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
-            attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "spSelectPaymentHistoryByOrderIDDataTable"
-            type.Attributes.Add(attribute2)
-            type.Particle = sequence
-            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
-            If xs.Contains(dsSchema.TargetNamespace) Then
-                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
-                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
-                Try 
-                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
-                    dsSchema.Write(s1)
-                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
-                    Do While schemas.MoveNext
-                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
-                        s2.SetLength(0)
-                        schema.Write(s2)
-                        If (s1.Length = s2.Length) Then
-                            s1.Position = 0
-                            s2.Position = 0
-                            
-                            Do While ((s1.Position <> s1.Length)  _
-                                        AndAlso (s1.ReadByte = s2.ReadByte))
-                                
-                                
-                            Loop
-                            If (s1.Position = s1.Length) Then
-                                Return type
-                            End If
-                        End If
-                        
-                    Loop
-                Finally
-                    If (Not (s1) Is Nothing) Then
-                        s1.Close
-                    End If
-                    If (Not (s2) Is Nothing) Then
-                        s2.Close
-                    End If
-                End Try
-            End If
-            xs.Add(dsSchema)
-            Return type
-        End Function
-    End Class
-    
-    '''<summary>
-    '''Represents the strongly named DataTable class.
-    '''</summary>
-    <Global.System.Serializable(),  _
-     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
     Partial Public Class spReportGPSOutputDataTable
         Inherits Global.System.Data.TypedTableBase(Of spReportGPSOutputRow)
         
@@ -3749,6 +3453,316 @@ Partial Public Class ds
     End Class
     
     '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class spSelectPaymentHistoryByOrderIDDataTable
+        Inherits Global.System.Data.TypedTableBase(Of spSelectPaymentHistoryByOrderIDRow)
+        
+        Private columnPaymentDate As Global.System.Data.DataColumn
+        
+        Private columnPayment As Global.System.Data.DataColumn
+        
+        Private columnType As Global.System.Data.DataColumn
+        
+        Private columnCheckPaypalNumber As Global.System.Data.DataColumn
+        
+        Private columnPaypalTransaction As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "spSelectPaymentHistoryByOrderID"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PaymentDateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPaymentDate
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PaymentColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPayment
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property TypeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnType
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CheckPaypalNumberColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCheckPaypalNumber
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property PaypalTransactionColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPaypalTransaction
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As spSelectPaymentHistoryByOrderIDRow
+            Get
+                Return CType(Me.Rows(index),spSelectPaymentHistoryByOrderIDRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event spSelectPaymentHistoryByOrderIDRowChanging As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event spSelectPaymentHistoryByOrderIDRowChanged As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event spSelectPaymentHistoryByOrderIDRowDeleting As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event spSelectPaymentHistoryByOrderIDRowDeleted As spSelectPaymentHistoryByOrderIDRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub AddspSelectPaymentHistoryByOrderIDRow(ByVal row As spSelectPaymentHistoryByOrderIDRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function AddspSelectPaymentHistoryByOrderIDRow(ByVal PaymentDate As Date, ByVal Payment As Double, ByVal Type As String, ByVal CheckPaypalNumber As String, ByVal PaypalTransaction As String) As spSelectPaymentHistoryByOrderIDRow
+            Dim rowspSelectPaymentHistoryByOrderIDRow As spSelectPaymentHistoryByOrderIDRow = CType(Me.NewRow,spSelectPaymentHistoryByOrderIDRow)
+            Dim columnValuesArray() As Object = New Object() {PaymentDate, Payment, Type, CheckPaypalNumber, PaypalTransaction}
+            rowspSelectPaymentHistoryByOrderIDRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowspSelectPaymentHistoryByOrderIDRow)
+            Return rowspSelectPaymentHistoryByOrderIDRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As spSelectPaymentHistoryByOrderIDDataTable = CType(MyBase.Clone,spSelectPaymentHistoryByOrderIDDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New spSelectPaymentHistoryByOrderIDDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnPaymentDate = MyBase.Columns("PaymentDate")
+            Me.columnPayment = MyBase.Columns("Payment")
+            Me.columnType = MyBase.Columns("Type")
+            Me.columnCheckPaypalNumber = MyBase.Columns("CheckPaypalNumber")
+            Me.columnPaypalTransaction = MyBase.Columns("PaypalTransaction")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnPaymentDate = New Global.System.Data.DataColumn("PaymentDate", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPaymentDate)
+            Me.columnPayment = New Global.System.Data.DataColumn("Payment", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPayment)
+            Me.columnType = New Global.System.Data.DataColumn("Type", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnType)
+            Me.columnCheckPaypalNumber = New Global.System.Data.DataColumn("CheckPaypalNumber", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCheckPaypalNumber)
+            Me.columnPaypalTransaction = New Global.System.Data.DataColumn("PaypalTransaction", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPaypalTransaction)
+            Me.columnPaymentDate.AllowDBNull = false
+            Me.columnPayment.AllowDBNull = false
+            Me.columnType.AllowDBNull = false
+            Me.columnType.MaxLength = 25
+            Me.columnCheckPaypalNumber.MaxLength = 50
+            Me.columnPaypalTransaction.MaxLength = 50
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function NewspSelectPaymentHistoryByOrderIDRow() As spSelectPaymentHistoryByOrderIDRow
+            Return CType(Me.NewRow,spSelectPaymentHistoryByOrderIDRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New spSelectPaymentHistoryByOrderIDRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(spSelectPaymentHistoryByOrderIDRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.spSelectPaymentHistoryByOrderIDRowChangedEvent) Is Nothing) Then
+                RaiseEvent spSelectPaymentHistoryByOrderIDRowChanged(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.spSelectPaymentHistoryByOrderIDRowChangingEvent) Is Nothing) Then
+                RaiseEvent spSelectPaymentHistoryByOrderIDRowChanging(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.spSelectPaymentHistoryByOrderIDRowDeletedEvent) Is Nothing) Then
+                RaiseEvent spSelectPaymentHistoryByOrderIDRowDeleted(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.spSelectPaymentHistoryByOrderIDRowDeletingEvent) Is Nothing) Then
+                RaiseEvent spSelectPaymentHistoryByOrderIDRowDeleting(Me, New spSelectPaymentHistoryByOrderIDRowChangeEvent(CType(e.Row,spSelectPaymentHistoryByOrderIDRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub RemovespSelectPaymentHistoryByOrderIDRow(ByVal row As spSelectPaymentHistoryByOrderIDRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As ds = New ds()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "spSelectPaymentHistoryByOrderIDDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
     Partial Public Class spSelectBuyersByOrderIDRow
@@ -4177,83 +4191,6 @@ Partial Public Class ds
     '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
-    Partial Public Class spSelectPaymentHistoryByOrderIDRow
-        Inherits Global.System.Data.DataRow
-        
-        Private tablespSelectPaymentHistoryByOrderID As spSelectPaymentHistoryByOrderIDDataTable
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
-            MyBase.New(rb)
-            Me.tablespSelectPaymentHistoryByOrderID = CType(Me.Table,spSelectPaymentHistoryByOrderIDDataTable)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property PaymentDate() As Date
-            Get
-                Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentDateColumn),Date)
-            End Get
-            Set
-                Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentDateColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Payment() As Double
-            Get
-                Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentColumn),Double)
-            End Get
-            Set
-                Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Type() As String
-            Get
-                Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.TypeColumn),String)
-            End Get
-            Set
-                Me(Me.tablespSelectPaymentHistoryByOrderID.TypeColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property Memo() As String
-            Get
-                Try 
-                    Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.MemoColumn),String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Memo' in table 'spSelectPaymentHistoryByOrderID' is DBNull."& _ 
-                            "", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablespSelectPaymentHistoryByOrderID.MemoColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsMemoNull() As Boolean
-            Return Me.IsNull(Me.tablespSelectPaymentHistoryByOrderID.MemoColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetMemoNull()
-            Me(Me.tablespSelectPaymentHistoryByOrderID.MemoColumn) = Global.System.Convert.DBNull
-        End Sub
-    End Class
-    
-    '''<summary>
-    '''Represents strongly named DataRow class.
-    '''</summary>
     Partial Public Class spReportGPSOutputRow
         Inherits Global.System.Data.DataRow
         
@@ -4519,6 +4456,111 @@ Partial Public Class ds
     End Class
     
     '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class spSelectPaymentHistoryByOrderIDRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tablespSelectPaymentHistoryByOrderID As spSelectPaymentHistoryByOrderIDDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tablespSelectPaymentHistoryByOrderID = CType(Me.Table,spSelectPaymentHistoryByOrderIDDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property PaymentDate() As Date
+            Get
+                Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentDateColumn),Date)
+            End Get
+            Set
+                Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentDateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Payment() As Double
+            Get
+                Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentColumn),Double)
+            End Get
+            Set
+                Me(Me.tablespSelectPaymentHistoryByOrderID.PaymentColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Type() As String
+            Get
+                Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.TypeColumn),String)
+            End Get
+            Set
+                Me(Me.tablespSelectPaymentHistoryByOrderID.TypeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property CheckPaypalNumber() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.CheckPaypalNumberColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'CheckPaypalNumber' in table 'spSelectPaymentHistoryByOrderI"& _ 
+                            "D' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablespSelectPaymentHistoryByOrderID.CheckPaypalNumberColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property PaypalTransaction() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablespSelectPaymentHistoryByOrderID.PaypalTransactionColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'PaypalTransaction' in table 'spSelectPaymentHistoryByOrderI"& _ 
+                            "D' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablespSelectPaymentHistoryByOrderID.PaypalTransactionColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCheckPaypalNumberNull() As Boolean
+            Return Me.IsNull(Me.tablespSelectPaymentHistoryByOrderID.CheckPaypalNumberColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCheckPaypalNumberNull()
+            Me(Me.tablespSelectPaymentHistoryByOrderID.CheckPaypalNumberColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsPaypalTransactionNull() As Boolean
+            Return Me.IsNull(Me.tablespSelectPaymentHistoryByOrderID.PaypalTransactionColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetPaypalTransactionNull()
+            Me(Me.tablespSelectPaymentHistoryByOrderID.PaypalTransactionColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -4738,42 +4780,6 @@ Partial Public Class ds
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-    Public Class spSelectPaymentHistoryByOrderIDRowChangeEvent
-        Inherits Global.System.EventArgs
-        
-        Private eventRow As spSelectPaymentHistoryByOrderIDRow
-        
-        Private eventAction As Global.System.Data.DataRowAction
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub New(ByVal row As spSelectPaymentHistoryByOrderIDRow, ByVal action As Global.System.Data.DataRowAction)
-            MyBase.New
-            Me.eventRow = row
-            Me.eventAction = action
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Row() As spSelectPaymentHistoryByOrderIDRow
-            Get
-                Return Me.eventRow
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
-            Get
-                Return Me.eventAction
-            End Get
-        End Property
-    End Class
-    
-    '''<summary>
-    '''Row event argument class
-    '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Class spReportGPSOutputRowChangeEvent
         Inherits Global.System.EventArgs
         
@@ -4900,6 +4906,42 @@ Partial Public Class ds
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property Row() As spGetNextSleeveNameRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class spSelectPaymentHistoryByOrderIDRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As spSelectPaymentHistoryByOrderIDRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As spSelectPaymentHistoryByOrderIDRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As spSelectPaymentHistoryByOrderIDRow
             Get
                 Return Me.eventRow
             End Get
@@ -6048,194 +6090,6 @@ Namespace dsTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-    Partial Public Class spSelectPaymentHistoryByOrderIDTableAdapter
-        Inherits Global.System.ComponentModel.Component
-        
-        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-        
-        Private _connection As Global.System.Data.SqlClient.SqlConnection
-        
-        Private _transaction As Global.System.Data.SqlClient.SqlTransaction
-        
-        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-        
-        Private _clearBeforeFill As Boolean
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub New()
-            MyBase.New
-            Me.ClearBeforeFill = true
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
-            Get
-                If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter
-                End If
-                Return Me._adapter
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
-            Get
-                If (Me._connection Is Nothing) Then
-                    Me.InitConnection
-                End If
-                Return Me._connection
-            End Get
-            Set
-                Me._connection = value
-                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
-                    Me.Adapter.InsertCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
-                    Me.Adapter.DeleteCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
-                    Me.Adapter.UpdateCommand.Connection = value
-                End If
-                Dim i As Integer = 0
-                Do While (i < Me.CommandCollection.Length)
-                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
-                    End If
-                    i = (i + 1)
-                Loop
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Friend Property Transaction() As Global.System.Data.SqlClient.SqlTransaction
-            Get
-                Return Me._transaction
-            End Get
-            Set
-                Me._transaction = value
-                Dim i As Integer = 0
-                Do While (i < Me.CommandCollection.Length)
-                    Me.CommandCollection(i).Transaction = Me._transaction
-                    i = (i + 1)
-                Loop
-                If ((Not (Me.Adapter) Is Nothing)  _
-                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
-                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
-                End If
-                If ((Not (Me.Adapter) Is Nothing)  _
-                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
-                    Me.Adapter.InsertCommand.Transaction = Me._transaction
-                End If
-                If ((Not (Me.Adapter) Is Nothing)  _
-                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
-                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
-                End If
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
-            Get
-                If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection
-                End If
-                Return Me._commandCollection
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property ClearBeforeFill() As Boolean
-            Get
-                Return Me._clearBeforeFill
-            End Get
-            Set
-                Me._clearBeforeFill = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitAdapter()
-            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
-            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
-            tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "spSelectPaymentHistoryByOrderID"
-            tableMapping.ColumnMappings.Add("PaymentDate", "PaymentDate")
-            tableMapping.ColumnMappings.Add("Payment", "Payment")
-            tableMapping.ColumnMappings.Add("Type", "Type")
-            tableMapping.ColumnMappings.Add("Memo", "Memo")
-            Me._adapter.TableMappings.Add(tableMapping)
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitConnection()
-            Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
-            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "dbo.spSelectPaymentHistoryByOrderID"
-            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.StoredProcedure
-            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ORDERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As ds.spSelectPaymentHistoryByOrderIDDataTable, ByVal ORDERID As Global.System.Nullable(Of Integer)) As Integer
-            Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (ORDERID.HasValue = true) Then
-                Me.Adapter.SelectCommand.Parameters(1).Value = CType(ORDERID.Value,Integer)
-            Else
-                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            If (Me.ClearBeforeFill = true) Then
-                dataTable.Clear
-            End If
-            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
-            Return returnValue
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData(ByVal ORDERID As Global.System.Nullable(Of Integer)) As ds.spSelectPaymentHistoryByOrderIDDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            If (ORDERID.HasValue = true) Then
-                Me.Adapter.SelectCommand.Parameters(1).Value = CType(ORDERID.Value,Integer)
-            Else
-                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            Dim dataTable As ds.spSelectPaymentHistoryByOrderIDDataTable = New ds.spSelectPaymentHistoryByOrderIDDataTable()
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-    End Class
-    
-    '''<summary>
-    '''Represents the connection and commands used to retrieve and save data.
-    '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
-     Global.System.ComponentModel.ToolboxItem(true),  _
-     Global.System.ComponentModel.DataObjectAttribute(true),  _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class spReportGPSOutputTableAdapter
         Inherits Global.System.ComponentModel.Component
         
@@ -6983,6 +6837,195 @@ Namespace dsTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class spSelectPaymentHistoryByOrderIDTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
+        
+        Private _connection As Global.System.Data.SqlClient.SqlConnection
+        
+        Private _transaction As Global.System.Data.SqlClient.SqlTransaction
+        
+        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.System.Data.SqlClient.SqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.SqlClient.SqlTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "spSelectPaymentHistoryByOrderID"
+            tableMapping.ColumnMappings.Add("PaymentDate", "PaymentDate")
+            tableMapping.ColumnMappings.Add("Payment", "Payment")
+            tableMapping.ColumnMappings.Add("Type", "Type")
+            tableMapping.ColumnMappings.Add("CheckPaypalNumber", "CheckPaypalNumber")
+            tableMapping.ColumnMappings.Add("PaypalTransaction", "PaypalTransaction")
+            Me._adapter.TableMappings.Add(tableMapping)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlClient.SqlConnection()
+            Me._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "dbo.spSelectPaymentHistoryByOrderID"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.StoredProcedure
+            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._commandCollection(0).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ORDERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As ds.spSelectPaymentHistoryByOrderIDDataTable, ByVal ORDERID As Global.System.Nullable(Of Integer)) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (ORDERID.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(ORDERID.Value,Integer)
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData(ByVal ORDERID As Global.System.Nullable(Of Integer)) As ds.spSelectPaymentHistoryByOrderIDDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (ORDERID.HasValue = true) Then
+                Me.Adapter.SelectCommand.Parameters(1).Value = CType(ORDERID.Value,Integer)
+            Else
+                Me.Adapter.SelectCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            Dim dataTable As ds.spSelectPaymentHistoryByOrderIDDataTable = New ds.spSelectPaymentHistoryByOrderIDDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
     Partial Public Class StoredProcedureTableAdapter
         Inherits Global.System.ComponentModel.Component
         
@@ -7148,1301 +7191,1307 @@ Namespace dsTableAdapters
             CType(Me._commandCollection(12),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OccasionName", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(13) = New Global.System.Data.SqlClient.SqlCommand()
             CType(Me._commandCollection(13),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewBuyerOrder"
-            CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@BuyerID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(13), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(13),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewBuyerOrder"
+            CType(Me._commandCollection(13),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(13),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(13),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@BuyerID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(13),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(14) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spRemoveFromRoute"
-            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(14), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PROPERTYOWNERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(14),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(14),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spRemoveFromRoute"
+            CType(Me._commandCollection(14),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(14),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(14),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PROPERTYOWNERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(15) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spUpdateSortOrder"
-            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PROPERTYOWNERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(15), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SORTORDER", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(15),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(15),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spUpdateSortOrder"
+            CType(Me._commandCollection(15),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(15),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(15),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PROPERTYOWNERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(15),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SORTORDER", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(16) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewPhoto"
-            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SleeveID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(16), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Photo", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(16),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(16),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewPhoto"
+            CType(Me._commandCollection(16),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(16),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(16),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SleeveID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(16),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Photo", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(17) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewPayment"
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.InputOutput, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Payment", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentSource", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(17), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentMemo", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(17),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(17),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddOrUpdateRouteColor"
+            CType(Me._commandCollection(17),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(17),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(17),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PROPERTYOWNERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(17),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ROUTECOLOR", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(17),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVIOUSCOLOR", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(18) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(18), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(18), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddOrUpdateRouteColor"
-            CType(Me._commandCollection(18), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(18), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(18), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PROPERTYOWNERID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(18), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ROUTECOLOR", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(18), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PREVIOUSCOLOR", Global.System.Data.SqlDbType.NVarChar, 15, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(18),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(18),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spMarkAllRoutesUnchanged"
+            CType(Me._commandCollection(18),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(18),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(19) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(19), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(19), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spMarkAllRoutesUnchanged"
-            CType(Me._commandCollection(19), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(19), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewSleeve"
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.InputOutput, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Active", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.Input, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PropertyOwnerID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@LocationDescription", Global.System.Data.SqlDbType.NVarChar, 2000, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Latitude", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Longitude", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OupsID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@InstalledDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ChangeDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Public", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.Input, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Deliver", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.Input, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ExpiredDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(19),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SleeveName", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(20) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewSleeve"
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.InputOutput, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Active", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.Input, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PropertyOwnerID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@LocationDescription", Global.System.Data.SqlDbType.NVarChar, 2000, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Latitude", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Longitude", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OupsID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@InstalledDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ChangeDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Public", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.Input, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Deliver", Global.System.Data.SqlDbType.Bit, 1, Global.System.Data.ParameterDirection.Input, 1, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ExpiredDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(20), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SleeveName", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewOrder"
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.InputOutput, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SourceID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SubYear", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Cost", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DiscountID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Type", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ConfirmationDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(20),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@FirstOccasionID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._commandCollection(21) = New Global.System.Data.SqlClient.SqlCommand()
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewOrder"
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.InputOutput, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SourceID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@SubYear", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Cost", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@DiscountID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Type", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ConfirmationDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            CType(Me._commandCollection(21), Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@FirstOccasionID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Connection = New Global.System.Data.SqlClient.SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString)
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).CommandText = "dbo.spAddNewPayment"
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).CommandType = Global.System.Data.CommandType.StoredProcedure
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@RETURN_VALUE", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.ReturnValue, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.InputOutput, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OrderID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Payment", Global.System.Data.SqlDbType.Float, 8, Global.System.Data.ParameterDirection.Input, 53, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentDate", Global.System.Data.SqlDbType.[Date], 3, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentSource", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 10, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentCheckPaypalNumber", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            CType(Me._commandCollection(21),Global.System.Data.SqlClient.SqlCommand).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@PaymentPaypalTransaction", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, Nothing, Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewSource(ByVal SourceName As String) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(0), Global.System.Data.SqlClient.SqlCommand)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewSource(ByVal SourceName As String) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(0),Global.System.Data.SqlClient.SqlCommand)
             If (SourceName Is Nothing) Then
                 command.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(1).Value = CType(SourceName, String)
+                command.Parameters(1).Value = CType(SourceName,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewTrait(ByVal TraitDescription As String) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(1), Global.System.Data.SqlClient.SqlCommand)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewTrait(ByVal TraitDescription As String) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(1),Global.System.Data.SqlClient.SqlCommand)
             If (TraitDescription Is Nothing) Then
                 command.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(1).Value = CType(TraitDescription, String)
+                command.Parameters(1).Value = CType(TraitDescription,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewDiscount(ByVal DiscountReason As String, ByVal DiscountAmount As Global.System.Nullable(Of Double), ByVal Active As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(2), Global.System.Data.SqlClient.SqlCommand)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewDiscount(ByVal DiscountReason As String, ByVal DiscountAmount As Global.System.Nullable(Of Double), ByVal Active As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(2),Global.System.Data.SqlClient.SqlCommand)
             If (DiscountReason Is Nothing) Then
                 command.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(1).Value = CType(DiscountReason, String)
+                command.Parameters(1).Value = CType(DiscountReason,String)
             End If
-            If (DiscountAmount.HasValue = True) Then
-                command.Parameters(2).Value = CType(DiscountAmount.Value, Double)
+            If (DiscountAmount.HasValue = true) Then
+                command.Parameters(2).Value = CType(DiscountAmount.Value,Double)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (Active.HasValue = True) Then
-                command.Parameters(3).Value = CType(Active.Value, Boolean)
+            If (Active.HasValue = true) Then
+                command.Parameters(3).Value = CType(Active.Value,Boolean)
             Else
                 command.Parameters(3).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewBuyer(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal BillType As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(3), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewBuyer(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal BillType As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(3),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (LastName Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(LastName, String)
+                command.Parameters(2).Value = CType(LastName,String)
             End If
             If (FirstName Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(FirstName, String)
+                command.Parameters(3).Value = CType(FirstName,String)
             End If
             If (StreetAddress Is Nothing) Then
                 command.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(4).Value = CType(StreetAddress, String)
+                command.Parameters(4).Value = CType(StreetAddress,String)
             End If
             If (City Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(City, String)
+                command.Parameters(5).Value = CType(City,String)
             End If
             If (State Is Nothing) Then
                 command.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(6).Value = CType(State, String)
+                command.Parameters(6).Value = CType(State,String)
             End If
             If (Zip Is Nothing) Then
                 command.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(7).Value = CType(Zip, String)
+                command.Parameters(7).Value = CType(Zip,String)
             End If
             If (Email Is Nothing) Then
                 command.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(8).Value = CType(Email, String)
+                command.Parameters(8).Value = CType(Email,String)
             End If
             If (Phone Is Nothing) Then
                 command.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(9).Value = CType(Phone, String)
+                command.Parameters(9).Value = CType(Phone,String)
             End If
             If (BillType Is Nothing) Then
                 command.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(10).Value = CType(BillType, String)
+                command.Parameters(10).Value = CType(BillType,String)
             End If
-            If (RotaryMember.HasValue = True) Then
-                command.Parameters(11).Value = CType(RotaryMember.Value, Boolean)
+            If (RotaryMember.HasValue = true) Then
+                command.Parameters(11).Value = CType(RotaryMember.Value,Boolean)
             Else
                 command.Parameters(11).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(1).Value Is Nothing) _
+            If ((command.Parameters(1).Value Is Nothing)  _
                         OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
                 ID = New Global.System.Nullable(Of Integer)()
             Else
-                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewPropertyOwner(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(4), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewPropertyOwner(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(4),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (LastName Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(LastName, String)
+                command.Parameters(2).Value = CType(LastName,String)
             End If
             If (FirstName Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(FirstName, String)
+                command.Parameters(3).Value = CType(FirstName,String)
             End If
             If (StreetAddress Is Nothing) Then
                 command.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(4).Value = CType(StreetAddress, String)
+                command.Parameters(4).Value = CType(StreetAddress,String)
             End If
             If (City Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(City, String)
+                command.Parameters(5).Value = CType(City,String)
             End If
             If (State Is Nothing) Then
                 command.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(6).Value = CType(State, String)
+                command.Parameters(6).Value = CType(State,String)
             End If
             If (Zip Is Nothing) Then
                 command.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(7).Value = CType(Zip, String)
+                command.Parameters(7).Value = CType(Zip,String)
             End If
             If (Email Is Nothing) Then
                 command.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(8).Value = CType(Email, String)
+                command.Parameters(8).Value = CType(Email,String)
             End If
             If (Phone Is Nothing) Then
                 command.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(9).Value = CType(Phone, String)
+                command.Parameters(9).Value = CType(Phone,String)
             End If
-            If (RotaryMember.HasValue = True) Then
-                command.Parameters(10).Value = CType(RotaryMember.Value, Boolean)
+            If (RotaryMember.HasValue = true) Then
+                command.Parameters(10).Value = CType(RotaryMember.Value,Boolean)
             Else
                 command.Parameters(10).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(1).Value Is Nothing) _
+            If ((command.Parameters(1).Value Is Nothing)  _
                         OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
                 ID = New Global.System.Nullable(Of Integer)()
             Else
-                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewOups(ByRef ID As Global.System.Nullable(Of Integer), ByVal OupsTicketNumber As String, ByVal OupsNotifiedDate As Global.System.Nullable(Of Date), ByVal OupsCheckedDate As Global.System.Nullable(Of Date)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(5), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewOups(ByRef ID As Global.System.Nullable(Of Integer), ByVal OupsTicketNumber As String, ByVal OupsNotifiedDate As Global.System.Nullable(Of Date), ByVal OupsCheckedDate As Global.System.Nullable(Of Date)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(5),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (OupsTicketNumber Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(OupsTicketNumber, String)
+                command.Parameters(2).Value = CType(OupsTicketNumber,String)
             End If
-            If (OupsNotifiedDate.HasValue = True) Then
-                command.Parameters(3).Value = CType(OupsNotifiedDate.Value, Date)
+            If (OupsNotifiedDate.HasValue = true) Then
+                command.Parameters(3).Value = CType(OupsNotifiedDate.Value,Date)
             Else
                 command.Parameters(3).Value = Global.System.DBNull.Value
             End If
-            If (OupsCheckedDate.HasValue = True) Then
-                command.Parameters(4).Value = CType(OupsCheckedDate.Value, Date)
+            If (OupsCheckedDate.HasValue = true) Then
+                command.Parameters(4).Value = CType(OupsCheckedDate.Value,Date)
             Else
                 command.Parameters(4).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(1).Value Is Nothing) _
+            If ((command.Parameters(1).Value Is Nothing)  _
                         OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
                 ID = New Global.System.Nullable(Of Integer)()
             Else
-                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewPropertyTraits(ByVal PropertyOwnerID As Global.System.Nullable(Of Integer), ByVal TraitID As Global.System.Nullable(Of Integer)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(6), Global.System.Data.SqlClient.SqlCommand)
-            If (PropertyOwnerID.HasValue = True) Then
-                command.Parameters(1).Value = CType(PropertyOwnerID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewPropertyTraits(ByVal PropertyOwnerID As Global.System.Nullable(Of Integer), ByVal TraitID As Global.System.Nullable(Of Integer)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(6),Global.System.Data.SqlClient.SqlCommand)
+            If (PropertyOwnerID.HasValue = true) Then
+                command.Parameters(1).Value = CType(PropertyOwnerID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (TraitID.HasValue = True) Then
-                command.Parameters(2).Value = CType(TraitID.Value, Integer)
+            If (TraitID.HasValue = true) Then
+                command.Parameters(2).Value = CType(TraitID.Value,Integer)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spSelectBuyerID(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal BillType As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(7), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spSelectBuyerID(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal BillType As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(7),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (LastName Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(LastName, String)
+                command.Parameters(2).Value = CType(LastName,String)
             End If
             If (FirstName Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(FirstName, String)
+                command.Parameters(3).Value = CType(FirstName,String)
             End If
             If (StreetAddress Is Nothing) Then
                 command.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(4).Value = CType(StreetAddress, String)
+                command.Parameters(4).Value = CType(StreetAddress,String)
             End If
             If (City Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(City, String)
+                command.Parameters(5).Value = CType(City,String)
             End If
             If (State Is Nothing) Then
                 command.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(6).Value = CType(State, String)
+                command.Parameters(6).Value = CType(State,String)
             End If
             If (Zip Is Nothing) Then
                 command.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(7).Value = CType(Zip, String)
+                command.Parameters(7).Value = CType(Zip,String)
             End If
             If (Email Is Nothing) Then
                 command.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(8).Value = CType(Email, String)
+                command.Parameters(8).Value = CType(Email,String)
             End If
             If (Phone Is Nothing) Then
                 command.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(9).Value = CType(Phone, String)
+                command.Parameters(9).Value = CType(Phone,String)
             End If
             If (BillType Is Nothing) Then
                 command.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(10).Value = CType(BillType, String)
+                command.Parameters(10).Value = CType(BillType,String)
             End If
-            If (RotaryMember.HasValue = True) Then
-                command.Parameters(11).Value = CType(RotaryMember.Value, Boolean)
+            If (RotaryMember.HasValue = true) Then
+                command.Parameters(11).Value = CType(RotaryMember.Value,Boolean)
             Else
                 command.Parameters(11).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(1).Value Is Nothing) _
+            If ((command.Parameters(1).Value Is Nothing)  _
                         OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
                 ID = New Global.System.Nullable(Of Integer)()
             Else
-                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spSelectPropertyOwnerID(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(8), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spSelectPropertyOwnerID(ByRef ID As Global.System.Nullable(Of Integer), ByVal LastName As String, ByVal FirstName As String, ByVal StreetAddress As String, ByVal City As String, ByVal State As String, ByVal Zip As String, ByVal Email As String, ByVal Phone As String, ByVal RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(8),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (LastName Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(LastName, String)
+                command.Parameters(2).Value = CType(LastName,String)
             End If
             If (FirstName Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(FirstName, String)
+                command.Parameters(3).Value = CType(FirstName,String)
             End If
             If (StreetAddress Is Nothing) Then
                 command.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(4).Value = CType(StreetAddress, String)
+                command.Parameters(4).Value = CType(StreetAddress,String)
             End If
             If (City Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(City, String)
+                command.Parameters(5).Value = CType(City,String)
             End If
             If (State Is Nothing) Then
                 command.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(6).Value = CType(State, String)
+                command.Parameters(6).Value = CType(State,String)
             End If
             If (Zip Is Nothing) Then
                 command.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(7).Value = CType(Zip, String)
+                command.Parameters(7).Value = CType(Zip,String)
             End If
             If (Email Is Nothing) Then
                 command.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(8).Value = CType(Email, String)
+                command.Parameters(8).Value = CType(Email,String)
             End If
             If (Phone Is Nothing) Then
                 command.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(9).Value = CType(Phone, String)
+                command.Parameters(9).Value = CType(Phone,String)
             End If
-            If (RotaryMember.HasValue = True) Then
-                command.Parameters(10).Value = CType(RotaryMember.Value, Boolean)
+            If (RotaryMember.HasValue = true) Then
+                command.Parameters(10).Value = CType(RotaryMember.Value,Boolean)
             Else
                 command.Parameters(10).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(1).Value Is Nothing) _
+            If ((command.Parameters(1).Value Is Nothing)  _
                         OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
                 ID = New Global.System.Nullable(Of Integer)()
             Else
-                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spSelectBuyer(ByVal ID As Global.System.Nullable(Of Integer), ByRef LastName As String, ByRef FirstName As String, ByRef StreetAddress As String, ByRef City As String, ByRef State As String, ByRef Zip As String, ByRef Email As String, ByRef Phone As String, ByRef BillType As String, ByRef RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(9), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spSelectBuyer(ByVal ID As Global.System.Nullable(Of Integer), ByRef LastName As String, ByRef FirstName As String, ByRef StreetAddress As String, ByRef City As String, ByRef State As String, ByRef Zip As String, ByRef Email As String, ByRef Phone As String, ByRef BillType As String, ByRef RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(9),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (LastName Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(LastName, String)
+                command.Parameters(2).Value = CType(LastName,String)
             End If
             If (FirstName Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(FirstName, String)
+                command.Parameters(3).Value = CType(FirstName,String)
             End If
             If (StreetAddress Is Nothing) Then
                 command.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(4).Value = CType(StreetAddress, String)
+                command.Parameters(4).Value = CType(StreetAddress,String)
             End If
             If (City Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(City, String)
+                command.Parameters(5).Value = CType(City,String)
             End If
             If (State Is Nothing) Then
                 command.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(6).Value = CType(State, String)
+                command.Parameters(6).Value = CType(State,String)
             End If
             If (Zip Is Nothing) Then
                 command.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(7).Value = CType(Zip, String)
+                command.Parameters(7).Value = CType(Zip,String)
             End If
             If (Email Is Nothing) Then
                 command.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(8).Value = CType(Email, String)
+                command.Parameters(8).Value = CType(Email,String)
             End If
             If (Phone Is Nothing) Then
                 command.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(9).Value = CType(Phone, String)
+                command.Parameters(9).Value = CType(Phone,String)
             End If
             If (BillType Is Nothing) Then
                 command.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(10).Value = CType(BillType, String)
+                command.Parameters(10).Value = CType(BillType,String)
             End If
-            If (RotaryMember.HasValue = True) Then
-                command.Parameters(11).Value = CType(RotaryMember.Value, Boolean)
+            If (RotaryMember.HasValue = true) Then
+                command.Parameters(11).Value = CType(RotaryMember.Value,Boolean)
             Else
                 command.Parameters(11).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(2).Value Is Nothing) _
+            If ((command.Parameters(2).Value Is Nothing)  _
                         OrElse (command.Parameters(2).Value.GetType Is GetType(Global.System.DBNull))) Then
                 LastName = Nothing
             Else
-                LastName = CType(command.Parameters(2).Value, String)
+                LastName = CType(command.Parameters(2).Value,String)
             End If
-            If ((command.Parameters(3).Value Is Nothing) _
+            If ((command.Parameters(3).Value Is Nothing)  _
                         OrElse (command.Parameters(3).Value.GetType Is GetType(Global.System.DBNull))) Then
                 FirstName = Nothing
             Else
-                FirstName = CType(command.Parameters(3).Value, String)
+                FirstName = CType(command.Parameters(3).Value,String)
             End If
-            If ((command.Parameters(4).Value Is Nothing) _
+            If ((command.Parameters(4).Value Is Nothing)  _
                         OrElse (command.Parameters(4).Value.GetType Is GetType(Global.System.DBNull))) Then
                 StreetAddress = Nothing
             Else
-                StreetAddress = CType(command.Parameters(4).Value, String)
+                StreetAddress = CType(command.Parameters(4).Value,String)
             End If
-            If ((command.Parameters(5).Value Is Nothing) _
+            If ((command.Parameters(5).Value Is Nothing)  _
                         OrElse (command.Parameters(5).Value.GetType Is GetType(Global.System.DBNull))) Then
                 City = Nothing
             Else
-                City = CType(command.Parameters(5).Value, String)
+                City = CType(command.Parameters(5).Value,String)
             End If
-            If ((command.Parameters(6).Value Is Nothing) _
+            If ((command.Parameters(6).Value Is Nothing)  _
                         OrElse (command.Parameters(6).Value.GetType Is GetType(Global.System.DBNull))) Then
                 State = Nothing
             Else
-                State = CType(command.Parameters(6).Value, String)
+                State = CType(command.Parameters(6).Value,String)
             End If
-            If ((command.Parameters(7).Value Is Nothing) _
+            If ((command.Parameters(7).Value Is Nothing)  _
                         OrElse (command.Parameters(7).Value.GetType Is GetType(Global.System.DBNull))) Then
                 Zip = Nothing
             Else
-                Zip = CType(command.Parameters(7).Value, String)
+                Zip = CType(command.Parameters(7).Value,String)
             End If
-            If ((command.Parameters(8).Value Is Nothing) _
+            If ((command.Parameters(8).Value Is Nothing)  _
                         OrElse (command.Parameters(8).Value.GetType Is GetType(Global.System.DBNull))) Then
                 Email = Nothing
             Else
-                Email = CType(command.Parameters(8).Value, String)
+                Email = CType(command.Parameters(8).Value,String)
             End If
-            If ((command.Parameters(9).Value Is Nothing) _
+            If ((command.Parameters(9).Value Is Nothing)  _
                         OrElse (command.Parameters(9).Value.GetType Is GetType(Global.System.DBNull))) Then
                 Phone = Nothing
             Else
-                Phone = CType(command.Parameters(9).Value, String)
+                Phone = CType(command.Parameters(9).Value,String)
             End If
-            If ((command.Parameters(10).Value Is Nothing) _
+            If ((command.Parameters(10).Value Is Nothing)  _
                         OrElse (command.Parameters(10).Value.GetType Is GetType(Global.System.DBNull))) Then
                 BillType = Nothing
             Else
-                BillType = CType(command.Parameters(10).Value, String)
+                BillType = CType(command.Parameters(10).Value,String)
             End If
-            If ((command.Parameters(11).Value Is Nothing) _
+            If ((command.Parameters(11).Value Is Nothing)  _
                         OrElse (command.Parameters(11).Value.GetType Is GetType(Global.System.DBNull))) Then
                 RotaryMember = New Global.System.Nullable(Of Boolean)()
             Else
-                RotaryMember = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(11).Value, Boolean))
+                RotaryMember = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(11).Value,Boolean))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spSelectPropertyOwner(ByVal ID As Global.System.Nullable(Of Integer), ByRef LastName As String, ByRef FirstName As String, ByRef StreetAddress As String, ByRef City As String, ByRef State As String, ByRef Zip As String, ByRef Email As String, ByRef Phone As String, ByRef RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(10), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spSelectPropertyOwner(ByVal ID As Global.System.Nullable(Of Integer), ByRef LastName As String, ByRef FirstName As String, ByRef StreetAddress As String, ByRef City As String, ByRef State As String, ByRef Zip As String, ByRef Email As String, ByRef Phone As String, ByRef RotaryMember As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(10),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (LastName Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(LastName, String)
+                command.Parameters(2).Value = CType(LastName,String)
             End If
             If (FirstName Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(FirstName, String)
+                command.Parameters(3).Value = CType(FirstName,String)
             End If
             If (StreetAddress Is Nothing) Then
                 command.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(4).Value = CType(StreetAddress, String)
+                command.Parameters(4).Value = CType(StreetAddress,String)
             End If
             If (City Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(City, String)
+                command.Parameters(5).Value = CType(City,String)
             End If
             If (State Is Nothing) Then
                 command.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(6).Value = CType(State, String)
+                command.Parameters(6).Value = CType(State,String)
             End If
             If (Zip Is Nothing) Then
                 command.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(7).Value = CType(Zip, String)
+                command.Parameters(7).Value = CType(Zip,String)
             End If
             If (Email Is Nothing) Then
                 command.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(8).Value = CType(Email, String)
+                command.Parameters(8).Value = CType(Email,String)
             End If
             If (Phone Is Nothing) Then
                 command.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(9).Value = CType(Phone, String)
+                command.Parameters(9).Value = CType(Phone,String)
             End If
-            If (RotaryMember.HasValue = True) Then
-                command.Parameters(10).Value = CType(RotaryMember.Value, Boolean)
+            If (RotaryMember.HasValue = true) Then
+                command.Parameters(10).Value = CType(RotaryMember.Value,Boolean)
             Else
                 command.Parameters(10).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(2).Value Is Nothing) _
+            If ((command.Parameters(2).Value Is Nothing)  _
                         OrElse (command.Parameters(2).Value.GetType Is GetType(Global.System.DBNull))) Then
                 LastName = Nothing
             Else
-                LastName = CType(command.Parameters(2).Value, String)
+                LastName = CType(command.Parameters(2).Value,String)
             End If
-            If ((command.Parameters(3).Value Is Nothing) _
+            If ((command.Parameters(3).Value Is Nothing)  _
                         OrElse (command.Parameters(3).Value.GetType Is GetType(Global.System.DBNull))) Then
                 FirstName = Nothing
             Else
-                FirstName = CType(command.Parameters(3).Value, String)
+                FirstName = CType(command.Parameters(3).Value,String)
             End If
-            If ((command.Parameters(4).Value Is Nothing) _
+            If ((command.Parameters(4).Value Is Nothing)  _
                         OrElse (command.Parameters(4).Value.GetType Is GetType(Global.System.DBNull))) Then
                 StreetAddress = Nothing
             Else
-                StreetAddress = CType(command.Parameters(4).Value, String)
+                StreetAddress = CType(command.Parameters(4).Value,String)
             End If
-            If ((command.Parameters(5).Value Is Nothing) _
+            If ((command.Parameters(5).Value Is Nothing)  _
                         OrElse (command.Parameters(5).Value.GetType Is GetType(Global.System.DBNull))) Then
                 City = Nothing
             Else
-                City = CType(command.Parameters(5).Value, String)
+                City = CType(command.Parameters(5).Value,String)
             End If
-            If ((command.Parameters(6).Value Is Nothing) _
+            If ((command.Parameters(6).Value Is Nothing)  _
                         OrElse (command.Parameters(6).Value.GetType Is GetType(Global.System.DBNull))) Then
                 State = Nothing
             Else
-                State = CType(command.Parameters(6).Value, String)
+                State = CType(command.Parameters(6).Value,String)
             End If
-            If ((command.Parameters(7).Value Is Nothing) _
+            If ((command.Parameters(7).Value Is Nothing)  _
                         OrElse (command.Parameters(7).Value.GetType Is GetType(Global.System.DBNull))) Then
                 Zip = Nothing
             Else
-                Zip = CType(command.Parameters(7).Value, String)
+                Zip = CType(command.Parameters(7).Value,String)
             End If
-            If ((command.Parameters(8).Value Is Nothing) _
+            If ((command.Parameters(8).Value Is Nothing)  _
                         OrElse (command.Parameters(8).Value.GetType Is GetType(Global.System.DBNull))) Then
                 Email = Nothing
             Else
-                Email = CType(command.Parameters(8).Value, String)
+                Email = CType(command.Parameters(8).Value,String)
             End If
-            If ((command.Parameters(9).Value Is Nothing) _
+            If ((command.Parameters(9).Value Is Nothing)  _
                         OrElse (command.Parameters(9).Value.GetType Is GetType(Global.System.DBNull))) Then
                 Phone = Nothing
             Else
-                Phone = CType(command.Parameters(9).Value, String)
+                Phone = CType(command.Parameters(9).Value,String)
             End If
-            If ((command.Parameters(10).Value Is Nothing) _
+            If ((command.Parameters(10).Value Is Nothing)  _
                         OrElse (command.Parameters(10).Value.GetType Is GetType(Global.System.DBNull))) Then
                 RotaryMember = New Global.System.Nullable(Of Boolean)()
             Else
-                RotaryMember = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(10).Value, Boolean))
+                RotaryMember = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(10).Value,Boolean))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spPropertyHasTrait(ByVal PropertyOwnerID As Global.System.Nullable(Of Integer), ByVal TraitID As Global.System.Nullable(Of Integer), ByRef HasTrait As Global.System.Nullable(Of Boolean)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(11), Global.System.Data.SqlClient.SqlCommand)
-            If (PropertyOwnerID.HasValue = True) Then
-                command.Parameters(1).Value = CType(PropertyOwnerID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spPropertyHasTrait(ByVal PropertyOwnerID As Global.System.Nullable(Of Integer), ByVal TraitID As Global.System.Nullable(Of Integer), ByRef HasTrait As Global.System.Nullable(Of Boolean)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(11),Global.System.Data.SqlClient.SqlCommand)
+            If (PropertyOwnerID.HasValue = true) Then
+                command.Parameters(1).Value = CType(PropertyOwnerID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (TraitID.HasValue = True) Then
-                command.Parameters(2).Value = CType(TraitID.Value, Integer)
+            If (TraitID.HasValue = true) Then
+                command.Parameters(2).Value = CType(TraitID.Value,Integer)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (HasTrait.HasValue = True) Then
-                command.Parameters(3).Value = CType(HasTrait.Value, Boolean)
+            If (HasTrait.HasValue = true) Then
+                command.Parameters(3).Value = CType(HasTrait.Value,Boolean)
             Else
                 command.Parameters(3).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(3).Value Is Nothing) _
+            If ((command.Parameters(3).Value Is Nothing)  _
                         OrElse (command.Parameters(3).Value.GetType Is GetType(Global.System.DBNull))) Then
                 HasTrait = New Global.System.Nullable(Of Boolean)()
             Else
-                HasTrait = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(3).Value, Boolean))
+                HasTrait = New Global.System.Nullable(Of Boolean)(CType(command.Parameters(3).Value,Boolean))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewOccasion(ByVal OccasionName As String) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(12), Global.System.Data.SqlClient.SqlCommand)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewOccasion(ByVal OccasionName As String) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(12),Global.System.Data.SqlClient.SqlCommand)
             If (OccasionName Is Nothing) Then
                 command.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(1).Value = CType(OccasionName, String)
+                command.Parameters(1).Value = CType(OccasionName,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewBuyerOrder(ByVal BuyerID As Global.System.Nullable(Of Integer), ByVal OrderID As Global.System.Nullable(Of Integer)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(13), Global.System.Data.SqlClient.SqlCommand)
-            If (BuyerID.HasValue = True) Then
-                command.Parameters(1).Value = CType(BuyerID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewBuyerOrder(ByVal BuyerID As Global.System.Nullable(Of Integer), ByVal OrderID As Global.System.Nullable(Of Integer)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(13),Global.System.Data.SqlClient.SqlCommand)
+            If (BuyerID.HasValue = true) Then
+                command.Parameters(1).Value = CType(BuyerID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (OrderID.HasValue = True) Then
-                command.Parameters(2).Value = CType(OrderID.Value, Integer)
+            If (OrderID.HasValue = true) Then
+                command.Parameters(2).Value = CType(OrderID.Value,Integer)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spRemoveFromRoute(ByVal PROPERTYOWNERID As Global.System.Nullable(Of Integer)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(14), Global.System.Data.SqlClient.SqlCommand)
-            If (PROPERTYOWNERID.HasValue = True) Then
-                command.Parameters(1).Value = CType(PROPERTYOWNERID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spRemoveFromRoute(ByVal PROPERTYOWNERID As Global.System.Nullable(Of Integer)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(14),Global.System.Data.SqlClient.SqlCommand)
+            If (PROPERTYOWNERID.HasValue = true) Then
+                command.Parameters(1).Value = CType(PROPERTYOWNERID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spUpdateSortOrder(ByVal PROPERTYOWNERID As Global.System.Nullable(Of Integer), ByVal SORTORDER As Global.System.Nullable(Of Integer)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(15), Global.System.Data.SqlClient.SqlCommand)
-            If (PROPERTYOWNERID.HasValue = True) Then
-                command.Parameters(1).Value = CType(PROPERTYOWNERID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spUpdateSortOrder(ByVal PROPERTYOWNERID As Global.System.Nullable(Of Integer), ByVal SORTORDER As Global.System.Nullable(Of Integer)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(15),Global.System.Data.SqlClient.SqlCommand)
+            If (PROPERTYOWNERID.HasValue = true) Then
+                command.Parameters(1).Value = CType(PROPERTYOWNERID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (SORTORDER.HasValue = True) Then
-                command.Parameters(2).Value = CType(SORTORDER.Value, Integer)
+            If (SORTORDER.HasValue = true) Then
+                command.Parameters(2).Value = CType(SORTORDER.Value,Integer)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewPhoto(ByVal SleeveID As Global.System.Nullable(Of Integer), ByVal Photo As String) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(16), Global.System.Data.SqlClient.SqlCommand)
-            If (SleeveID.HasValue = True) Then
-                command.Parameters(1).Value = CType(SleeveID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewPhoto(ByVal SleeveID As Global.System.Nullable(Of Integer), ByVal Photo As String) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(16),Global.System.Data.SqlClient.SqlCommand)
+            If (SleeveID.HasValue = true) Then
+                command.Parameters(1).Value = CType(SleeveID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (Photo Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(Photo, String)
+                command.Parameters(2).Value = CType(Photo,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewPayment(ByRef PaymentID As Global.System.Nullable(Of Integer), ByVal OrderID As Global.System.Nullable(Of Integer), ByVal Payment As Global.System.Nullable(Of Double), ByVal PaymentDate As Global.System.Nullable(Of Date), ByVal PaymentSource As Global.System.Nullable(Of Integer), ByVal PaymentMemo As String) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(17), Global.System.Data.SqlClient.SqlCommand)
-            If (PaymentID.HasValue = True) Then
-                command.Parameters(1).Value = CType(PaymentID.Value, Integer)
-            Else
-                command.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            If (OrderID.HasValue = True) Then
-                command.Parameters(2).Value = CType(OrderID.Value, Integer)
-            Else
-                command.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            If (Payment.HasValue = True) Then
-                command.Parameters(3).Value = CType(Payment.Value, Double)
-            Else
-                command.Parameters(3).Value = Global.System.DBNull.Value
-            End If
-            If (PaymentDate.HasValue = True) Then
-                command.Parameters(4).Value = CType(PaymentDate.Value, Date)
-            Else
-                command.Parameters(4).Value = Global.System.DBNull.Value
-            End If
-            If (PaymentSource.HasValue = True) Then
-                command.Parameters(5).Value = CType(PaymentSource.Value, Integer)
-            Else
-                command.Parameters(5).Value = Global.System.DBNull.Value
-            End If
-            If (PaymentMemo Is Nothing) Then
-                command.Parameters(6).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(6).Value = CType(PaymentMemo, String)
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Integer
-            Try
-                returnValue = command.ExecuteNonQuery
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((command.Parameters(1).Value Is Nothing) _
-                        OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
-                PaymentID = New Global.System.Nullable(Of Integer)()
-            Else
-                PaymentID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
-            End If
-            Return returnValue
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddOrUpdateRouteColor(ByVal PROPERTYOWNERID As Global.System.Nullable(Of Integer), ByVal ROUTECOLOR As String, ByVal PREVIOUSCOLOR As String) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(18), Global.System.Data.SqlClient.SqlCommand)
-            If (PROPERTYOWNERID.HasValue = True) Then
-                command.Parameters(1).Value = CType(PROPERTYOWNERID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddOrUpdateRouteColor(ByVal PROPERTYOWNERID As Global.System.Nullable(Of Integer), ByVal ROUTECOLOR As String, ByVal PREVIOUSCOLOR As String) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(17),Global.System.Data.SqlClient.SqlCommand)
+            If (PROPERTYOWNERID.HasValue = true) Then
+                command.Parameters(1).Value = CType(PROPERTYOWNERID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
             If (ROUTECOLOR Is Nothing) Then
                 command.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(2).Value = CType(ROUTECOLOR, String)
+                command.Parameters(2).Value = CType(ROUTECOLOR,String)
             End If
             If (PREVIOUSCOLOR Is Nothing) Then
                 command.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(3).Value = CType(PREVIOUSCOLOR, String)
+                command.Parameters(3).Value = CType(PREVIOUSCOLOR,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spMarkAllRoutesUnchanged() As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(19), Global.System.Data.SqlClient.SqlCommand)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spMarkAllRoutesUnchanged() As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(18),Global.System.Data.SqlClient.SqlCommand)
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewSleeve(ByRef ID As Global.System.Nullable(Of Integer), ByVal Active As Global.System.Nullable(Of Boolean), ByVal OrderID As Global.System.Nullable(Of Integer), ByVal PropertyOwnerID As Global.System.Nullable(Of Integer), ByVal LocationDescription As String, ByVal Latitude As Global.System.Nullable(Of Double), ByVal Longitude As Global.System.Nullable(Of Double), ByVal OupsID As Global.System.Nullable(Of Integer), ByVal InstalledDate As Global.System.Nullable(Of Date), ByVal ChangeDate As Global.System.Nullable(Of Date), ByVal _Public As Global.System.Nullable(Of Boolean), ByVal Deliver As Global.System.Nullable(Of Boolean), ByVal ExpiredDate As Global.System.Nullable(Of Date), ByVal SleeveName As String) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(20), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewSleeve(ByRef ID As Global.System.Nullable(Of Integer), ByVal Active As Global.System.Nullable(Of Boolean), ByVal OrderID As Global.System.Nullable(Of Integer), ByVal PropertyOwnerID As Global.System.Nullable(Of Integer), ByVal LocationDescription As String, ByVal Latitude As Global.System.Nullable(Of Double), ByVal Longitude As Global.System.Nullable(Of Double), ByVal OupsID As Global.System.Nullable(Of Integer), ByVal InstalledDate As Global.System.Nullable(Of Date), ByVal ChangeDate As Global.System.Nullable(Of Date), ByVal _Public As Global.System.Nullable(Of Boolean), ByVal Deliver As Global.System.Nullable(Of Boolean), ByVal ExpiredDate As Global.System.Nullable(Of Date), ByVal SleeveName As String) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(19),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (Active.HasValue = True) Then
-                command.Parameters(2).Value = CType(Active.Value, Boolean)
+            If (Active.HasValue = true) Then
+                command.Parameters(2).Value = CType(Active.Value,Boolean)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (OrderID.HasValue = True) Then
-                command.Parameters(3).Value = CType(OrderID.Value, Integer)
+            If (OrderID.HasValue = true) Then
+                command.Parameters(3).Value = CType(OrderID.Value,Integer)
             Else
                 command.Parameters(3).Value = Global.System.DBNull.Value
             End If
-            If (PropertyOwnerID.HasValue = True) Then
-                command.Parameters(4).Value = CType(PropertyOwnerID.Value, Integer)
+            If (PropertyOwnerID.HasValue = true) Then
+                command.Parameters(4).Value = CType(PropertyOwnerID.Value,Integer)
             Else
                 command.Parameters(4).Value = Global.System.DBNull.Value
             End If
             If (LocationDescription Is Nothing) Then
                 command.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(5).Value = CType(LocationDescription, String)
+                command.Parameters(5).Value = CType(LocationDescription,String)
             End If
-            If (Latitude.HasValue = True) Then
-                command.Parameters(6).Value = CType(Latitude.Value, Double)
+            If (Latitude.HasValue = true) Then
+                command.Parameters(6).Value = CType(Latitude.Value,Double)
             Else
                 command.Parameters(6).Value = Global.System.DBNull.Value
             End If
-            If (Longitude.HasValue = True) Then
-                command.Parameters(7).Value = CType(Longitude.Value, Double)
+            If (Longitude.HasValue = true) Then
+                command.Parameters(7).Value = CType(Longitude.Value,Double)
             Else
                 command.Parameters(7).Value = Global.System.DBNull.Value
             End If
-            If (OupsID.HasValue = True) Then
-                command.Parameters(8).Value = CType(OupsID.Value, Integer)
+            If (OupsID.HasValue = true) Then
+                command.Parameters(8).Value = CType(OupsID.Value,Integer)
             Else
                 command.Parameters(8).Value = Global.System.DBNull.Value
             End If
-            If (InstalledDate.HasValue = True) Then
-                command.Parameters(9).Value = CType(InstalledDate.Value, Date)
+            If (InstalledDate.HasValue = true) Then
+                command.Parameters(9).Value = CType(InstalledDate.Value,Date)
             Else
                 command.Parameters(9).Value = Global.System.DBNull.Value
             End If
-            If (ChangeDate.HasValue = True) Then
-                command.Parameters(10).Value = CType(ChangeDate.Value, Date)
+            If (ChangeDate.HasValue = true) Then
+                command.Parameters(10).Value = CType(ChangeDate.Value,Date)
             Else
                 command.Parameters(10).Value = Global.System.DBNull.Value
             End If
-            If (_Public.HasValue = True) Then
-                command.Parameters(11).Value = CType(_Public.Value, Boolean)
+            If (_Public.HasValue = true) Then
+                command.Parameters(11).Value = CType(_Public.Value,Boolean)
             Else
                 command.Parameters(11).Value = Global.System.DBNull.Value
             End If
-            If (Deliver.HasValue = True) Then
-                command.Parameters(12).Value = CType(Deliver.Value, Boolean)
+            If (Deliver.HasValue = true) Then
+                command.Parameters(12).Value = CType(Deliver.Value,Boolean)
             Else
                 command.Parameters(12).Value = Global.System.DBNull.Value
             End If
-            If (ExpiredDate.HasValue = True) Then
-                command.Parameters(13).Value = CType(ExpiredDate.Value, Date)
+            If (ExpiredDate.HasValue = true) Then
+                command.Parameters(13).Value = CType(ExpiredDate.Value,Date)
             Else
                 command.Parameters(13).Value = Global.System.DBNull.Value
             End If
             If (SleeveName Is Nothing) Then
                 command.Parameters(14).Value = Global.System.DBNull.Value
             Else
-                command.Parameters(14).Value = CType(SleeveName, String)
+                command.Parameters(14).Value = CType(SleeveName,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(1).Value Is Nothing) _
+            If ((command.Parameters(1).Value Is Nothing)  _
                         OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
                 ID = New Global.System.Nullable(Of Integer)()
             Else
-                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
             End If
             Return returnValue
         End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function spAddNewOrder(ByRef ID As Global.System.Nullable(Of Integer), ByVal OrderDate As Global.System.Nullable(Of Date), ByVal SourceID As Global.System.Nullable(Of Integer), ByVal SubYear As Global.System.Nullable(Of Integer), ByVal Cost As Global.System.Nullable(Of Double), ByVal DiscountID As Global.System.Nullable(Of Integer), ByVal Type As Global.System.Nullable(Of Integer), ByVal ConfirmationDate As Global.System.Nullable(Of Date), ByVal FirstOccasionID As Global.System.Nullable(Of Integer)) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(21), Global.System.Data.SqlClient.SqlCommand)
-            If (ID.HasValue = True) Then
-                command.Parameters(1).Value = CType(ID.Value, Integer)
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewOrder(ByRef ID As Global.System.Nullable(Of Integer), ByVal OrderDate As Global.System.Nullable(Of Date), ByVal SourceID As Global.System.Nullable(Of Integer), ByVal SubYear As Global.System.Nullable(Of Integer), ByVal Cost As Global.System.Nullable(Of Double), ByVal DiscountID As Global.System.Nullable(Of Integer), ByVal Type As Global.System.Nullable(Of Integer), ByVal ConfirmationDate As Global.System.Nullable(Of Date), ByVal FirstOccasionID As Global.System.Nullable(Of Integer)) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(20),Global.System.Data.SqlClient.SqlCommand)
+            If (ID.HasValue = true) Then
+                command.Parameters(1).Value = CType(ID.Value,Integer)
             Else
                 command.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (OrderDate.HasValue = True) Then
-                command.Parameters(2).Value = CType(OrderDate.Value, Date)
+            If (OrderDate.HasValue = true) Then
+                command.Parameters(2).Value = CType(OrderDate.Value,Date)
             Else
                 command.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (SourceID.HasValue = True) Then
-                command.Parameters(3).Value = CType(SourceID.Value, Integer)
+            If (SourceID.HasValue = true) Then
+                command.Parameters(3).Value = CType(SourceID.Value,Integer)
             Else
                 command.Parameters(3).Value = Global.System.DBNull.Value
             End If
-            If (SubYear.HasValue = True) Then
-                command.Parameters(4).Value = CType(SubYear.Value, Integer)
+            If (SubYear.HasValue = true) Then
+                command.Parameters(4).Value = CType(SubYear.Value,Integer)
             Else
                 command.Parameters(4).Value = Global.System.DBNull.Value
             End If
-            If (Cost.HasValue = True) Then
-                command.Parameters(5).Value = CType(Cost.Value, Double)
+            If (Cost.HasValue = true) Then
+                command.Parameters(5).Value = CType(Cost.Value,Double)
             Else
                 command.Parameters(5).Value = Global.System.DBNull.Value
             End If
-            If (DiscountID.HasValue = True) Then
-                command.Parameters(6).Value = CType(DiscountID.Value, Integer)
+            If (DiscountID.HasValue = true) Then
+                command.Parameters(6).Value = CType(DiscountID.Value,Integer)
             Else
                 command.Parameters(6).Value = Global.System.DBNull.Value
             End If
-            If (Type.HasValue = True) Then
-                command.Parameters(7).Value = CType(Type.Value, Integer)
+            If (Type.HasValue = true) Then
+                command.Parameters(7).Value = CType(Type.Value,Integer)
             Else
                 command.Parameters(7).Value = Global.System.DBNull.Value
             End If
-            If (ConfirmationDate.HasValue = True) Then
-                command.Parameters(8).Value = CType(ConfirmationDate.Value, Date)
+            If (ConfirmationDate.HasValue = true) Then
+                command.Parameters(8).Value = CType(ConfirmationDate.Value,Date)
             Else
                 command.Parameters(8).Value = Global.System.DBNull.Value
             End If
-            If (FirstOccasionID.HasValue = True) Then
-                command.Parameters(9).Value = CType(FirstOccasionID.Value, Integer)
+            If (FirstOccasionID.HasValue = true) Then
+                command.Parameters(9).Value = CType(FirstOccasionID.Value,Integer)
             Else
                 command.Parameters(9).Value = Global.System.DBNull.Value
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
+                command.Connection.Open
             End If
             Dim returnValue As Integer
-            Try
+            Try 
                 returnValue = command.ExecuteNonQuery
             Finally
                 If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
+                    command.Connection.Close
                 End If
             End Try
-            If ((command.Parameters(1).Value Is Nothing) _
+            If ((command.Parameters(1).Value Is Nothing)  _
                         OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
                 ID = New Global.System.Nullable(Of Integer)()
             Else
-                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value, Integer))
+                ID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
+            End If
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function spAddNewPayment(ByRef PaymentID As Global.System.Nullable(Of Integer), ByVal OrderID As Global.System.Nullable(Of Integer), ByVal Payment As Global.System.Nullable(Of Double), ByVal PaymentDate As Global.System.Nullable(Of Date), ByVal PaymentSource As Global.System.Nullable(Of Integer), ByVal PaymentCheckPaypalNumber As String, ByVal PaymentPaypalTransaction As String) As Integer
+            Dim command As Global.System.Data.SqlClient.SqlCommand = CType(Me.CommandCollection(21),Global.System.Data.SqlClient.SqlCommand)
+            If (PaymentID.HasValue = true) Then
+                command.Parameters(1).Value = CType(PaymentID.Value,Integer)
+            Else
+                command.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (OrderID.HasValue = true) Then
+                command.Parameters(2).Value = CType(OrderID.Value,Integer)
+            Else
+                command.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (Payment.HasValue = true) Then
+                command.Parameters(3).Value = CType(Payment.Value,Double)
+            Else
+                command.Parameters(3).Value = Global.System.DBNull.Value
+            End If
+            If (PaymentDate.HasValue = true) Then
+                command.Parameters(4).Value = CType(PaymentDate.Value,Date)
+            Else
+                command.Parameters(4).Value = Global.System.DBNull.Value
+            End If
+            If (PaymentSource.HasValue = true) Then
+                command.Parameters(5).Value = CType(PaymentSource.Value,Integer)
+            Else
+                command.Parameters(5).Value = Global.System.DBNull.Value
+            End If
+            If (PaymentCheckPaypalNumber Is Nothing) Then
+                command.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(6).Value = CType(PaymentCheckPaypalNumber,String)
+            End If
+            If (PaymentPaypalTransaction Is Nothing) Then
+                command.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                command.Parameters(7).Value = CType(PaymentPaypalTransaction,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
+            If ((command.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                command.Connection.Open
+            End If
+            Dim returnValue As Integer
+            Try 
+                returnValue = command.ExecuteNonQuery
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    command.Connection.Close
+                End If
+            End Try
+            If ((command.Parameters(1).Value Is Nothing)  _
+                        OrElse (command.Parameters(1).Value.GetType Is GetType(Global.System.DBNull))) Then
+                PaymentID = New Global.System.Nullable(Of Integer)()
+            Else
+                PaymentID = New Global.System.Nullable(Of Integer)(CType(command.Parameters(1).Value,Integer))
             End If
             Return returnValue
         End Function

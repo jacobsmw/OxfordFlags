@@ -161,7 +161,7 @@ Public Class New_Order
 
     Protected Sub HandlePayment()
         Dim PaymentID As Integer
-        tbl.spAddNewPayment(PaymentID, OrderId, OrderAmountPaidInput.Text, OrderDateInput.Text, OrderPaymentSourceDropDownList.SelectedValue, OrderPaymentMemoInput.Text)
+        tbl.spAddNewPayment(PaymentID, OrderId, OrderAmountPaidInput.Text, OrderDateInput.Text, OrderPaymentSourceDropDownList.SelectedValue, OrderPaymentCheckPaypalNumberInput.Text, OrderPaymentPaypalTransactionInput.Text)
     End Sub
 
     ' <--------------------Buyer---------------------->

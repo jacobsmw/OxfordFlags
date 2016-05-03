@@ -53,8 +53,12 @@
                         <asp:SqlDataSource ID="OrderPaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="OrderPaymentMemoLabel" runat="server" Text="Check # / Paypal ID: " CssClass="col-x2-2"></asp:Label>
-                        <asp:TextBox ID="OrderPaymentMemoInput" runat="server" CssClass="form-control" placeholder="Check # or PayPal ID"></asp:TextBox>
+                        <asp:Label ID="OrderPaymentCheckPaypalNumberLabel" runat="server" Text="Check # / Paypal ID: " CssClass="col-x2-2"></asp:Label>
+                        <asp:TextBox ID="OrderPaymentCheckPaypalNumberInput" runat="server" CssClass="form-control" placeholder="Check # or PayPal ID"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <asp:Label ID="OrderPaymentPaypalTransactionLabel" runat="server" Text="Paypal Transaction: " CssClass="col-x2-2"></asp:Label>
+                        <asp:TextBox ID="OrderPaymentPaypalTransactionInput" runat="server" CssClass="form-control" placeholder="Paypal transaction (leave empty of N/A)"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderDiscountLabel" runat="server" Text="Discount: " CssClass="col-x2-2"></asp:Label>
@@ -422,22 +426,10 @@
                             <div class="form-group">
                                 <asp:Label ID="SleeveLatitudeLabel" runat="server" Text="Latitude" CssClass="col-x2-2"></asp:Label>
                                 <asp:TextBox ID="SleeveLatitudeInput" runat="server" EnableTheming="False" CssClass="form-control" placeholder="XXX.XXXXXX"></asp:TextBox>
-                                <asp:RegularExpressionValidator ID="SleeveLatitudeFormatValidator" runat="server"
-                                    ControlToValidate="SleeveLatitudeInput"
-                                    ErrorMessage="You must enter a valid latitude."
-                                    ForeColor="Red"
-                                    ValidationExpression="^\d{0,8}(.\d{0,6})?$">
-                                </asp:RegularExpressionValidator>
                             </div>
                             <div class="form-group">
-                                <asp:Label ID="SleeveLongitudeLabel" runat="server" Text="Latitude" CssClass="col-x2-2"></asp:Label>
+                                <asp:Label ID="SleeveLongitudeLabel" runat="server" Text="Longitude" CssClass="col-x2-2"></asp:Label>
                                 <asp:TextBox ID="SleeveLongitudeInput" runat="server" EnableTheming="False" CssClass="form-control" placeholder="XXX.XXXXXX"></asp:TextBox>
-                                <asp:RegularExpressionValidator ID="SleeveLongitudeFormatValidator" runat="server"
-                                    ControlToValidate="SleeveLongitudeInput"
-                                    ErrorMessage="You must enter a valid longitude."
-                                    ForeColor="Red"
-                                    ValidationExpression="^\d{0,8}(.\d{0,6})?$">
-                                </asp:RegularExpressionValidator>
                             </div>
                             <div class="form-group">
                                 <asp:Label ID="OupsNotifiedDateLabel" runat="server" Text="OUPS Notified Date:" CssClass="col-x2-2"></asp:Label>

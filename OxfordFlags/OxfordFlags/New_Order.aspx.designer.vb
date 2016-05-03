@@ -131,22 +131,40 @@ Partial Public Class New_Order
     Protected WithEvents OrderPaymentSourceDataSource As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''OrderPaymentMemoLabel control.
+    '''OrderPaymentCheckPaypalNumberLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OrderPaymentMemoLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents OrderPaymentCheckPaypalNumberLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''OrderPaymentMemoInput control.
+    '''OrderPaymentCheckPaypalNumberInput control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents OrderPaymentMemoInput As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents OrderPaymentCheckPaypalNumberInput As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''OrderPaymentPaypalTransactionLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderPaymentPaypalTransactionLabel As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''OrderPaymentPaypalTransactionInput control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OrderPaymentPaypalTransactionInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''OrderDiscountLabel control.
@@ -896,15 +914,6 @@ Partial Public Class New_Order
     Protected WithEvents SleeveLatitudeInput As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''SleeveLatitudeFormatValidator control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SleeveLatitudeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-
-    '''<summary>
     '''SleeveLongitudeLabel control.
     '''</summary>
     '''<remarks>
@@ -921,15 +930,6 @@ Partial Public Class New_Order
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SleeveLongitudeInput As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''SleeveLongitudeFormatValidator control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SleeveLongitudeFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
     '''OupsNotifiedDateLabel control.
