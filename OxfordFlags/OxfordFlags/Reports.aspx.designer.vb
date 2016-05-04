@@ -66,4 +66,13 @@ Partial Public Class Reports
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GPSDataButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''PaymentTypeReportButton0 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents PaymentTypeReportButton0 As Global.System.Web.UI.WebControls.Button
 End Class

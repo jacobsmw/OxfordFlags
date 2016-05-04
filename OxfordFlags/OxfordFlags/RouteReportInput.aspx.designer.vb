@@ -41,11 +41,29 @@ Partial Public Class RouteReportInput
     Protected WithEvents RouteReportInputData As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''PaymentReportInputSearchButton control.
+    '''SubscriptionYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents PaymentReportInputSearchButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''RouteReportSearchButton control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RouteReportSearchButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''OutputLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OutputLabel As Global.System.Web.UI.WebControls.Label
 End Class

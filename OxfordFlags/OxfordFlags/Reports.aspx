@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="Reports" Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Reports.aspx.vb" Inherits="OxfordFlags.Reports" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %></h2>
+    <h2><%--communicate with non subscribers--%></h2>
     
     <p>
-        <%--Customer by street address--%>
+        <%--route output--%>
         <asp:Button ID="CustomerReportButton" runat="server" Text="Customer Report" PostBackUrl="~/CustomerReportInput.aspx" CssClass="btn btn-primary" Width="300px" />
     </p>
     <p>
@@ -24,6 +24,9 @@
     </p>
     <p>
         <asp:Button ID="GPSDataButton" runat="server" Text="GPS Data" CssClass="btn btn-primary" Width="300px" PostBackUrl="~/GPSOutput.aspx" />
+    </p>
+    <p>
+        <asp:Button ID="PaymentTypeReportButton0" runat="server" Text="PaymentType" PostBackUrl="~/PaymentReportInput.aspx" CssClass="btn btn-primary" Width="300px" />
     </p>
 
     </asp:Content>

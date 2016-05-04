@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class PaymentReportInput
-    
+
     '''<summary>
     '''SubscriptionYearLabel control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class PaymentReportInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''SubscriptionYear control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class PaymentReportInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''SubscriptionYearEnteredValidator control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class PaymentReportInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''SubscriptionYearFormatValidator control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class PaymentReportInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
     '''<summary>
     '''PaymentReportInputSearchButton control.
     '''</summary>
@@ -57,4 +57,13 @@ Partial Public Class PaymentReportInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents PaymentReportInputSearchButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''OutputLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OutputLabel As Global.System.Web.UI.WebControls.Label
 End Class

@@ -6,23 +6,7 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.SleeveDataSheets.SleeveDataSheetsButton">
-	<summary>
-SleeveDataSheetsButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.SleeveDataSheets.OutputLabel">
-	<summary>
-OutputLabel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.Search.SelectSearchType">
+<member name="F:OxfordFlags.Search.SelectSearchType">
 	<summary>
 SelectSearchType control.
 </summary>
@@ -258,6 +242,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Reports.GPSDataButton">
 	<summary>
 GPSDataButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.PaymentTypeReportButton0">
+	<summary>
+PaymentTypeReportButton0 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -762,6 +754,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.PaymentReportInput.PaymentReportInputSearchButton">
 	<summary>
 PaymentReportInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.PaymentReportInput.OutputLabel">
+	<summary>
+OutputLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2455,6 +2455,22 @@ NewEntryButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.SleeveDataSheets.SleeveDataSheetsButton">
+	<summary>
+SleeveDataSheetsButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.SleeveDataSheets.OutputLabel">
+	<summary>
+OutputLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.Register.ErrorMessage">
 	<summary>
 ErrorMessage control.
@@ -2575,9 +2591,25 @@ RouteReportInputData control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.RouteReportInput.PaymentReportInputSearchButton">
+</member><member name="F:OxfordFlags.RouteReportInput.SubscriptionYear">
 	<summary>
-PaymentReportInputSearchButton control.
+SubscriptionYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.RouteReportInput.RouteReportSearchButton">
+	<summary>
+RouteReportSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.RouteReportInput.OutputLabel">
+	<summary>
+OutputLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2759,6 +2791,14 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportDeliveryRoutesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportSumOfPaymentTypesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -2815,6 +2855,14 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportDeliveryRoutesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportSumOfPaymentTypesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRowChangeEvent">
 	<summary>
 Row event argument class
@@ -2868,6 +2916,14 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:OxfordFlags.ds.spReportSleeveDataSheetsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportDeliveryRoutesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportSumOfPaymentTypesRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -2928,6 +2984,14 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:OxfordFlags.dsTableAdapters.spReportSleeveDataSheetsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportDeliveryRoutesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportSumOfPaymentTypesTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

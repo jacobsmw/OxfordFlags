@@ -12,7 +12,13 @@
             <asp:SqlDataSource ID="RouteReportInputData" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName] FROM [Occasion]"></asp:SqlDataSource>
        
     <p>
-        <asp:Button ID="PaymentReportInputSearchButton" runat="server" Text="Search" />
+        Year  
+        <asp:TextBox ID="SubscriptionYear" runat="server"></asp:TextBox>
+        <br />
+       
+    <p>
+        <asp:Button ID="RouteReportSearchButton" runat="server" Text="Search" />
+        <br />
+        <asp:Label ID="OutputLabel" runat="server"></asp:Label>
     </p>
-
 </asp:Content>

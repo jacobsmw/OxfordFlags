@@ -20,6 +20,8 @@
     </p>
     <p>
         <asp:Button ID="PaymentReportInputSearchButton" runat="server" Text="Search" />
+        <br />
+        <asp:Label ID="OutputLabel" runat="server"></asp:Label>
     </p>
 
 </asp:Content>
