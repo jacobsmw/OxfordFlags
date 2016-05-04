@@ -20,10 +20,10 @@
         <asp:Button ID="RouteReportButton" runat="server" Text="Route Report" PostBackUrl="~/RouteReportInput.aspx" CssClass="btn btn-primary" Width="300px" />
     </p>
     <p>
-        <asp:Button ID="SleeveReportButton" runat="server" Text="Sleeve Report" CssClass="btn btn-primary" Width="300px" />
+        <asp:Button ID="SleeveReportButton" runat="server" Text="Sleeve Report" CssClass="btn btn-primary" Width="300px" PostBackUrl="~/SleeveDataSheets.aspx" />
     </p>
     <p>
-        <asp:Button ID="GPSDataButton" runat="server" Text="GPS Data" CssClass="btn btn-primary" Width="300px" />
+        <asp:Button ID="GPSDataButton" runat="server" Text="GPS Data" CssClass="btn btn-primary" Width="300px" PostBackUrl="~/GPSOutput.aspx" />
     </p>
 
     </asp:Content>

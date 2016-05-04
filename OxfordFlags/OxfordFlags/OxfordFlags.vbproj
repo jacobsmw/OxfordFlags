@@ -296,6 +296,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Search.aspx" />
+    <Content Include="SleeveDataSheets.aspx" />
     <Content Include="SubscriberCommunicationInput.aspx" />
     <Content Include="Tools.aspx" />
     <Content Include="ViewEntry.aspx" />
@@ -597,6 +598,13 @@
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SleeveDataSheets.aspx.designer.vb">
+      <DependentUpon>SleeveDataSheets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SleeveDataSheets.aspx.vb">
+      <DependentUpon>SleeveDataSheets.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Startup.vb" />
     <Compile Include="SubscriberCommunicationInput.aspx.designer.vb">

@@ -6,47 +6,15 @@ OxfordFlags
 </name>
 </assembly>
 <members>
-<member name="F:OxfordFlags.GPSOutput.SubscriptionYearLabel">
+<member name="F:OxfordFlags.SleeveDataSheets.SleeveDataSheetsButton">
 	<summary>
-SubscriptionYearLabel control.
+SleeveDataSheetsButton control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.GPSOutput.SubscriptionYear">
-	<summary>
-SubscriptionYear control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.GPSOutput.SubscriptionYearEnteredValidator">
-	<summary>
-SubscriptionYearEnteredValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.GPSOutput.SubscriptionYearFormatValidator">
-	<summary>
-SubscriptionYearFormatValidator control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.GPSOutput.GPSOutputSearchButton">
-	<summary>
-GPSOutputSearchButton control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:OxfordFlags.GPSOutput.OutputLabel">
+</member><member name="F:OxfordFlags.SleeveDataSheets.OutputLabel">
 	<summary>
 OutputLabel control.
 </summary>
@@ -2367,6 +2335,54 @@ MarkAllRoutesUnchangedButton control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.GPSOutput.SubscriptionYearLabel">
+	<summary>
+SubscriptionYearLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.GPSOutput.SubscriptionYear">
+	<summary>
+SubscriptionYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.GPSOutput.SubscriptionYearEnteredValidator">
+	<summary>
+SubscriptionYearEnteredValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.GPSOutput.SubscriptionYearFormatValidator">
+	<summary>
+SubscriptionYearFormatValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.GPSOutput.GPSOutputSearchButton">
+	<summary>
+GPSOutputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.GPSOutput.OutputLabel">
+	<summary>
+OutputLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.Confirm.status">
 	<summary>
 status control.
@@ -2739,6 +2755,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportSleeveDataSheetsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -2791,6 +2811,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportSleeveDataSheetsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRowChangeEvent">
 	<summary>
 Row event argument class
@@ -2840,6 +2864,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:OxfordFlags.ds.spReportNotRenewedRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportSleeveDataSheetsRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -2896,6 +2924,10 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:OxfordFlags.dsTableAdapters.spReportNotRenewedTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportSleeveDataSheetsTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
