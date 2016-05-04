@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class NonSubscriberCommunicationInput
-    
+
     '''<summary>
     '''SubscriptionYearLabel control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class NonSubscriberCommunicationInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''SubscriptionYear control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class NonSubscriberCommunicationInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''SubscriptionYearEnteredValidator control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class NonSubscriberCommunicationInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''SubscriptionYearFormatValidator control.
     '''</summary>
@@ -48,7 +48,34 @@ Partial Public Class NonSubscriberCommunicationInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
-    
+
+    '''<summary>
+    '''basePrice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents basePrice As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''EarlyDiscount control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents EarlyDiscount As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''multiDiscount control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents multiDiscount As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
     '''NonSubscriberCommunicationInputSearchButton control.
     '''</summary>
@@ -57,4 +84,13 @@ Partial Public Class NonSubscriberCommunicationInput
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents NonSubscriberCommunicationInputSearchButton As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''OutputLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents OutputLabel As Global.System.Web.UI.WebControls.Label
 End Class

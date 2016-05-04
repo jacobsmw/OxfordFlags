@@ -447,9 +447,41 @@ SubscriptionYearFormatValidator control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.basePrice">
+	<summary>
+basePrice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.EarlyDiscount">
+	<summary>
+EarlyDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.multiDiscount">
+	<summary>
+multiDiscount control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.NonSubscriberCommunicationInputSearchButton">
 	<summary>
 NonSubscriberCommunicationInputSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.NonSubscriberCommunicationInput.OutputLabel">
+	<summary>
+OutputLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2651,6 +2683,14 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportSleevesPerPropertyByBuyerIdDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportNotRenewedDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -2695,6 +2735,14 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:OxfordFlags.ds.spReportSleevesPerPropertyByBuyerIdRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportNotRenewedRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:OxfordFlags.ds.spSelectBuyersByOrderIDRowChangeEvent">
 	<summary>
 Row event argument class
@@ -2736,6 +2784,14 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:OxfordFlags.ds.spReportCustomerReportRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportSleevesPerPropertyByBuyerIdRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OxfordFlags.ds.spReportNotRenewedRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -2784,6 +2840,14 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="T:OxfordFlags.dsTableAdapters.spReportCustomerReportTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportSleevesPerPropertyByBuyerIdTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OxfordFlags.dsTableAdapters.spReportNotRenewedTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

@@ -17,9 +17,21 @@
             ForeColor="Red"
             ValidationExpression="^[0-9]{4}$">
         </asp:RegularExpressionValidator>
+        <br />
+        base Price&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        <asp:TextBox ID="basePrice" runat="server"></asp:TextBox>
+        <br />
+        Early Discount&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        <asp:TextBox ID="EarlyDiscount" runat="server"></asp:TextBox>
+        <br />
+        Multiple Discount&nbsp;&nbsp;&nbsp;  
+        <asp:TextBox ID="multiDiscount" runat="server"></asp:TextBox>
+        <br />
     </p>
     <p>
         <asp:Button ID="NonSubscriberCommunicationInputSearchButton" runat="server" Text="Search" />
+        <br />
+        <asp:Label ID="OutputLabel" runat="server"></asp:Label>
     </p>
 
 </asp:Content>
