@@ -10,6 +10,8 @@
     Private Property qty As Integer
     Private Property earlyRenew As Integer 'for calculations of early vs not early.
     Private Property lateRenew As Integer
+
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not User.Identity.IsAuthenticated Then
             Response.Redirect("~/Account/Login")
@@ -78,21 +80,24 @@
             earlyRenew = 0
             lateRenew = 0
             qty = 0
+
             For Each rs2 In db2.GetData(rs.BuyerID, vYear)
+
                 qty = qty + rs2.Sleeves
                 lateRenew = lateRenew + bPrice + ((bPrice - mDiscount) * (rs2.Sleeves - 1))
                 earlyRenew = earlyRenew + (bPrice - eDiscount) + ((bPrice - mDiscount - eDiscount) * (rs2.Sleeves - 1))
                 If (i > 0) Then
+
                     sb.Append(", ") : sb.Append(rs2.StreetAddress)
                     i = 1
                 End If
                 If (i < 1) Then
+
                     sb.Append(rs2.StreetAddress)
 
                 End If
                 i = 1
-                'sb.Append(rs2.StreetAddress)
-
+                
 
             Next
             rs2 = Nothing

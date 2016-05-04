@@ -18,7 +18,7 @@
         sb.Append("<table style='thin black line'>")
         sb.Append("<tr>")
         sb.Append("<td>") : sb.Append("FirstName") : sb.Append("</td style='padding: 10px'>")
-        sb.Append("<td>") : sb.Append("LastName") : sb.Append("</td style='padding: 10px'>")
+        sb.Append("<td style='padding: 10px'>") : sb.Append("LastName") : sb.Append("</td style='padding: 10px'>")
         'sb.Append("<td style='padding: 10px'>") : sb.Append("SLEEVE COUNT") : sb.Append("</td>")
         sb.Append("<td style='padding: 10px'>") : sb.Append("Amount Due") : sb.Append("</td>")
         sb.Append("<td style='padding: 10px'>") : sb.Append("PAID") : sb.Append("</td>")

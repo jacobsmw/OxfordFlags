@@ -195,6 +195,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomerByAddress.aspx" />
     <Content Include="fonts\About.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -403,6 +404,13 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\IdentityConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="CustomerByAddress.aspx.designer.vb">
+      <DependentUpon>CustomerByAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerByAddress.aspx.vb">
+      <DependentUpon>CustomerByAddress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="fonts\About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>

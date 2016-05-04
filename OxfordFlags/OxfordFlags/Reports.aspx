@@ -9,7 +9,7 @@
     </p>
     <p>
         <%-- finances for particular year--%>
-        <asp:Button ID="FinanceReportButton" runat="server" Text="Finance Report" PostBackUrl="~/FinanceReportInput.aspx" CssClass="btn btn-primary" Width="300px" />
+        <asp:Button ID="CustomerByAddressReportButton" runat="server" Text="Customers By Address" PostBackUrl="~/FinanceReportInput.aspx" CssClass="btn btn-primary" Width="300px" />
     </p>
     <p>
         <%--communicate with non subscribers--%>

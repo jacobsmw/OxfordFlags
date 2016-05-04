@@ -11,68 +11,59 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Reports
+Partial Public Class CustomerByAddress
 
     '''<summary>
-    '''CustomerReportButton control.
+    '''SubscriptionYearLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CustomerReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''CustomerByAddressReportButton control.
+    '''SubscriptionYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CustomerByAddressReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''NonSubscriberCommunicationButton control.
+    '''SubscriptionYearEnteredValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents NonSubscriberCommunicationButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SubscriptionYearEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''RouteReportButton control.
+    '''SubscriptionYearFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RouteReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''SleeveReportButton control.
+    '''CustomerByAddressSearchButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SleeveReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents CustomerByAddressSearchButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''GPSDataButton control.
+    '''OutputLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents GPSDataButton As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''PaymentTypeReportButton0 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents PaymentTypeReportButton0 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents OutputLabel As Global.System.Web.UI.WebControls.Label
 End Class
