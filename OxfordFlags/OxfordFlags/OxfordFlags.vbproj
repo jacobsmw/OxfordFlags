@@ -195,6 +195,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ChequeReportByDates.aspx" />
     <Content Include="CustomerByAddress.aspx" />
     <Content Include="fonts\About.aspx" />
     <Content Include="Account\Confirm.aspx" />
@@ -404,6 +405,13 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\IdentityConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="ChequeReportByDates.aspx.designer.vb">
+      <DependentUpon>ChequeReportByDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChequeReportByDates.aspx.vb">
+      <DependentUpon>ChequeReportByDates.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="CustomerByAddress.aspx.designer.vb">
       <DependentUpon>CustomerByAddress.aspx</DependentUpon>
     </Compile>

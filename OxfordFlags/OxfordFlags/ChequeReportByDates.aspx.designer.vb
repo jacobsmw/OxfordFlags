@@ -11,77 +11,59 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Reports
+Partial Public Class ChequeReportByDates
 
     '''<summary>
-    '''CustomerReportButton control.
+    '''StartDateLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CustomerReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents StartDateLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''CustomerByAddressReportButton control.
+    '''StartDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CustomerByAddressReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents StartDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''NonSubscriberCommunicationButton control.
+    '''StartDateLabel0 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents NonSubscriberCommunicationButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents StartDateLabel0 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''RouteReportButton control.
+    '''EndDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RouteReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents EndDate As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''SleeveReportButton control.
+    '''ChequeByDatesSearchButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents SleeveReportButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents ChequeByDatesSearchButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''GPSDataButton control.
+    '''OutputLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents GPSDataButton As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''PaymentTypeReportButton0 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents PaymentTypeReportButton0 As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''PaymentTypeReportButton1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents PaymentTypeReportButton1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents OutputLabel As Global.System.Web.UI.WebControls.Label
 End Class

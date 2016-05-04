@@ -174,41 +174,41 @@ PaymentResultsData control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.CustomerByAddress.SubscriptionYearLabel">
+</member><member name="F:OxfordFlags.CustomerByAddress.StartDateLabel">
 	<summary>
-SubscriptionYearLabel control.
+StartDateLabel control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.CustomerByAddress.SubscriptionYear">
+</member><member name="F:OxfordFlags.CustomerByAddress.StartDate">
 	<summary>
-SubscriptionYear control.
+StartDate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.CustomerByAddress.SubscriptionYearEnteredValidator">
+</member><member name="F:OxfordFlags.CustomerByAddress.StartDateLabel0">
 	<summary>
-SubscriptionYearEnteredValidator control.
+StartDateLabel0 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.CustomerByAddress.SubscriptionYearFormatValidator">
+</member><member name="F:OxfordFlags.CustomerByAddress.EndDate">
 	<summary>
-SubscriptionYearFormatValidator control.
+EndDate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:OxfordFlags.CustomerByAddress.CustomerByAddressSearchButton">
+</member><member name="F:OxfordFlags.CustomerByAddress.ChequeByDatesSearchButton">
 	<summary>
-CustomerByAddressSearchButton control.
+ChequeByDatesSearchButton control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -298,6 +298,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.Reports.PaymentTypeReportButton0">
 	<summary>
 PaymentTypeReportButton0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.Reports.PaymentTypeReportButton1">
+	<summary>
+PaymentTypeReportButton1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1034,6 +1042,54 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:OxfordFlags.SiteMaster.MainContent">
 	<summary>
 MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ChequeReportByDates.StartDateLabel">
+	<summary>
+StartDateLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ChequeReportByDates.StartDate">
+	<summary>
+StartDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ChequeReportByDates.StartDateLabel0">
+	<summary>
+StartDateLabel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ChequeReportByDates.EndDate">
+	<summary>
+EndDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ChequeReportByDates.ChequeByDatesSearchButton">
+	<summary>
+ChequeByDatesSearchButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:OxfordFlags.ChequeReportByDates.OutputLabel">
+	<summary>
+OutputLabel control.
 </summary>
 	<remarks>
 Auto-generated field.

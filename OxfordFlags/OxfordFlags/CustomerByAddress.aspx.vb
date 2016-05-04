@@ -6,8 +6,8 @@
 
     End Sub
 
-    Protected Sub GPSOutputButton_Click(sender As Object, e As EventArgs) Handles CustomerByAddressSearchButton.Click
-        vYear = SubscriptionYear.Text
+    Protected Sub GPSOutputButton_Click(sender As Object, e As EventArgs) Handles ChequeByDatesSearchButton.Click
+        vYear = StartDate.Text
         'SleeveLabel.Text = "Pressed"
         Dim db As dsTableAdapters.spReportCustomerByStreetAddressTableAdapter = New dsTableAdapters.spReportCustomerByStreetAddressTableAdapter
         Dim rs As ds.spReportCustomerByStreetAddressRow

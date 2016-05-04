@@ -28,5 +28,8 @@
     <p>
         <asp:Button ID="PaymentTypeReportButton0" runat="server" Text="PaymentType" PostBackUrl="~/PaymentReportInput.aspx" CssClass="btn btn-primary" Width="300px" />
     </p>
+<p>
+        <asp:Button ID="PaymentTypeReportButton1" runat="server" Text="Cheques in Date Range" PostBackUrl="~/ChequeReportByDates.aspx" CssClass="btn btn-primary" Width="300px" />
+    </p>
 
     </asp:Content>
