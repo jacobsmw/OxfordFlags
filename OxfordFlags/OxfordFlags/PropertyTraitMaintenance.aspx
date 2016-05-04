@@ -5,7 +5,7 @@
 
 <hr />
 
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="PropertyTraitMaintenanceData" ForeColor="#333333" GridLines="None" Width="400px" DataKeyNames="TraitID">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="PropertyTraitMaintenanceData" ForeColor="#333333" GridLines="None" Width="500px" DataKeyNames="TraitID">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:BoundField DataField="TraitID" HeaderText="TraitID" SortExpression="TraitID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
@@ -58,5 +58,5 @@
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
-&nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
+&nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-info" Text="Submit New Entry" />
 </asp:Content>

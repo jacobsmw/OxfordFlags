@@ -6,7 +6,7 @@
             
             <br />
             Route Color:
-            <asp:DropDownList ID="RouteColorsDropDownList" runat="server" AutoPostBack="True" DataSourceID="ColorsDataSource" DataTextField="RouteColor" DataValueField="RouteColor">
+            <asp:DropDownList ID="RouteColorsDropDownList" runat="server" CssClass="form-control" AutoPostBack="True" DataSourceID="ColorsDataSource" DataTextField="RouteColor" DataValueField="RouteColor" Width="200px">
             </asp:DropDownList>
             <asp:SqlDataSource ID="ColorsDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT DISTINCT [Route].RouteColor
 FROM [Route]"></asp:SqlDataSource>
@@ -19,11 +19,11 @@ FROM [Route]"></asp:SqlDataSource>
             </asp:SqlDataSource>
             
             <br />
-            <asp:Button ID="UpButton" runat="server" Text="▲" CssClass="btn btn-default" />
-            &nbsp;<asp:Button ID="DownButton" runat="server" Text="▼" CssClass="btn btn-default" />
+            <asp:Button ID="UpButton" runat="server" Text="▲" CssClass="btn btn-warning" />
+            &nbsp;<asp:Button ID="DownButton" runat="server" Text="▼" CssClass="btn btn-warning" />
             <br />
             <br />
-            <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-default" />
+            <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-info" />
             
         </ContentTemplate>
     </asp:UpdatePanel>

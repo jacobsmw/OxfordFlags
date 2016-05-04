@@ -7,7 +7,7 @@
 
     <br />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="OrderSourceMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="SourceID">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="OrderSourceMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="SourceID" Width="500px">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="SourceID" HeaderText="SourceID" SortExpression="SourceID" ControlStyle-Font-Size="Small" InsertVisible="False" ReadOnly="True" Visible="False" >
@@ -58,6 +58,8 @@
             ValidationExpression="^[a-zA-Z0-9''-'\s]{0,50}$">
         </asp:RegularExpressionValidator>
     </p>
+    <p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
-    <asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
+    </p>
+    <asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-info" Text="Submit New Entry" />
 </asp:Content>

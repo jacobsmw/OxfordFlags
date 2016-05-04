@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="PaymentSourceMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="Id">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="PaymentSourceMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="Id" Width="500px">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="Id" HeaderText="Id" SortExpression="Id" InsertVisible="False" ReadOnly="True" Visible="False" />
@@ -55,5 +55,6 @@
         </asp:RegularExpressionValidator>
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
-    <asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
+    <br />
+    <asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-info" Text="Submit New Entry" />
 </asp:Content>

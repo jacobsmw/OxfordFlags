@@ -6,7 +6,7 @@
 
 <hr />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="OccasionMaintenanceData" Width="400px" CellPadding="4" ForeColor="#333333" GridLines="None" DataKeyNames="OccasionID">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="OccasionMaintenanceData" Width="500px" CellPadding="4" ForeColor="#333333" GridLines="None" DataKeyNames="OccasionID">
         <AlternatingRowStyle BackColor="White" />
         
         <Columns>
@@ -60,6 +60,6 @@
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
-    &nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
+    &nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-info" Text="Submit New Entry" />
 
 </asp:Content>

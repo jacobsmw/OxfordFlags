@@ -7,10 +7,10 @@
                 &nbsp;</p>
             <p>
                 Address:
-                <asp:TextBox ID="AddressInput" runat="server"></asp:TextBox>
+                <asp:TextBox ID="AddressInput" runat="server" CssClass="form-control" placeholder="123 Ohio Road" Width="200px"></asp:TextBox>
         &nbsp;<asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="btn btn-default" />
                 <br />
-                <asp:ListBox ID="SleevesListBox" runat="server" DataSourceID="SleeveNamesDataSource" DataTextField="SleeveName" DataValueField="SleeveID"></asp:ListBox>
+                <asp:ListBox ID="SleevesListBox" runat="server" DataSourceID="SleeveNamesDataSource" DataTextField="SleeveName" DataValueField="SleeveID" Width="300px"></asp:ListBox>
                 <asp:SqlDataSource ID="SleeveNamesDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSelectSleevesByAddress" SelectCommandType="StoredProcedure">
                     <SelectParameters>
                         <asp:ControlParameter ControlID="AddressInput" Name="Address" PropertyName="Text" Type="String" />
@@ -23,6 +23,6 @@
         <asp:FileUpload ID="SleevePhotoFileUpload" runat="server" AllowMultiple="True" />
     </p>
     <p>
-        <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-default" />
+        <asp:Button ID="SubmitButton" runat="server" Text="Submit" CssClass="btn btn-info" />
     </p>
 </asp:Content>

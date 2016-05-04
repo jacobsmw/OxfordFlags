@@ -5,7 +5,7 @@
     
 <hr />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="DiscountMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="DiscountID">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="DiscountMaintenanceData" ForeColor="#333333" GridLines="None" DataKeyNames="DiscountID" Width="500px">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
 <asp:BoundField DataField="DiscountID" HeaderText="DiscountID" SortExpression="DiscountID" InsertVisible="False" ReadOnly="True" Visible="False">
@@ -90,5 +90,5 @@
     </p>
     <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
-&nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-default" Text="Submit New Entry" />
+&nbsp;<asp:Button ID="NewEntryButton" runat="server" CssClass="btn btn-info" Text="Submit New Entry" />
 </asp:Content>

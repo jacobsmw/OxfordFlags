@@ -3,13 +3,13 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <asp:Label ID="SearchLabel" runat="server" Text="Search: "></asp:Label>
-            <asp:TextBox ID="SearchInput" runat="server"></asp:TextBox>
+            <asp:Label ID="SearchLabel" runat="server" Text="Search: " CssClass="col-x2-2"></asp:Label>
+            <asp:TextBox ID="SearchInput" runat="server" CssClass="form-control" placeholder=""></asp:TextBox>
             <asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="btn btn-default" />
             <br />
             <br />
             Orders:<br />
-            <asp:ListBox ID="OrdersListBox" runat="server" DataSourceID="OrdersDataSource" DataTextField="OrderID" DataValueField="OrderID" AutoPostBack="True" Height="75px" Width="100px" ></asp:ListBox>
+            <asp:ListBox ID="OrdersListBox" runat="server" DataSourceID="OrdersDataSource" DataTextField="OrderID" DataValueField="OrderID" AutoPostBack="True" Height="75px" Width="300px" ></asp:ListBox>
             <asp:SqlDataSource ID="OrdersDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="spSelectOrderCrossTable" SelectCommandType="StoredProcedure">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="SearchInput" Name="SEARCH" PropertyName="Text" Type="String" />
@@ -66,24 +66,24 @@
             </div>
             <hr />
             <div class="form-group">
-                Payment: <asp:TextBox ID="PaymentInput" runat="server"></asp:TextBox>
+                Payment: <asp:TextBox ID="PaymentInput" runat="server" CssClass="form-control" placeholder="40.00" Width="200px"></asp:TextBox>
             </div>
             <div class="form-group">
-                Payment Date: <asp:TextBox ID="PaymentDateInput" runat="server"></asp:TextBox>
+                Payment Date: <asp:TextBox ID="PaymentDateInput" runat="server" CssClass="form-control" placeholder="mm/dd/yyyy" Width="200px"></asp:TextBox>
             </div>
             <div class="form-group">
                 Payment Type: <br />
-                <asp:DropDownList ID="PaymentSourceDropDownList" runat="server" DataSourceID="PaymentSourceDataSource" DataTextField="Type" DataValueField="Id">
+                <asp:DropDownList ID="PaymentSourceDropDownList" runat="server" CssClass="form-control" DataSourceID="PaymentSourceDataSource" DataTextField="Type" DataValueField="Id" Width="200px">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="PaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource><br />
             </div>
             <div class="form-group">
-                Check # / Paypal ID: <asp:TextBox ID="PaymentCheckPaypalNumberInput" runat="server"></asp:TextBox><br />
+                Check # / Paypal ID: <asp:TextBox ID="PaymentCheckPaypalNumberInput" runat="server" CssClass="form-control" Width="200"></asp:TextBox><br />
             </div>
             <div class="form-group">
-                Paypal Transaction: <asp:TextBox ID="PaymentPaypalTransactionInput" runat="server"></asp:TextBox><br />
+                Paypal Transaction: <asp:TextBox ID="PaymentPaypalTransactionInput" runat="server" CssClass="form-control" Width="200px"></asp:TextBox><br />
             </div>
-            <asp:Button ID="NewPaymentButton" runat="server" Text="New Payment" CssClass="btn btn-default" />
+            <asp:Button ID="NewPaymentButton" runat="server" Text="New Payment" CssClass="btn btn-info" />
         </ContentTemplate>
     </asp:UpdatePanel>
 

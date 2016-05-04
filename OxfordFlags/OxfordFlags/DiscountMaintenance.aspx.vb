@@ -8,6 +8,11 @@
     End Sub
 
     Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
+
+
+    End Sub
+
+    Protected Sub NewEntryButton_Click(sender As Object, e As EventArgs) Handles NewEntryButton.Click
         Dim tbl As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
 
         Dim desc As String
@@ -20,27 +25,6 @@
         active = DiscountActive.Checked
 
         tbl.spAddNewDiscount(desc, amount, active)
-<<<<<<< Updated upstream
-        Label1.Text = "Inserted new Discount"
-        Response.Redirect("~/Admin")
-=======
-
->>>>>>> Stashed changes
-    End Sub
-
-    Protected Sub NewEntryButton_Click(sender As Object, e As EventArgs) Handles NewEntryButton.Click
-        Dim tbl As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
-
-        Dim d As String
-        d = DiscountDescription.Text
-
-        Dim a As Double
-        a = DiscountAmount.Text
-
-        Dim c As Boolean
-        c = DiscountActive.Checked
-
-        tbl.spAddNewDiscount(d, a, c)
         Label1.Text = "Inserted New Discount"
     End Sub
 

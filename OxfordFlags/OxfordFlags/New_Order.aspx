@@ -48,13 +48,13 @@
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderPaymentSourceLabel" runat="server" Text="Payment Type: " CssClass="col-x2-2"></asp:Label><br />
-                        <asp:DropDownList ID="OrderPaymentSourceDropDownList" runat="server" DataSourceID="OrderPaymentSourceDataSource" DataTextField="Type" DataValueField="Id">
+                        <asp:DropDownList ID="OrderPaymentSourceDropDownList" runat="server" CssClass="form-control" DataSourceID="OrderPaymentSourceDataSource" DataTextField="Type" DataValueField="Id" Width="200px">
                         </asp:DropDownList>
                         <asp:SqlDataSource ID="OrderPaymentSourceDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [PaymentSource]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderPaymentCheckPaypalNumberLabel" runat="server" Text="Check # / Paypal ID: " CssClass="col-x2-2"></asp:Label>
-                        <asp:TextBox ID="OrderPaymentCheckPaypalNumberInput" runat="server" CssClass="form-control" placeholder="Check # or PayPal ID"></asp:TextBox>
+                        <asp:TextBox ID="OrderPaymentCheckPaypalNumberInput" runat="server" CssClass="form-control" placeholder="Check # or PayPal ID" Width="200px"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderPaymentPaypalTransactionLabel" runat="server" Text="Paypal Transaction: " CssClass="col-x2-2"></asp:Label>
@@ -62,12 +62,12 @@
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderDiscountLabel" runat="server" Text="Discount: " CssClass="col-x2-2"></asp:Label>
-                        <asp:DropDownList ID="OrderDiscountDropDownList" runat="server" DataSourceID="OrderDiscountSource" DataTextField="DiscountReason" DataValueField="DiscountID"></asp:DropDownList>
+                        <asp:DropDownList ID="OrderDiscountDropDownList" runat="server" CssClass="form-control" DataSourceID="OrderDiscountSource" DataTextField="DiscountReason" DataValueField="DiscountID" Width="200px"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderDiscountSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DiscountReason], [DiscountID] FROM [Discount]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderSourceLabel" runat="server" Text="Source: " CssClass="col-x2-2"></asp:Label>
-                        <asp:DropDownList ID="OrderSourceDropDownList" runat="server" DataSourceID="OrderSourceSource" DataTextField="SourceName" DataValueField="SourceID"></asp:DropDownList>
+                        <asp:DropDownList ID="OrderSourceDropDownList" runat="server" CssClass="form-control" DataSourceID="OrderSourceSource" DataTextField="SourceName" DataValueField="SourceID" Width="200px"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderSourceSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [SourceName], [SourceID] FROM [Source]"></asp:SqlDataSource>
                     </div>
                     <div class="form-group">
@@ -82,7 +82,7 @@
                     </div>
                     <div class="form-group">
                         <asp:Label ID="OrderFirstOccasionLabel" runat="server" Text="First Occasion: " CssClass="col-x2-2"></asp:Label>
-                        <asp:DropDownList ID="OrderFirstOccasionDropDownList" runat="server" DataSourceID="OrderFirstOccasionSource" DataTextField="OccasionName" DataValueField="OccasionID"></asp:DropDownList>
+                        <asp:DropDownList ID="OrderFirstOccasionDropDownList" runat="server" CssClass="form-control" DataSourceID="OrderFirstOccasionSource" DataTextField="OccasionName" DataValueField="OccasionID" Width="200px"></asp:DropDownList>
                         <asp:SqlDataSource ID="OrderFirstOccasionSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OccasionName], [OccasionID] FROM [Occasion]"></asp:SqlDataSource>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                         <asp:TableCell>
                         <div id="BuyerForm">
                             <asp:Label ID="BuyerLabel" runat="server" Text="Buyer: " CssClass="col-x2-2"></asp:Label>
-                            <asp:DropDownList ID="BuyerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="BuyerSource" DataTextField="Name" DataValueField="BuyerID">
+                            <asp:DropDownList ID="BuyerDropDownList" runat="server" CssClass="form-control" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="BuyerSource" DataTextField="Name" DataValueField="BuyerID" Width="200px">
                                 <asp:ListItem Value="0">New</asp:ListItem>
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="BuyerSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT BuyerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [Buyer] WHERE ([Active] = '1')"></asp:SqlDataSource>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="form-group">
                                 <asp:Label ID="BuyerStateLabel" runat="server" Text="State: " CssClass="col-x2-2"></asp:Label>
-                                <asp:DropDownList ID="BuyerStateDropDownList" runat="server">
+                                <asp:DropDownList ID="BuyerStateDropDownList" runat="server" CssClass="form-control" Width="200px">
                                     <asp:ListItem>AL</asp:ListItem>
                                     <asp:ListItem>AK</asp:ListItem>
                                     <asp:ListItem>AZ</asp:ListItem>
@@ -232,9 +232,9 @@
                         </asp:TableCell>
                         <asp:TableCell>
                         <div id="BuyerButtons">
-                            <asp:Button ID="BuyerAddButton" runat="server" CssClass="btn btn-default" Text="Add" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="BuyerAddButton" runat="server" CssClass="btn btn-warning" Text="Add" Width="75px" HorizontalAlign="Right"/>
                             <br />
-                            <asp:Button ID="BuyerRemoveButton" runat="server" CssClass="btn btn-default" Text="Remove" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="BuyerRemoveButton" runat="server" CssClass="btn btn-warning" Text="Remove" Width="75px" HorizontalAlign="Right"/>
                         </div>
                         </asp:TableCell>
                         <asp:TableCell >
@@ -253,7 +253,7 @@
                             <asp:TableCell>
                                 <div id="PropertyOwnerForm">
                                     <asp:Label ID="PropertyOwnerLabel" runat="server" Text="Property Owner: " CssClass="col-x2-2"></asp:Label>
-                                    <asp:DropDownList ID="PropertyOwnerDropDownList" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PropertyOwnerSource" DataTextField="Name" DataValueField="PropertyOwnerID">
+                                    <asp:DropDownList ID="PropertyOwnerDropDownList" runat="server" CssClass="form-control" AppendDataBoundItems="True" AutoPostBack="True" DataSourceID="PropertyOwnerSource" DataTextField="Name" DataValueField="PropertyOwnerID" Width="200px">
                                         <asp:ListItem Value="0">New</asp:ListItem>
                                     </asp:DropDownList>
                                     <asp:SqlDataSource ID="PropertyOwnerSource" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT PropertyOwnerID, CONCAT( LastName, ', ', FirstName) AS Name FROM [PropertyOwner]"></asp:SqlDataSource>
@@ -300,7 +300,7 @@
                                     </div>
                                     <div class="form-group">
                                         <asp:Label ID="PropertyOwnerStateLabel" runat="server" Text="State: " CssClass="col-x2-2"></asp:Label>
-                                        <asp:DropDownList ID="PropertyOwnerStateDropDownList" runat="server">
+                                        <asp:DropDownList ID="PropertyOwnerStateDropDownList" runat="server" CssClass="form-control" Width="200px">
                                             <asp:ListItem>AL</asp:ListItem>
                                             <asp:ListItem>AK</asp:ListItem>
                                             <asp:ListItem>AZ</asp:ListItem>
@@ -396,9 +396,9 @@
                             </asp:TableCell>
                             <asp:TableCell>
                                 <div id="PropertyOwnerButtons">
-                                    <asp:Button ID="PropertyOwnerAddButton" runat="server" CssClass="btn btn-default" Text="Add" Width="75px" HorizontalAlign="Right"/>
+                                    <asp:Button ID="PropertyOwnerAddButton" runat="server" CssClass="btn btn-warning" Text="Add" Width="75px" HorizontalAlign="Right"/>
                                     <br />
-                                    <asp:Button ID="PropertyOwnerRemoveButton" runat="server" CssClass="btn btn-default" Text="Remove" Width="75px" HorizontalAlign="Right"/>
+                                    <asp:Button ID="PropertyOwnerRemoveButton" runat="server" CssClass="btn btn-warning" Text="Remove" Width="75px" HorizontalAlign="Right"/>
                                 </div>
                             </asp:TableCell>
                             <asp:TableCell>
@@ -417,7 +417,7 @@
                         <asp:TableCell>
                         <div id="SleeveForm">
                             <div class="form-group">
-                                Property: <asp:DropDownList ID="SleevePropertyDropDownList" runat="server"></asp:DropDownList>
+                                Property: <asp:DropDownList ID="SleevePropertyDropDownList" runat="server" CssClass="form-control" Width="200px"></asp:DropDownList>
                             </div>
                             <div class="form-group">
                                 <asp:Label ID="SleeveLocationDescriptionLabel" runat="server" Text="Location Desciption:" CssClass="col-x2-2"></asp:Label>
@@ -495,9 +495,9 @@
                         </asp:TableCell>
                         <asp:TableCell>
                         <div id="SleeveButtons">
-                            <asp:Button ID="SleeveAddButton" runat="server" CssClass="btn btn-default" Text="Add" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="SleeveAddButton" runat="server" CssClass="btn btn-warning" Text="Add" Width="75px" HorizontalAlign="Right"/>
                             <br />
-                            <asp:Button ID="SleeveRemoveButton" runat="server" CssClass="btn btn-default" Text="Remove" Width="75px" HorizontalAlign="Right"/>
+                            <asp:Button ID="SleeveRemoveButton" runat="server" CssClass="btn btn-warning" Text="Remove" Width="75px" HorizontalAlign="Right"/>
                         </div>
                         </asp:TableCell>
                         <asp:TableCell>
@@ -507,7 +507,7 @@
                         </asp:TableCell>
                     </asp:TableRow>
                     </asp:Table>
-                    <asp:Button ID="SubmitButton" runat="server" CssClass="btn btn-default" Text="Submit" />
+                    <asp:Button ID="SubmitButton" runat="server" CssClass="btn btn-info" Text="Submit" />
                 </div>
             
             </div>
