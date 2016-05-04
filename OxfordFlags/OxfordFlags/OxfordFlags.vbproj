@@ -223,6 +223,7 @@
     <Content Include="EditRouteOrder.aspx" />
     <Content Include="FinanceReportInput.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GPSOutput.aspx" />
     <Content Include="Main_Menu.aspx" />
     <Content Include="MarkRoutesUnchanged.aspx" />
     <Content Include="New_Order.aspx" />
@@ -473,6 +474,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GPSOutput.aspx.designer.vb">
+      <DependentUpon>GPSOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPSOutput.aspx.vb">
+      <DependentUpon>GPSOutput.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="List.vb" />
     <Compile Include="Main_Menu.aspx.designer.vb">
