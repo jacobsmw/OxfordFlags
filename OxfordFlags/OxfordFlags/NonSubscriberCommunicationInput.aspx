@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
     <p>
-        <asp:Label ID="SubscriptionYearLabel" runat="server" Text="Subscription Year"></asp:Label>
+        <asp:Label ID="SubscriptionYearLabel" runat="server" Text="Year Not Subscribed"></asp:Label>
         &nbsp;  
         <asp:TextBox ID="SubscriptionYear" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="SubscriptionYearEnteredValidator" runat="server"

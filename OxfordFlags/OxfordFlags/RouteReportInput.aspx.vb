@@ -18,6 +18,9 @@
 
 
         'SELECT [Route].RouteColor, [Route].SortOrder, [PropertyOwner].StreetAddress, [PropertyOwner].FirstName, [PropertyOwner].LastName, [PropertyOwner].Phone, [Sleeve].LocationDescription, [Sleeve].SleeveID, [Route].Changed, [Route].Changed, [Route].PreviousColor-- new order , changed route
+        sb.Append("<table>")
+        sb.Append("<tr><td><b>") : sb.Append(DropDownList1.SelectedValue) : sb.Append("</b></td></tr>")
+        sb.Append("</table>")
 
         sb.Append("<table>")
         sb.Append("<tr>")

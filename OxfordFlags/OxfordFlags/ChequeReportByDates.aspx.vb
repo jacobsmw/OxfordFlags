@@ -19,18 +19,15 @@
         'edit based off what he wants as the output.
         sb.Append("<table style='thin black line'>")
         sb.Append("<tr>")
-        sb.Append("<td>") : sb.Append("FirstName") : sb.Append("</td style='padding: 10px'>")
-        sb.Append("<td style='padding: 10px'>") : sb.Append("LastName") : sb.Append("</td style='padding: 10px'>")
-        'sb.Append("<td style='padding: 10px'>") : sb.Append("SLEEVE COUNT") : sb.Append("</td>")
-        sb.Append("<td style='padding: 10px'>") : sb.Append("Amount Due") : sb.Append("</td>")
-        sb.Append("<td style='padding: 10px'>") : sb.Append("PAID") : sb.Append("</td>")
-        sb.Append("<td style='padding: 10px'>") : sb.Append("Outstanding") : sb.Append("</td>")
+        sb.Append("<td>") : sb.Append("ChequeNumber") : sb.Append("</td style='padding: 10px'>")
+        sb.Append("<td style='padding: 10px'>") : sb.Append("Amount") : sb.Append("</td style='padding: 10px'>")
+        
         sb.Append("</tr>")
         For Each rs In db.GetData(sDate, eDate)
             sb.Append("<tr>")
-            'sb.Append("<td>") : sb.Append(rs.FirstName) : sb.Append("</td>")
+            sb.Append("<td>") : sb.Append(rs.CheckPaypalNumber) : sb.Append("</td>")
 
-            'sb.Append("<td style='padding: 10px'>") : sb.Append(rs.LastName) : sb.Append("</td>")
+            sb.Append("<td style='padding: 10px'>") : sb.Append(rs.Payment) : sb.Append("</td>")
 
 
             'sb.Append("<td style='padding: 10px'>") : sb.Append(rs.AmountDue) : sb.Append("</td>")

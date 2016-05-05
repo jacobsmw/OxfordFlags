@@ -14,49 +14,49 @@ Option Explicit On
 Partial Public Class CustomerByAddress
 
     '''<summary>
-    '''StartDateLabel control.
+    '''SubscriptionYearLabel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents StartDateLabel As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SubscriptionYearLabel As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''StartDate control.
+    '''SubscriptionYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents StartDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SubscriptionYear As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''StartDateLabel0 control.
+    '''SubscriptionYearEnteredValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents StartDateLabel0 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents SubscriptionYearEnteredValidator As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
-    '''EndDate control.
+    '''SubscriptionYearFormatValidator control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents EndDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents SubscriptionYearFormatValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''ChequeByDatesSearchButton control.
+    '''CustomerByAddressSearchButton control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ChequeByDatesSearchButton As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents CustomerByAddressSearchButton As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''OutputLabel control.

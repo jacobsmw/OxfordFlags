@@ -4,12 +4,12 @@
     Dim tbl2 As dsTableAdapters.spSelectPhotoBySleeveIDTableAdapter = New dsTableAdapters.spSelectPhotoBySleeveIDTableAdapter()
     Private Property vYear As String
     Private Property i As Integer
-    Private Property bPrice As Integer
-    Private Property eDiscount As Integer
-    Private Property mDiscount As Integer
+    Private Property bPrice As String
+    Private Property eDiscount As String
+    Private Property mDiscount As String
     Private Property qty As Integer
-    Private Property earlyRenew As Integer 'for calculations of early vs not early.
-    Private Property lateRenew As Integer
+    Private Property earlyRenew As String 'for calculations of early vs not early.
+    Private Property lateRenew As String
 
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -18,7 +18,7 @@
         End If
     End Sub
 
-    Protected Sub CustomerInputSearchButton_Click(sender As Object, e As EventArgs) Handles NonSubscriberCommunicationInputSearchButton.Click
+    Protected Sub NonSubscriberCommunicationInputSearchButton_Click(sender As Object, e As EventArgs) Handles NonSubscriberCommunicationInputSearchButton.Click
         vYear = SubscriptionYear.Text
         bPrice = basePrice.Text
         eDiscount = EarlyDiscount.Text
@@ -49,7 +49,7 @@
         sb.Append("<td style='padding: 10px'>") : sb.Append("LateExtend") : sb.Append("</td style='padding: 10px'>")
         'above were the critical sections
 
-        sb.Append("<td style='padding: 10px'>") : sb.Append("Lastnameeeeee") : sb.Append("</td style='padding: 10px'>")
+        sb.Append("<td style='padding: 10px'>") : sb.Append("Lastname") : sb.Append("</td style='padding: 10px'>")
         sb.Append("<td style='padding: 10px'>") : sb.Append("Comm Type") : sb.Append("</td style='padding: 10px'>") 'comm type is bill type
 
 
@@ -61,7 +61,8 @@
 
 
 
-        For Each rs In db.GetData(basePrice.Text, EarlyDiscount.Text, multiDiscount.Text, vYear)
+        'For Each rs In db.GetData(basePrice.Text, EarlyDiscount.Text, multiDiscount.Text, vYear)
+        For Each rs In db.GetData(vYear)
 
 
 
@@ -97,7 +98,7 @@
 
                 End If
                 i = 1
-                
+
 
             Next
             rs2 = Nothing
