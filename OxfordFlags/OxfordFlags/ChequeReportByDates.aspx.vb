@@ -3,6 +3,7 @@
     Dim tbl As dsTableAdapters.StoredProcedureTableAdapter = New dsTableAdapters.StoredProcedureTableAdapter()
     Private Property sDate As Date
     Private Property eDate As Date
+    Private Property i As Single ' a float. 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not User.Identity.IsAuthenticated Then
             Response.Redirect("~/Account/Login")
@@ -23,27 +24,22 @@
         sb.Append("<td style='padding: 10px'>") : sb.Append("Amount") : sb.Append("</td style='padding: 10px'>")
         
         sb.Append("</tr>")
+        i = 0
         For Each rs In db.GetData(sDate, eDate)
             sb.Append("<tr>")
             sb.Append("<td>") : sb.Append(rs.CheckPaypalNumber) : sb.Append("</td>")
 
             sb.Append("<td style='padding: 10px'>") : sb.Append(rs.Payment) : sb.Append("</td>")
+            i = i + rs.Payment
 
-
-            'sb.Append("<td style='padding: 10px'>") : sb.Append(rs.AmountDue) : sb.Append("</td>")
-
-            'sb.Append("<td style='padding: 10px'>") : sb.Append(rs.AmountPaid) : sb.Append("</td>")
-
-            'sb.Append("<td style='padding: 10px'>") : sb.Append(rs.AmountDue - rs.AmountPaid) : sb.Append("</td>")
-
-
+            
 
 
             sb.Append("</tr>")
         Next
 
         sb.Append("</table>")
-
+        sb.Append("Total for cheque within dates: ") : sb.Append(i)
         rs = Nothing
         db.Connection.Close()
         db = Nothing
