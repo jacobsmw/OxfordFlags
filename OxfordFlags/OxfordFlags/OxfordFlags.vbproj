@@ -249,6 +249,7 @@
     <Content Include="ds.xss">
       <DependentUpon>ds.xsd</DependentUpon>
     </Content>
+    <None Include="My Project\PublishProfiles\OxfordFlags.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="PaymentReportInput.aspx" />
     <Content Include="PropertyTraitMaintenance.aspx" />
